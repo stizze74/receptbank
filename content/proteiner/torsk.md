@@ -41,12 +41,12 @@ ingredienser:
 tillagning:
   - namn: Salta i förväg
     text: >-
-      Lagga torskfiléerna på ett fat. Salta båda sidor med flingsalt. Låt stå i
+      Lägg torskfiléerna på ett fat. Salta båda sidor med flingsalt. Låt stå i
       5–10 min — saltet drar ut lite vätska och ger fastare textur.
     timer_min: 8
   - namn: Torka
     text: >-
-      Torka filterna torra med hushållspapper. Detta är kritiskt — våt fisk
+      Torka filéerna torra med hushållspapper. Detta är kritiskt — våt fisk
       steks inte, den kokas.
   - namn: Värm pannan
     text: >-
@@ -61,17 +61,17 @@ tillagning:
       lätt med gaffel — innertemp 50–55°C.
     timer_min: 3
   - namn: Servera
-    text: Pepra. Servera direkt med citronklyfta vid sidan.
+    text: Peppra. Servera direkt med citronklyfta vid sidan.
 tips:
   - >-
     Torsk går från perfekt till överstekt på 30 sekunder — lyft hellre för
     tidigt och lägg tillbaka. Eftervarme finns.
   - >-
-    Mjola eller paneraing skipas — onodödigt på LCHF och torsken blir gott i sig
+    Mjöl eller panering skippas — onödigt på LCHF och torsken är god i sig
     själv.
   - >-
-    Klyftor av smor + citron + persilja rörda i en skål = snabb örtsmor som
-    passar perfekt.
+    En klick smör + citron + persilja rört i en skål = snabbt örtsmör som passar
+    perfekt.
   - >-
     Frusen torsk: tina helt och torka extra noga, annars fäller fisken massor av
     vätska i pannan.

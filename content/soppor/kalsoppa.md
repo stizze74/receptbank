@@ -74,7 +74,7 @@ tillagning:
   - namn: Tillsätt grädde
     text: Häll i grädde. Värm igenom utan att koka.
   - namn: Smaka av
-    text: Plocka ut lagerbladet. Smaka — må vara salt nog från fläsket. Peppra.
+    text: Plocka ut lagerbladet. Smaka — bör vara salt nog från fläsket. Peppra.
 tips:
   - Sidfläsk i kall kastrull — fettet smälter ut långsamt utan att brännas.
   - Smakkolla salt INNAN du saltar — sidfläsk + buljong är redan ganska saltigt.

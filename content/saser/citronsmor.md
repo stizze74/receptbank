@@ -48,11 +48,11 @@ tillagning:
       Tillsätt citronskal, citronjuice, salt, peppar och hackad persilja. Vispa
       till jämn massa.
   - namn: Smaka av
-    text: Mer salt? Mer citron? Justerar.
+    text: Mer salt? Mer citron? Justera.
   - namn: Forma
     text: >-
       Klicka ner på plastfolie eller bakplåtspapper. Forma till en rulle (~3 cm
-      i diameter). Rulla ihop till hård korv. Vrid ändarna. Lagga i kyl 30 min
+      i diameter). Rulla ihop till hård korv. Vrid ändarna. Lägg i kyl 30 min
       minst.
   - namn: Servera
     text: >-

@@ -16,7 +16,7 @@ taggar:
   - snabb
   - notkott
   - kombo
-  - engrytaspann
+  - engryta
 ingredienser:
   - vara: Se modulrecepten
     notering: 'kottfars, smorstekt-vitkal, ev. gräddfil eller senap-gradde'

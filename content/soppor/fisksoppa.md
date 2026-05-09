@@ -42,7 +42,7 @@ ingredienser:
   - mangd: 1
     enhet: dl
     vara: passerade tomater
-    notering: håll mer mått om du vill hålla nere kh
+    notering: minska mängden om du vill hålla nere kh
   - mangd: 4
     enhet: dl
     vara: fiskbuljong
@@ -91,7 +91,7 @@ tillagning:
   - namn: Smaka av och servera
     text: Salt och peppar. Toppa varje tallrik generöst med färsk dill.
 tips:
-  - 'Sjud, koka inte — stark koking gör fisken seg.'
+  - 'Sjud, koka inte — stark kokning gör fisken seg.'
   - 'Räkor sist, bara värmas. Hopkokta räkor blir gummi.'
   - >-
     För mer marginal på kh: hoppa över passerade tomater och paprika — du får då

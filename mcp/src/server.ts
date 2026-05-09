@@ -250,12 +250,38 @@ app.post('/register', (_req, res) => {
 // MCP Streamable HTTP-spec kräver Accept: application/json, text/event-stream
 // på POST. Anthropic-Connector skickar inte alltid headern korrekt — patcha
 // inkommande request så transport-handlern accepterar.
-const tvingaAccept = (req: Request, _res: Response, next: () => void) => {
-  const a = req.headers['accept'] ?? '';
-  const harJson = a.includes('application/json');
-  const harSse = a.includes('text/event-stream');
+//
+// SDK:n läser via Web Standards `req.headers.get('accept')`. Express
+// IncomingMessage konverteras via @hono/node-server som läser från
+// req.headers objekt OCH ibland req.rawHeaders array. Patcha båda för
+// säkerhets skull.
+const PATCHED_ACCEPT = 'application/json, text/event-stream';
+const tvingaAccept = (req: Request, res: Response, next: () => void) => {
+  const original = String(req.headers['accept'] ?? '');
+  const harJson = original.includes('application/json');
+  const harSse = original.includes('text/event-stream');
+
   if (!harJson || !harSse) {
-    req.headers['accept'] = 'application/json, text/event-stream';
+    // Express normaliserade headers
+    req.headers['accept'] = PATCHED_ACCEPT;
+    // Raw headers (Hono läser ofta härifrån)
+    const raw = (req as any).rawHeaders as string[] | undefined;
+    if (Array.isArray(raw)) {
+      let acceptIdx = -1;
+      for (let i = 0; i < raw.length; i += 2) {
+        if (raw[i] && raw[i].toLowerCase() === 'accept') {
+          acceptIdx = i;
+          break;
+        }
+      }
+      if (acceptIdx >= 0) {
+        raw[acceptIdx + 1] = PATCHED_ACCEPT;
+      } else {
+        raw.push('Accept', PATCHED_ACCEPT);
+      }
+    }
+    res.setHeader('X-Patched-Accept', PATCHED_ACCEPT);
+    res.setHeader('X-Original-Accept', original || '<missing>');
   }
   next();
 };

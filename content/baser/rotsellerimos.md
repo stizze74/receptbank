@@ -45,7 +45,7 @@ tillagning:
       sticka kniv genom.
     timer_min: 17
   - namn: Häll av
-    text: Häll av allt vatten ordentligt. Låt ånga av i durkslåg 1–2 min.
+    text: Häll av allt vatten ordentligt. Låt ånga av i durkslag 1–2 min.
   - namn: Mosa
     text: Mosa med stavmixer eller potatisstöt. Tillsätt smör och grädde.
   - namn: Smaka av

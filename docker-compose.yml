@@ -25,6 +25,7 @@ services:
     restart: unless-stopped
     environment:
       MCP_TOKEN: ${MCP_TOKEN}
+      GITHUB_TOKEN: ${GITHUB_TOKEN:-}
       CONTENT_ROT: /data/content
       PORT: 3030
     volumes:

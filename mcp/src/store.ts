@@ -101,6 +101,31 @@ export async function raderaRecept(modul: Modulmapp, slug: string): Promise<void
 
 // ---- Git ----
 let git: SimpleGit | null = null;
+let remoteAuthSatt = false;
+
+async function setupRemoteAuth(g: SimpleGit): Promise<void> {
+  if (remoteAuthSatt) return;
+  const token = process.env.GITHUB_TOKEN;
+  if (!token) {
+    remoteAuthSatt = true;
+    return;
+  }
+  try {
+    const remotes = await g.getRemotes(true);
+    const origin = remotes.find((r) => r.name === 'origin');
+    if (origin && origin.refs.push.startsWith('https://github.com/')) {
+      const newUrl = origin.refs.push.replace(
+        'https://github.com/',
+        `https://oauth2:${token}@github.com/`,
+      );
+      await g.remote(['set-url', '--push', 'origin', newUrl]);
+    }
+    remoteAuthSatt = true;
+  } catch (e) {
+    console.warn(`setupRemoteAuth misslyckades: ${(e as Error).message}`);
+  }
+}
+
 function gitInstans(): SimpleGit {
   if (!git) git = simpleGit(CONTENT_ROT);
   return git;
@@ -129,6 +154,7 @@ export async function gitPullRebase(): Promise<void> {
 
 export async function commitOchPush(meddelande: string): Promise<{ commit?: string; pushed: boolean; meddelande: string }> {
   const g = gitInstans();
+  await setupRemoteAuth(g);
   const status = await g.status();
   if (status.files.length === 0) return { pushed: false, meddelande: 'Inget att committa' };
   await g.add('.');

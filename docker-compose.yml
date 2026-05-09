@@ -58,6 +58,7 @@ services:
       DEBOUNCE_SEC: "30"
       COMPOSE_DIR: /repo
       COMPOSE_SERVICE: recept-web
+      COMPOSE_PROJECT_NAME: recept
       GIT_REMOTE_POLL_SEC: "60"
       DEPLOY_PULL: "1"
     volumes:

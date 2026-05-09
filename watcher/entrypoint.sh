@@ -20,7 +20,9 @@ log() {
 triggera_rebuild() {
   log "Trigger: build & deploy ${COMPOSE_SERVICE}…"
   cd "$COMPOSE_DIR"
-  if docker compose up -d --build "$COMPOSE_SERVICE" 2>&1; then
+  # -p tvingar project-name att matcha host-stacken (annars blir det "repo"
+  # från WORKDIR och container-namn krockar med befintlig recept-web)
+  if docker compose -p "${COMPOSE_PROJECT_NAME:-recept}" up -d --build "$COMPOSE_SERVICE" 2>&1; then
     log "Rebuild klar."
   else
     log "Rebuild misslyckades — kontrollera docker compose-loggen."

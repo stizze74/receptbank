@@ -16,8 +16,12 @@ editera eller diskutera recept i sin LCHF-receptbank. Det innehåller två delar
 | Fält | Värde |
 |---|---|
 | Name | Receptbank |
-| Server URL | `https://mcp-recept.hjerne.net/sse?token=<MCP_TOKEN>` |
-| Auth | Ingen extra (tokenen är i URL eller skicka via `Authorization: Bearer <MCP_TOKEN>`-header) |
+| Server URL | `https://mcp-recept.hjerne.net/mcp` |
+| Auth-header | `Authorization: Bearer <MCP_TOKEN>` |
+
+Servern stödjer:
+- **`/mcp`** — modern Streamable HTTP-transport (Claude.ai-Connectors använder denna)
+- **`/sse`** + `/messages` — bakåtkompat SSE-transport (gamla klienter)
 
 Hämta `<MCP_TOKEN>` från `~/.secrets` på NUC:
 

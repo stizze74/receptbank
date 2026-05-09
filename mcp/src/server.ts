@@ -1,6 +1,9 @@
 import express, { type Request, type Response } from 'express';
 import { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js';
 import { SSEServerTransport } from '@modelcontextprotocol/sdk/server/sse.js';
+import { StreamableHTTPServerTransport } from '@modelcontextprotocol/sdk/server/streamableHttp.js';
+import { isInitializeRequest } from '@modelcontextprotocol/sdk/types.js';
+import { randomUUID } from 'node:crypto';
 import { z } from 'zod';
 import {
   listaAlla,
@@ -219,27 +222,74 @@ app.get('/healthz', (_req, res) => {
   res.type('text/plain').send('ok');
 });
 
-// MCP SSE-transport: GET /sse upprättar event-stream, POST /messages skickar in
-let activeTransport: SSEServerTransport | null = null;
+// ---- Modern Streamable HTTP transport: /mcp (Claude.ai Custom Connector använder denna) ----
+const streamableTransports: Record<string, StreamableHTTPServerTransport> = {};
+
+app.post('/mcp', tokenAuth, async (req, res) => {
+  const sessionId = req.headers['mcp-session-id'] as string | undefined;
+  let transport: StreamableHTTPServerTransport;
+
+  if (sessionId && streamableTransports[sessionId]) {
+    transport = streamableTransports[sessionId];
+  } else if (!sessionId && isInitializeRequest(req.body)) {
+    transport = new StreamableHTTPServerTransport({
+      sessionIdGenerator: () => randomUUID(),
+      onsessioninitialized: (id) => {
+        streamableTransports[id] = transport;
+      },
+    });
+    transport.onclose = () => {
+      if (transport.sessionId && streamableTransports[transport.sessionId]) {
+        delete streamableTransports[transport.sessionId];
+      }
+    };
+    await mcp.server.connect(transport);
+  } else {
+    res.status(400).json({
+      jsonrpc: '2.0',
+      error: { code: -32000, message: 'Bad Request: ogiltig session eller init.' },
+      id: null,
+    });
+    return;
+  }
+
+  await transport.handleRequest(req, res, req.body);
+});
+
+const handleStreamableSession = async (req: Request, res: Response) => {
+  const sessionId = req.headers['mcp-session-id'] as string | undefined;
+  if (!sessionId || !streamableTransports[sessionId]) {
+    res.status(400).send('Saknad eller okänd session');
+    return;
+  }
+  await streamableTransports[sessionId].handleRequest(req, res);
+};
+
+app.get('/mcp', tokenAuth, handleStreamableSession);
+app.delete('/mcp', tokenAuth, handleStreamableSession);
+
+// ---- Bakåtkompatibel SSE-transport: GET /sse + POST /messages ----
+let activeSseTransport: SSEServerTransport | null = null;
 
 app.get('/sse', tokenAuth, async (req, res) => {
   const transport = new SSEServerTransport('/messages', res);
-  activeTransport = transport;
+  activeSseTransport = transport;
   res.on('close', () => {
-    if (activeTransport === transport) activeTransport = null;
+    if (activeSseTransport === transport) activeSseTransport = null;
   });
   await mcp.server.connect(transport);
 });
 
 app.post('/messages', tokenAuth, async (req, res) => {
-  if (!activeTransport) {
-    res.status(503).json({ error: 'Ingen aktiv MCP-session — anslut till /sse först' });
+  if (!activeSseTransport) {
+    res.status(503).json({ error: 'Ingen aktiv SSE-session — anslut till /sse först' });
     return;
   }
-  await activeTransport.handlePostMessage(req, res, req.body);
+  await activeSseTransport.handlePostMessage(req, res, req.body);
 });
 
 app.listen(PORT, '0.0.0.0', () => {
   console.log(`Receptbank MCP-server lyssnar på 0.0.0.0:${PORT}`);
-  console.log(`SSE-endpoint: /sse  (auth: Bearer <MCP_TOKEN>)`);
+  console.log(`Modern (Claude.ai): POST/GET/DELETE /mcp  (auth: Bearer <MCP_TOKEN>)`);
+  console.log(`Bakåtkompat SSE:    GET /sse + POST /messages`);
 });

@@ -286,52 +286,46 @@ const tvingaAccept = (req: Request, res: Response, next: () => void) => {
   next();
 };
 
-// ---- Modern Streamable HTTP transport: /mcp (Claude.ai Custom Connector använder denna) ----
-const streamableTransports: Record<string, StreamableHTTPServerTransport> = {};
-
+// ---- Modern Streamable HTTP transport: /mcp ----
+// Stateless mode: ny transport + McpServer-instans per request.
+// Anthropic-Connectorn skickar tools/call utan föregående initialize, så vi
+// kan inte kräva sessions. Per-request transport är lite overhead men
+// funkar för read-only tool-calls och write-tool-calls (som inte behöver
+// state mellan requests).
 app.post('/mcp', tokenAuth, tvingaAccept, async (req, res) => {
-  const sessionId = req.headers['mcp-session-id'] as string | undefined;
-  let transport: StreamableHTTPServerTransport;
-
-  if (sessionId && streamableTransports[sessionId]) {
-    transport = streamableTransports[sessionId];
-  } else if (!sessionId && isInitializeRequest(req.body)) {
-    transport = new StreamableHTTPServerTransport({
-      sessionIdGenerator: () => randomUUID(),
-      onsessioninitialized: (id) => {
-        streamableTransports[id] = transport;
-      },
+  try {
+    const transport = new StreamableHTTPServerTransport({
+      sessionIdGenerator: undefined,  // stateless
     });
-    transport.onclose = () => {
-      if (transport.sessionId && streamableTransports[transport.sessionId]) {
-        delete streamableTransports[transport.sessionId];
-      }
-    };
+    res.on('close', () => {
+      transport.close().catch(() => {});
+    });
     const mcp = createMcpServer();
     await mcp.server.connect(transport);
-  } else {
-    res.status(400).json({
-      jsonrpc: '2.0',
-      error: { code: -32000, message: 'Bad Request: ogiltig session eller init.' },
-      id: null,
-    });
-    return;
+    await transport.handleRequest(req, res, req.body);
+  } catch (e) {
+    console.error('MCP POST /mcp fail:', e);
+    if (!res.headersSent) {
+      res.status(500).json({
+        jsonrpc: '2.0',
+        error: { code: -32603, message: `Server error: ${(e as Error).message}` },
+        id: null,
+      });
+    }
   }
-
-  await transport.handleRequest(req, res, req.body);
 });
 
-const handleStreamableSession = async (req: Request, res: Response) => {
-  const sessionId = req.headers['mcp-session-id'] as string | undefined;
-  if (!sessionId || !streamableTransports[sessionId]) {
-    res.status(400).send('Saknad eller okänd session');
-    return;
-  }
-  await streamableTransports[sessionId].handleRequest(req, res);
+// I stateless mode finns ingen session att GET-strömma mot eller terminera.
+// Returnera 405 Method Not Allowed enligt MCP-spec.
+const stateless405 = (_req: Request, res: Response) => {
+  res.status(405).json({
+    jsonrpc: '2.0',
+    error: { code: -32000, message: 'Method not allowed (stateless server)' },
+    id: null,
+  });
 };
-
-app.get('/mcp', tokenAuth, tvingaAccept, handleStreamableSession);
-app.delete('/mcp', tokenAuth, tvingaAccept, handleStreamableSession);
+app.get('/mcp', tokenAuth, stateless405);
+app.delete('/mcp', tokenAuth, stateless405);
 
 // ---- Bakåtkompatibel SSE-transport: GET /sse + POST /messages ----
 let activeSseTransport: SSEServerTransport | null = null;

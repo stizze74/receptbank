@@ -33,11 +33,18 @@ if (!TOKEN) {
   process.exit(1);
 }
 
-// ---- MCP Server ----
-const mcp = new McpServer({ name: SERVER_NAME, version: VERSION });
+// ---- MCP Server-factory ----
+// En ny McpServer-instans skapas per anslutning eftersom McpServer:s underliggande
+// Server bara stödjer en transport per instans. Tool-registreringen är samma för alla.
+function createMcpServer(): McpServer {
+  const mcp = new McpServer({ name: SERVER_NAME, version: VERSION });
+  registerTools(mcp);
+  return mcp;
+}
 
-mcp.tool(
-  'list_recept',
+function registerTools(mcp: McpServer): void {
+  mcp.tool(
+    'list_recept',
   'Lista alla recept i banken. Filtrera på modul (baser/proteiner/saser/tillbehor/soppor/middagar) och/eller status (skriven/planerad/testad/noterad).',
   {
     modul: z.enum(MODULER).optional(),
@@ -202,6 +209,7 @@ mcp.tool(
     });
   },
 );
+}  // end of registerTools
 
 // ---- HTTP / SSE Transport ----
 const app = express();
@@ -243,6 +251,7 @@ app.post('/mcp', tokenAuth, async (req, res) => {
         delete streamableTransports[transport.sessionId];
       }
     };
+    const mcp = createMcpServer();
     await mcp.server.connect(transport);
   } else {
     res.status(400).json({
@@ -277,6 +286,7 @@ app.get('/sse', tokenAuth, async (req, res) => {
   res.on('close', () => {
     if (activeSseTransport === transport) activeSseTransport = null;
   });
+  const mcp = createMcpServer();
   await mcp.server.connect(transport);
 });
 

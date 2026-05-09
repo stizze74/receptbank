@@ -46,9 +46,9 @@ ingredienser:
     enhet: krm
     vara: svartpeppar
 tillagning:
-  - namn: Skuller sallad
+  - namn: Skölj sallad
     text: Skölj salladen om nödvändigt. Riv eller skär i bitar. Lägg i en skål.
-  - namn: Skär grurka och tomater
+  - namn: Skär gurka och tomater
     text: Skiva gurkan i halvmånar. Dela tomaterna på mitten.
   - namn: Gör dressing
     text: >-
@@ -58,9 +58,9 @@ tillagning:
     text: Häll dressingen över salladen precis innan servering. Vänd om försiktigt.
 tips:
   - Dressing alltid SIST — sallad som stått länge i dressing blir slapp.
-  - 'Bästa dressingen är 3:1 olja till syra. Justerar efter smak.'
+  - 'Bästa dressingen är 3:1 olja till syra. Justera efter smak.'
   - >-
-    Centrifugera salladen torr i salladsslunga om du har — våt sallad utspäder
+    Centrifugera salladen torr i salladsslunga om du har — våt sallad späder ut
     dressingen.
   - 'Avokado, nötter eller riven ost höjer mättnaden om salladen är huvudrätt.'
 testlogg: []

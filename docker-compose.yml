@@ -6,7 +6,6 @@ services:
     container_name: recept-web
     restart: unless-stopped
     ports:
-      # Bakup-mapping till localhost om man vill testa NPM-förbi
       - "127.0.0.1:8087:80"
     networks:
       - docker_default
@@ -18,8 +17,63 @@ services:
         max-size: "5m"
         max-file: "3"
 
+  recept-mcp:
+    build:
+      context: ./mcp
+      dockerfile: Dockerfile
+    container_name: recept-mcp
+    restart: unless-stopped
+    environment:
+      MCP_TOKEN: ${MCP_TOKEN}
+      CONTENT_ROT: /data/content
+      PORT: 3030
+    volumes:
+      # Mountar hela repot till /data så MCP kan skriva markdown och kalla git (commit + push).
+      # Containerns kod ligger i /app — payload-volymen är separat.
+      - ./:/data
+      # SSH för git push via origin (read-only mount, MCP rör inte nyckeln)
+      - ${HOME}/.ssh:/root/.ssh:ro
+    ports:
+      - "127.0.0.1:3030:3030"
+    networks:
+      - docker_default
+    labels:
+      - "se.hjerne.recept-mcp=v1"
+    depends_on:
+      - recept-web
+    logging:
+      driver: json-file
+      options:
+        max-size: "5m"
+        max-file: "3"
+
+  recept-watcher:
+    build:
+      context: ./watcher
+      dockerfile: Dockerfile
+    container_name: recept-watcher
+    restart: unless-stopped
+    environment:
+      WATCH_DIR: /repo/content
+      DEBOUNCE_SEC: "30"
+      COMPOSE_DIR: /repo
+      COMPOSE_SERVICE: recept-web
+      GIT_REMOTE_POLL_SEC: "60"
+      DEPLOY_PULL: "1"
+    volumes:
+      - ./:/repo
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ${HOME}/.ssh:/root/.ssh:ro
+    networks:
+      - docker_default
+    labels:
+      - "se.hjerne.recept-watcher=v1"
+    logging:
+      driver: json-file
+      options:
+        max-size: "5m"
+        max-file: "3"
+
 networks:
-  # NPM (nginx-proxy) bor på docker_default — vi joinar den för att kunna
-  # nås via service-namn (recept-web) från NPM:s proxy-host-konfig.
   docker_default:
     external: true

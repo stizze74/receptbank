@@ -10,7 +10,9 @@ RUN npm run build
 
 FROM node:22-alpine AS runtime
 WORKDIR /app
-RUN apk add --no-cache git openssh-client
+RUN apk add --no-cache git openssh-client && \
+    git config --system --add safe.directory /data && \
+    git config --system --add safe.directory '*'
 COPY package.json package-lock.json* ./
 RUN npm ci --omit=dev && npm cache clean --force
 COPY --from=builder /app/dist ./dist

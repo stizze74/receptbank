@@ -11,6 +11,7 @@ COPY astro.config.mjs tsconfig.json tailwind.config.mjs ./
 COPY src ./src
 COPY content ./content
 COPY public ./public
+COPY scripts ./scripts
 
 RUN npx astro telemetry disable && npm run build
 

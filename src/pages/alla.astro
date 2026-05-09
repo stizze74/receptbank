@@ -1,0 +1,143 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ReceptKort from '../components/ReceptKort.astro';
+import { getCollection } from 'astro:content';
+
+const collections = await Promise.all([
+  getCollection('baser'),
+  getCollection('proteiner'),
+  getCollection('saser'),
+  getCollection('tillbehor'),
+  getCollection('soppor'),
+  getCollection('middagar'),
+]);
+const alla = collections.flat();
+alla.sort((a, b) => a.data.namn.localeCompare(b.data.namn, 'sv'));
+
+const allaTaggar = Array.from(
+  new Set(alla.flatMap((r) => r.data.taggar ?? []))
+).sort((a, b) => a.localeCompare(b, 'sv'));
+---
+
+<BaseLayout titel="Alla recept">
+  <h1 class="mb-3 text-2xl">Alla recept</h1>
+
+  <section class="kort mb-4 grid gap-2 text-sm">
+    <label class="grid grid-cols-[6rem_1fr] items-center gap-2">
+      <span>Sök</span>
+      <input id="filter-q" type="search" placeholder="t.ex. kyckling, soppa, snabb" class="rounded-md border border-bas-300 px-2 py-1" />
+    </label>
+    <label class="grid grid-cols-[6rem_1fr] items-center gap-2">
+      <span>Modul</span>
+      <select id="filter-modul" class="rounded-md border border-bas-300 px-2 py-1">
+        <option value="">Alla</option>
+        <option value="bas">Bas</option>
+        <option value="protein">Protein</option>
+        <option value="sas">Sås</option>
+        <option value="tillbehor">Tillbehör</option>
+        <option value="soppa">Soppa</option>
+        <option value="middag">Middag</option>
+      </select>
+    </label>
+    <label class="grid grid-cols-[6rem_1fr] items-center gap-2">
+      <span>Status</span>
+      <select id="filter-status" class="rounded-md border border-bas-300 px-2 py-1">
+        <option value="">Alla</option>
+        <option value="skriven">Skrivna</option>
+        <option value="testad">Testade</option>
+        <option value="planerad">Planerade</option>
+        <option value="noterad">Köpta genvägar</option>
+      </select>
+    </label>
+    <label class="grid grid-cols-[6rem_1fr] items-center gap-2">
+      <span>Max tid</span>
+      <select id="filter-tid" class="rounded-md border border-bas-300 px-2 py-1">
+        <option value="">Spelar ingen roll</option>
+        <option value="15">≤ 15 min</option>
+        <option value="30">≤ 30 min</option>
+        <option value="60">≤ 60 min</option>
+      </select>
+    </label>
+    <label class="grid grid-cols-[6rem_1fr] items-center gap-2">
+      <span>Jessica</span>
+      <select id="filter-jessica" class="rounded-md border border-bas-300 px-2 py-1">
+        <option value="">Spelar ingen roll</option>
+        <option value="delad-fisk">Delad fisk</option>
+        <option value="byt-protein">Byt protein</option>
+        <option value="pasta">Pasta-version</option>
+        <option value="solo">Bara för Stefan</option>
+      </select>
+    </label>
+  </section>
+
+  <p id="resultat-text" class="mb-2 text-sm text-bas-700">{alla.length} recept</p>
+
+  <div id="recept-grid" class="grid grid-cols-1 gap-2 sm:grid-cols-2">
+    {alla.map((r) => {
+      const tid = r.data.tid;
+      const totalt = tid?.total_min ?? ((tid?.prep_min ?? 0) + (tid?.tillagning_min ?? 0));
+      return (
+        <div
+          class="recept-item"
+          data-modul={r.data.modul}
+          data-status={r.data.status}
+          data-tid={totalt || ''}
+          data-jessica={r.data.jessica_tagg ?? ''}
+          data-taggar={(r.data.taggar ?? []).join(' ')}
+          data-namn={r.data.namn.toLowerCase()}
+        >
+          <ReceptKort recept={r} />
+        </div>
+      );
+    })}
+  </div>
+
+  <p id="tom-text" class="mt-4 hidden text-sm text-bas-700">Inga recept matchar filtren.</p>
+</BaseLayout>
+
+<script>
+  const filterFor = (id: string) => (document.getElementById(id) as HTMLInputElement | HTMLSelectElement);
+
+  const q = filterFor('filter-q');
+  const modul = filterFor('filter-modul');
+  const status = filterFor('filter-status');
+  const tid = filterFor('filter-tid');
+  const jessica = filterFor('filter-jessica');
+  const resultatText = document.getElementById('resultat-text')!;
+  const tomText = document.getElementById('tom-text')!;
+  const items = Array.from(document.querySelectorAll<HTMLElement>('.recept-item'));
+
+  // Restore from URL
+  const params = new URL(location.href).searchParams;
+  if (params.get('modul')) modul.value = params.get('modul')!;
+  if (params.get('q')) (q as HTMLInputElement).value = params.get('q')!;
+
+  const tillampa = () => {
+    const qVal = (q.value || '').trim().toLowerCase();
+    const mVal = modul.value;
+    const sVal = status.value;
+    const tVal = tid.value ? Number(tid.value) : 0;
+    const jVal = jessica.value;
+
+    let synliga = 0;
+    items.forEach((it) => {
+      const passQ = !qVal ||
+        (it.dataset.namn ?? '').includes(qVal) ||
+        (it.dataset.taggar ?? '').toLowerCase().includes(qVal);
+      const passM = !mVal || it.dataset.modul === mVal;
+      const passS = !sVal || it.dataset.status === sVal;
+      const tidNum = Number(it.dataset.tid || 0);
+      const passT = !tVal || (tidNum > 0 && tidNum <= tVal);
+      const passJ = !jVal || it.dataset.jessica === jVal;
+
+      const ok = passQ && passM && passS && passT && passJ;
+      it.style.display = ok ? '' : 'none';
+      if (ok) synliga++;
+    });
+    resultatText.textContent = `${synliga} recept`;
+    tomText.classList.toggle('hidden', synliga > 0);
+  };
+
+  [q, modul, status, tid, jessica].forEach((el) => el.addEventListener('input', tillampa));
+  tillampa();
+</script>

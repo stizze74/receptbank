@@ -1,0 +1,115 @@
+---
+import { getCollection } from 'astro:content';
+import { ingrediensTillStrang, tillagningTillObj, summeraTid, minutterTillIso } from '../../../utils/format';
+import { recipeJsonLd } from '../../../utils/jsonld';
+
+export async function getStaticPaths() {
+  const collections = ['baser', 'proteiner', 'saser', 'tillbehor', 'soppor', 'middagar'] as const;
+  const allEntries = await Promise.all(collections.map((c) => getCollection(c)));
+  return allEntries
+    .flat()
+    .filter((entry) => (entry.data.ingredienser ?? []).length > 0 && (entry.data.tillagning ?? []).length > 0)
+    .map((entry) => ({
+      params: { slug: entry.id },
+      props: { entry },
+    }));
+}
+
+const { entry } = Astro.props;
+const d = entry.data;
+const sitan = Astro.site?.toString() ?? 'https://recept.hjerne.net';
+const ld = recipeJsonLd(entry, sitan);
+
+const rader = d.ingredienser.map((i) => ingrediensTillStrang(i));
+const steg = d.tillagning.map((s) => tillagningTillObj(s));
+const totalMin = summeraTid(d.tid);
+const prepIso = minutterTillIso(d.tid?.prep_min);
+const cookIso = minutterTillIso(d.tid?.tillagning_min);
+const totalIso = minutterTillIso(totalMin);
+
+const huvudPath = `/recept/${entry.id}`;
+const description = `${d.namn} — ${d.portioner} portioner${totalMin ? ` · ${totalMin} min` : ''}`;
+---
+
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#3f6f3d" />
+    <meta name="description" content={description} />
+    <title>{d.namn}</title>
+    <link rel="canonical" href={`${sitan}${huvudPath}/dela/`} />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content={d.namn} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={`${sitan}${huvudPath}/dela/`} />
+    <script type="application/ld+json" set:html={JSON.stringify(ld)} />
+    <style>
+      :root { color-scheme: light dark; font-family: system-ui, -apple-system, sans-serif; }
+      body { margin: 0; padding: 1.25rem; line-height: 1.5; background: #fff; color: #111; max-width: 42rem; }
+      h1 { margin: 0 0 0.25rem; font-size: 1.6rem; }
+      .meta { margin: 0 0 1.25rem; color: #555; font-size: 0.9rem; }
+      h2 { margin: 1.5rem 0 0.5rem; font-size: 1.15rem; }
+      ul, ol { margin: 0; padding: 0 0 0 1.25rem; }
+      li { margin: 0.25rem 0; }
+      ol li { padding-left: 0.25rem; }
+      footer { margin-top: 2rem; font-size: 0.85rem; color: #555; border-top: 1px solid #ddd; padding-top: 1rem; }
+      a { color: #345733; }
+      .nutrition { font-size: 0.85rem; color: #555; }
+    </style>
+  </head>
+  <body itemscope itemtype="https://schema.org/Recipe">
+    <h1 itemprop="name">{d.namn}</h1>
+    <p class="meta">
+      <span itemprop="recipeYield">{d.portioner} portioner</span>
+      {totalMin && (
+        <>
+          {' '}· <span><time itemprop="totalTime" datetime={totalIso}>{totalMin} min</time></span>
+        </>
+      )}
+      {d.tid?.prep_min && (
+        <>
+          {' '}· <span>förberedelse <time itemprop="prepTime" datetime={prepIso}>{d.tid.prep_min} min</time></span>
+        </>
+      )}
+      {d.tid?.tillagning_min && (
+        <>
+          {' '}· <span>tillagning <time itemprop="cookTime" datetime={cookIso}>{d.tid.tillagning_min} min</time></span>
+        </>
+      )}
+    </p>
+
+    {d.narings_per_portion && (
+      <p class="nutrition" itemprop="nutrition" itemscope itemtype="https://schema.org/NutritionInformation">
+        Per portion:{' '}
+        <span itemprop="calories">{d.narings_per_portion.kcal} kcal</span>{' '}·{' '}
+        <span itemprop="carbohydrateContent">{d.narings_per_portion.netto_kh} g kolhydrater</span>{' '}·{' '}
+        <span itemprop="fatContent">{d.narings_per_portion.fett} g fett</span>{' '}·{' '}
+        <span itemprop="proteinContent">{d.narings_per_portion.protein} g protein</span>
+      </p>
+    )}
+
+    <h2>Ingredienser</h2>
+    <ul>
+      {rader.map((rad) => (
+        <li itemprop="recipeIngredient">{rad}</li>
+      ))}
+    </ul>
+
+    <h2>Gör så här</h2>
+    <ol>
+      {steg.map((s) => (
+        <li itemprop="recipeInstructions" itemscope itemtype="https://schema.org/HowToStep">
+          {s.namn && <strong itemprop="name">{s.namn}: </strong>}
+          <span itemprop="text">{s.text}</span>
+        </li>
+      ))}
+    </ol>
+
+    <footer>
+      Receptet finns i fullversion på <a href={huvudPath}>recept.hjerne.net{huvudPath}</a>
+      med portionsskalning, kryssrutor och testlogg.
+    </footer>
+  </body>
+</html>

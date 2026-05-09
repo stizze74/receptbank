@@ -1,0 +1,343 @@
+---
+import { getCollection } from 'astro:content';
+import { ingrediensSomObj } from '../../../utils/format';
+
+export async function getStaticPaths() {
+  const collections = ['baser', 'proteiner', 'saser', 'tillbehor', 'soppor', 'middagar'] as const;
+  const allEntries = await Promise.all(collections.map((c) => getCollection(c)));
+  return allEntries
+    .flat()
+    .filter((entry) => (entry.data.ingredienser ?? []).length > 0)
+    .map((entry) => ({
+      params: { slug: entry.id },
+      props: { entry },
+    }));
+}
+
+const { entry } = Astro.props;
+const d = entry.data;
+const huvudPath = `/recept/${entry.id}`;
+const objs = d.ingredienser.map((i) => ingrediensSomObj(i));
+const objJson = JSON.stringify(objs);
+---
+
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#3f6f3d" />
+    <title>{d.namn} — inköp</title>
+    <style>
+      :root { color-scheme: light dark; font-family: system-ui, -apple-system, sans-serif; }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        padding: 0.75rem;
+        line-height: 1.5;
+        background: #f7faf7;
+        color: #111;
+        max-width: 38rem;
+        margin: 0 auto;
+        -webkit-tap-highlight-color: transparent;
+      }
+      h1 { margin: 0.5rem 0 0.25rem; font-size: 1.4rem; color: #2c462c; }
+      .meta { color: #555; font-size: 0.9rem; margin: 0 0 1rem; }
+      .portioner {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        background: #fff;
+        border: 1px solid #cfe0cd;
+        border-radius: 0.75rem;
+        padding: 0.6rem 0.75rem;
+        margin: 0 0 1rem;
+        font-size: 0.95rem;
+      }
+      .portioner button {
+        width: 2.25rem;
+        height: 2.25rem;
+        border-radius: 0.5rem;
+        border: 1px solid #cfe0cd;
+        background: #fff;
+        font-size: 1.25rem;
+        cursor: pointer;
+      }
+      .portioner input {
+        width: 3rem;
+        text-align: center;
+        font-size: 1rem;
+        border-radius: 0.5rem;
+        border: 1px solid #cfe0cd;
+        padding: 0.4rem 0.25rem;
+      }
+      .ingredient {
+        width: 100%;
+        text-align: left;
+        background: #fff;
+        border: 1px solid #cfe0cd;
+        border-radius: 0.75rem;
+        padding: 0.85rem 1rem;
+        margin: 0 0 0.5rem;
+        font-size: 1.05rem;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        transition: background 0.15s, border-color 0.15s;
+      }
+      .ingredient:active { background: #e8f0e7; }
+      .ingredient.copied {
+        background: #e8f0e7;
+        border-color: #7ba577;
+        color: #345733;
+      }
+      .ingredient .check {
+        flex: 0 0 auto;
+        width: 1.5rem;
+        height: 1.5rem;
+        border: 2px solid #cfe0cd;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1rem;
+        color: #fff;
+        background: #fff;
+      }
+      .ingredient.copied .check { background: #3f6f3d; border-color: #3f6f3d; }
+      .ingredient .text { flex: 1; }
+      .ingredient .hint {
+        font-size: 0.75rem;
+        color: #888;
+        flex: 0 0 auto;
+      }
+      .ingredient.copied .hint { color: #2c462c; }
+      .toolbar {
+        display: flex;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+        margin: 1rem 0;
+      }
+      .btn {
+        flex: 1;
+        min-width: 8rem;
+        padding: 0.7rem 1rem;
+        border-radius: 0.5rem;
+        border: 1px solid #cfe0cd;
+        background: #fff;
+        font-size: 0.95rem;
+        cursor: pointer;
+      }
+      .btn.primary { background: #3f6f3d; color: #fff; border-color: #3f6f3d; }
+      .progress {
+        font-size: 0.85rem;
+        color: #555;
+        margin: 0 0 0.5rem;
+      }
+      footer {
+        margin-top: 2rem;
+        padding-top: 1rem;
+        border-top: 1px solid #cfe0cd;
+        font-size: 0.85rem;
+        color: #555;
+      }
+      a { color: #345733; }
+      .toast {
+        position: fixed;
+        bottom: 2rem;
+        left: 50%;
+        transform: translateX(-50%);
+        background: #2c462c;
+        color: #fff;
+        padding: 0.6rem 1.25rem;
+        border-radius: 1.5rem;
+        font-size: 0.95rem;
+        opacity: 0;
+        transition: opacity 0.2s;
+        pointer-events: none;
+        z-index: 50;
+        max-width: calc(100% - 2rem);
+        text-align: center;
+      }
+      .toast.show { opacity: 1; }
+      @media (prefers-color-scheme: dark) {
+        body { background: #1a1a1a; color: #eee; }
+        h1 { color: #cfe0cd; }
+        .meta, .progress, footer, .ingredient .hint { color: #aaa; }
+        .ingredient, .portioner, .btn {
+          background: #2a2a2a; border-color: #3f6f3d; color: #eee;
+        }
+        .ingredient.copied {
+          background: #2c462c; border-color: #7ba577; color: #cfe0cd;
+        }
+        .ingredient.copied .check { background: #7ba577; border-color: #7ba577; }
+        .btn.primary { background: #7ba577; color: #1a1a1a; border-color: #7ba577; }
+        footer { border-top-color: #3f6f3d; }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>{d.namn}</h1>
+    <p class="meta">Tryck på en vara för att kopiera den. Växla till Matlistan, klistra in. Tillbaka, nästa vara.</p>
+
+    <div class="portioner">
+      <span>Portioner:</span>
+      <button type="button" id="port-minus" aria-label="Färre">−</button>
+      <input type="number" id="port-input" min="1" max="20" value={d.portioner} />
+      <button type="button" id="port-plus" aria-label="Fler">+</button>
+      <span id="port-orig" style="margin-left: auto; font-size: 0.8rem; color: #888;">
+        original: {d.portioner}
+      </span>
+    </div>
+
+    <p class="progress" id="progress"></p>
+
+    <div id="lista"></div>
+
+    <div class="toolbar">
+      <button type="button" id="btn-alla" class="btn primary">Kopiera alla på en gång</button>
+      <button type="button" id="btn-aterstall" class="btn">Återställ</button>
+    </div>
+
+    <footer>
+      <a href={huvudPath}>← Tillbaka till receptet</a>
+    </footer>
+
+    <div id="toast" class="toast"></div>
+
+    <script type="application/json" id="ingred-data" set:html={objJson}></script>
+    <script define:vars={{ originalPortioner: d.portioner, slug: entry.id }}>
+      // @ts-nocheck
+      const data = JSON.parse(document.getElementById('ingred-data').textContent || '[]');
+      const $ = (id) => document.getElementById(id);
+
+      const portInp = $('port-input');
+      const lista = $('lista');
+      const toast = $('toast');
+      const progress = $('progress');
+
+      const lsKey = `inkop-status:${slug}`;
+      let kopierade = new Set(JSON.parse(localStorage.getItem(lsKey) || '[]'));
+
+      const formatM = (m) => {
+        if (typeof m !== 'number') return m;
+        return Number.isInteger(m) ? String(m) : parseFloat(m.toFixed(2)).toString();
+      };
+
+      const ingTillStr = (i, faktor) => {
+        const delar = [];
+        let m = i.mangd;
+        if (typeof m === 'number') m = formatM(m * faktor);
+        if (m !== undefined && m !== '') delar.push(m);
+        if (i.enhet) delar.push(i.enhet);
+        delar.push(i.vara);
+        let s = delar.join(' ');
+        if (i.notering) s += ` (${i.notering})`;
+        return s;
+      };
+
+      const skrivTillUrklipp = async (text) => {
+        if (navigator.clipboard?.writeText) {
+          try { await navigator.clipboard.writeText(text); return true; } catch {}
+        }
+        try {
+          const ta = document.createElement('textarea');
+          ta.value = text;
+          ta.style.position = 'fixed';
+          ta.style.opacity = '0';
+          ta.setAttribute('readonly', '');
+          document.body.appendChild(ta);
+          ta.select();
+          ta.setSelectionRange(0, text.length);
+          const ok = document.execCommand('copy');
+          ta.remove();
+          return ok;
+        } catch { return false; }
+      };
+
+      const visaToast = (msg) => {
+        toast.textContent = msg;
+        toast.classList.add('show');
+        setTimeout(() => toast.classList.remove('show'), 1300);
+      };
+
+      const updProgress = () => {
+        const total = data.length;
+        const klara = data.filter((_, i) => kopierade.has(i)).length;
+        progress.textContent = `${klara} / ${total} kopierade`;
+      };
+
+      const sparaState = () => {
+        localStorage.setItem(lsKey, JSON.stringify([...kopierade]));
+      };
+
+      const renderaLista = () => {
+        const port = Math.max(1, parseInt(portInp.value, 10) || originalPortioner);
+        const faktor = port / originalPortioner;
+        lista.innerHTML = '';
+        data.forEach((i, idx) => {
+          const text = ingTillStr(i, faktor);
+          const item = document.createElement('button');
+          item.type = 'button';
+          item.className = 'ingredient' + (kopierade.has(idx) ? ' copied' : '');
+          item.dataset.idx = String(idx);
+          item.dataset.text = text;
+          item.innerHTML = `
+            <span class="check">${kopierade.has(idx) ? '✓' : ''}</span>
+            <span class="text"></span>
+            <span class="hint">${kopierade.has(idx) ? 'kopierad' : 'tryck för att kopiera'}</span>
+          `;
+          item.querySelector('.text').textContent = text;
+          item.addEventListener('click', async () => {
+            const ok = await skrivTillUrklipp(text);
+            if (ok) {
+              kopierade.add(idx);
+              sparaState();
+              item.classList.add('copied');
+              item.querySelector('.check').textContent = '✓';
+              item.querySelector('.hint').textContent = 'kopierad';
+              visaToast(`Kopierat: ${text}`);
+              updProgress();
+            } else {
+              visaToast('Kopia misslyckades — markera texten själv');
+            }
+          });
+          lista.appendChild(item);
+        });
+        updProgress();
+      };
+
+      $('port-minus').addEventListener('click', () => {
+        portInp.value = String(Math.max(1, parseInt(portInp.value, 10) - 1));
+        renderaLista();
+      });
+      $('port-plus').addEventListener('click', () => {
+        portInp.value = String(parseInt(portInp.value, 10) + 1);
+        renderaLista();
+      });
+      portInp.addEventListener('input', renderaLista);
+
+      $('btn-alla').addEventListener('click', async () => {
+        const port = Math.max(1, parseInt(portInp.value, 10) || originalPortioner);
+        const faktor = port / originalPortioner;
+        const text = data.map((i) => ingTillStr(i, faktor)).join('\r\n');
+        const ok = await skrivTillUrklipp(text);
+        if (ok) {
+          visaToast(`${data.length} varor kopierade`);
+        } else {
+          visaToast('Kopia misslyckades');
+        }
+      });
+
+      $('btn-aterstall').addEventListener('click', () => {
+        kopierade.clear();
+        sparaState();
+        renderaLista();
+        visaToast('Återställt');
+      });
+
+      renderaLista();
+    </script>
+  </body>
+</html>

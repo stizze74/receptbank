@@ -1,0 +1,80 @@
+---
+// Toggle som håller skärmen på (wakelock) + döljer header/footer för matlagningsläge.
+---
+
+<button
+  type="button"
+  id="cooking-mode-toggle"
+  class="knapp-sekundar fixed bottom-4 right-4 z-40 shadow-lg sm:bottom-6 sm:right-6"
+  aria-pressed="false"
+  title="Cooking mode — håller skärmen på"
+>
+  <span class="cm-on hidden">🍳 Avsluta</span>
+  <span class="cm-off">🍳 Cooking mode</span>
+</button>
+
+<style>
+  body.cooking-mode header,
+  body.cooking-mode footer {
+    display: none;
+  }
+  body.cooking-mode {
+    background: #fff;
+  }
+  body.cooking-mode main {
+    padding-top: 1rem;
+  }
+  body.cooking-mode .till-text,
+  body.cooking-mode .ing-rad {
+    font-size: 1.05rem;
+  }
+</style>
+
+<script>
+  const btn = document.getElementById('cooking-mode-toggle')!;
+  const onLbl = btn.querySelector<HTMLElement>('.cm-on')!;
+  const offLbl = btn.querySelector<HTMLElement>('.cm-off')!;
+  let wakeLock: WakeLockSentinel | null = null;
+
+  const applyState = (on: boolean) => {
+    document.body.classList.toggle('cooking-mode', on);
+    btn.setAttribute('aria-pressed', String(on));
+    onLbl.classList.toggle('hidden', !on);
+    offLbl.classList.toggle('hidden', on);
+  };
+
+  const enable = async () => {
+    try {
+      if ('wakeLock' in navigator) {
+        wakeLock = await (navigator as any).wakeLock.request('screen');
+        wakeLock?.addEventListener('release', () => {
+          wakeLock = null;
+        });
+      }
+    } catch {}
+    applyState(true);
+  };
+
+  const disable = async () => {
+    try {
+      await wakeLock?.release();
+    } catch {}
+    wakeLock = null;
+    applyState(false);
+  };
+
+  btn.addEventListener('click', () => {
+    if (document.body.classList.contains('cooking-mode')) {
+      disable();
+    } else {
+      enable();
+    }
+  });
+
+  // Återhämta wakelock om sidan blir synlig igen
+  document.addEventListener('visibilitychange', () => {
+    if (document.body.classList.contains('cooking-mode') && document.visibilityState === 'visible' && !wakeLock) {
+      enable();
+    }
+  });
+</script>

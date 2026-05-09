@@ -1,0 +1,154 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import BaseLayout from './BaseLayout.astro';
+import Ingredienslista from '../components/Ingredienslista.astro';
+import Tillagningslista from '../components/Tillagningslista.astro';
+import CookingMode from '../components/CookingMode.astro';
+import Testlogg from '../components/Testlogg.astro';
+import { recipeJsonLd } from '../utils/jsonld';
+import { summeraTid } from '../utils/format';
+
+type AnyRecept =
+  | CollectionEntry<'baser'>
+  | CollectionEntry<'proteiner'>
+  | CollectionEntry<'saser'>
+  | CollectionEntry<'tillbehor'>
+  | CollectionEntry<'soppor'>
+  | CollectionEntry<'middagar'>;
+
+interface Props {
+  recept: AnyRecept;
+}
+
+const { recept } = Astro.props;
+const d = recept.data;
+
+const sitan = Astro.site?.toString() ?? 'https://recept.hjerne.net';
+const ld = recipeJsonLd(recept, sitan);
+
+const tid = summeraTid(d.tid);
+const planerad = d.status === 'planerad';
+const noterad = d.status === 'noterad';
+
+const matlistaUrl = new URL(`/recept/${recept.id}`, sitan).toString();
+---
+
+<BaseLayout titel={d.namn} jsonLd={ld}>
+  <header class="mb-4">
+    <div class="mb-1 flex flex-wrap items-center gap-1">
+      <span class="modul-tagg bg-bas-200 text-bas-800">{d.modul}</span>
+      {d.taggar?.map((t) => (
+        <span class="modul-tagg bg-bas-100 text-bas-800">{t}</span>
+      ))}
+      {planerad && <span class="modul-tagg bg-amber-200 text-amber-900">planerad</span>}
+      {noterad && <span class="modul-tagg bg-amber-300 text-amber-900">köpt genväg</span>}
+    </div>
+    <h1 class="text-2xl">{d.namn}</h1>
+
+    <div class="mt-2 flex flex-wrap gap-3 text-sm text-bas-700">
+      {tid !== undefined && <span>⏱ {tid} min</span>}
+      <span>👥 {d.portioner} portioner</span>
+      {d.narings_per_portion && (
+        <span>
+          {d.narings_per_portion.netto_kh} g kh · {d.narings_per_portion.fett} g fett · {d.narings_per_portion.protein} g protein · {d.narings_per_portion.kcal} kcal/portion
+        </span>
+      )}
+      {d.forvantad_glukospaverkan && d.forvantad_glukospaverkan !== '-' && (
+        <span class="rounded-full bg-bas-100 px-2 py-0.5">
+          glukos: {d.forvantad_glukospaverkan}
+        </span>
+      )}
+    </div>
+  </header>
+
+  {noterad && d.inkop && (
+    <section class="kort mb-4 border-amber-300 bg-amber-50/40 text-sm">
+      <strong class="block font-semibold">Köpinfo: </strong>
+      {d.inkop}
+    </section>
+  )}
+
+  {planerad && (
+    <section class="kort mb-4 border-dashed text-sm text-bas-700">
+      <strong class="block">Skelett-recept</strong>
+      Detta är ett planerat recept utan färdiga steg. Editera <code>.md</code>-filen
+      när du provkokat det.
+    </section>
+  )}
+
+  {!planerad && d.ingredienser.length > 0 && (
+    <Ingredienslista ingredienser={d.ingredienser} portioner={d.portioner} />
+  )}
+
+  {!planerad && d.tillagning.length > 0 && (
+    <Tillagningslista tillagning={d.tillagning} />
+  )}
+
+  {d.tips?.length > 0 && (
+    <section class="mb-6">
+      <h2 class="mb-2 text-lg">Tips</h2>
+      <ul class="space-y-1 text-sm">
+        {d.tips.map((t) => <li>· {t}</li>)}
+      </ul>
+    </section>
+  )}
+
+  {!planerad && d.ingredienser.length > 0 && (
+    <section class="mb-6">
+      <h2 class="mb-2 text-lg">Inköpslista</h2>
+      <a
+        href={`/recept/${recept.id}/inkop/`}
+        class="kort mb-3 flex items-center justify-between gap-2 no-underline transition hover:bg-bas-50"
+      >
+        <div>
+          <span class="block text-base font-semibold text-bas-800">→ Öppna inköpsläge</span>
+          <span class="block text-xs text-bas-700">
+            Tryck på en vara, kopiera, klistra in i inköpsappen, tillbaka, nästa.
+            Bockar av automatiskt.
+          </span>
+        </div>
+        <span class="text-xl">🛒</span>
+      </a>
+      <details class="kort text-sm">
+        <summary class="cursor-pointer text-bas-700">
+          Eller dela hela receptet till Matlistan / annan app (för familjedelning)
+        </summary>
+        <p class="mt-2 text-xs text-bas-700">
+          Skickar URL till en ren version av receptet. Matlistan importerar det som
+          recept i din recept-samling — sen kan du där trycka "Lägg till i
+          inköpslista".
+        </p>
+        <button
+          type="button"
+          id="ml-dela-recept"
+          class="knapp-sekundar mt-2 hidden"
+        >
+          Dela receptet…
+        </button>
+      </details>
+    </section>
+  )}
+
+  <slot />
+
+  <Testlogg recept={recept} />
+
+  <CookingMode />
+</BaseLayout>
+
+<script>
+  // Dela receptet via Web Share — pekar mot ren recept-sub-sida (ingredienser + steg, inga formulär)
+  const delaRecept = document.getElementById('ml-dela-recept') as HTMLButtonElement | null;
+  if (delaRecept && typeof navigator.share === 'function') {
+    delaRecept.classList.remove('hidden');
+    delaRecept.addEventListener('click', async () => {
+      const slug = location.pathname.replace(/^\/recept\//, '').replace(/\/$/, '');
+      const delaUrl = `${location.origin}/recept/${slug}/dela/`;
+      try {
+        await navigator.share({ url: delaUrl });
+      } catch {
+        // användaren avbröt
+      }
+    });
+  }
+</script>

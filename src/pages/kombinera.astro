@@ -1,0 +1,349 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const baser = (await getCollection('baser')).filter((r) => r.data.status !== 'planerad');
+const proteiner = (await getCollection('proteiner')).filter((r) => r.data.status !== 'planerad');
+const saser = await getCollection('saser');
+const tillbehor = (await getCollection('tillbehor')).filter((r) => r.data.status !== 'planerad');
+
+const sortAlpha = <T extends { data: { namn: string } }>(arr: T[]) =>
+  arr.sort((a, b) => a.data.namn.localeCompare(b.data.namn, 'sv'));
+
+sortAlpha(baser); sortAlpha(proteiner); sortAlpha(saser); sortAlpha(tillbehor);
+
+// Skicka all data till klienten som JSON, så kombineringen sker i webbläsaren utan reload.
+const exportera = (lista: typeof baser) =>
+  lista.map((r) => ({
+    id: r.id,
+    namn: r.data.namn,
+    modul: r.data.modul,
+    status: r.data.status,
+    portioner: r.data.portioner,
+    narings_per_portion: r.data.narings_per_portion ?? null,
+    tid: r.data.tid ?? null,
+    jessica_tagg: r.data.jessica_tagg ?? null,
+    forvantad_glukospaverkan: r.data.forvantad_glukospaverkan ?? null,
+    taggar: r.data.taggar ?? [],
+    ingredienser: r.data.ingredienser ?? [],
+    tillagning: r.data.tillagning ?? [],
+  }));
+
+const data = {
+  baser: exportera(baser),
+  proteiner: exportera(proteiner),
+  saser: exportera(saser),
+  tillbehor: exportera(tillbehor),
+};
+---
+
+<BaseLayout titel="Kombinera">
+  <h1 class="mb-1 text-2xl">Kombinera modul</h1>
+  <p class="mb-4 text-sm text-bas-700">
+    Välj bas + protein + sås. Få ett sammanslaget recept med summerade ingredienser
+    och näring. Klart på 10 sekunder.
+  </p>
+
+  <section class="kort mb-4 grid gap-2 text-sm">
+    <label class="grid grid-cols-[5rem_1fr] items-center gap-2">
+      <span>Bas</span>
+      <select id="sel-bas" class="rounded-md border border-bas-300 px-2 py-1">
+        <option value="">— välj —</option>
+        {baser.map((r) => <option value={r.id}>{r.data.namn}</option>)}
+      </select>
+    </label>
+    <label class="grid grid-cols-[5rem_1fr] items-center gap-2">
+      <span>Protein</span>
+      <select id="sel-protein" class="rounded-md border border-bas-300 px-2 py-1">
+        <option value="">— välj —</option>
+        {proteiner.map((r) => <option value={r.id}>{r.data.namn}</option>)}
+      </select>
+    </label>
+    <label class="grid grid-cols-[5rem_1fr] items-center gap-2">
+      <span>Sås</span>
+      <select id="sel-sas" class="rounded-md border border-bas-300 px-2 py-1">
+        <option value="">— ingen —</option>
+        {saser.map((r) => (
+          <option value={r.id}>
+            {r.data.namn}{r.data.status === 'noterad' ? ' (köpt)' : ''}
+          </option>
+        ))}
+      </select>
+    </label>
+    {tillbehor.length > 0 && (
+      <label class="grid grid-cols-[5rem_1fr] items-center gap-2">
+        <span>Tillbehör</span>
+        <select id="sel-till" class="rounded-md border border-bas-300 px-2 py-1">
+          <option value="">— inget —</option>
+          {tillbehor.map((r) => <option value={r.id}>{r.data.namn}</option>)}
+        </select>
+      </label>
+    )}
+    <label class="grid grid-cols-[5rem_1fr] items-center gap-2">
+      <span>Portioner</span>
+      <input id="sel-portioner" type="number" min="1" max="20" value="2" class="rounded-md border border-bas-300 px-2 py-1" />
+    </label>
+    <div class="flex gap-2">
+      <button id="btn-slumpa" type="button" class="knapp-sekundar">Slumpa kombination</button>
+      <button id="btn-rensa" type="button" class="knapp-sekundar">Rensa</button>
+    </div>
+  </section>
+
+  <div id="result" class="hidden">
+    <header class="mb-3">
+      <h2 id="r-namn" class="text-2xl"></h2>
+      <div id="r-meta" class="mt-1 flex flex-wrap gap-3 text-sm text-bas-700"></div>
+    </header>
+
+    <section class="kort mb-4">
+      <h3 class="mb-2 text-lg">Ingredienser (sammanslagna)</h3>
+      <ul id="r-ingredienser" class="space-y-1 text-sm"></ul>
+    </section>
+
+    <section class="kort mb-4">
+      <h3 class="mb-2 text-lg">Tillagning (per modul)</h3>
+      <div id="r-tillagning" class="space-y-3 text-sm"></div>
+    </section>
+
+    <section class="mb-4 flex flex-wrap gap-2">
+      <button id="btn-matlistan" type="button" class="knapp-primar">Skicka till Matlistan</button>
+      <button id="btn-spara" type="button" class="knapp-sekundar">Spara som middag</button>
+      <button id="btn-veckoplan" type="button" class="knapp-sekundar">Lägg i veckoplan</button>
+    </section>
+
+    <details class="kort mb-4">
+      <summary class="cursor-pointer font-semibold text-sm">Markdown att klistra in i content/middagar/</summary>
+      <pre id="r-markdown" class="mt-2 overflow-auto whitespace-pre-wrap rounded-md bg-bas-100 p-2 text-xs"></pre>
+    </details>
+  </div>
+</BaseLayout>
+
+<script define:vars={{ DATA: data }}>
+  // @ts-nocheck
+  const $ = (id) => document.getElementById(id);
+
+  const find = (modul, id) => DATA[modul].find((r) => r.id === id);
+
+  const ingrediensSomObj = (i) => (typeof i === 'string' ? { vara: i } : i);
+  const sammaVara = (a, b) =>
+    a.vara.toLowerCase().trim() === b.vara.toLowerCase().trim() &&
+    (a.enhet ?? '').toLowerCase() === (b.enhet ?? '').toLowerCase();
+
+  const summeraIngred = (listor) => {
+    const objs = listor.flat().map(ingrediensSomObj);
+    const out = [];
+    for (const ny of objs) {
+      const exist = out.find((r) => sammaVara(r, ny));
+      if (exist && typeof exist.mangd === 'number' && typeof ny.mangd === 'number') {
+        exist.mangd = exist.mangd + ny.mangd;
+      } else {
+        out.push({ ...ny });
+      }
+    }
+    return out;
+  };
+
+  const formatM = (m) => (Number.isInteger(m) ? String(m) : parseFloat(Number(m).toFixed(2)).toString());
+  const ingTillStr = (i, faktor = 1) => {
+    const o = ingrediensSomObj(i);
+    let mangd = o.mangd;
+    if (typeof mangd === 'number') mangd = formatM(mangd * faktor);
+    const delar = [mangd, o.enhet, o.vara].filter(Boolean).join(' ');
+    return o.notering ? `${delar} (${o.notering})` : delar;
+  };
+
+  const stegTillStr = (s) => (typeof s === 'string' ? s : (s.namn ? `${s.namn}: ${s.text}` : s.text));
+
+  const summeraNar = (recept) => {
+    const lista = recept.map((r) => r.narings_per_portion).filter(Boolean);
+    if (lista.length === 0) return null;
+    return lista.reduce(
+      (a, c) => ({
+        netto_kh: a.netto_kh + c.netto_kh,
+        fett: a.fett + c.fett,
+        protein: a.protein + c.protein,
+        kcal: a.kcal + c.kcal,
+      }),
+      { netto_kh: 0, fett: 0, protein: 0, kcal: 0 },
+    );
+  };
+
+  const beraknaTid = (recept) => {
+    const prep = recept.map((r) => r.tid?.prep_min ?? 0);
+    const till = recept.map((r) => r.tid?.tillagning_min ?? 0);
+    const mp = prep.length ? Math.max(...prep) : 0;
+    const mt = till.length ? Math.max(...till) : 0;
+    return mp + mt || null;
+  };
+
+  const slug = (s) =>
+    s.toLowerCase()
+      .replaceAll('å', 'a').replaceAll('ä', 'a').replaceAll('ö', 'o')
+      .replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+
+  const render = () => {
+    const valda = [];
+    const bas = find('baser', $('sel-bas').value);
+    const protein = find('proteiner', $('sel-protein').value);
+    const sas = find('saser', $('sel-sas').value);
+    const till = $('sel-till') ? find('tillbehor', $('sel-till').value) : null;
+    if (bas) valda.push({ recept: bas, etikett: 'Bas' });
+    if (protein) valda.push({ recept: protein, etikett: 'Protein' });
+    if (sas) valda.push({ recept: sas, etikett: 'Sås' });
+    if (till) valda.push({ recept: till, etikett: 'Tillbehör' });
+
+    const result = $('result');
+    if (valda.length < 2) {
+      result.classList.add('hidden');
+      return;
+    }
+    result.classList.remove('hidden');
+
+    const portioner = Math.max(1, parseInt($('sel-portioner').value, 10) || 2);
+    const namn = valda.map((v) => v.recept.namn).join(' + ');
+    $('r-namn').textContent = namn;
+
+    const tid = beraknaTid(valda.map((v) => v.recept));
+    const nar = summeraNar(valda.map((v) => v.recept));
+    const meta = [];
+    if (tid) meta.push(`⏱ ${tid} min`);
+    meta.push(`👥 ${portioner} portioner`);
+    if (nar) {
+      const f = portioner / 2;
+      meta.push(
+        `${(nar.netto_kh * f).toFixed(1)} g kh · ${(nar.fett * f).toFixed(0)} g fett · ${(nar.protein * f).toFixed(0)} g protein · ${Math.round(nar.kcal * f)} kcal`,
+      );
+    }
+    $('r-meta').innerHTML = meta.map((m) => `<span>${m}</span>`).join('');
+
+    // Skala om mängder från recept (som har portioner_default)
+    const skaladeRecept = valda.map((v) => {
+      const k = portioner / (v.recept.portioner ?? 2);
+      const ingred = (v.recept.ingredienser ?? []).map((i) => {
+        const o = ingrediensSomObj(i);
+        if (typeof o.mangd === 'number') return { ...o, mangd: o.mangd * k };
+        return o;
+      });
+      return { ...v.recept, _skalad: ingred };
+    });
+
+    const summerade = summeraIngred(skaladeRecept.map((r) => r._skalad));
+    $('r-ingredienser').innerHTML = summerade.map((i) => `<li>· ${ingTillStr(i)}</li>`).join('');
+
+    const tillSec = $('r-tillagning');
+    tillSec.innerHTML = valda.map((v) => {
+      const r = v.recept;
+      if (!r.tillagning?.length) return '';
+      const stegHtml = r.tillagning.map((s) => `<li>· ${stegTillStr(s)}</li>`).join('');
+      return `
+        <div>
+          <h4 class="font-semibold mb-1">${v.etikett} — ${r.namn}</h4>
+          <ul class="space-y-1 text-sm pl-2">${stegHtml}</ul>
+        </div>`;
+    }).join('');
+
+    // Markdown för "Spara som middag"
+    const fmIngred = summerade.map((i) => {
+      const o = i;
+      if (o.enhet && typeof o.mangd === 'number') {
+        return `  - { mangd: ${formatM(o.mangd)}, enhet: ${o.enhet}, vara: ${JSON.stringify(o.vara)} }`;
+      }
+      if (typeof o.mangd === 'number') {
+        return `  - { mangd: ${formatM(o.mangd)}, vara: ${JSON.stringify(o.vara)} }`;
+      }
+      return `  - ${JSON.stringify(o.vara)}`;
+    }).join('\n');
+
+    const fmTill = valda.flatMap((v) => {
+      const steg = (v.recept.tillagning ?? []).map((s) => {
+        const t = typeof s === 'string' ? s : (s.namn ? `${v.etikett}: ${s.namn} — ${s.text}` : `${v.etikett}: ${s.text}`);
+        return `  - ${JSON.stringify(t)}`;
+      });
+      return steg;
+    }).join('\n');
+
+    const taggar = Array.from(new Set(valda.flatMap((v) => v.recept.taggar ?? [])));
+    const slugStr = valda.map((v) => slug(v.recept.namn)).join('-');
+
+    const md = [
+      '---',
+      `namn: ${JSON.stringify(namn)}`,
+      'status: skriven',
+      'modul: middag',
+      `portioner: ${portioner}`,
+      tid ? `tid:\n  total_min: ${tid}` : '',
+      nar ? `narings_per_portion:\n  netto_kh: ${nar.netto_kh}\n  fett: ${nar.fett}\n  protein: ${nar.protein}\n  kcal: ${nar.kcal}` : '',
+      taggar.length ? `taggar: [${taggar.map((t) => JSON.stringify(t)).join(', ')}]` : 'taggar: []',
+      'ingredienser:',
+      fmIngred,
+      'tillagning:',
+      fmTill,
+      'testlogg: []',
+      '---',
+      '',
+      `Kombinerat från: ${valda.map((v) => v.recept.namn).join(', ')}.`,
+      `Spara som content/middagar/${slugStr}.md`,
+    ].filter(Boolean).join('\n');
+
+    $('r-markdown').textContent = md;
+
+    // Spara state för veckoplan/matlistan-knappar
+    window.__senasteKombi = { namn, slug: slugStr, valda: valda.map((v) => ({ etikett: v.etikett, namn: v.recept.namn, id: v.recept.id })) };
+  };
+
+  ['sel-bas', 'sel-protein', 'sel-sas', 'sel-till', 'sel-portioner'].forEach((id) => {
+    const el = $(id);
+    if (el) el.addEventListener('change', render);
+    if (el) el.addEventListener('input', render);
+  });
+
+  $('btn-rensa').addEventListener('click', () => {
+    ['sel-bas', 'sel-protein', 'sel-sas', 'sel-till'].forEach((id) => {
+      const el = $(id);
+      if (el) el.value = '';
+    });
+    render();
+  });
+
+  $('btn-slumpa').addEventListener('click', () => {
+    const slumpa = (lista) => lista[Math.floor(Math.random() * lista.length)];
+    if (DATA.baser.length) $('sel-bas').value = slumpa(DATA.baser).id;
+    if (DATA.proteiner.length) $('sel-protein').value = slumpa(DATA.proteiner).id;
+    if (DATA.saser.length && Math.random() > 0.3) $('sel-sas').value = slumpa(DATA.saser).id;
+    render();
+  });
+
+  $('btn-matlistan').addEventListener('click', async () => {
+    // Kopiera markdown — användaren kan klistra in i ny GitHub-fil
+    // ELLER kopiera URL till receptbank-sajten (men ingen kombinerad URL finns än)
+    const md = $('r-markdown').textContent ?? '';
+    try {
+      await navigator.clipboard.writeText(md);
+      alert(
+        'Receptet kopierat som markdown. För Matlistan-import krävs publik URL — ' +
+        'spara först som middag (commit:a markdown:en) så får du en URL att skicka till Matlistan.',
+      );
+    } catch {
+      alert('Kunde inte kopiera. Markera markdown:en manuellt.');
+    }
+  });
+
+  $('btn-spara').addEventListener('click', () => {
+    const md = $('r-markdown').textContent ?? '';
+    navigator.clipboard.writeText(md).then(() => {
+      alert(
+        'Markdown kopierad. Klistra in som ny .md-fil i content/middagar/ via GitHub-webgränssnittet ' +
+        'eller låt Claude.ai-chatten committa filen.',
+      );
+    });
+  });
+
+  $('btn-veckoplan').addEventListener('click', () => {
+    const k = window.__senasteKombi;
+    if (!k) return;
+    const veckoplan = JSON.parse(localStorage.getItem('veckoplan-utkast') || '[]');
+    veckoplan.push(k);
+    localStorage.setItem('veckoplan-utkast', JSON.stringify(veckoplan));
+    location.href = '/veckoplan';
+  });
+</script>

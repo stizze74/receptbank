@@ -1,0 +1,432 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const collections = await Promise.all([
+  getCollection('baser'),
+  getCollection('proteiner'),
+  getCollection('saser'),
+  getCollection('tillbehor'),
+  getCollection('soppor'),
+  getCollection('middagar'),
+]);
+const alla = collections.flat().sort((a, b) => a.data.namn.localeCompare(b.data.namn, 'sv'));
+
+const exporterad = alla.map((r) => ({
+  id: r.id,
+  namn: r.data.namn,
+  modul: r.data.modul,
+  status: r.data.status,
+  portioner: r.data.portioner,
+  ingredienser: r.data.ingredienser ?? [],
+  taggar: r.data.taggar ?? [],
+}));
+
+const dagar = ['Mån', 'Tis', 'Ons', 'Tor', 'Fre', 'Lör', 'Sön'];
+---
+
+<BaseLayout titel="Veckoplan">
+  <h1 class="mb-1 text-2xl">Veckoplan</h1>
+  <p class="mb-4 text-sm text-bas-700">
+    Sju dagar. Varning om samma bas eller protein används två dagar i rad.
+    Generera inköpslista nederst.
+  </p>
+
+  <section id="veckoplan-grid" class="mb-4 grid gap-2">
+    {dagar.map((dag, idx) => (
+      <div class="kort" data-dag-idx={idx}>
+        <div class="mb-2 flex items-center justify-between">
+          <span class="font-semibold">{dag}</span>
+          <span class="dag-datum text-xs text-bas-600"></span>
+        </div>
+        <div class="dag-slot space-y-1.5"></div>
+        <div class="mt-2 flex flex-wrap gap-1">
+          <button type="button" class="kn-lagg-till knapp-sekundar text-xs" data-dag={idx}>+ recept</button>
+          <button type="button" class="kn-aterar knapp-sekundar text-xs" data-dag={idx}>äter ute</button>
+          <button type="button" class="kn-rensa-dag knapp-sekundar text-xs" data-dag={idx}>rensa</button>
+        </div>
+      </div>
+    ))}
+  </section>
+
+  <section class="kort mb-4">
+    <h2 class="mb-2 text-lg">Inköpslista</h2>
+    <p class="mb-2 text-sm text-bas-700" id="inkop-status">Lägg till middagar i veckan ovan.</p>
+    <textarea id="inkop-text" rows="10" readonly class="hidden w-full rounded-md border border-bas-300 bg-white p-2 font-mono text-xs"></textarea>
+    <div class="mt-2 flex flex-wrap gap-2">
+      <button type="button" id="kn-gen" class="knapp-primar">Generera inköpslista</button>
+      <button type="button" id="kn-kopiera-inkop" class="knapp-sekundar hidden">Kopiera</button>
+      <button type="button" id="kn-dela-inkop" class="knapp-sekundar hidden">Dela till app…</button>
+      <button type="button" id="kn-ladda-inkop" class="knapp-sekundar hidden">Ladda ner .txt</button>
+    </div>
+    <p class="mt-2 text-xs text-bas-600">
+      Klistra in i Matlistans fritextfält — den förstår en vara per rad med mängd och enhet.
+      "Dela till app" öppnar mobilens dela-meny om Matlistan är registrerad där.
+    </p>
+  </section>
+
+  <details class="kort mb-8">
+    <summary class="cursor-pointer font-semibold text-sm">Historik (lagade middagar)</summary>
+    <ul id="historik-list" class="mt-2 space-y-1 text-sm"></ul>
+    <p id="historik-tom" class="text-sm text-bas-700">Inga lagade middagar än.</p>
+  </details>
+
+  <!-- Recept-väljare modal -->
+  <div id="modal" class="fixed inset-0 z-50 hidden items-end justify-center bg-black/50 sm:items-center">
+    <div class="m-3 w-full max-w-md rounded-xl bg-white p-3 shadow-xl">
+      <header class="mb-2 flex items-center justify-between">
+        <h3 class="text-lg font-semibold">Välj recept till <span id="modal-dag"></span></h3>
+        <button type="button" id="modal-stang" class="knapp-sekundar text-sm">×</button>
+      </header>
+      <input id="modal-q" type="search" placeholder="Sök…" class="mb-2 w-full rounded-md border border-bas-300 px-2 py-1" />
+      <select id="modal-modul" class="mb-2 w-full rounded-md border border-bas-300 px-2 py-1">
+        <option value="">Alla moduler</option>
+        <option value="middag">Middag (kombinerad)</option>
+        <option value="protein">Protein</option>
+        <option value="bas">Bas</option>
+        <option value="sas">Sås</option>
+        <option value="soppa">Soppa</option>
+        <option value="tillbehor">Tillbehör</option>
+      </select>
+      <ul id="modal-list" class="max-h-72 space-y-1 overflow-y-auto text-sm"></ul>
+    </div>
+  </div>
+</BaseLayout>
+
+<script define:vars={{ ALLA: exporterad }}>
+  // @ts-nocheck
+  const $ = (id) => document.getElementById(id);
+
+  const lsKey = 'veckoplan-v1';
+  const histKey = 'veckoplan-hist';
+  const utkastKey = 'veckoplan-utkast';
+
+  let plan = JSON.parse(localStorage.getItem(lsKey) || '[]');
+  if (!Array.isArray(plan) || plan.length !== 7) plan = Array(7).fill(null).map(() => ({ recept: [], aterar: false }));
+
+  // Förslag från kombinator-sidan?
+  const utkast = JSON.parse(localStorage.getItem(utkastKey) || '[]');
+  if (utkast.length) {
+    // Lägg in på första lediga dag
+    const ledigIdx = plan.findIndex((d) => !d.aterar && d.recept.length === 0);
+    if (ledigIdx >= 0) {
+      plan[ledigIdx].recept = utkast.map((u) => ({ id: u.slug, namn: u.namn, modul: 'middag', _utkast: true }));
+    }
+    localStorage.removeItem(utkastKey);
+  }
+
+  let hist = JSON.parse(localStorage.getItem(histKey) || '[]');
+
+  const sparaPlan = () => localStorage.setItem(lsKey, JSON.stringify(plan));
+  const sparaHist = () => localStorage.setItem(histKey, JSON.stringify(hist.slice(0, 100)));
+
+  // Datum-kalkyl: visa veckans måndag–söndag baserat på "idag"
+  const today = new Date();
+  const dow = (today.getDay() + 6) % 7; // mån = 0
+  const monday = new Date(today);
+  monday.setDate(today.getDate() - dow);
+
+  const renderDatum = () => {
+    document.querySelectorAll('[data-dag-idx]').forEach((kort) => {
+      const idx = Number(kort.dataset.dagIdx);
+      const d = new Date(monday);
+      d.setDate(monday.getDate() + idx);
+      const dStr = `${d.getDate()}/${d.getMonth() + 1}`;
+      kort.querySelector('.dag-datum').textContent = dStr;
+    });
+  };
+
+  const findRecept = (id) => ALLA.find((r) => r.id === id);
+
+  const renderPlan = () => {
+    document.querySelectorAll('[data-dag-idx]').forEach((kort) => {
+      const idx = Number(kort.dataset.dagIdx);
+      const dag = plan[idx];
+      const slot = kort.querySelector('.dag-slot');
+      slot.innerHTML = '';
+      if (dag.aterar) {
+        slot.innerHTML = '<div class="text-sm italic text-bas-700">Äter ute</div>';
+        return;
+      }
+      if (dag.recept.length === 0) {
+        slot.innerHTML = '<div class="text-sm text-bas-600">— tomt —</div>';
+        return;
+      }
+      dag.recept.forEach((r, ri) => {
+        const isUtkast = r._utkast;
+        const link = isUtkast ? '#' : `/recept/${r.id}`;
+        slot.insertAdjacentHTML('beforeend', `
+          <div class="flex items-start justify-between gap-2 text-sm">
+            <a href="${link}" class="flex-1 truncate ${isUtkast ? 'italic text-bas-700' : ''}">${r.namn}</a>
+            <button type="button" class="kn-ta-bort text-bas-600 hover:text-red-700" data-dag="${idx}" data-recept="${ri}" aria-label="Ta bort">×</button>
+          </div>
+        `);
+      });
+      // Markera som lagad
+      slot.insertAdjacentHTML('beforeend', `
+        <button type="button" class="kn-lagad mt-1 text-xs text-emerald-700 hover:underline" data-dag="${idx}">✓ Markera som lagad</button>
+      `);
+    });
+    renderRotationsvarning();
+  };
+
+  const baseSlug = (recept) => {
+    if (!recept) return null;
+    const r = findRecept(recept.id);
+    if (!r) return null;
+    if (r.modul === 'bas') return r.id;
+    return null;
+  };
+
+  const renderRotationsvarning = () => {
+    // Hämta varje dags första bas/protein
+    const dagar = plan.map((d) => {
+      const rep = d.recept.map((r) => findRecept(r.id)).filter(Boolean);
+      const bas = rep.find((r) => r?.modul === 'bas');
+      const prot = rep.find((r) => r?.modul === 'protein');
+      return { bas: bas?.id, prot: prot?.id };
+    });
+    document.querySelectorAll('[data-dag-idx]').forEach((kort) => {
+      const idx = Number(kort.dataset.dagIdx);
+      kort.classList.remove('ring-2', 'ring-amber-400');
+      const slot = kort.querySelector('.dag-slot');
+      const oldVarn = kort.querySelector('.rot-varn');
+      oldVarn?.remove();
+      if (idx === 0) return;
+      const dag = dagar[idx];
+      const igar = dagar[idx - 1];
+      const skalForsamma = [];
+      if (dag.bas && dag.bas === igar.bas) skalForsamma.push(`bas (${findRecept(dag.bas)?.namn})`);
+      if (dag.prot && dag.prot === igar.prot) skalForsamma.push(`protein (${findRecept(dag.prot)?.namn})`);
+      if (skalForsamma.length) {
+        kort.classList.add('ring-2', 'ring-amber-400');
+        slot.insertAdjacentHTML('beforeend', `
+          <div class="rot-varn mt-1 rounded-md bg-amber-100 p-1 text-xs text-amber-900">
+            ⚠ Samma som igår: ${skalForsamma.join(', ')}
+          </div>
+        `);
+      }
+    });
+  };
+
+  // Modal
+  let aktivDag = -1;
+  const modal = $('modal');
+  const modalQ = $('modal-q');
+  const modalMod = $('modal-modul');
+  const modalList = $('modal-list');
+
+  const oppnaModal = (dagIdx) => {
+    aktivDag = dagIdx;
+    $('modal-dag').textContent = ['måndag', 'tisdag', 'onsdag', 'torsdag', 'fredag', 'lördag', 'söndag'][dagIdx];
+    modalQ.value = '';
+    modalMod.value = '';
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+    renderModalLista();
+    setTimeout(() => modalQ.focus(), 50);
+  };
+  const stangModal = () => {
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+    aktivDag = -1;
+  };
+
+  const renderModalLista = () => {
+    const q = modalQ.value.toLowerCase().trim();
+    const mod = modalMod.value;
+    const filt = ALLA.filter((r) => {
+      if (r.status === 'planerad') return false;
+      if (mod && r.modul !== mod) return false;
+      if (q && !r.namn.toLowerCase().includes(q) && !(r.taggar ?? []).some((t) => t.toLowerCase().includes(q))) return false;
+      return true;
+    });
+    modalList.innerHTML = filt.map((r) => `
+      <li>
+        <button type="button" class="modal-vali w-full rounded-md p-2 text-left hover:bg-bas-100" data-id="${r.id}">
+          <span class="text-xs uppercase text-bas-600">${r.modul}</span>
+          <span class="ml-2 font-medium">${r.namn}</span>
+        </button>
+      </li>
+    `).join('');
+    modalList.querySelectorAll('.modal-vali').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const id = btn.dataset.id;
+        const r = findRecept(id);
+        if (r && aktivDag >= 0) {
+          plan[aktivDag].aterar = false;
+          plan[aktivDag].recept.push({ id: r.id, namn: r.namn, modul: r.modul });
+          sparaPlan();
+          renderPlan();
+          stangModal();
+        }
+      });
+    });
+  };
+
+  modalQ.addEventListener('input', renderModalLista);
+  modalMod.addEventListener('change', renderModalLista);
+  $('modal-stang').addEventListener('click', stangModal);
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) stangModal();
+  });
+
+  document.querySelectorAll('.kn-lagg-till').forEach((b) => {
+    b.addEventListener('click', () => oppnaModal(Number(b.dataset.dag)));
+  });
+  document.querySelectorAll('.kn-aterar').forEach((b) => {
+    b.addEventListener('click', () => {
+      const i = Number(b.dataset.dag);
+      plan[i] = { recept: [], aterar: true };
+      sparaPlan();
+      renderPlan();
+    });
+  });
+  document.querySelectorAll('.kn-rensa-dag').forEach((b) => {
+    b.addEventListener('click', () => {
+      const i = Number(b.dataset.dag);
+      plan[i] = { recept: [], aterar: false };
+      sparaPlan();
+      renderPlan();
+    });
+  });
+
+  document.addEventListener('click', (e) => {
+    const target = e.target;
+    if (!(target instanceof HTMLElement)) return;
+    if (target.classList.contains('kn-ta-bort')) {
+      const dagIdx = Number(target.dataset.dag);
+      const recIdx = Number(target.dataset.recept);
+      plan[dagIdx].recept.splice(recIdx, 1);
+      sparaPlan();
+      renderPlan();
+    }
+    if (target.classList.contains('kn-lagad')) {
+      const dagIdx = Number(target.dataset.dag);
+      const dag = plan[dagIdx];
+      hist.unshift({ datum: new Date().toISOString().slice(0, 10), recept: dag.recept });
+      sparaHist();
+      plan[dagIdx] = { recept: [], aterar: false };
+      sparaPlan();
+      renderPlan();
+      renderHist();
+    }
+  });
+
+  // Inköpslista
+  const ingrediensSomObj = (i) => (typeof i === 'string' ? { vara: i } : i);
+  const sammaVara = (a, b) =>
+    a.vara.toLowerCase().trim() === b.vara.toLowerCase().trim() &&
+    (a.enhet ?? '').toLowerCase() === (b.enhet ?? '').toLowerCase();
+
+  $('kn-gen').addEventListener('click', () => {
+    const allaIngred = [];
+    plan.forEach((d) => {
+      if (d.aterar) return;
+      d.recept.forEach((r) => {
+        const recept = findRecept(r.id);
+        if (!recept) return;
+        const f = 1; // antagar 2 portioner som default; skalning per dag är framtidsfunktion
+        recept.ingredienser.forEach((i) => {
+          const o = ingrediensSomObj(i);
+          allaIngred.push({ ...o });
+        });
+      });
+    });
+
+    if (allaIngred.length === 0) {
+      $('inkop-status').textContent = 'Inga middagar med ingredienser planerade. Lägg till först.';
+      return;
+    }
+
+    // Dedupera och summera
+    const summerade = [];
+    for (const ny of allaIngred) {
+      const exist = summerade.find((r) => sammaVara(r, ny));
+      if (exist && typeof exist.mangd === 'number' && typeof ny.mangd === 'number') {
+        exist.mangd = exist.mangd + ny.mangd;
+      } else {
+        summerade.push({ ...ny });
+      }
+    }
+
+    const formatM = (m) => (Number.isInteger(m) ? String(m) : parseFloat(Number(m).toFixed(2)).toString());
+    const ingTillRad = (i) => {
+      const delar = [];
+      if (i.mangd !== undefined && i.mangd !== '') delar.push(typeof i.mangd === 'number' ? formatM(i.mangd) : i.mangd);
+      if (i.enhet) delar.push(i.enhet);
+      delar.push(i.vara);
+      return delar.join(' ');
+    };
+
+    // Sortera på vara så frukt/grönt grupperas naturligt
+    summerade.sort((a, b) => a.vara.localeCompare(b.vara, 'sv'));
+    const text = summerade.map(ingTillRad).join('\n');
+
+    $('inkop-text').value = text;
+    $('inkop-text').classList.remove('hidden');
+    $('kn-kopiera-inkop').classList.remove('hidden');
+    $('kn-ladda-inkop').classList.remove('hidden');
+    if (typeof navigator.share === 'function') {
+      $('kn-dela-inkop').classList.remove('hidden');
+    }
+    $('inkop-status').textContent = `${summerade.length} unika varor från ${plan.filter((d) => !d.aterar && d.recept.length).length} middagar.`;
+  });
+
+  $('kn-dela-inkop').addEventListener('click', async () => {
+    const text = $('inkop-text').value;
+    if (!text) return;
+    try {
+      await navigator.share({ title: 'Inköpslista', text });
+    } catch {
+      // användare avbröt
+    }
+  });
+
+  $('kn-kopiera-inkop').addEventListener('click', async () => {
+    const t = $('inkop-text').value;
+    try {
+      await navigator.clipboard.writeText(t);
+      const btn = $('kn-kopiera-inkop');
+      const orig = btn.textContent;
+      btn.textContent = 'Kopierat ✓';
+      setTimeout(() => (btn.textContent = orig), 1500);
+    } catch {
+      alert('Kunde inte kopiera. Markera texten manuellt.');
+    }
+  });
+
+  $('kn-ladda-inkop').addEventListener('click', () => {
+    const t = $('inkop-text').value;
+    const blob = new Blob([t], { type: 'text/plain;charset=utf-8' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `inkopslista-${new Date().toISOString().slice(0, 10)}.txt`;
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    URL.revokeObjectURL(url);
+  });
+
+  const renderHist = () => {
+    const list = $('historik-list');
+    const tom = $('historik-tom');
+    if (hist.length === 0) {
+      tom.classList.remove('hidden');
+      list.innerHTML = '';
+      return;
+    }
+    tom.classList.add('hidden');
+    list.innerHTML = hist.slice(0, 14).map((h) => `
+      <li class="flex flex-wrap items-center gap-2 text-bas-700">
+        <span class="font-mono text-xs">${h.datum}</span>
+        <span>${(h.recept ?? []).map((r) => r.namn).join(' + ') || '—'}</span>
+      </li>
+    `).join('');
+  };
+
+  renderDatum();
+  renderPlan();
+  renderHist();
+</script>

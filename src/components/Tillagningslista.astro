@@ -1,0 +1,122 @@
+---
+import type { Tillagning } from '../content/config';
+import { tillagningTillObj } from '../utils/format';
+
+interface Props {
+  tillagning: Tillagning[];
+  prefix?: string;
+}
+
+const { tillagning, prefix } = Astro.props;
+const objLista = tillagning.map((s) => tillagningTillObj(s));
+---
+
+<section class="mb-6">
+  <h2 class="mb-2 text-lg">{prefix ? `${prefix} — Tillagning` : 'Tillagning'}</h2>
+  <ol class="space-y-3 text-sm">
+    {objLista.map((s, idx) => (
+      <li class="till-steg flex items-start gap-3" data-idx={idx} data-timer={s.timer_min ?? ''}>
+        <input
+          type="checkbox"
+          class="till-check mt-0.5 h-4 w-4 cursor-pointer accent-bas-600"
+        />
+        <div class="flex-1">
+          <span class="till-text inline">
+            {s.namn && <strong class="font-semibold text-bas-800">{s.namn}: </strong>}
+            {s.text}
+          </span>
+          {s.timer_min && (
+            <button
+              type="button"
+              class="till-timer ml-2 inline-flex items-center gap-1 rounded-md bg-bas-100 px-2 py-0.5 text-xs font-medium text-bas-800 hover:bg-bas-200"
+              data-timer-min={s.timer_min}
+            >
+              <span class="till-timer-label">⏱ {s.timer_min}:00</span>
+            </button>
+          )}
+        </div>
+      </li>
+    ))}
+  </ol>
+</section>
+
+<script>
+  // Step-checkbox med cascade + step-timers (localStorage)
+  const slug = location.pathname.replace(/\/$/, '').split('/').pop() ?? 'recept';
+  const lsKey = `till-check:${slug}`;
+
+  document.querySelectorAll<HTMLElement>('.till-steg').forEach((li, idx, alla) => {
+    const cb = li.querySelector<HTMLInputElement>('.till-check')!;
+    cb.addEventListener('change', () => {
+      // Cascade: bocka av föregående steg automatiskt
+      if (cb.checked) {
+        for (let i = 0; i < idx; i++) {
+          const prev = alla[i].querySelector<HTMLInputElement>('.till-check');
+          if (prev && !prev.checked) prev.checked = true;
+        }
+      }
+      saveState();
+    });
+  });
+
+  const saveState = () => {
+    const checked = Array.from(document.querySelectorAll<HTMLInputElement>('.till-check'))
+      .map((c, i) => (c.checked ? i : -1))
+      .filter((x) => x >= 0);
+    localStorage.setItem(lsKey, JSON.stringify(checked));
+  };
+
+  try {
+    const saved = JSON.parse(localStorage.getItem(lsKey) ?? '[]') as number[];
+    saved.forEach((i) => {
+      const cb = document.querySelectorAll<HTMLInputElement>('.till-check')[i];
+      if (cb) cb.checked = true;
+    });
+  } catch {}
+
+  // Timers
+  const aktivaTimers = new Map<HTMLButtonElement, number>();
+
+  document.querySelectorAll<HTMLButtonElement>('.till-timer').forEach((btn) => {
+    const min = Number(btn.dataset.timerMin ?? '0');
+    let kvar = min * 60;
+    let igang = false;
+    let intervalId: number | undefined;
+    const label = btn.querySelector<HTMLElement>('.till-timer-label')!;
+
+    const formatera = (s: number) => {
+      const m = Math.floor(s / 60);
+      const sek = s % 60;
+      return `⏱ ${m}:${String(sek).padStart(2, '0')}`;
+    };
+
+    btn.addEventListener('click', () => {
+      if (!igang) {
+        igang = true;
+        btn.classList.add('animate-pulse', 'bg-amber-200');
+        intervalId = window.setInterval(() => {
+          kvar--;
+          label.textContent = formatera(kvar);
+          if (kvar <= 0) {
+            window.clearInterval(intervalId);
+            igang = false;
+            label.textContent = `⏰ Klar!`;
+            btn.classList.remove('animate-pulse', 'bg-amber-200');
+            btn.classList.add('bg-emerald-200');
+            try {
+              new Audio('data:audio/wav;base64,UklGRn4DAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YVoDAAB/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/').play();
+            } catch {}
+            if ('vibrate' in navigator) navigator.vibrate([200, 100, 200]);
+          }
+        }, 1000);
+      } else {
+        // Reset
+        window.clearInterval(intervalId);
+        igang = false;
+        kvar = min * 60;
+        label.textContent = formatera(kvar);
+        btn.classList.remove('animate-pulse', 'bg-amber-200', 'bg-emerald-200');
+      }
+    });
+  });
+</script>

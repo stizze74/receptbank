@@ -1,0 +1,78 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const allaCollections = await Promise.all([
+  getCollection('baser'),
+  getCollection('proteiner'),
+  getCollection('saser'),
+  getCollection('tillbehor'),
+  getCollection('soppor'),
+  getCollection('middagar'),
+]);
+const alla = allaCollections.flat();
+
+const skrivna = alla.filter((r) => r.data.status === 'skriven' || r.data.status === 'testad');
+const planerade = alla.filter((r) => r.data.status === 'planerad');
+
+const senaste = skrivna.slice(0, 6);
+
+const moduler = [
+  { titel: 'Baser', slug: 'baser', mojligt: 'bas' },
+  { titel: 'Proteiner', slug: 'proteiner', mojligt: 'protein' },
+  { titel: 'Såser', slug: 'saser', mojligt: 'sas' },
+  { titel: 'Tillbehör', slug: 'tillbehor', mojligt: 'tillbehor' },
+  { titel: 'Soppor', slug: 'soppor', mojligt: 'soppa' },
+  { titel: 'Middagar', slug: 'middagar', mojligt: 'middag' },
+];
+---
+
+<BaseLayout titel="Start">
+  <h1 class="mb-1 text-2xl">Receptbank</h1>
+  <p class="mb-4 text-sm text-bas-700">
+    LCHF · ~5–10 g netto kh per måltid · {skrivna.length} skrivna recept · {planerade.length} planerade
+  </p>
+
+  <section class="mb-6 grid grid-cols-2 gap-2">
+    <a href="/kombinera" class="kort flex flex-col gap-1 no-underline hover:bg-bas-50">
+      <span class="text-xs uppercase tracking-wide text-bas-600">Vad ska jag äta?</span>
+      <span class="text-base font-semibold">Kombinera modul →</span>
+    </a>
+    <a href="/veckoplan" class="kort flex flex-col gap-1 no-underline hover:bg-bas-50">
+      <span class="text-xs uppercase tracking-wide text-bas-600">Hela veckan</span>
+      <span class="text-base font-semibold">Veckoplan →</span>
+    </a>
+  </section>
+
+  <section class="mb-6">
+    <h2 class="mb-2 text-lg">Senaste recept</h2>
+    {senaste.length === 0 && (
+      <p class="text-sm text-bas-700">Inga recept skrivna än. Kolla planerade nedan.</p>
+    )}
+    <div class="grid grid-cols-1 gap-2 sm:grid-cols-2">
+      {senaste.map((r) => (
+        <a href={`/recept/${r.id}`} class="kort flex flex-col gap-0.5 no-underline hover:bg-bas-50">
+          <span class="text-xs uppercase tracking-wide text-bas-600">{r.data.modul}</span>
+          <span class="font-semibold">{r.data.namn}</span>
+          {r.data.tid?.total_min && (
+            <span class="text-xs text-bas-700">{r.data.tid.total_min} min</span>
+          )}
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <section class="mb-6">
+    <h2 class="mb-2 text-lg">Bläddra</h2>
+    <div class="grid grid-cols-2 gap-2 sm:grid-cols-3">
+      {moduler.map((m) => (
+        <a href={`/alla?modul=${m.mojligt}`} class="kort no-underline hover:bg-bas-50">
+          <span class="block text-sm font-semibold">{m.titel}</span>
+          <span class="block text-xs text-bas-600">
+            {alla.filter((r) => r.data.modul === m.mojligt).length} st
+          </span>
+        </a>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,138 @@
+---
+import type { CollectionEntry } from 'astro:content';
+
+type AnyRecept =
+  | CollectionEntry<'baser'>
+  | CollectionEntry<'proteiner'>
+  | CollectionEntry<'saser'>
+  | CollectionEntry<'tillbehor'>
+  | CollectionEntry<'soppor'>
+  | CollectionEntry<'middagar'>;
+
+interface Props {
+  recept: AnyRecept;
+}
+
+const { recept } = Astro.props;
+const d = recept.data;
+const sortLogg = [...(d.testlogg ?? [])].sort((a, b) => {
+  const da = typeof a.datum === 'string' ? a.datum : a.datum.toISOString().slice(0, 10);
+  const db = typeof b.datum === 'string' ? b.datum : b.datum.toISOString().slice(0, 10);
+  return db.localeCompare(da);
+});
+---
+
+<section class="mb-6">
+  <h2 class="mb-2 text-lg">Testlogg</h2>
+  {sortLogg.length === 0 && <p class="mb-3 text-sm text-bas-700">Inga tester än.</p>}
+  {sortLogg.length > 0 && (
+    <ul class="mb-3 space-y-2 text-sm">
+      {sortLogg.map((t) => (
+        <li class="kort">
+          <div class="flex flex-wrap items-center gap-2 text-xs text-bas-700">
+            <span class="font-semibold">
+              {typeof t.datum === 'string' ? t.datum : t.datum.toISOString().slice(0, 10)}
+            </span>
+            {typeof t.betyg === 'number' && (
+              <span>{'★'.repeat(t.betyg)}{'☆'.repeat(5 - t.betyg)}</span>
+            )}
+            {t.glukos_fore !== undefined && (
+              <span>
+                {t.glukos_fore} → {t.glukos_topp_2h ?? '?'} mmol/L
+              </span>
+            )}
+            {t.magreaktion && <span>· mage: {t.magreaktion}</span>}
+          </div>
+          {t.notering && <p class="mt-1 text-bas-800">{t.notering}</p>}
+        </li>
+      ))}
+    </ul>
+  )}
+
+  <details class="kort">
+    <summary class="cursor-pointer font-semibold">Logga ny testning</summary>
+    <form id="testlogg-form" class="mt-3 grid gap-2 text-sm">
+      <label class="grid grid-cols-3 items-center gap-2">
+        <span>Datum</span>
+        <input type="date" id="tl-datum" class="col-span-2 rounded-md border border-bas-300 px-2 py-1" />
+      </label>
+      <label class="grid grid-cols-3 items-center gap-2">
+        <span>Glukos före</span>
+        <input type="number" step="0.1" id="tl-fore" class="col-span-2 rounded-md border border-bas-300 px-2 py-1" />
+      </label>
+      <label class="grid grid-cols-3 items-center gap-2">
+        <span>Glukos topp 2h</span>
+        <input type="number" step="0.1" id="tl-topp" class="col-span-2 rounded-md border border-bas-300 px-2 py-1" />
+      </label>
+      <label class="grid grid-cols-3 items-center gap-2">
+        <span>Mage</span>
+        <input type="text" id="tl-mage" placeholder="ingen / lätt / stark" class="col-span-2 rounded-md border border-bas-300 px-2 py-1" />
+      </label>
+      <label class="grid grid-cols-3 items-center gap-2">
+        <span>Betyg</span>
+        <select id="tl-betyg" class="col-span-2 rounded-md border border-bas-300 px-2 py-1">
+          <option value="">—</option>
+          <option value="5">★★★★★</option>
+          <option value="4">★★★★</option>
+          <option value="3">★★★</option>
+          <option value="2">★★</option>
+          <option value="1">★</option>
+        </select>
+      </label>
+      <label class="grid grid-cols-3 items-start gap-2">
+        <span>Notering</span>
+        <textarea id="tl-not" rows="2" class="col-span-2 rounded-md border border-bas-300 px-2 py-1"></textarea>
+      </label>
+      <div class="flex gap-2">
+        <button type="button" id="tl-generera" class="knapp-primar">Generera markdown</button>
+        <button type="button" id="tl-kopiera" class="knapp-sekundar">Kopiera</button>
+      </div>
+      <pre id="tl-output" class="mt-2 hidden whitespace-pre-wrap rounded-md bg-bas-100 p-2 text-xs"></pre>
+      <p class="text-xs text-bas-700">
+        Klistra in genererad YAML i <code>testlogg:</code>-sektionen i receptets <code>.md</code>-fil.
+      </p>
+    </form>
+  </details>
+</section>
+
+<script>
+  const $ = <T extends HTMLElement>(id: string) => document.getElementById(id) as T;
+
+  const today = new Date().toISOString().slice(0, 10);
+  const datumInp = $<HTMLInputElement>('tl-datum');
+  if (datumInp && !datumInp.value) datumInp.value = today;
+
+  const generera = (): string => {
+    const v = (id: string) => ($<HTMLInputElement>(id)?.value ?? '').trim();
+    const lines: string[] = ['  - datum: ' + (v('tl-datum') || today)];
+    const fore = v('tl-fore');
+    const topp = v('tl-topp');
+    const mage = v('tl-mage');
+    const betyg = v('tl-betyg');
+    const not = ($<HTMLTextAreaElement>('tl-not')?.value ?? '').trim();
+    if (fore) lines.push('    glukos_fore: ' + fore);
+    if (topp) lines.push('    glukos_topp_2h: ' + topp);
+    if (mage) lines.push('    magreaktion: ' + mage);
+    if (betyg) lines.push('    betyg: ' + betyg);
+    if (not) lines.push('    notering: ' + JSON.stringify(not));
+    return lines.join('\n');
+  };
+
+  $('tl-generera')?.addEventListener('click', () => {
+    const out = $('tl-output');
+    out.textContent = generera();
+    out.classList.remove('hidden');
+  });
+
+  $('tl-kopiera')?.addEventListener('click', async () => {
+    try {
+      await navigator.clipboard.writeText(generera());
+      const btn = $('tl-kopiera') as HTMLButtonElement;
+      const orig = btn.textContent;
+      btn.textContent = 'Kopierat ✓';
+      setTimeout(() => (btn.textContent = orig), 1500);
+    } catch (e) {
+      alert('Kopiera misslyckades — välj texten manuellt.');
+    }
+  });
+</script>

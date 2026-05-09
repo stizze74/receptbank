@@ -1,0 +1,48 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { summeraTid } from '../utils/format';
+
+type AnyRecept =
+  | CollectionEntry<'baser'>
+  | CollectionEntry<'proteiner'>
+  | CollectionEntry<'saser'>
+  | CollectionEntry<'tillbehor'>
+  | CollectionEntry<'soppor'>
+  | CollectionEntry<'middagar'>;
+
+interface Props {
+  recept: AnyRecept;
+}
+
+const { recept } = Astro.props;
+const d = recept.data;
+const tid = summeraTid(d.tid);
+const planerad = d.status === 'planerad';
+const noterad = d.status === 'noterad';
+---
+
+<a
+  href={`/recept/${recept.id}`}
+  class:list={[
+    'kort flex flex-col gap-1 no-underline transition hover:bg-bas-50',
+    planerad && 'border-dashed opacity-70',
+    noterad && 'bg-amber-50/40',
+  ]}
+>
+  <div class="flex flex-wrap items-center gap-1">
+    <span class="modul-tagg bg-bas-200 text-bas-800">{d.modul}</span>
+    {planerad && <span class="modul-tagg bg-amber-200 text-amber-900">planerad</span>}
+    {noterad && <span class="modul-tagg bg-amber-300 text-amber-900">köpt</span>}
+    {d.jessica_tagg && (
+      <span class="modul-tagg bg-purple-200 text-purple-900">{d.jessica_tagg}</span>
+    )}
+  </div>
+  <span class="text-base font-semibold">{d.namn}</span>
+  <div class="flex flex-wrap items-center gap-2 text-xs text-bas-700">
+    {tid !== undefined && <span>{tid} min</span>}
+    {d.narings_per_portion && (
+      <span>{d.narings_per_portion.netto_kh} g kh</span>
+    )}
+    {d.taggar?.length > 0 && <span class="truncate">· {d.taggar.slice(0, 3).join(' · ')}</span>}
+  </div>
+</a>

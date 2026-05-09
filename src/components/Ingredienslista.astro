@@ -1,0 +1,114 @@
+---
+import type { Ingrediens } from '../content/config';
+import { ingrediensSomObj } from '../utils/format';
+
+interface Props {
+  ingredienser: Ingrediens[];
+  portioner: number;
+  prefix?: string;
+}
+
+const { ingredienser, portioner, prefix } = Astro.props;
+const objLista = ingredienser.map((i) => ingrediensSomObj(i));
+const dataAttr = JSON.stringify(objLista);
+---
+
+<section class="mb-6" data-ingredienser-portioner={portioner} data-ingredienser={dataAttr}>
+  <header class="mb-2 flex items-center justify-between">
+    <h2 class="text-lg">{prefix ? `${prefix} — Ingredienser` : 'Ingredienser'}</h2>
+    <div class="flex items-center gap-1 text-sm">
+      <button type="button" class="kn-portion -" aria-label="Färre portioner">−</button>
+      <input
+        type="number"
+        class="ing-portioner w-12 rounded-md border border-bas-300 bg-white px-1 py-0.5 text-center text-sm"
+        min="1"
+        max="20"
+        value={portioner}
+      />
+      <span class="text-bas-700">portioner</span>
+      <button type="button" class="kn-portion +" aria-label="Fler portioner">+</button>
+    </div>
+  </header>
+  <ul class="space-y-1.5">
+    {objLista.map((i, idx) => (
+      <li class="flex items-start gap-2">
+        <input
+          type="checkbox"
+          class="ing-check mt-1 h-4 w-4 cursor-pointer accent-bas-600"
+          data-idx={idx}
+        />
+        <span class="ing-rad text-sm" data-idx={idx}>
+          {/* Initial render — JS uppdaterar */}
+          {[i.mangd, i.enhet, i.vara].filter(Boolean).join(' ')}
+          {i.notering && <span class="text-bas-600"> ({i.notering})</span>}
+        </span>
+      </li>
+    ))}
+  </ul>
+</section>
+
+<script>
+  // Ingrediensskalning + checkbox-state per recept i localStorage
+  type IngObj = { mangd?: number | string; enhet?: string; vara: string; notering?: string };
+
+  const formatMangd = (m: number) => {
+    if (Number.isInteger(m)) return String(m);
+    return parseFloat(m.toFixed(2)).toString();
+  };
+
+  document.querySelectorAll('[data-ingredienser]').forEach((sec) => {
+    const root = sec as HTMLElement;
+    const original: IngObj[] = JSON.parse(root.dataset.ingredienser ?? '[]');
+    const ursprung = Number(root.dataset.ingredienserPortioner ?? '2');
+    const portInput = root.querySelector<HTMLInputElement>('.ing-portioner')!;
+    const minus = root.querySelector<HTMLButtonElement>('.kn-portion.-')!;
+    const plus = root.querySelector<HTMLButtonElement>('.kn-portion.+')!;
+
+    const slug = location.pathname.replace(/\/$/, '').split('/').pop() ?? 'recept';
+    const lsKey = `ing-check:${slug}`;
+
+    // Återställ checkbox-state
+    try {
+      const saved = JSON.parse(localStorage.getItem(lsKey) ?? '[]') as number[];
+      saved.forEach((i) => {
+        const cb = root.querySelector<HTMLInputElement>(`.ing-check[data-idx="${i}"]`);
+        if (cb) cb.checked = true;
+      });
+    } catch {}
+
+    root.querySelectorAll<HTMLInputElement>('.ing-check').forEach((cb) => {
+      cb.addEventListener('change', () => {
+        const checked = Array.from(root.querySelectorAll<HTMLInputElement>('.ing-check'))
+          .map((c, i) => (c.checked ? i : -1))
+          .filter((x) => x >= 0);
+        localStorage.setItem(lsKey, JSON.stringify(checked));
+      });
+    });
+
+    const renderRader = () => {
+      const port = Math.max(1, parseInt(portInput.value, 10) || ursprung);
+      const faktor = port / ursprung;
+      original.forEach((ing, idx) => {
+        const span = root.querySelector<HTMLElement>(`.ing-rad[data-idx="${idx}"]`);
+        if (!span) return;
+        let mangd = ing.mangd;
+        if (typeof mangd === 'number') {
+          mangd = formatMangd(mangd * faktor);
+        }
+        const delar = [mangd, ing.enhet, ing.vara].filter(Boolean).join(' ');
+        const not = ing.notering ? ` (${ing.notering})` : '';
+        span.textContent = delar + not;
+      });
+    };
+
+    portInput.addEventListener('input', renderRader);
+    minus.addEventListener('click', () => {
+      portInput.value = String(Math.max(1, parseInt(portInput.value, 10) - 1));
+      renderRader();
+    });
+    plus.addEventListener('click', () => {
+      portInput.value = String(parseInt(portInput.value, 10) + 1);
+      renderRader();
+    });
+  });
+</script>

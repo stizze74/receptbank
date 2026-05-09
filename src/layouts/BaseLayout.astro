@@ -1,0 +1,59 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  titel?: string;
+  beskrivning?: string;
+  jsonLd?: Record<string, unknown>;
+}
+
+const { titel, beskrivning, jsonLd } = Astro.props;
+const fullTitel = titel ? `${titel} — Receptbank` : 'Receptbank';
+const beskr = beskrivning ?? 'Stefans LCHF-receptbank med modulkombinator och veckoplanerare.';
+---
+
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#3f6f3d" />
+    <meta name="description" content={beskr} />
+    <title>{fullTitel}</title>
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    {jsonLd && (
+      <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+    )}
+  </head>
+  <body class="min-h-dvh">
+    <header class="sticky top-0 z-30 border-b border-bas-200 bg-bas-50/95 backdrop-blur">
+      <nav class="mx-auto flex max-w-3xl items-center gap-1 px-3 py-3 text-sm">
+        <a href="/" class="font-semibold text-bas-800 no-underline hover:underline">Receptbank</a>
+        <span class="mx-1 text-bas-300">·</span>
+        <a href="/alla" class="text-bas-700 no-underline hover:underline">Alla</a>
+        <a href="/kombinera" class="ml-2 text-bas-700 no-underline hover:underline">Kombinera</a>
+        <a href="/veckoplan" class="ml-2 text-bas-700 no-underline hover:underline">Veckoplan</a>
+      </nav>
+    </header>
+    <main class="mx-auto max-w-3xl px-3 py-4 pb-24">
+      <slot />
+    </main>
+    <footer class="mx-auto max-w-3xl px-3 py-6 text-xs text-bas-600">
+      LCHF-receptbank · publik · privat användning
+    </footer>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker
+            .register('/sw.js', { scope: '/' })
+            .then((reg) => {
+              reg.active?.postMessage('trim-cache');
+            })
+            .catch(() => {});
+        });
+      }
+    </script>
+  </body>
+</html>

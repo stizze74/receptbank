@@ -230,10 +230,40 @@ app.get('/healthz', (_req, res) => {
   res.type('text/plain').send('ok');
 });
 
+// Anthropic Connector-routern provar OAuth Protected Resource Metadata-discovery
+// (RFC 9728) innan den faller tillbaka till URL-token-auth. Min server stödjer
+// bara Bearer-token, men vi måste svara stilrent så Anthropic-klienten inte
+// fastnar i fel-loop. Returnera 404 med tom JSON istället för HTML.
+app.get('/.well-known/oauth-protected-resource', (_req, res) => {
+  res.status(404).json({ error: 'no_oauth' });
+});
+app.get('/.well-known/oauth-protected-resource/mcp', (_req, res) => {
+  res.status(404).json({ error: 'no_oauth' });
+});
+app.get('/.well-known/oauth-authorization-server', (_req, res) => {
+  res.status(404).json({ error: 'no_oauth' });
+});
+app.post('/register', (_req, res) => {
+  res.status(404).json({ error: 'no_oauth' });
+});
+
+// MCP Streamable HTTP-spec kräver Accept: application/json, text/event-stream
+// på POST. Anthropic-Connector skickar inte alltid headern korrekt — patcha
+// inkommande request så transport-handlern accepterar.
+const tvingaAccept = (req: Request, _res: Response, next: () => void) => {
+  const a = req.headers['accept'] ?? '';
+  const harJson = a.includes('application/json');
+  const harSse = a.includes('text/event-stream');
+  if (!harJson || !harSse) {
+    req.headers['accept'] = 'application/json, text/event-stream';
+  }
+  next();
+};
+
 // ---- Modern Streamable HTTP transport: /mcp (Claude.ai Custom Connector använder denna) ----
 const streamableTransports: Record<string, StreamableHTTPServerTransport> = {};
 
-app.post('/mcp', tokenAuth, async (req, res) => {
+app.post('/mcp', tokenAuth, tvingaAccept, async (req, res) => {
   const sessionId = req.headers['mcp-session-id'] as string | undefined;
   let transport: StreamableHTTPServerTransport;
 
@@ -274,8 +304,8 @@ const handleStreamableSession = async (req: Request, res: Response) => {
   await streamableTransports[sessionId].handleRequest(req, res);
 };
 
-app.get('/mcp', tokenAuth, handleStreamableSession);
-app.delete('/mcp', tokenAuth, handleStreamableSession);
+app.get('/mcp', tokenAuth, tvingaAccept, handleStreamableSession);
+app.delete('/mcp', tokenAuth, tvingaAccept, handleStreamableSession);
 
 // ---- Bakåtkompatibel SSE-transport: GET /sse + POST /messages ----
 let activeSseTransport: SSEServerTransport | null = null;

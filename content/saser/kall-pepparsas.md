@@ -1,5 +1,5 @@
 ---
-namn: Kall pepparrås
+namn: Kall pepparsås
 status: skriven
 portioner: 4
 narings_per_portion:
@@ -45,7 +45,7 @@ tillagning:
   - namn: Krossa peppar
     text: >-
       Lägg pepparkornen i en mortel. Krossa grovt — inte till pulver, du vill ha
-      tydliga kornar.
+      tydliga korn.
   - namn: Blanda
     text: Lägg crème fraîche och gräddfil i skål. Vispa jämt.
   - namn: Smaksätt
@@ -53,7 +53,7 @@ tillagning:
       Tillsätt krossad peppar, dijonsenap, worcestershiresås, salt och eventuell
       citronjuice. Rör ihop.
   - namn: Smaka av
-    text: Mer peppar? Mer salt? Justerar.
+    text: Mer peppar? Mer salt? Justera.
   - namn: Vila
     text: Låt stå i kyl minst 10 min innan servering — smakerna går ihop.
     timer_min: 10
@@ -62,9 +62,9 @@ tips:
   - >-
     Crème fraîche 32% är fettrikast och ger bästa konsistens. Gräddfil 12% står
     för syrligheten.
-  - Såsen blir bättre dag 2 — gör gärna kvallen innan.
+  - Såsen blir bättre dag 2 — gör gärna kvällen innan.
   - >-
-    Lohmanders och Eriks Såser har båda kalla pepparråser — LCHF-vänliga
+    Lohmanders och Eriks Såser har båda kalla pepparsåser — LCHF-vänliga
     genvägar när du inte hinner.
 testlogg: []
 ---

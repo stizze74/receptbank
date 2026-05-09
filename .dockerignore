@@ -10,7 +10,6 @@ dist
 npm-debug.log*
 .env
 .env.production
-scripts
 README.md
 docker-compose.yml
 Dockerfile

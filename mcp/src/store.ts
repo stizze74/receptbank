@@ -99,6 +99,35 @@ export async function raderaRecept(modul: Modulmapp, slug: string): Promise<void
   await fs.unlink(fil);
 }
 
+const TILLATNA_BILD_EXT = ['jpg', 'jpeg', 'png', 'webp', 'avif', 'gif'] as const;
+
+export async function skrivBild(
+  modul: Modulmapp,
+  filnamn: string,
+  base64Data: string,
+): Promise<{ filsökväg: string; bytes: number }> {
+  // Säkerhetskontroller
+  if (filnamn.includes('/') || filnamn.includes('\\') || filnamn.includes('..')) {
+    throw new Error(`Ogiltigt filnamn: ${filnamn} (inga path-tecken)`);
+  }
+  const ext = filnamn.split('.').pop()?.toLowerCase() ?? '';
+  if (!TILLATNA_BILD_EXT.includes(ext as any)) {
+    throw new Error(`Otillåten bild-typ: ${ext}. Tillåtna: ${TILLATNA_BILD_EXT.join(', ')}`);
+  }
+
+  // Strippa eventuell data-URL-prefix (data:image/jpeg;base64,...)
+  const cleanB64 = base64Data.replace(/^data:[^;]+;base64,/, '');
+  const buf = Buffer.from(cleanB64, 'base64');
+  if (buf.length === 0) throw new Error('Tom bild-data');
+  if (buf.length > 15 * 1024 * 1024) throw new Error(`Bilden är ${(buf.length / 1024 / 1024).toFixed(1)} MB — max 15 MB`);
+
+  const dir = path.join(CONTENT_ROT, modul, 'bilder');
+  await fs.mkdir(dir, { recursive: true });
+  const filsökväg = path.join(dir, filnamn);
+  await fs.writeFile(filsökväg, buf);
+  return { filsökväg, bytes: buf.length };
+}
+
 // ---- Git ----
 let git: SimpleGit | null = null;
 let remoteAuthSatt = false;

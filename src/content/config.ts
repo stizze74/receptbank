@@ -62,6 +62,8 @@ const baseSchema = z.object({
   tips: z.array(z.string()).default([]),
   testlogg: z.array(testpost).default([]),
   inkop: z.string().optional(),
+  bild: z.string().optional(), // filnamn relativt content/<modul>/bilder/, t.ex. "kycklinglar.jpg"
+  bild_alt: z.string().optional(),
 });
 
 const makeCollection = (folder: string, modul: string) =>

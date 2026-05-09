@@ -4,9 +4,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro build",
+    "dev": "node scripts/sync-bilder.mjs && astro dev",
+    "start": "node scripts/sync-bilder.mjs && astro dev",
+    "build": "node scripts/sync-bilder.mjs && astro build",
     "preview": "astro preview",
     "astro": "astro"
   },

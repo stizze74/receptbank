@@ -7,6 +7,7 @@ import CookingMode from '../components/CookingMode.astro';
 import Testlogg from '../components/Testlogg.astro';
 import { recipeJsonLd } from '../utils/jsonld';
 import { summeraTid } from '../utils/format';
+import { bildUrl, bildAlt } from '../utils/bild';
 
 type AnyRecept =
   | CollectionEntry<'baser'>
@@ -31,9 +32,19 @@ const planerad = d.status === 'planerad';
 const noterad = d.status === 'noterad';
 
 const matlistaUrl = new URL(`/recept/${recept.id}`, sitan).toString();
+const bild = bildUrl(recept);
 ---
 
 <BaseLayout titel={d.namn} jsonLd={ld}>
+  {bild && (
+    <figure class="mb-4 -mx-3 sm:mx-0 sm:rounded-xl overflow-hidden">
+      <img
+        src={bild}
+        alt={bildAlt(recept)}
+        class="w-full aspect-[4/3] object-cover sm:aspect-[16/9]"
+      />
+    </figure>
+  )}
   <header class="mb-4">
     <div class="mb-1 flex flex-wrap items-center gap-1">
       <span class="modul-tagg bg-bas-200 text-bas-800">{d.modul}</span>
@@ -131,6 +142,41 @@ const matlistaUrl = new URL(`/recept/${recept.id}`, sitan).toString();
 
   <slot />
 
+  {!planerad && (
+    <section class="mb-6">
+      <details class="kort">
+        <summary class="cursor-pointer text-sm font-semibold">📷 Ladda upp foto</summary>
+        <div class="mt-3 space-y-2 text-sm">
+          <p class="text-bas-700">
+            Foto sparas till receptet och blir live efter ~30 sek.
+            Tokenet sparas i webbläsaren (localStorage) — du anger det en gång.
+          </p>
+          <input
+            type="file"
+            id="bild-fil"
+            accept="image/jpeg,image/png,image/webp,image/avif"
+            class="block w-full text-sm"
+          />
+          <input
+            type="text"
+            id="bild-alt"
+            placeholder="Beskrivning av bilden (valfritt)"
+            class="block w-full rounded-md border border-bas-300 px-2 py-1"
+          />
+          <div class="flex gap-2">
+            <button type="button" id="bild-upload" data-slug={recept.id} class="knapp-primar">
+              Ladda upp
+            </button>
+            <button type="button" id="bild-token" class="knapp-sekundar text-xs">
+              Sätt om token
+            </button>
+          </div>
+          <p id="bild-status" class="text-xs text-bas-700"></p>
+        </div>
+      </details>
+    </section>
+  )}
+
   <Testlogg recept={recept} />
 
   <CookingMode />
@@ -151,4 +197,110 @@ const matlistaUrl = new URL(`/recept/${recept.id}`, sitan).toString();
       }
     });
   }
+
+  // ---- Bild-upload via MCP ----
+  const TOKEN_KEY = 'mcp-token';
+  const MCP_URL = 'https://mcp-recept.hjerne.net/mcp';
+
+  const getToken = (): string | null => {
+    let t = localStorage.getItem(TOKEN_KEY);
+    if (!t) {
+      t = window.prompt('Klistra in MCP_TOKEN (sparas i denna browser för framtida uploads):');
+      if (t) localStorage.setItem(TOKEN_KEY, t.trim());
+    }
+    return t?.trim() || null;
+  };
+
+  const uploadBtn = document.getElementById('bild-upload') as HTMLButtonElement | null;
+  const tokenBtn = document.getElementById('bild-token') as HTMLButtonElement | null;
+  const fileInp = document.getElementById('bild-fil') as HTMLInputElement | null;
+  const altInp = document.getElementById('bild-alt') as HTMLInputElement | null;
+  const status = document.getElementById('bild-status') as HTMLElement | null;
+
+  tokenBtn?.addEventListener('click', () => {
+    localStorage.removeItem(TOKEN_KEY);
+    if (status) status.textContent = 'Token borttaget. Du blir tillfrågad nästa gång.';
+  });
+
+  const fileToBase64 = (file: File): Promise<string> =>
+    new Promise((resolve, reject) => {
+      const reader = new FileReader();
+      reader.onload = () => {
+        const result = reader.result as string;
+        resolve(result.split(',')[1] ?? '');
+      };
+      reader.onerror = () => reject(reader.error);
+      reader.readAsDataURL(file);
+    });
+
+  uploadBtn?.addEventListener('click', async () => {
+    if (!fileInp?.files?.[0]) {
+      if (status) status.textContent = 'Välj en bildfil först.';
+      return;
+    }
+    const file = fileInp.files[0];
+    const slug = uploadBtn.dataset.slug;
+    if (!slug) return;
+
+    const token = getToken();
+    if (!token) {
+      if (status) status.textContent = 'Token krävs.';
+      return;
+    }
+
+    const ext = (file.name.split('.').pop() || 'jpg').toLowerCase();
+    const filnamn = `${slug}.${ext}`;
+    const altText = altInp?.value.trim() || undefined;
+
+    if (status) status.textContent = `Läser ${(file.size / 1024).toFixed(0)} KB…`;
+    uploadBtn.disabled = true;
+
+    try {
+      const base64 = await fileToBase64(file);
+      if (status) status.textContent = 'Skickar till servern…';
+
+      const args: Record<string, unknown> = { slug, filnamn, base64_data: base64 };
+      if (altText) args.alt_text = altText;
+
+      const resp = await fetch(MCP_URL, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json, text/event-stream',
+          'Authorization': `Bearer ${token}`,
+        },
+        body: JSON.stringify({
+          jsonrpc: '2.0',
+          id: Date.now(),
+          method: 'tools/call',
+          params: { name: 'lagg_till_bild', arguments: args },
+        }),
+      });
+
+      if (resp.status === 401) {
+        localStorage.removeItem(TOKEN_KEY);
+        if (status) status.textContent = 'Token avvisades. Tryck "Ladda upp" igen och ange korrekt token.';
+        return;
+      }
+
+      const text = await resp.text();
+      // Streamable HTTP returnerar event-stream — extrahera JSON ur "data: ..."
+      const match = text.match(/data:\s*(\{.*\})/);
+      const data = match ? JSON.parse(match[1]) : JSON.parse(text);
+
+      if (data.error) {
+        if (status) status.textContent = `Fel: ${data.error.message ?? 'okänt'}`;
+        return;
+      }
+
+      if (status) {
+        status.textContent = 'Sparat ✓ Sajten byggs om (~30 sek). Reloadar…';
+      }
+      setTimeout(() => location.reload(), 35_000);
+    } catch (e) {
+      if (status) status.textContent = `Fel: ${(e as Error).message}`;
+    } finally {
+      uploadBtn.disabled = false;
+    }
+  });
 </script>

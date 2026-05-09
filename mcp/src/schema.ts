@@ -53,6 +53,8 @@ export const receptFrontmatter = z.object({
   tips: z.array(z.string()).default([]),
   testlogg: z.array(testpost).default([]),
   inkop: z.string().optional(),
+  bild: z.string().optional(),
+  bild_alt: z.string().optional(),
 });
 
 export type ReceptFrontmatter = z.infer<typeof receptFrontmatter>;

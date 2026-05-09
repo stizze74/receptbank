@@ -1,6 +1,7 @@
 ---
 import type { CollectionEntry } from 'astro:content';
 import { summeraTid } from '../utils/format';
+import { bildUrl, bildAlt } from '../utils/bild';
 
 type AnyRecept =
   | CollectionEntry<'baser'>
@@ -19,16 +20,26 @@ const d = recept.data;
 const tid = summeraTid(d.tid);
 const planerad = d.status === 'planerad';
 const noterad = d.status === 'noterad';
+const bild = bildUrl(recept);
 ---
 
 <a
   href={`/recept/${recept.id}`}
   class:list={[
-    'kort flex flex-col gap-1 no-underline transition hover:bg-bas-50',
+    'kort flex flex-col gap-1 overflow-hidden p-0 no-underline transition hover:bg-bas-50',
     planerad && 'border-dashed opacity-70',
     noterad && 'bg-amber-50/40',
   ]}
 >
+  {bild && (
+    <img
+      src={bild}
+      alt={bildAlt(recept)}
+      loading="lazy"
+      class="aspect-[4/3] w-full object-cover"
+    />
+  )}
+  <div class="p-3 flex flex-col gap-1">
   <div class="flex flex-wrap items-center gap-1">
     <span class="modul-tagg bg-bas-200 text-bas-800">{d.modul}</span>
     {planerad && <span class="modul-tagg bg-amber-200 text-amber-900">planerad</span>}
@@ -44,5 +55,6 @@ const noterad = d.status === 'noterad';
       <span>{d.narings_per_portion.netto_kh} g kh</span>
     )}
     {d.taggar?.length > 0 && <span class="truncate">· {d.taggar.slice(0, 3).join(' · ')}</span>}
+  </div>
   </div>
 </a>

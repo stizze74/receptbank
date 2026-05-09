@@ -9,6 +9,7 @@ import {
   listaAlla,
   läsReceptPåSlug,
   skrivRecept,
+  skrivBild,
   raderaRecept,
   hittaModul,
   commitOchPush,
@@ -189,6 +190,39 @@ mcp.tool(
 );
 
 mcp.tool(
+  'lagg_till_bild',
+  'Spara en bild för ett recept. Bilden lagras i content/<modul>/bilder/<filnamn> och receptet får bild- och bild_alt-fält i frontmatter. Skicka base64-encoded bytes (med eller utan data:-prefix). Tillåtna ext: jpg, jpeg, png, webp, avif, gif. Max 15 MB.',
+  {
+    slug: z.string(),
+    filnamn: z.string().describe('T.ex. "smorstekt-kycklinglar.jpg" — använd receptets slug + ext'),
+    base64_data: z.string().describe('Bilden som base64-string'),
+    alt_text: z.string().optional().describe('Beskrivande alt-text för tillgänglighet, t.ex. "Smörstekt kycklinglår med blank yta"'),
+  },
+  async ({ slug, filnamn, base64_data, alt_text }) => {
+    return medLås(slug, async () => {
+      await gitPullRebase();
+      const recept = await läsReceptPåSlug(slug);
+      const bildInfo = await skrivBild(recept.modul, filnamn, base64_data);
+      const ny = {
+        ...recept.frontmatter,
+        bild: filnamn,
+        ...(alt_text ? { bild_alt: alt_text } : {}),
+      };
+      await skrivRecept(recept.modul, slug, ny, recept.brödtext);
+      const git = await commitOchPush(`Lägg till bild på ${recept.frontmatter.namn}`);
+      return {
+        content: [
+          {
+            type: 'text',
+            text: `Sparade bild ${bildInfo.filsökväg} (${(bildInfo.bytes / 1024).toFixed(1)} KB).\nGit: ${git.pushed ? 'committat och pushat' : 'committat lokalt'} (${git.commit ?? 'ingen ändring'}).`,
+          },
+        ],
+      };
+    });
+  },
+);
+
+mcp.tool(
   'radera_recept',
   'Radera ett recept permanent. Använd försiktigt.',
   { slug: z.string(), bekräfta: z.literal(true) },
@@ -213,7 +247,8 @@ mcp.tool(
 
 // ---- HTTP / SSE Transport ----
 const app = express();
-app.use(express.json({ limit: '1mb' }));
+// 20 MB räcker för base64-encoded foton upp till ~15 MB rå
+app.use(express.json({ limit: '20mb' }));
 
 const tokenAuth = (req: Request, res: Response, next: () => void) => {
   const auth = req.header('authorization') ?? '';

@@ -1,5 +1,6 @@
 import type { CollectionEntry } from 'astro:content';
 import { ingrediensTillStrang, minutterTillIso, tillagningTillObj, summeraTid } from './format';
+import { bildUrl, bildAlt } from './bild';
 
 type AnyRecept =
   | CollectionEntry<'baser'>
@@ -43,6 +44,11 @@ export function recipeJsonLd(entry: AnyRecept, sitan: string): Record<string, un
       }
     : undefined;
 
+  const bildPath = bildUrl(entry);
+  const bildAbsolut = bildPath
+    ? bildPath.startsWith('http') ? bildPath : new URL(bildPath, sitan).toString()
+    : undefined;
+
   const ld: Record<string, unknown> = {
     '@context': 'https://schema.org',
     '@type': 'Recipe',
@@ -53,6 +59,11 @@ export function recipeJsonLd(entry: AnyRecept, sitan: string): Record<string, un
     recipeInstructions: instruktioner,
     inLanguage: 'sv',
   };
+
+  if (bildAbsolut) {
+    ld.image = bildAbsolut;
+    ld.description = bildAlt(entry);
+  }
 
   if (prepIso) ld.prepTime = prepIso;
   if (cookIso) ld.cookTime = cookIso;

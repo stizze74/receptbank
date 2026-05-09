@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import { ingrediensTillStrang, tillagningTillObj, summeraTid, minutterTillIso } from '../../../utils/format';
 import { recipeJsonLd } from '../../../utils/jsonld';
+import { bildUrl, bildAlt } from '../../../utils/bild';
 
 export async function getStaticPaths() {
   const collections = ['baser', 'proteiner', 'saser', 'tillbehor', 'soppor', 'middagar'] as const;
@@ -29,6 +30,8 @@ const totalIso = minutterTillIso(totalMin);
 
 const huvudPath = `/recept/${entry.id}`;
 const description = `${d.namn} — ${d.portioner} portioner${totalMin ? ` · ${totalMin} min` : ''}`;
+const bild = bildUrl(entry);
+const bildAbs = bild ? (bild.startsWith('http') ? bild : `${sitan.replace(/\/$/, '')}${bild}`) : undefined;
 ---
 
 <!doctype html>
@@ -44,6 +47,7 @@ const description = `${d.namn} — ${d.portioner} portioner${totalMin ? ` · ${t
     <meta property="og:title" content={d.namn} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={`${sitan}${huvudPath}/dela/`} />
+    {bildAbs && <meta property="og:image" content={bildAbs} />}
     <script type="application/ld+json" set:html={JSON.stringify(ld)} />
     <style>
       :root { color-scheme: light dark; font-family: system-ui, -apple-system, sans-serif; }
@@ -60,6 +64,9 @@ const description = `${d.namn} — ${d.portioner} portioner${totalMin ? ` · ${t
     </style>
   </head>
   <body itemscope itemtype="https://schema.org/Recipe">
+    {bild && (
+      <img src={bild} alt={bildAlt(entry)} itemprop="image" style="width:100%;max-height:24rem;object-fit:cover;border-radius:0.5rem;margin-bottom:1rem" />
+    )}
     <h1 itemprop="name">{d.namn}</h1>
     <p class="meta">
       <span itemprop="recipeYield">{d.portioner} portioner</span>

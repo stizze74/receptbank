@@ -78,6 +78,8 @@ tips:
     Innertemperatur 75°C är säkert. Termometer rekommenderas — kycklinglår är
     förlåtande och blir saftigt även vid 78–80°C, till skillnad från bröst.
 testlogg: []
+bild: kycklinglar-test.png
+bild_alt: Test-bild
 ---
 
 Vardagshjälte. Kycklinglår tål mer värme och mer tid än bröst, blir saftigare av sig själv, och fungerar i stort sett alla modulkombinationer. När bröstfilén är för torr — välj lår.

@@ -73,7 +73,10 @@ tips:
   - >-
     Såsen blir bättre om du låter den stå av värmen 1–2 min innan servering —
     smakerna går ihop.
-testlogg: []
+testlogg:
+  - datum: '2026-05-09'
+    betyg: 4
+    notering: 'Pipeline-test: verifiera push-flow'
 ---
 
 Klassisk följeslagare till fläsk och kyckling. Görs allra bäst i samma panna som proteinet just stekts i — fonden från köttet lyfter såsen rejält. Tar 8 minuter från start till tallrik och kräver ingen pyssel.

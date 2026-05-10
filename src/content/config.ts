@@ -79,6 +79,11 @@ export const collections = {
   tillbehor: makeCollection('tillbehor', 'tillbehor'),
   soppor: makeCollection('soppor', 'soppa'),
   middagar: makeCollection('middagar', 'middag'),
+  snacks: makeCollection('snacks', 'snack'),
+  drycker: makeCollection('drycker', 'dryck'),
+  efterratter: makeCollection('efterratter', 'efterratt'),
+  forratter: makeCollection('forratter', 'forratt'),
+  brod: makeCollection('brod', 'brod'),
 };
 
 export type ReceptModul =
@@ -87,4 +92,9 @@ export type ReceptModul =
   | 'sas'
   | 'tillbehor'
   | 'soppa'
-  | 'middag';
+  | 'middag'
+  | 'snack'
+  | 'dryck'
+  | 'efterratt'
+  | 'forratt'
+  | 'brod';

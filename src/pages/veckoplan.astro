@@ -9,6 +9,11 @@ const collections = await Promise.all([
   getCollection('tillbehor'),
   getCollection('soppor'),
   getCollection('middagar'),
+  getCollection('snacks'),
+  getCollection('drycker'),
+  getCollection('efterratter'),
+  getCollection('forratter'),
+  getCollection('brod'),
 ]);
 const alla = collections.flat().sort((a, b) => a.data.namn.localeCompare(b.data.namn, 'sv'));
 
@@ -87,6 +92,11 @@ const dagar = ['Mån', 'Tis', 'Ons', 'Tor', 'Fre', 'Lör', 'Sön'];
         <option value="sas">Sås</option>
         <option value="soppa">Soppa</option>
         <option value="tillbehor">Tillbehör</option>
+        <option value="snack">Snack</option>
+        <option value="dryck">Dryck</option>
+        <option value="efterratt">Efterrätt</option>
+        <option value="forratt">Förrätt</option>
+        <option value="brod">Bröd & bullar</option>
       </select>
       <ul id="modal-list" class="max-h-72 space-y-1 overflow-y-auto text-sm"></ul>
     </div>

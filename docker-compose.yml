@@ -26,6 +26,8 @@ services:
     environment:
       MCP_TOKEN: ${MCP_TOKEN}
       GITHUB_TOKEN: ${GITHUB_TOKEN:-}
+      UPLOAD_USER: ${UPLOAD_USER:-familjen}
+      UPLOAD_PASSWORD: ${UPLOAD_PASSWORD:-}
       CONTENT_ROT: /data/content
       PORT: 3030
     volumes:

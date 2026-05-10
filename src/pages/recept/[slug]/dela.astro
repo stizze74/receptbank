@@ -5,7 +5,7 @@ import { recipeJsonLd } from '../../../utils/jsonld';
 import { bildUrl, bildAlt } from '../../../utils/bild';
 
 export async function getStaticPaths() {
-  const collections = ['baser', 'proteiner', 'saser', 'tillbehor', 'soppor', 'middagar'] as const;
+  const collections = ['baser', 'proteiner', 'saser', 'tillbehor', 'soppor', 'middagar', 'snacks', 'drycker', 'efterratter', 'forratter', 'brod'] as const;
   const allEntries = await Promise.all(collections.map((c) => getCollection(c)));
   return allEntries
     .flat()

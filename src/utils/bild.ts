@@ -7,6 +7,11 @@ export const MODUL_MAPP: Record<string, string> = {
   tillbehor: 'tillbehor',
   soppa: 'soppor',
   middag: 'middagar',
+  snack: 'snacks',
+  dryck: 'drycker',
+  efterratt: 'efterratter',
+  forratt: 'forratter',
+  brod: 'brod',
 };
 
 type AnyRecept =
@@ -15,7 +20,12 @@ type AnyRecept =
   | CollectionEntry<'saser'>
   | CollectionEntry<'tillbehor'>
   | CollectionEntry<'soppor'>
-  | CollectionEntry<'middagar'>;
+  | CollectionEntry<'middagar'>
+  | CollectionEntry<'snacks'>
+  | CollectionEntry<'drycker'>
+  | CollectionEntry<'efterratter'>
+  | CollectionEntry<'forratter'>
+  | CollectionEntry<'brod'>;
 
 export function bildUrl(recept: AnyRecept): string | undefined {
   const fil = recept.data.bild;

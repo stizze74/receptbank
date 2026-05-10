@@ -8,7 +8,17 @@ type AnyRecept =
   | CollectionEntry<'saser'>
   | CollectionEntry<'tillbehor'>
   | CollectionEntry<'soppor'>
-  | CollectionEntry<'middagar'>;
+  | CollectionEntry<'middagar'>
+
+  | CollectionEntry<'snacks'>
+
+  | CollectionEntry<'drycker'>
+
+  | CollectionEntry<'efterratter'>
+
+  | CollectionEntry<'forratter'>
+
+  | CollectionEntry<'brod'>;
 
 export function recipeJsonLd(entry: AnyRecept, sitan: string): Record<string, unknown> {
   const d = entry.data;

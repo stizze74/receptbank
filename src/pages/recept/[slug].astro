@@ -3,7 +3,7 @@ import { getCollection, render } from 'astro:content';
 import ReceptLayout from '../../layouts/ReceptLayout.astro';
 
 export async function getStaticPaths() {
-  const collections = ['baser', 'proteiner', 'saser', 'tillbehor', 'soppor', 'middagar'] as const;
+  const collections = ['baser', 'proteiner', 'saser', 'tillbehor', 'soppor', 'middagar', 'snacks', 'drycker', 'efterratter', 'forratter', 'brod'] as const;
   const allEntries = await Promise.all(collections.map((c) => getCollection(c)));
   return allEntries.flat().map((entry) => ({
     params: { slug: entry.id },

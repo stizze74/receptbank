@@ -8,7 +8,10 @@ const ROT = dirname(fileURLToPath(import.meta.url)) + '/..';
 const CONTENT = join(ROT, 'content');
 const PUBLIC_BILDER = join(ROT, 'public', 'bilder');
 
-const MODULER = ['baser', 'proteiner', 'saser', 'tillbehor', 'soppor', 'middagar'];
+const MODULER = [
+  'baser', 'proteiner', 'saser', 'tillbehor', 'soppor', 'middagar',
+  'snacks', 'drycker', 'efterratter', 'forratter', 'brod',
+];
 
 let kopierade = 0;
 for (const modul of MODULER) {

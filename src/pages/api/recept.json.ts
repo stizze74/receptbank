@@ -11,6 +11,11 @@ export const GET: APIRoute = async () => {
     getCollection('tillbehor'),
     getCollection('soppor'),
     getCollection('middagar'),
+    getCollection('snacks'),
+    getCollection('drycker'),
+    getCollection('efterratter'),
+    getCollection('forratter'),
+    getCollection('brod'),
   ]);
   const alla = collections.flat();
 

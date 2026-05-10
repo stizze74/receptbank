@@ -265,6 +265,78 @@ app.get('/healthz', (_req, res) => {
   res.type('text/plain').send('ok');
 });
 
+// ---- Basic auth-skyddad /upload-endpoint för browser-uploads ----
+const UPLOAD_USER = process.env.UPLOAD_USER ?? 'familjen';
+const UPLOAD_PASSWORD = process.env.UPLOAD_PASSWORD ?? '';
+
+const basicAuth = (req: Request, res: Response, next: () => void) => {
+  if (!UPLOAD_PASSWORD) {
+    res.status(503).json({ error: 'Upload-endpoint inaktiverad: UPLOAD_PASSWORD ej satt' });
+    return;
+  }
+  const auth = req.header('authorization') ?? '';
+  if (!auth.toLowerCase().startsWith('basic ')) {
+    res.status(401).set('WWW-Authenticate', 'Basic realm="Receptbank"').end();
+    return;
+  }
+  const decoded = Buffer.from(auth.slice(6).trim(), 'base64').toString('utf8');
+  const sep = decoded.indexOf(':');
+  if (sep < 0) {
+    res.status(401).set('WWW-Authenticate', 'Basic realm="Receptbank"').end();
+    return;
+  }
+  const user = decoded.slice(0, sep);
+  const pass = decoded.slice(sep + 1);
+  if (user !== UPLOAD_USER || pass !== UPLOAD_PASSWORD) {
+    res.status(401).set('WWW-Authenticate', 'Basic realm="Receptbank"').end();
+    return;
+  }
+  next();
+};
+
+const corsMcpServer = (_req: Request, res: Response, next: () => void) => {
+  res.setHeader('Access-Control-Allow-Origin', 'https://recept.hjerne.net');
+  res.setHeader('Access-Control-Allow-Credentials', 'true');
+  res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
+  res.setHeader('Access-Control-Allow-Headers', 'Authorization, Content-Type');
+  next();
+};
+
+app.options('/upload', corsMcpServer, (_req, res) => {
+  res.status(204).end();
+});
+
+app.post('/upload', corsMcpServer, basicAuth, async (req, res) => {
+  try {
+    const { slug, filnamn, base64_data, alt_text } = req.body ?? {};
+    if (typeof slug !== 'string' || typeof filnamn !== 'string' || typeof base64_data !== 'string') {
+      res.status(400).json({ error: 'Saknar slug, filnamn eller base64_data' });
+      return;
+    }
+    await medLås(slug, async () => {
+      await gitPullRebase();
+      const recept = await läsReceptPåSlug(slug);
+      const bildInfo = await skrivBild(recept.modul, filnamn, base64_data);
+      const ny = {
+        ...recept.frontmatter,
+        bild: filnamn,
+        ...(typeof alt_text === 'string' && alt_text.trim() ? { bild_alt: alt_text.trim() } : {}),
+      };
+      await skrivRecept(recept.modul, slug, ny, recept.brödtext);
+      const git = await commitOchPush(`Lägg till bild på ${recept.frontmatter.namn}`);
+      res.json({
+        ok: true,
+        bild: { fil: bildInfo.filsökväg, bytes: bildInfo.bytes },
+        git: { commit: git.commit, pushed: git.pushed },
+      });
+    });
+  } catch (e) {
+    if (!res.headersSent) {
+      res.status(500).json({ error: (e as Error).message });
+    }
+  }
+});
+
 // Anthropic Connector-routern provar OAuth Protected Resource Metadata-discovery
 // (RFC 9728) innan den faller tillbaka till URL-token-auth. Min server stödjer
 // bara Bearer-token, men vi måste svara stilrent så Anthropic-klienten inte

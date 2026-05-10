@@ -17,8 +17,75 @@ taggar:
   - notkott
   - kombo
 ingredienser:
-  - vara: Se modulrecepten
-    notering: 'kottfars, blomkalsmos, senap-gradde'
+  - mangd: 400
+    enhet: g
+    vara: nötfärs
+    notering: gärna 17–20% fett
+  - mangd: 30
+    enhet: g
+    vara: smör
+  - mangd: 0.5
+    enhet: st
+    vara: gul lök
+    notering: 'ca 50 g, finhackad'
+  - mangd: 2
+    enhet: st
+    vara: vitlöksklyftor
+    notering: krossade
+  - mangd: 1
+    enhet: tsk
+    vara: salt
+  - mangd: 0.5
+    enhet: tsk
+    vara: 'svartpeppar, nymalen'
+  - mangd: 1
+    enhet: tsk
+    vara: 'oregano, torkad'
+    notering: valfritt
+  - mangd: 400
+    enhet: g
+    vara: blomkål
+  - mangd: 50
+    enhet: g
+    vara: smör
+  - mangd: 0.5
+    enhet: dl
+    vara: grädde
+    notering: 'valfritt, för krämigare resultat'
+  - mangd: 1
+    enhet: krm
+    vara: salt
+  - mangd: 1
+    enhet: krm
+    vara: vitpeppar
+  - mangd: 1
+    enhet: krm
+    vara: 'muskot, riven'
+    notering: valfritt
+  - mangd: 2
+    enhet: dl
+    vara: grädde
+    notering: vispgrädde 36%
+  - mangd: 1
+    enhet: msk
+    vara: dijonsenap
+  - mangd: 1
+    enhet: tsk
+    vara: fransk grovkornsenap
+    notering: 'valfritt, för textur'
+  - mangd: 1
+    enhet: msk
+    vara: smör
+  - mangd: 0.5
+    enhet: tsk
+    vara: salt
+  - mangd: 1
+    enhet: krm
+    vara: 'svartpeppar, nymalen'
+  - mangd: 1
+    enhet: msk
+    vara: 'persilja, fint hackad'
+    notering: valfritt
 tillagning:
   - namn: Vatten på
     text: Sätt en kastrull med lättsaltat vatten på spisen.

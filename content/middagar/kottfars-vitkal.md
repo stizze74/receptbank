@@ -18,8 +18,48 @@ taggar:
   - kombo
   - engryta
 ingredienser:
-  - vara: Se modulrecepten
-    notering: 'kottfars, smorstekt-vitkal, ev. gräddfil eller senap-gradde'
+  - mangd: 400
+    enhet: g
+    vara: nötfärs
+    notering: gärna 17–20% fett
+  - mangd: 30
+    enhet: g
+    vara: smör
+  - mangd: 0.5
+    enhet: st
+    vara: gul lök
+    notering: 'ca 50 g, finhackad'
+  - mangd: 2
+    enhet: st
+    vara: vitlöksklyftor
+    notering: krossade
+  - mangd: 1
+    enhet: tsk
+    vara: salt
+  - mangd: 0.5
+    enhet: tsk
+    vara: 'svartpeppar, nymalen'
+  - mangd: 1
+    enhet: tsk
+    vara: 'oregano, torkad'
+    notering: valfritt
+  - mangd: 400
+    enhet: g
+    vara: vitkål
+    notering: 'ca 1/4 medelstort kålhuvud, strimlad'
+  - mangd: 50
+    enhet: g
+    vara: smör
+  - mangd: 0.5
+    enhet: tsk
+    vara: salt
+  - mangd: 1
+    enhet: krm
+    vara: svartpeppar
+  - mangd: 1
+    enhet: tsk
+    vara: kummin
+    notering: 'valfritt, klassiskt med fläsk'
 tillagning:
   - namn: Förbered vitkål
     text: Strimla 300 g vitkål fint. Hacka 1/2 gul lök och krossa 2 vitlöksklyftor.

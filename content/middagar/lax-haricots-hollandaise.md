@@ -17,8 +17,36 @@ taggar:
   - fisk
   - kombo
 ingredienser:
-  - vara: Se modulrecepten
-    notering: 'smorstekt-lax, smorstekta-haricots-verts, hollandaise-mixer'
+  - { mangd: 300, enhet: g, vara: laxfilé med skinn }
+  - { mangd: 2, enhet: msk, vara: smör }
+  - "Salt och vitpeppar"
+  - { mangd: 1, enhet: st, vara: citron, notering: "för att pressa över vid servering" }
+  - mangd: 250
+    enhet: g
+    vara: haricots verts
+    notering: färska eller frusna
+  - mangd: 30
+    enhet: g
+    vara: smör
+  - mangd: 0.5
+    enhet: tsk
+    vara: flingsalt
+  - mangd: 1
+    enhet: krm
+    vara: svartpeppar
+  - mangd: 1
+    enhet: st
+    vara: vitlöksklyfta
+    notering: 'krossad, valfritt'
+  - mangd: 1
+    enhet: msk
+    vara: mandelflarn
+    notering: 'valfritt, ger nötighet'
+  - { mangd: 3, enhet: st, vara: äggulor }
+  - { mangd: 200, enhet: g, vara: smör }
+  - { mangd: 1, enhet: msk, vara: pressad citron }
+  - { mangd: 1, enhet: krm, vara: salt }
+  - { mangd: 1, enhet: krm, vara: cayennepeppar, notering: "valfritt" }
 tillagning:
   - namn: Förberedelse
     text: >-

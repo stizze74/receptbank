@@ -18,20 +18,56 @@ taggar:
   - skaldjur
   - kombo
 ingredienser:
-  - vara: Se modulrecepten
-    notering: 'rakor, sallad, lohmanders-aioli'
+  - mangd: 400
+    enhet: g
+    vara: handpillade räkor
+    notering: 'i lake, avrunna'
   - mangd: 1
-    enhet: st
-    vara: avokado
-    notering: 'mogen, halverad'
-  - mangd: 2
     enhet: msk
-    vara: färsk dill
-    notering: fint hackad
+    vara: olivolja
   - mangd: 0.5
     enhet: st
     vara: citron
     notering: klyftor till servering
+  - mangd: 1
+    enhet: msk
+    vara: färsk dill
+    notering: fint hackad
+  - mangd: 1
+    enhet: krm
+    vara: flingsalt
+  - mangd: 1
+    enhet: krm
+    vara: svartpeppar
+  - mangd: 100
+    enhet: g
+    vara: blandsallad
+    notering: 'rucola, ekblad, frisé, romaine eller blandning'
+  - mangd: 0.5
+    enhet: st
+    vara: gurka
+    notering: skivad
+  - mangd: 6
+    enhet: st
+    vara: körsbärstomater
+    notering: delade
+  - mangd: 2
+    enhet: msk
+    vara: olivolja
+  - mangd: 1
+    enhet: msk
+    vara: rödvinsvinäger
+  - mangd: 1
+    enhet: tsk
+    vara: dijonsenap
+    notering: emulgerar dressingen
+  - mangd: 0.5
+    enhet: tsk
+    vara: flingsalt
+  - mangd: 1
+    enhet: krm
+    vara: svartpeppar
+  - { vara: "Klick av Lohmanders Aioli Original", mangd: 1, enhet: msk }
 tillagning:
   - namn: Avrinning räkor
     text: Häll av laken från räkorna i ett durkslag. Låt rinna av i 1–2 min.

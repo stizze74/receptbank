@@ -17,8 +17,70 @@ taggar:
   - kyckling
   - kombo
 ingredienser:
-  - vara: Se modulrecepten
-    notering: 'kycklinglar, smorstekt-vitkal, senap-gradde'
+  - mangd: 500
+    enhet: g
+    vara: kycklinglårfilé
+    notering: 'utan ben, gärna med skinn'
+  - mangd: 30
+    enhet: g
+    vara: smör
+  - mangd: 1
+    enhet: msk
+    vara: olivolja
+  - mangd: 1
+    enhet: tsk
+    vara: flingsalt
+  - mangd: 0.5
+    enhet: tsk
+    vara: 'svartpeppar, nymalen'
+  - mangd: 1
+    enhet: tsk
+    vara: 'timjan, torkad'
+  - mangd: 2
+    enhet: st
+    vara: vitlöksklyftor
+    notering: krossade
+  - mangd: 400
+    enhet: g
+    vara: vitkål
+    notering: 'ca 1/4 medelstort kålhuvud, strimlad'
+  - mangd: 50
+    enhet: g
+    vara: smör
+  - mangd: 0.5
+    enhet: tsk
+    vara: salt
+  - mangd: 1
+    enhet: krm
+    vara: svartpeppar
+  - mangd: 1
+    enhet: tsk
+    vara: kummin
+    notering: 'valfritt, klassiskt med fläsk'
+  - mangd: 2
+    enhet: dl
+    vara: grädde
+    notering: vispgrädde 36%
+  - mangd: 1
+    enhet: msk
+    vara: dijonsenap
+  - mangd: 1
+    enhet: tsk
+    vara: fransk grovkornsenap
+    notering: 'valfritt, för textur'
+  - mangd: 1
+    enhet: msk
+    vara: smör
+  - mangd: 0.5
+    enhet: tsk
+    vara: salt
+  - mangd: 1
+    enhet: krm
+    vara: 'svartpeppar, nymalen'
+  - mangd: 1
+    enhet: msk
+    vara: 'persilja, fint hackad'
+    notering: valfritt
 tillagning:
   - namn: Förberedelse
     text: >-

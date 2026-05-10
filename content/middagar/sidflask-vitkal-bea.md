@@ -17,8 +17,32 @@ taggar:
   - flask
   - kombo
 ingredienser:
-  - vara: Se modulrecepten
-    notering: 'sidflask, smorstekt-vitkal, lohmanders-bea'
+  - mangd: 250
+    enhet: g
+    vara: sidfläsk
+    notering: 'skivat, 3–4 mm'
+  - mangd: 1
+    enhet: krm
+    vara: 'svartpeppar, nymalen'
+    notering: salta inte — sidfläsk är redan saltat
+  - mangd: 400
+    enhet: g
+    vara: vitkål
+    notering: 'ca 1/4 medelstort kålhuvud, strimlad'
+  - mangd: 50
+    enhet: g
+    vara: smör
+  - mangd: 0.5
+    enhet: tsk
+    vara: salt
+  - mangd: 1
+    enhet: krm
+    vara: svartpeppar
+  - mangd: 1
+    enhet: tsk
+    vara: kummin
+    notering: 'valfritt, klassiskt med fläsk'
+  - { vara: "Klick av Lohmanders Béarnaise Original", mangd: 1, enhet: msk }
 tillagning:
   - namn: Förberedelse
     text: >-

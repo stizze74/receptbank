@@ -17,8 +17,51 @@ taggar:
   - notkott
   - kombo
 ingredienser:
-  - vara: Se modulrecepten
-    notering: 'entrecote, rotsellerimos, lohmanders-bea'
+  - mangd: 400
+    enhet: g
+    vara: entrecôte
+    notering: 'gärna 2,5–3 cm tjock skiva'
+  - mangd: 30
+    enhet: g
+    vara: smör
+  - mangd: 1
+    enhet: msk
+    vara: olivolja
+  - mangd: 1
+    enhet: st
+    vara: vitlöksklyfta
+    notering: 'krossad, oskalad'
+  - mangd: 2
+    enhet: kvist
+    vara: färsk timjan
+    notering: 'eller 0,5 tsk torkad'
+  - mangd: 1
+    enhet: tsk
+    vara: flingsalt
+  - mangd: 0.5
+    enhet: tsk
+    vara: 'svartpeppar, nymalen'
+  - mangd: 400
+    enhet: g
+    vara: rotselleri
+    notering: skalad och tärnad i 2 cm bitar
+  - mangd: 50
+    enhet: g
+    vara: smör
+  - mangd: 0.5
+    enhet: dl
+    vara: grädde
+  - mangd: 0.5
+    enhet: tsk
+    vara: salt
+  - mangd: 1
+    enhet: krm
+    vara: vitpeppar
+  - mangd: 1
+    enhet: krm
+    vara: 'muskot, riven'
+    notering: valfritt
+  - { vara: "Klick av Lohmanders Béarnaise Original", mangd: 1, enhet: msk }
 tillagning:
   - namn: Kött rumstemp
     text: Ta ut entrecôtet ur kylen. Låt stå i rumstemp.

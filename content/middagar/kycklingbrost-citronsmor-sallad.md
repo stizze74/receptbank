@@ -17,8 +17,58 @@ taggar:
   - kyckling
   - kombo
 ingredienser:
-  - vara: Se modulrecepten
-    notering: 'smorstekt-kycklingbrost, sallad, citronsmor'
+  - { mangd: 2, enhet: st, vara: kycklingbröstfilé }
+  - { mangd: 2, enhet: msk, vara: smör }
+  - "Salt och svartpeppar"
+  - mangd: 100
+    enhet: g
+    vara: blandsallad
+    notering: 'rucola, ekblad, frisé, romaine eller blandning'
+  - mangd: 0.5
+    enhet: st
+    vara: gurka
+    notering: skivad
+  - mangd: 6
+    enhet: st
+    vara: körsbärstomater
+    notering: delade
+  - mangd: 2
+    enhet: msk
+    vara: olivolja
+  - mangd: 1
+    enhet: msk
+    vara: rödvinsvinäger
+  - mangd: 1
+    enhet: tsk
+    vara: dijonsenap
+    notering: emulgerar dressingen
+  - mangd: 0.5
+    enhet: tsk
+    vara: flingsalt
+  - mangd: 1
+    enhet: krm
+    vara: svartpeppar
+  - mangd: 100
+    enhet: g
+    vara: smör
+    notering: rumstempererat
+  - mangd: 2
+    enhet: tsk
+    vara: 'citronskal, finrivet'
+    notering: från osprutad citron
+  - mangd: 2
+    enhet: msk
+    vara: 'citronjuice, färsk'
+  - mangd: 0.5
+    enhet: tsk
+    vara: flingsalt
+  - mangd: 1
+    enhet: krm
+    vara: svartpeppar
+  - mangd: 2
+    enhet: msk
+    vara: färsk persilja
+    notering: fint hackad
 tillagning:
   - namn: Citronsmör förberett
     text: 'Citronsmör ska finnas i kyl, redan formad. Tas ut precis innan servering.'

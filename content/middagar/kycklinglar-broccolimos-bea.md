@@ -17,8 +17,35 @@ taggar:
   - kyckling
   - kombo
 ingredienser:
-  - vara: Se modulrecepten
-    notering: 'kycklinglar, broccolimos, lohmanders-bea'
+  - mangd: 500
+    enhet: g
+    vara: kycklinglårfilé
+    notering: 'utan ben, gärna med skinn'
+  - mangd: 30
+    enhet: g
+    vara: smör
+  - mangd: 1
+    enhet: msk
+    vara: olivolja
+  - mangd: 1
+    enhet: tsk
+    vara: flingsalt
+  - mangd: 0.5
+    enhet: tsk
+    vara: 'svartpeppar, nymalen'
+  - mangd: 1
+    enhet: tsk
+    vara: 'timjan, torkad'
+  - mangd: 2
+    enhet: st
+    vara: vitlöksklyftor
+    notering: krossade
+  - { mangd: 400, enhet: g, vara: broccoli (fryst eller färsk) }
+  - { mangd: 50, enhet: g, vara: smör }
+  - { mangd: 1, enhet: krm, vara: salt }
+  - { mangd: 1, enhet: krm, vara: vitpeppar }
+  - { mangd: 0.5, enhet: dl, vara: grädde, notering: "valfritt, för krämigare resultat" }
+  - { vara: "Klick av Lohmanders Béarnaise Original", mangd: 1, enhet: msk }
 tillagning:
   - namn: Vatten på
     text: Sätt på en kastrull med lättsaltat vatten för broccolin.

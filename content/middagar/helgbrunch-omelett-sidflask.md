@@ -17,8 +17,55 @@ taggar:
   - frukost
   - kombo
 ingredienser:
-  - vara: Se modulrecepten
-    notering: 'agg-omelett, sidflask, smorstekta-haricots-verts'
+  - mangd: 6
+    enhet: st
+    vara: ägg
+  - mangd: 30
+    enhet: g
+    vara: smör
+  - mangd: 1
+    enhet: msk
+    vara: grädde
+    notering: 'valfritt, ger fluffigare resultat'
+  - mangd: 1
+    enhet: tsk
+    vara: salt
+  - mangd: 0.5
+    enhet: tsk
+    vara: 'svartpeppar, nymalen'
+  - mangd: 1
+    enhet: msk
+    vara: 'färska örter, finhackade'
+    notering: valfritt
+  - mangd: 250
+    enhet: g
+    vara: sidfläsk
+    notering: 'skivat, 3–4 mm'
+  - mangd: 1
+    enhet: krm
+    vara: 'svartpeppar, nymalen'
+    notering: salta inte — sidfläsk är redan saltat
+  - mangd: 250
+    enhet: g
+    vara: haricots verts
+    notering: färska eller frusna
+  - mangd: 30
+    enhet: g
+    vara: smör
+  - mangd: 0.5
+    enhet: tsk
+    vara: flingsalt
+  - mangd: 1
+    enhet: krm
+    vara: svartpeppar
+  - mangd: 1
+    enhet: st
+    vara: vitlöksklyfta
+    notering: 'krossad, valfritt'
+  - mangd: 1
+    enhet: msk
+    vara: mandelflarn
+    notering: 'valfritt, ger nötighet'
 tillagning:
   - namn: Stek sidfläsk
     text: >-

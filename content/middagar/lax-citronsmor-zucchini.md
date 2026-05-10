@@ -17,8 +17,59 @@ taggar:
   - fisk
   - kombo
 ingredienser:
-  - vara: Se modulrecepten
-    notering: 'smorstekt-lax, stekt-zucchini, citronsmor'
+  - { mangd: 300, enhet: g, vara: laxfilé med skinn }
+  - { mangd: 2, enhet: msk, vara: smör }
+  - "Salt och vitpeppar"
+  - { mangd: 1, enhet: st, vara: citron, notering: "för att pressa över vid servering" }
+  - mangd: 400
+    enhet: g
+    vara: zucchini
+    notering: skivad eller tärnad
+  - mangd: 30
+    enhet: g
+    vara: smör
+  - mangd: 1
+    enhet: msk
+    vara: olivolja
+  - mangd: 1
+    enhet: st
+    vara: vitlöksklyfta
+    notering: krossad
+  - mangd: 0.5
+    enhet: tsk
+    vara: flingsalt
+  - mangd: 1
+    enhet: krm
+    vara: svartpeppar
+  - mangd: 1
+    enhet: msk
+    vara: färska örter
+    notering: 'valfritt, t.ex. basilika eller persilja'
+  - mangd: 1
+    enhet: msk
+    vara: 'parmesan, riven'
+    notering: valfritt
+  - mangd: 100
+    enhet: g
+    vara: smör
+    notering: rumstempererat
+  - mangd: 2
+    enhet: tsk
+    vara: 'citronskal, finrivet'
+    notering: från osprutad citron
+  - mangd: 2
+    enhet: msk
+    vara: 'citronjuice, färsk'
+  - mangd: 0.5
+    enhet: tsk
+    vara: flingsalt
+  - mangd: 1
+    enhet: krm
+    vara: svartpeppar
+  - mangd: 2
+    enhet: msk
+    vara: färsk persilja
+    notering: fint hackad
 tillagning:
   - namn: Citronsmör förberett
     text: 'Citronsmör ska finnas i kyl, redan formad. Tas ut precis innan servering.'

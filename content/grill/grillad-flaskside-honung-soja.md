@@ -1,5 +1,5 @@
 ---
-namn: "Grillad fläsksida med honung-soja"
+namn: Grillad fläsksida med soja-sukringlaze
 status: skriven
 portioner: 2
 narings_per_portion:
@@ -12,22 +12,63 @@ tid:
   tillagning_min: 25
   total_min: 35
 forvantad_glukospaverkan: lag
-taggar: ["grill", "gotland", "flask", "asiatisk"]
+taggar:
+  - grill
+  - gotland
+  - fläsk
+  - asiatiskt
 ingredienser:
-  - { mangd: 600, enhet: "g", vara: "fläsksida", notering: "i tjocka skivor" }
-  - { mangd: 3, enhet: "msk", vara: "soja", notering: "tamari" }
-  - { mangd: 1, enhet: "msk", vara: "sesamolja" }
-  - { mangd: 2, enhet: "msk", vara: "erytritol-honung" }
-  - { mangd: 1, enhet: "msk", vara: "färsk ingefära", notering: "riven" }
-  - { mangd: 3, enhet: "st", vara: "vitlöksklyftor", notering: "pressade" }
-  - { mangd: 1, enhet: "tsk", vara: "svartpeppar" }
+  - mangd: 600
+    enhet: g
+    vara: fläsksida
+    notering: i tjocka skivor
+  - mangd: 3
+    enhet: msk
+    vara: soja
+    notering: gärna tamari
+  - mangd: 1
+    enhet: msk
+    vara: sesamolja
+  - mangd: 2
+    enhet: msk
+    vara: erytritol-honung
+    notering: från Sukrin eller likn.
+  - mangd: 1
+    enhet: msk
+    vara: färsk ingefära
+    notering: riven
+  - mangd: 3
+    enhet: klyftor
+    vara: vitlök
+    notering: pressade
+  - mangd: 1
+    enhet: tsk
+    vara: svartpeppar
 tillagning:
-  - { namn: "Marinera", text: "Blanda allt utom fläsket. Marinera 4 tim i kyl." }
-  - { namn: "Grilla", text: "Indirekt värme 20 min, sen direktvärme 2 min per sida för knaprighet.", timer_min: 24 }
-  - "Skär i bitar och servera."
+  - namn: Marinera
+    text: >-
+      Blanda soja, sesamolja, erytritol-honung, ingefära, vitlök och
+      svartpeppar. Vänd ner fläskskivorna så allt blir täckt. Marinera minst 4 h
+      i kyl, helst över natt.
+  - namn: Grilla indirekt
+    text: >-
+      Tänd grillen för medel-hög värme. Lagg fläsket på indirekt sida. Grilla 20
+      min, vänd halvvägs.
+    timer_min: 20
+  - namn: Slutgrilla direkt
+    text: >-
+      Flytta till direkt värme sista 2 min per sida för krispig yta. Håll koll —
+      erytritolen kan bränna lätt.
+    timer_min: 4
+  - namn: Vila och servera
+    text: Låt vila 3 min. Skär i bitar och servera.
 tips:
-  - "Erytritol-baserad \"honung\" från Sukrin eller liknande funkar bra."
-  - "Fett blir krispigt på direktvärme — håll koll så det inte bränns."
+  - 'Erytritol-honung från Sukrin — inte riktig honung, helt LCHF-vanlig.'
+  - >-
+    Fläsksida är fett — därför perfekt LCHF. Fettet blir krispigt på
+    direktvärme.
+  - Servera med tzatziki eller LCHF-coleslaw.
+  - 'I ugn: 200°C 25 min, sen 250°C eller broil sista 3 min.'
 testlogg: []
 ---
 

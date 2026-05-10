@@ -15,7 +15,7 @@ taggar: ["snack"]
 ingredienser:
   - { mangd: 200, enhet: "g", vara: "nötfärs" }
   - { mangd: 4, enhet: "skivor", vara: "cheddar" }
-  - { mangd: 4, enhet: "salladsblad" }
+  - { mangd: 4, enhet: "st", vara: "salladsblad" }
   - "Salt, peppar, senap"
 tillagning:
   - "Forma 4 mini-bullar, stek 3 min/sida."

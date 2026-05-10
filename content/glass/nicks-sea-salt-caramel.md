@@ -1,6 +1,6 @@
 ---
 namn: Nick's Sea Salt Caramel (köpt glass)
-status: noterad
+status: testad
 portioner: 4
 narings_per_portion:
   netto_kh: 1.75
@@ -42,11 +42,11 @@ testlogg:
   - datum: '2026-05-10'
     glukos_fore: 5.4
     glukos_topp_2h: 6
+    betyg: 4
     notering: >-
       Start 5,4 kl 19:03 → topp 6,0 kl 21:03. Stigning +0,6 över 2h. Mycket låg
       glukospåverkan — sötningsmedlen (allulose, erytritol, sorbitol, ev.
-      xylitol) verkar väl tolererade glukosmässigt. Magreaktion och betyg ej
-      rapporterat.
+      xylitol) väl tolererade glukosmässigt. God smak.
 inkop: 'ICA, Coop, Hemköp — frysavdelningen. Köps i pint (473 ml).'
 ---
 

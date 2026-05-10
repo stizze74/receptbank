@@ -1,5 +1,5 @@
 ---
-namn: LCHF-pannkakor (mandelmölsbas)
+namn: LCHF-pannkakor (mandelmjölsbas)
 status: skriven
 portioner: 2
 narings_per_portion:
@@ -20,10 +20,10 @@ taggar:
 ingredienser:
   - mangd: 1.5
     enhet: dl
-    vara: mandelmöl
+    vara: mandelmjöl
   - mangd: 1
     enhet: msk
-    vara: kokosmöl
+    vara: kokosmjöl
   - mangd: 1
     enhet: tsk
     vara: bakpulver
@@ -36,7 +36,7 @@ ingredienser:
     vara: vispgrädde
   - mangd: 2
     enhet: msk
-    vara: smalt smör
+    vara: smält smör
   - mangd: 1
     enhet: tsk
     vara: vaniljpulver
@@ -47,21 +47,21 @@ ingredienser:
   - vara: smör till stekning
 tillagning:
   - namn: Blanda torrt
-    text: 'Blanda mandelmöl, kokosmöl, bakpulver, salt och vaniljpulver.'
-  - namn: Blanda vätan
-    text: 'Vispa ihop ägg, grädde, smalt smör och ev. erytritol.'
+    text: 'Blanda mandelmjöl, kokosmjöl, bakpulver, salt och vaniljpulver.'
+  - namn: Blanda vätskan
+    text: 'Vispa ihop ägg, grädde, smält smör och ev. erytritol.'
   - namn: Förena
-    text: Vinda samman till en lan smet. Låt stå 5 min så mjölet suger vätska.
+    text: Vispa samman till en len smet. Låt stå 5 min så mjölet suger vätska.
     timer_min: 5
   - namn: Stek
     text: >-
-      Smalta smör i stekpanna på medelvärme. Stek pannkakor en åt gången, ca 2
+      Smält smör i stekpanna på medelvärme. Stek pannkakor en åt gången, ca 2
       min per sida. Smeten ger ca 6–8 små pannkakor.
     timer_min: 12
 tips:
-  - Servera med smalt smör och några hallon eller en klick lattvispad grädde.
+  - Servera med smält smör och några hallon eller en klick lättvispad grädde.
   - >-
-    Smeten blir tjockare än vanlig pannkaks-smet — stekpannkakor blir mer som
+    Smeten blir tjockare än vanlig pannkakssmet — stekpannkakor blir mer som
     amerikanska pancakes.
   - Funkar att fördubbla — svala extra och ta med som snack.
 testlogg: []

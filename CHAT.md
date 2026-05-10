@@ -32,17 +32,99 @@ grep RECEPTBANK_MCP_TOKEN ~/.secrets | cut -d'=' -f2
 Tokenet är 64 tecken hex. Om du behöver rotera det: ändra `MCP_TOKEN` i
 `~/recept/.env` och kör `docker compose up -d recept-mcp`.
 
-När connectorn är aktiv har Claude.ai 6 verktyg tillgängliga:
+När connectorn är aktiv har Claude.ai 7 verktyg tillgängliga:
 
 - `list_recept(modul?, status?)` — listar recept med valbara filter
 - `las_recept(slug)` — hämtar fullständigt recept
 - `lagg_till_recept(modul, frontmatter, brödtext?, slug?)` — skapar nytt
 - `uppdatera_recept(slug, frontmatter, brödtext?)` — uppdaterar
 - `lagg_till_testlogg(slug, post)` — appendar test-resultat
+- `lagg_till_bild(slug, filnamn, base64_data, alt_text?)` — sparar foto till receptet
 - `radera_recept(slug, bekräfta=true)` — tar bort permanent
 
 Varje skriv-verktyg commit:ar och pushar automatiskt till `github.com/stizze74/receptbank`.
 NUC-containern bygger om Astro-sajten vid nästa pull-cycle.
+
+---
+
+## 1.5 Moduler (17 stycken)
+
+| Mappnamn | modul-värde | Typ |
+|---|---|---|
+| `baser` | bas | Kolhydrat-ersättare (blomkålsmos, broccolimos, blomkålsris) |
+| `proteiner` | protein | Smörstekt kött/fisk/ägg/skaldjur |
+| `saser` | sas | Smör/ägg/grädde-baserade såser |
+| `tillbehor` | tillbehor | Sidor: sallader, picklat, dippar, ägghalvor |
+| `soppor` | soppa | Hela soppor som måltid |
+| `middagar` | middag | Kombinerade hela rätter |
+| `snacks` | snack | Mellanmål (torra, söta, salta) |
+| `drycker` | dryck | Smoothies, alkohol, mocktails, te, smaksatt vatten |
+| `efterratter` | efterratt | Mousse, ostkaka, panna cotta, crème brûlée |
+| `forratter` | forratt | Tartar, carpaccio, ostbricka, soppa i shotglas |
+| `brod` | brod | LCHF-bröd, bullar, scones, fathead |
+| `frukost` | frukost | Pannkakor LCHF, yoghurt-bowl, smörrebröd |
+| `sallader` | sallad | Mat-sallader/lunch-bowls (skiljer från Tillbehör som är sidor) |
+| `forrad` | forrad | Picklat, syltat, fermenterat, kombucha |
+| `grill` | grill | Grillrecept, marinader, BBQ |
+| `glass` | glass | Glass och frusen efterrätt |
+| `festmat` | festmat | Helgmat: rosbiff, gravad lax, fläskstek |
+
+## 1.6 Stefans smakkalibrering
+
+**Smakhet & kryddor:** OK med alla asiatiska smaker. Undvik koriander.
+
+**Kötten extra:** Lamm/vilt i måttlig mängd. Anka kan introduceras.
+
+**Skaldjur extra:** Bläckfisk, kammusslor, ostron, blå-/hjärtmusslor är OK.
+
+**Mejeri-proteiner:** Halloumi, cottage cheese, kvarg, getost — alla OK.
+
+**Söt-palett:** Vanilj, kanel, kakao, kardemumma OK.
+
+**Sötningsmedel:** Erytritol, stevia, allulose, xylitol OK.
+
+**Bak-mjöl:** Mandelmjöl, kokosmjöl, psyllium, fiberhusk OK.
+
+**Bröd-format:** Skivbröd, bullar/scones, fathead-pizza OK. Skip knäckebröd.
+
+**Efterrätter:** Glass, mousse, ostkaka OK. Skip panna cotta, crème brûlée.
+
+**Förrätter:** Tartar/carpaccio, mild ostbricka, soppor i shotglas OK. Skip ägghalvor som förrätt (de hör hemma som tillbehör).
+
+**Snacks:** Torra, söta, salta. Skip fuktiga (skålrötter).
+
+**Frukost-helg:** Brunch, pannkakor LCHF. Skip yoghurt-bowl och smörrebröd som frukost.
+
+**Drycker:** Full alkohol, smoothies (frukost + eftermiddag), te. Skip iskaffe, mocktails, smaksatt bubbelvatten — får skrivas men inte i prio.
+
+**Format:** Wraps i salladsblad, pyttipanna, tapas — gärna. Skip sashimi som hel rätt.
+
+**Tekniker:** Spis + ugn primärt. Grill på Gotland. Skip air fryer, sous vide, slow cooker (Stefan har inte utrustningen / vill inte bygga recept som kräver den).
+
+**Övrigt:** Kokos och ingefära OK i lagom dos. Frys är "lite viktigt" — några nyckelrecept som tål frys är värdefulla men ingen fokus.
+
+## 1.7 Modulfördelningsmål för 500 recept
+
+Approx fördelning Stefan siktar på:
+
+| Modul | Mål |
+|---|---|
+| middagar | 150 |
+| snacks | 40 |
+| efterratter | 40 |
+| drycker | 40 |
+| brod | 30 |
+| frukost | 30 |
+| baser | 30 |
+| proteiner | 30 |
+| saser | 30 |
+| tillbehor | 30 |
+| soppor | 25 |
+| forratter | 25 |
+| **+ nyare 5 moduler** | sammanlagt ~30–50 till |
+| **Totalt** | ≥500 |
+
+Skriv i bredd över alla moduler — receptbanken vinner på täthet.
 
 ---
 

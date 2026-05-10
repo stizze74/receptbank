@@ -62,6 +62,7 @@ export type ReceptFrontmatter = z.infer<typeof receptFrontmatter>;
 export const MODULER = [
   'baser', 'proteiner', 'saser', 'tillbehor', 'soppor', 'middagar',
   'snacks', 'drycker', 'efterratter', 'forratter', 'brod',
+  'frukost', 'sallader', 'forrad', 'grill', 'glass', 'festmat',
 ] as const;
 export type Modulmapp = (typeof MODULER)[number];
 
@@ -77,6 +78,12 @@ export const MODUL_TILL_ETIKETT: Record<Modulmapp, string> = {
   efterratter: 'efterratt',
   forratter: 'forratt',
   brod: 'brod',
+  frukost: 'frukost',
+  sallader: 'sallad',
+  forrad: 'forrad',
+  grill: 'grill',
+  glass: 'glass',
+  festmat: 'festmat',
 };
 
 export const slugifySvenska = (s: string): string =>

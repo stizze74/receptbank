@@ -25,7 +25,13 @@ type AnyRecept =
 
   | CollectionEntry<'forratter'>
 
-  | CollectionEntry<'brod'>;
+  | CollectionEntry<'brod'>
+  | CollectionEntry<'frukost'>
+  | CollectionEntry<'sallader'>
+  | CollectionEntry<'forrad'>
+  | CollectionEntry<'grill'>
+  | CollectionEntry<'glass'>
+  | CollectionEntry<'festmat'>;
 
 interface Props {
   recept: AnyRecept;

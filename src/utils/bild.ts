@@ -12,6 +12,12 @@ export const MODUL_MAPP: Record<string, string> = {
   efterratt: 'efterratter',
   forratt: 'forratter',
   brod: 'brod',
+  frukost: 'frukost',
+  sallad: 'sallader',
+  forrad: 'forrad',
+  grill: 'grill',
+  glass: 'glass',
+  festmat: 'festmat',
 };
 
 type AnyRecept =
@@ -25,7 +31,13 @@ type AnyRecept =
   | CollectionEntry<'drycker'>
   | CollectionEntry<'efterratter'>
   | CollectionEntry<'forratter'>
-  | CollectionEntry<'brod'>;
+  | CollectionEntry<'brod'>
+  | CollectionEntry<'frukost'>
+  | CollectionEntry<'sallader'>
+  | CollectionEntry<'forrad'>
+  | CollectionEntry<'grill'>
+  | CollectionEntry<'glass'>
+  | CollectionEntry<'festmat'>;
 
 export function bildUrl(recept: AnyRecept): string | undefined {
   const fil = recept.data.bild;

@@ -16,6 +16,12 @@ export const getStaticPaths: GetStaticPaths = async () => {
     getCollection('efterratter'),
     getCollection('forratter'),
     getCollection('brod'),
+    getCollection('frukost'),
+    getCollection('sallader'),
+    getCollection('forrad'),
+    getCollection('grill'),
+    getCollection('glass'),
+    getCollection('festmat'),
   ]);
   return collections.flat().map((entry) => ({
     params: { slug: entry.id },

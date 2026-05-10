@@ -14,6 +14,12 @@ const allaCollections = await Promise.all([
   getCollection('efterratter'),
   getCollection('forratter'),
   getCollection('brod'),
+    getCollection('frukost'),
+    getCollection('sallader'),
+    getCollection('forrad'),
+    getCollection('grill'),
+    getCollection('glass'),
+    getCollection('festmat'),
 ]);
 const alla = allaCollections.flat();
 
@@ -34,6 +40,12 @@ const moduler = [
   { titel: 'Efterrätter', slug: 'efterratter', mojligt: 'efterratt' },
   { titel: 'Förrätter', slug: 'forratter', mojligt: 'forratt' },
   { titel: 'Bröd & bullar', slug: 'brod', mojligt: 'brod' },
+  { titel: 'Frukost', slug: 'frukost', mojligt: 'frukost' },
+  { titel: 'Sallader & lunch', slug: 'sallader', mojligt: 'sallad' },
+  { titel: 'Förråd', slug: 'forrad', mojligt: 'forrad' },
+  { titel: 'Grill', slug: 'grill', mojligt: 'grill' },
+  { titel: 'Glass & frusen', slug: 'glass', mojligt: 'glass' },
+  { titel: 'Fest- & helgmat', slug: 'festmat', mojligt: 'festmat' },
 ];
 ---
 

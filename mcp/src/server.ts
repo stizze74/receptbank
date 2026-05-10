@@ -306,6 +306,40 @@ app.options('/upload', corsMcpServer, (_req, res) => {
   res.status(204).end();
 });
 
+app.options('/testlogg', corsMcpServer, (_req, res) => {
+  res.status(204).end();
+});
+
+app.post('/testlogg', corsMcpServer, basicAuth, async (req, res) => {
+  try {
+    const { slug, post } = req.body ?? {};
+    if (typeof slug !== 'string' || !post || typeof post !== 'object') {
+      res.status(400).json({ error: 'Saknar slug eller post' });
+      return;
+    }
+    if (!post.datum) post.datum = new Date().toISOString().slice(0, 10);
+    await medLås(slug, async () => {
+      await gitPullRebase();
+      const recept = await läsReceptPåSlug(slug);
+      const ny = {
+        ...recept.frontmatter,
+        testlogg: [...(recept.frontmatter.testlogg ?? []), post],
+      };
+      await skrivRecept(recept.modul, slug, ny, recept.brödtext);
+      const git = await commitOchPush(`Logga test: ${recept.frontmatter.namn} ${post.datum}`);
+      res.json({
+        ok: true,
+        post,
+        git: { commit: git.commit, pushed: git.pushed },
+      });
+    });
+  } catch (e) {
+    if (!res.headersSent) {
+      res.status(500).json({ error: (e as Error).message });
+    }
+  }
+});
+
 app.post('/upload', corsMcpServer, basicAuth, async (req, res) => {
   try {
     const { slug, filnamn, base64_data, alt_text } = req.body ?? {};

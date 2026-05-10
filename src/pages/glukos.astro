@@ -1,0 +1,212 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const collections = await Promise.all([
+  getCollection('baser'),
+  getCollection('proteiner'),
+  getCollection('saser'),
+  getCollection('tillbehor'),
+  getCollection('soppor'),
+  getCollection('middagar'),
+  getCollection('snacks'),
+  getCollection('drycker'),
+  getCollection('efterratter'),
+  getCollection('forratter'),
+  getCollection('brod'),
+  getCollection('frukost'),
+  getCollection('sallader'),
+  getCollection('forrad'),
+  getCollection('grill'),
+  getCollection('glass'),
+  getCollection('festmat'),
+]);
+const alla = collections.flat();
+
+interface FlatPost {
+  datum: string;
+  recept_namn: string;
+  recept_slug: string;
+  modul: string;
+  glukos_fore?: number;
+  glukos_topp_2h?: number;
+  stegring?: number;
+  magreaktion?: string;
+  betyg?: number;
+  notering?: string;
+}
+
+const poster: FlatPost[] = [];
+for (const r of alla) {
+  for (const t of r.data.testlogg ?? []) {
+    const datumStr = typeof t.datum === 'string' ? t.datum : t.datum.toISOString().slice(0, 10);
+    const stegring =
+      typeof t.glukos_fore === 'number' && typeof t.glukos_topp_2h === 'number'
+        ? Math.round((t.glukos_topp_2h - t.glukos_fore) * 10) / 10
+        : undefined;
+    poster.push({
+      datum: datumStr,
+      recept_namn: r.data.namn,
+      recept_slug: r.id,
+      modul: r.data.modul,
+      glukos_fore: t.glukos_fore,
+      glukos_topp_2h: t.glukos_topp_2h,
+      stegring,
+      magreaktion: t.magreaktion,
+      betyg: t.betyg,
+      notering: t.notering,
+    });
+  }
+}
+poster.sort((a, b) => b.datum.localeCompare(a.datum));
+
+const medGlukos = poster.filter((p) => typeof p.stegring === 'number');
+const allaStegringar = medGlukos.map((p) => p.stegring as number);
+const snittStegring = allaStegringar.length
+  ? Math.round((allaStegringar.reduce((a, b) => a + b, 0) / allaStegringar.length) * 10) / 10
+  : null;
+const maxStegring = allaStegringar.length ? Math.max(...allaStegringar) : null;
+const minStegring = allaStegringar.length ? Math.min(...allaStegringar) : null;
+
+// Stats per modul
+const perModul = new Map<string, number[]>();
+for (const p of medGlukos) {
+  if (!perModul.has(p.modul)) perModul.set(p.modul, []);
+  perModul.get(p.modul)!.push(p.stegring as number);
+}
+const modulStats = Array.from(perModul.entries())
+  .map(([modul, vals]) => ({
+    modul,
+    antal: vals.length,
+    snitt: Math.round((vals.reduce((a, b) => a + b, 0) / vals.length) * 10) / 10,
+    max: Math.max(...vals),
+  }))
+  .sort((a, b) => b.snitt - a.snitt);
+
+// Värsta 5 (högst stegring)
+const varsta = [...medGlukos].sort((a, b) => (b.stegring as number) - (a.stegring as number)).slice(0, 5);
+// Bästa 5 (lägst stegring)
+const basta = [...medGlukos].sort((a, b) => (a.stegring as number) - (b.stegring as number)).slice(0, 5);
+
+const stegringFarg = (s: number) => {
+  if (s <= 1) return 'text-emerald-700';
+  if (s <= 2) return 'text-amber-700';
+  return 'text-red-700';
+};
+---
+
+<BaseLayout titel="Glukos-uppföljning">
+  <h1 class="mb-2 text-2xl">Glukos-uppföljning</h1>
+  <p class="mb-4 text-sm text-bas-700">
+    {poster.length} loggade måltider · {medGlukos.length} med både före- och 2h-värde
+    {snittStegring !== null && (
+      <span> · snittstegring <strong class={stegringFarg(snittStegring)}>{snittStegring} mmol/L</strong></span>
+    )}
+  </p>
+
+  {medGlukos.length > 0 && (
+    <section class="mb-6">
+      <h2 class="mb-2 text-lg">Stats</h2>
+      <div class="grid grid-cols-2 gap-2 text-sm sm:grid-cols-4">
+        <div class="kort">
+          <span class="block text-xs text-bas-600">Antal med glukos</span>
+          <span class="text-lg font-semibold">{medGlukos.length}</span>
+        </div>
+        <div class="kort">
+          <span class="block text-xs text-bas-600">Snittstegring</span>
+          <span class={`text-lg font-semibold ${stegringFarg(snittStegring ?? 0)}`}>
+            {snittStegring} mmol/L
+          </span>
+        </div>
+        <div class="kort">
+          <span class="block text-xs text-bas-600">Lägsta</span>
+          <span class={`text-lg font-semibold ${stegringFarg(minStegring ?? 0)}`}>{minStegring}</span>
+        </div>
+        <div class="kort">
+          <span class="block text-xs text-bas-600">Högsta</span>
+          <span class={`text-lg font-semibold ${stegringFarg(maxStegring ?? 0)}`}>{maxStegring}</span>
+        </div>
+      </div>
+    </section>
+  )}
+
+  {modulStats.length > 0 && (
+    <section class="mb-6">
+      <h2 class="mb-2 text-lg">Per modul</h2>
+      <ul class="space-y-1 text-sm">
+        {modulStats.map((m) => (
+          <li class="flex items-center justify-between rounded-md bg-white px-3 py-2 border border-bas-200">
+            <span class="font-medium">{m.modul}</span>
+            <span class="flex gap-3 text-xs text-bas-700">
+              <span>{m.antal} test</span>
+              <span class={`font-semibold ${stegringFarg(m.snitt)}`}>snitt {m.snitt}</span>
+              <span class={stegringFarg(m.max)}>max {m.max}</span>
+            </span>
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
+
+  {varsta.length > 0 && (
+    <section class="mb-6">
+      <h2 class="mb-2 text-lg">Värst (störst stegring)</h2>
+      <ul class="space-y-1 text-sm">
+        {varsta.map((p) => (
+          <li class="flex items-center justify-between rounded-md bg-white px-3 py-2 border border-bas-200">
+            <a href={`/recept/${p.recept_slug}`} class="font-medium no-underline hover:underline">{p.recept_namn}</a>
+            <span class={`text-sm font-semibold ${stegringFarg(p.stegring as number)}`}>+{p.stegring} mmol/L</span>
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
+
+  {basta.length > 0 && (
+    <section class="mb-6">
+      <h2 class="mb-2 text-lg">Bäst (minst stegring)</h2>
+      <ul class="space-y-1 text-sm">
+        {basta.map((p) => (
+          <li class="flex items-center justify-between rounded-md bg-white px-3 py-2 border border-bas-200">
+            <a href={`/recept/${p.recept_slug}`} class="font-medium no-underline hover:underline">{p.recept_namn}</a>
+            <span class={`text-sm font-semibold ${stegringFarg(p.stegring as number)}`}>+{p.stegring} mmol/L</span>
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
+
+  <section class="mb-6">
+    <h2 class="mb-2 text-lg">Alla loggade måltider</h2>
+    {poster.length === 0 && (
+      <p class="text-sm text-bas-700">
+        Inga loggade tester än. Öppna ett recept och använd <em>Logga ny testning</em> för att börja.
+      </p>
+    )}
+    <ul class="space-y-2 text-sm">
+      {poster.map((p) => (
+        <li class="kort">
+          <header class="flex flex-wrap items-center gap-2 text-xs text-bas-700">
+            <span class="font-mono">{p.datum}</span>
+            <span class="modul-tagg bg-bas-200 text-bas-800">{p.modul}</span>
+            <a href={`/recept/${p.recept_slug}`} class="font-semibold text-bas-800 no-underline hover:underline">
+              {p.recept_namn}
+            </a>
+          </header>
+          <div class="mt-1 flex flex-wrap items-center gap-3">
+            {typeof p.stegring === 'number' && (
+              <span class={`font-semibold ${stegringFarg(p.stegring)}`}>
+                {p.glukos_fore} → {p.glukos_topp_2h} mmol/L (+{p.stegring})
+              </span>
+            )}
+            {typeof p.betyg === 'number' && (
+              <span>{'★'.repeat(p.betyg)}{'☆'.repeat(5 - p.betyg)}</span>
+            )}
+            {p.magreaktion && <span class="text-bas-700">mage: {p.magreaktion}</span>}
+          </div>
+          {p.notering && <p class="mt-1 text-bas-800">{p.notering}</p>}
+        </li>
+      ))}
+    </ul>
+  </section>
+</BaseLayout>

@@ -11,6 +11,7 @@ const PUBLIC_BILDER = join(ROT, 'public', 'bilder');
 const MODULER = [
   'baser', 'proteiner', 'saser', 'tillbehor', 'soppor', 'middagar',
   'snacks', 'drycker', 'efterratter', 'forratter', 'brod',
+  'frukost', 'sallader', 'forrad', 'grill', 'glass', 'festmat',
 ];
 
 let kopierade = 0;

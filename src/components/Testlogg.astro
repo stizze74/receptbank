@@ -17,7 +17,13 @@ type AnyRecept =
 
   | CollectionEntry<'forratter'>
 
-  | CollectionEntry<'brod'>;
+  | CollectionEntry<'brod'>
+  | CollectionEntry<'frukost'>
+  | CollectionEntry<'sallader'>
+  | CollectionEntry<'forrad'>
+  | CollectionEntry<'grill'>
+  | CollectionEntry<'glass'>
+  | CollectionEntry<'festmat'>;
 
 interface Props {
   recept: AnyRecept;
@@ -93,13 +99,17 @@ const sortLogg = [...(d.testlogg ?? [])].sort((a, b) => {
         <span>Notering</span>
         <textarea id="tl-not" rows="2" class="col-span-2 rounded-md border border-bas-300 px-2 py-1"></textarea>
       </label>
-      <div class="flex gap-2">
-        <button type="button" id="tl-generera" class="knapp-primar">Generera markdown</button>
-        <button type="button" id="tl-kopiera" class="knapp-sekundar">Kopiera</button>
+      <div class="flex flex-wrap gap-2">
+        <button type="button" id="tl-spara" data-slug={recept.id} class="knapp-primar">Spara direkt</button>
+        <button type="button" id="tl-generera" class="knapp-sekundar text-xs">Visa markdown</button>
+        <button type="button" id="tl-kopiera" class="knapp-sekundar text-xs">Kopiera markdown</button>
       </div>
+      <p id="tl-status" class="mt-2 text-xs text-bas-700"></p>
       <pre id="tl-output" class="mt-2 hidden whitespace-pre-wrap rounded-md bg-bas-100 p-2 text-xs"></pre>
       <p class="text-xs text-bas-700">
-        Klistra in genererad YAML i <code>testlogg:</code>-sektionen i receptets <code>.md</code>-fil.
+        "Spara direkt" skickar testet till servern (basic auth — samma lösen som
+        bilduploaden) och commitar omedelbart. Markdown-knapparna är fallback om
+        du behöver klistra in manuellt.
       </p>
     </form>
   </details>
@@ -143,6 +153,56 @@ const sortLogg = [...(d.testlogg ?? [])].sort((a, b) => {
       setTimeout(() => (btn.textContent = orig), 1500);
     } catch (e) {
       alert('Kopiera misslyckades — välj texten manuellt.');
+    }
+  });
+
+  // Direkt-submit till MCP /testlogg
+  const sparaBtn = $<HTMLButtonElement>('tl-spara');
+  const tlStatus = $('tl-status');
+  sparaBtn?.addEventListener('click', async () => {
+    const slug = sparaBtn.dataset.slug;
+    if (!slug) return;
+    const v = (id: string) => ($<HTMLInputElement>(id)?.value ?? '').trim();
+    const post: Record<string, unknown> = { datum: v('tl-datum') || today };
+    const fore = v('tl-fore');
+    const topp = v('tl-topp');
+    const mage = v('tl-mage');
+    const betyg = v('tl-betyg');
+    const not = ($<HTMLTextAreaElement>('tl-not')?.value ?? '').trim();
+    if (fore) post.glukos_fore = Number(fore);
+    if (topp) post.glukos_topp_2h = Number(topp);
+    if (mage) post.magreaktion = mage;
+    if (betyg) post.betyg = Number(betyg);
+    if (not) post.notering = not;
+
+    sparaBtn.disabled = true;
+    if (tlStatus) tlStatus.textContent = 'Skickar…';
+    try {
+      const resp = await fetch('https://mcp-recept.hjerne.net/testlogg', {
+        method: 'POST',
+        credentials: 'include',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ slug, post }),
+      });
+      if (resp.status === 401) {
+        if (tlStatus) tlStatus.textContent = 'Lösenord avvisades.';
+        return;
+      }
+      if (!resp.ok) {
+        if (tlStatus) tlStatus.textContent = `Fel ${resp.status}.`;
+        return;
+      }
+      const data = await resp.json();
+      if (data.error) {
+        if (tlStatus) tlStatus.textContent = `Fel: ${data.error}`;
+        return;
+      }
+      if (tlStatus) tlStatus.textContent = 'Sparat ✓ Sajten byggs om (~30 sek). Reloadar…';
+      setTimeout(() => location.reload(), 35_000);
+    } catch (e) {
+      if (tlStatus) tlStatus.textContent = `Fel: ${(e as Error).message}`;
+    } finally {
+      sparaBtn.disabled = false;
     }
   });
 </script>

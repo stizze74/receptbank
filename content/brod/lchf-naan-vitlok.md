@@ -44,13 +44,12 @@ ingredienser:
     vara: smält smör
   - mangd: 1
     enhet: tsk
-    vara: nyån vitlökspulver
+    vara: vitlökspulver
   - vara: extra smör till stekning
   - mangd: 1
     enhet: msk
-    vara: färsk koriander
-    notering: 'valfritt, på servering'
-  - vara: 'OBS: byt koriander mot persilja eller mynta'
+    vara: 'färsk persilja eller mynta, hackad'
+    notering: på servering
 tillagning:
   - namn: Blanda torrt
     text: >-
@@ -60,7 +59,7 @@ tillagning:
     text: 'Vispa yoghurt, ägg och smält smör.'
   - namn: Förena
     text: >-
-      Vinda samman till en len, klabbig deg. Låt stå 8 min så psylliumen suger
+      Rör samman till en len, klibbig deg. Låt stå 8 min så psylliumen suger
       vätska och degen blir stadig.
     timer_min: 8
   - namn: Forma
@@ -75,13 +74,15 @@ tillagning:
     timer_min: 8
   - namn: Servera
     text: >-
-      Pensla med extra smör och strö över persilja eller mynta. Servera direkt
-      med curry eller dippsaser.
+      Pensla med extra smör och strö över färsk persilja eller mynta. Servera
+      direkt med curry eller dippsaser.
 tips:
   - >-
     Perfekt till butter chicken, tikka masala, vindaloo — alla indiska
     curryrätter som redan finns i banken.
-  - 'OBS: använd ALDRIG koriander — byt mot persilja, mynta eller thaibasilika.'
+  - >-
+    Klassisk indisk naan har koriander — men vi byter alltid mot persilja eller
+    mynta för Stefans smakprofil.
   - Fryser bra — värm i torr stekpanna eller ugn.
   - 'Variera: tillsätt 1 msk pressad vitlök direkt i degen för mer smak.'
 testlogg: []

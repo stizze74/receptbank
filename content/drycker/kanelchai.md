@@ -14,7 +14,7 @@ forvantad_glukospaverkan: mycket-lag
 taggar: ["te", "krydda", "varm"]
 ingredienser:
   - { mangd: 2, enhet: "st", vara: "tepåsar svart te" }
-  - { mangd: 1, enhet: "kanel-pinne" }
+  - { mangd: 1, enhet: "st", vara: "kanel-pinne" }
   - { mangd: 4, enhet: "st", vara: "kardemumma-kapslar" }
   - { mangd: 4, enhet: "st", vara: "kryddnejlikor" }
   - { mangd: 2, enhet: "cm", vara: "färsk ingefära" }

@@ -17,7 +17,7 @@ ingredienser:
   - { mangd: 400, enhet: "g", vara: "oxstek tunt skivad" }
   - { mangd: 6, enhet: "dl", vara: "kötbuljong" }
   - { mangd: 4, enhet: "st", vara: "stjärnanis" }
-  - { mangd: 1, enhet: "kanel-pinne" }
+  - { mangd: 1, enhet: "st", vara: "kanel-pinne" }
   - { mangd: 1, enhet: "msk", vara: "rivet ingefära" }
   - { mangd: 2, enhet: "msk", vara: "fisksås" }
   - { mangd: 200, enhet: "g", vara: "shirataki-nudlar", notering: "optional" }

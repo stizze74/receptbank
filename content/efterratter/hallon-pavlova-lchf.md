@@ -43,15 +43,15 @@ ingredienser:
     vara: rivet citronskal
 tillagning:
   - namn: Förvärm ugn
-    text: Sätt ugnen på 110°C. Klä plat med bakplats.
+    text: Sätt ugnen på 110°C. Klä plåt med bakplåtspapper.
   - namn: Vispa äggvitor
     text: >-
-      Vispa äggvitor med nypa salt till hårda toppar. Tillsätt erytritol latt
-      och latt under fortsatt vispning, sedan vinäger och vanilj. Vispa till
+      Vispa äggvitor med nypa salt till hårda toppar. Tillsätt erytritol lätt
+      och lätt under fortsatt vispning, sedan vinäger och vanilj. Vispa till
       glatt och blank.
   - namn: Forma
     text: >-
-      Forma till en stor disk (~22 cm diameter) på plat. Gröp ur mitten lite för
+      Forma till en stor disk (~22 cm diameter) på plåt. Gröp ur mitten lite för
       att kunna fylla.
   - namn: Baka
     text: Baka 90 min. Stäng av ugn och låt pavlovan svalna i ugnen.

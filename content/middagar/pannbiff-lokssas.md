@@ -62,7 +62,7 @@ tillagning:
   - namn: Stek lök
     text: >-
       Smält halva smöret. Stek löken på medel-låg värme 8 min tills mjuk och
-      latt karamelliserad. Lägg åt sidan.
+      lätt karamelliserad. Lägg åt sidan.
     timer_min: 8
   - namn: Stek biffar
     text: >-
@@ -72,7 +72,7 @@ tillagning:
   - namn: Gör sås
     text: >-
       Avsläck pannan med buljong, koka in 2 min. Tillsätt grädde, soja och
-      dijonsenap. Sjud 5 min. Tillsätt löken tillbaka och vinda samman.
+      dijonsenap. Sjud 5 min. Tillsätt löken tillbaka och vänd samman.
     timer_min: 7
   - namn: Servera
     text: >-

@@ -49,7 +49,7 @@ tillagning:
     text: Häll över olivolja så vitlöken täcks helt — viktigt!
   - namn: Confit
     text: >-
-      Lagg in i ugnen. Confit 50–60 min tills vitlöken är mjuk och guld-gul. Den
+      Lägg in i ugnen. Confit 50–60 min tills vitlöken är mjuk och guld-gul. Den
       ska inte brännas.
     timer_min: 55
   - namn: Svalna
@@ -59,7 +59,7 @@ tillagning:
 tips:
   - 'Håller 2 veckor i kyl, täckt av olja.'
   - >-
-    Användningsområden: mosa på bröd som smör-ersättning, vinda i
+    Användningsområden: mosa på bröd som smör-ersättning, vänd i
     såser/dressings, på grillat kött, eller bara mos och blanda med yoghurt för
     dipp.
   - >-

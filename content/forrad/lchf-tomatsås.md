@@ -24,6 +24,9 @@ tillagning:
   - "Stek lök 5 min."
   - "Tomater + kryddor, sjud 20 min."
 testlogg: []
+bild: "lchf-tomatsås.jpg"
+bild_alt: "AI-bild: LCHF-tomatsås på burk"
+bild_ai: true
 ---
 
 Bas-sås för pizza/pasta. Frys i portioner.

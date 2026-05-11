@@ -65,6 +65,9 @@ tips:
     konserveringssatt.
   - Det smaks aturade ankfettet är en guldgruva — använd som stekfett.
 testlogg: []
+bild: "andconfit.jpg"
+bild_alt: "AI-bild: Andconfit (anklar i fett)"
+bild_ai: true
 ---
 
 

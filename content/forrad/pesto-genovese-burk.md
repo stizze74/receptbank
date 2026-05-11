@@ -23,6 +23,9 @@ tillagning:
   - "Mixa allt."
   - "Burk, täck med olja för längre hållbarhet."
 testlogg: []
+bild: "pesto-genovese-burk.jpg"
+bild_alt: "AI-bild: Pesto på burk"
+bild_ai: true
 ---
 
 Klassisk pesto. 1 vecka i kyl.

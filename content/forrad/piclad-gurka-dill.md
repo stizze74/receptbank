@@ -23,6 +23,9 @@ tillagning:
   - "Salta gurkan, vila 10 min, skölj."
   - "Värm lag, häll över, dill, kyl."
 testlogg: []
+bild: "piclad-gurka-dill.jpg"
+bild_alt: "AI-bild: Picklad gurka med dill"
+bild_ai: true
 ---
 
 Klassisk svensk pressgurka.

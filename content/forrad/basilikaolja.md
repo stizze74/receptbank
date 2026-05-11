@@ -63,6 +63,9 @@ tips:
     Variera med koriander — eller VENT, byt mot persilja eller mynta för Stefans
     smak. Persilja-olja blir grovare smak.
 testlogg: []
+bild: "basilikaolja.jpg"
+bild_alt: "AI-bild: Basilikaolja"
+bild_ai: true
 ---
 
 

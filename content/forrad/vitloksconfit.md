@@ -67,6 +67,9 @@ tips:
     stekfett.
   - 'Funkar lika bra med näst an vilken ört som helst: salvia, oregano, basilika.'
 testlogg: []
+bild: "vitloksconfit.jpg"
+bild_alt: "AI-bild: Vitlöksconfit"
+bild_ai: true
 ---
 
 

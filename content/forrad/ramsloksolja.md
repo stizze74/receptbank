@@ -45,6 +45,9 @@ tips:
   - Ramslökssasong är april–maj — gör en stor sats och fryser i is-kuber.
   - 'Drizzla över fisk, äggrätter, soppor eller på bröd med smör.'
 testlogg: []
+bild: "ramsloksolja.jpg"
+bild_alt: "AI-bild: Ramslöksolja"
+bild_ai: true
 ---
 
 

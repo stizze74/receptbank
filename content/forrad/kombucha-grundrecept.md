@@ -23,6 +23,9 @@ tillagning:
   - "I burk: te + SCOBY + starter."
   - "Täck med papper, jäs 7–14 dagar."
 testlogg: []
+bild: "kombucha-grundrecept.jpg"
+bild_alt: "AI-bild: Kombucha (LCHF-anpassad)"
+bild_ai: true
 ---
 
 Fermenterat. Slut-fermentering äter upp sukrin-restkh.

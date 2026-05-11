@@ -53,6 +53,9 @@ tips:
     Funkar lika bra med björnbär eller blåbär — båtar björnbär till lite
     färg+textur.
 testlogg: []
+bild: "hallonmarmelad-lchf-chia.jpg"
+bild_alt: "AI-bild: Hallonmarmelad LCHF (chia-baserad)"
+bild_ai: true
 ---
 
 

@@ -21,6 +21,9 @@ tillagning:
   - "Värm allt försiktigt 60°C, 10 min."
   - "Sila ev, fyll burk."
 testlogg: []
+bild: "olja-vitlok-rosmarin.jpg"
+bild_alt: "AI-bild: Vitlöks-rosmarin-olja"
+bild_ai: true
 ---
 
 Smaksatt olja. 1 mån i kyl.

@@ -23,6 +23,9 @@ tillagning:
   - "Lägg paprika i burk."
   - "Koka lag, häll över, vila 1 vecka."
 testlogg: []
+bild: "piclad-paprika-syrlig.jpg"
+bild_alt: "AI-bild: Picklad paprika, syrlig"
+bild_ai: true
 ---
 
 Italiensk-spansk klassiker.

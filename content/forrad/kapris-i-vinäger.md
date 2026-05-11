@@ -20,6 +20,9 @@ tillagning:
   - "Lägg kapris i burk."
   - "Häll vinäger över, salta."
 testlogg: []
+bild: "kapris-i-vinäger.jpg"
+bild_alt: "AI-bild: Kapris i vinäger"
+bild_ai: true
 ---
 
 Hemmagjord. Bättre än köpta.

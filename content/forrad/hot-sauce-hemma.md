@@ -64,6 +64,9 @@ tips:
     1 portion = 1 msk — använd som tabasco-ersättning, på ägg, marinader, dippsa
     ser.
 testlogg: []
+bild: "hot-sauce-hemma.jpg"
+bild_alt: "AI-bild: Hot sauce hemma (chili-vitlök)"
+bild_ai: true
 ---
 
 

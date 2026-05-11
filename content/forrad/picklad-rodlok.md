@@ -24,6 +24,9 @@ tillagning:
   - "Värm vinäger, vatten, salt, erytritol."
   - "Häll över, vila 30 min."
 testlogg: []
+bild: "picklad-rodlok.jpg"
+bild_alt: "AI-bild: Picklad rödlök"
+bild_ai: true
 ---
 
 Håller 3 veckor.

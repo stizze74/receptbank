@@ -22,6 +22,9 @@ tillagning:
   - "Häll i smör i tunn stråle."
   - "Burk, kyl 1 vecka."
 testlogg: []
+bild: "bea-konfekt-keto.jpg"
+bild_alt: "AI-bild: Bea-konfekt på burk"
+bild_ai: true
 ---
 
 Hemmagjord bea i lager.

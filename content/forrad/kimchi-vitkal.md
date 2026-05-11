@@ -25,6 +25,9 @@ tillagning:
   - "Massera in i kålen."
   - "Burk, vila i rumstemp 2–5 dagar, sen kyl."
 testlogg: []
+bild: "kimchi-vitkal.jpg"
+bild_alt: "AI-bild: Hemmagjord kimchi (vitkål)"
+bild_ai: true
 ---
 
 Fermenterad korean klassiker. Håller 2 mån i kyl.

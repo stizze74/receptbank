@@ -45,16 +45,16 @@ tillagning:
     text: 'Salta, peppra fisken. Vänd lätt i mandelmjöl — inte tjockt lager.'
   - namn: Stek
     text: >-
-      Smält smör i panna tills latt brunt (beurre noisette). Stek fisken 2 min
+      Smält smör i panna tills lätt brunt (beurre noisette). Stek fisken 2 min
       per sida.
     timer_min: 5
   - namn: Avsluta
-    text: Tillsätt citron och kapris i pannan. Vinda runt. Toppa med persilja.
+    text: Tillsätt citron och kapris i pannan. Vänd runt. Toppa med persilja.
   - namn: Servera
     text: Direkt med ringlad smörsås över. Bra med smorstekt sparris eller spenat.
 tips:
   - >-
-    Klassisk fransk meunière-teknik — smöret ska bli latt nötigt (brunt) för
+    Klassisk fransk meunière-teknik — smöret ska bli lätt nötigt (brunt) för
     autentisk smak.
   - Funkar lika bra med rödspatta eller annan tunn vit fisk.
 testlogg: []

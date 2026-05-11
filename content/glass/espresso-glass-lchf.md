@@ -51,7 +51,7 @@ tillagning:
       instantkaffe.
   - namn: Gör röra
     text: >-
-      Vispa äggulor med erytritol till tjockt och latt. Rör in lite kaffegrädde
+      Vispa äggulor med erytritol till tjockt och lätt. Rör in lite kaffegrädde
       i äggulorna för att jamna temperatur, sen häll allt tillbaka i kastrullen.
   - namn: Tjocka
     text: >-

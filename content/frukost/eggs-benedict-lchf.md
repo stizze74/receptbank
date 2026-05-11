@@ -43,7 +43,7 @@ ingredienser:
   - vara: 'salt, svartpeppar'
 tillagning:
   - namn: Förber bröd
-    text: Dela bagels/frallor och rosta latt. Värm hollandaise i vattenbad om kall.
+    text: Dela bagels/frallor och rosta lätt. Värm hollandaise i vattenbad om kall.
   - namn: Värm skinka
     text: Stek skinkan i torr stekpanna 30 sek per sida bara för att värma.
   - namn: Pochera ägg

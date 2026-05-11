@@ -63,6 +63,9 @@ tips:
   - Håller 2 veckor i kyl täckt av lag.
   - 'Funkar på smörgåsar, charkbrickor, sallader.'
 testlogg: []
+bild: "picklad-zucchini.jpg"
+bild_alt: "AI-bild: Picklad zucchini"
+bild_ai: true
 ---
 
 

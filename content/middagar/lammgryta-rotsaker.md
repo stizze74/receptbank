@@ -83,6 +83,9 @@ tips:
     Jessica-tagg byt-protein: Jessica kan ta vegetarisk variant med svamp eller
     kikartstub i samma sås (Stefan undviker svamp men det är OK för Jessica).
 testlogg: []
+bild: "lammgryta-rotsaker.jpg"
+bild_alt: "AI-bild: Lammgryta med rotsaker"
+bild_ai: true
 ---
 
 

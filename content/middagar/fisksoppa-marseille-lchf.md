@@ -92,6 +92,9 @@ tips:
     använder bara grädde och fond för kropp.
   - 'OBS: använder ALDRIG blåmusslor (Stefans undantag). Pilgrimsmusslor är OK.'
 testlogg: []
+bild: "fisksoppa-marseille-lchf.jpg"
+bild_alt: "AI-bild: Krämig fisksoppa Marseille-stil (LCHF-bouillabaisse)"
+bild_ai: true
 ---
 
 

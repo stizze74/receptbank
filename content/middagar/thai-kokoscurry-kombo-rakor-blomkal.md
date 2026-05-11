@@ -89,6 +89,9 @@ tips:
     mättande tack vare kokosfett.
   - Funkar lika bra med tofu för Jessica om hon vill ha mer protein.
 testlogg: []
+bild: "thai-kokoscurry-kombo-rakor-blomkal.jpg"
+bild_alt: "AI-bild: Thai-kokoscurry (Stefan räkor, Jessica blomkål)"
+bild_ai: true
 ---
 
 

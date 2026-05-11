@@ -81,6 +81,9 @@ tips:
   - Klassisk svensk köttbulle utan stött skorpa — mandelmjöl ger samma bindning.
   - Lingonsylt utan socker (Felix sockerf ri) eller hemmagjord med erytritol.
 testlogg: []
+bild: "kottbullar-graddesas-husmans.jpg"
+bild_alt: "AI-bild: Köttbullar med gräddsa s (klassisk husmans)"
+bild_ai: true
 ---
 
 

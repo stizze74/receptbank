@@ -96,6 +96,9 @@ tips:
   - Salladsbladen ersätter tortillas — utmärkt LCHF-version av street-tacos.
   - Båda varianter funkar lika bra — en heteren afton kan ni byta.
 testlogg: []
+bild: "tex-mex-tacos-salladsblad-kombo.jpg"
+bild_alt: "AI-bild: Tex-mex tacos i salladsblad (Stefan nötfärs, Jessica halloumi)"
+bild_ai: true
 ---
 
 

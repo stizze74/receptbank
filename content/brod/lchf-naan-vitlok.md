@@ -86,6 +86,9 @@ tips:
   - Fryser bra — värm i torr stekpanna eller ugn.
   - 'Variera: tillsätt 1 msk pressad vitlök direkt i degen för mer smak.'
 testlogg: []
+bild: "lchf-naan-vitlok.jpg"
+bild_alt: "AI-bild: LCHF-naan med vitlök"
+bild_ai: true
 ---
 
 

@@ -79,6 +79,9 @@ tips:
   - Klassisk fransk dijon-grad d-sa s — funkar på i princip allt.
   - Båda varianter är utmärkta — sa sen är huvudpersonen.
 testlogg: []
+bild: "kremig-dijon-sas-kombo.jpg"
+bild_alt: "AI-bild: Krämig dijon-sa s (Stefan kyckling, Jessica halloumi)"
+bild_ai: true
 ---
 
 

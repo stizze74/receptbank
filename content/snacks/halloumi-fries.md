@@ -52,6 +52,9 @@ tips:
   - 'Bra som snack, sida till hamburgare eller förrätt.'
   - Salta inte — halloumi är redan väldigt salt.
 testlogg: []
+bild: "halloumi-fries.jpg"
+bild_alt: "AI-bild: Halloumi-fries"
+bild_ai: true
 ---
 
 

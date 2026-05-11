@@ -55,6 +55,9 @@ tips:
     lakrits-extrakt.
   - Toppa med lite extra flingsalt och lakritsraspel.
 testlogg: []
+bild: "lakritsglass-lchf.jpg"
+bild_alt: "AI-bild: Lakritsglass LCHF"
+bild_ai: true
 ---
 
 

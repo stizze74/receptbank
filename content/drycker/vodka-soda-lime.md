@@ -20,6 +20,9 @@ ingredienser:
 tillagning:
   - "Glas med is, vodka, sodavatten, pressad lime."
 testlogg: []
+bild: "vodka-soda-lime.jpg"
+bild_alt: "AI-bild: Vodka soda med lime"
+bild_ai: true
 ---
 
 Cleanaste cocktail. 0g kh, ren bubbel.

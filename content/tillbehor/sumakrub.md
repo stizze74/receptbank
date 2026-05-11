@@ -60,6 +60,9 @@ tips:
   - Sumak ger surhet utan citron — unikt mellanostern-grepp.
   - Håller 6 månader i lufttat burk.
 testlogg: []
+bild: "sumakrub.jpg"
+bild_alt: "AI-bild: Sumakrub (mellanostern-krydda)"
+bild_ai: true
 ---
 
 

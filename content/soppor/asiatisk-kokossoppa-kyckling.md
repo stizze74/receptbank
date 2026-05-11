@@ -71,6 +71,9 @@ tips:
     utmärkt.
   - Variera med räkor istället för kyckling.
 testlogg: []
+bild: "asiatisk-kokossoppa-kyckling.jpg"
+bild_alt: "AI-bild: Asiatisk kokossoppa med kyckling"
+bild_ai: true
 ---
 
 

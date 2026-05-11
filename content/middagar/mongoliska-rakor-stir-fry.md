@@ -76,6 +76,9 @@ tips:
   - Mongolisk-stil betyder söt-salt-glaze — erytritol ger sötman utan kh.
   - Stekpannan måste vara mycket het för riktig stir-fry-effekt.
 testlogg: []
+bild: "mongoliska-rakor-stir-fry.jpg"
+bild_alt: "AI-bild: Mongoliska räkor (stir-fry)"
+bild_ai: true
 ---
 
 

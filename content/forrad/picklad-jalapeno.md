@@ -77,6 +77,9 @@ tips:
     Variera med Habanero eller Scotch Bonnet om du vill ha riktigt värme —
     mycket mindre mängd.
 testlogg: []
+bild: "picklad-jalapeno.jpg"
+bild_alt: "AI-bild: Picklad jalapeño (hett)"
+bild_ai: true
 ---
 
 

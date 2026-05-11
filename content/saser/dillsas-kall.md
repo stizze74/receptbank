@@ -47,6 +47,9 @@ tips:
     Gör mer senap-tjock genom att stöta i ett par msk rörsockerersattning
     (erytritol) för en hovmästarsas-stil.
 testlogg: []
+bild: "dillsas-kall.jpg"
+bild_alt: "AI-bild: Dillsås kall (till lax och fisk)"
+bild_ai: true
 ---
 
 

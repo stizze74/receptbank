@@ -73,6 +73,9 @@ tips:
     samma textur.
   - 'Bäst dagen efter, smaker mögnar.'
 testlogg: []
+bild: "sjomansbiff-lchf.jpg"
+bild_alt: "AI-bild: Sjömansbiff LCHF (utan potatis)"
+bild_ai: true
 ---
 
 

@@ -48,6 +48,9 @@ tips:
     tomatpuré + erytritol.
   - Perfekt till klassisk räkcocktail eller som dippsås till halloumi-fries.
 testlogg: []
+bild: "cocktailsas-lchf.jpg"
+bild_alt: "AI-bild: Cocktailsås LCHF (rod räksås)"
+bild_ai: true
 ---
 
 

@@ -71,6 +71,9 @@ tips:
   - Klassisk svensk augusti-kräftskiva.
   - Smörstek lite extra dill i smör för en dippsås om du vill.
 testlogg: []
+bild: "saltvattenskraftor-dill.jpg"
+bild_alt: "AI-bild: Saltvattenkräftor i dill"
+bild_ai: true
 ---
 
 

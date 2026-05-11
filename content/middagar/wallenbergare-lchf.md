@@ -77,6 +77,9 @@ tips:
     Porkrinds (skinkpuffar) ersätter äkta stortskorpa — finns på ICA/Coop i
     hetlsosfodel.
 testlogg: []
+bild: "wallenbergare-lchf.jpg"
+bild_alt: "AI-bild: Wallenbergare med smortstekta bräckta gurkor"
+bild_ai: true
 ---
 
 

@@ -62,6 +62,9 @@ tips:
     Vinbärsgele med erytritol från Sukrin eller hemmagjord LCHF-variant. Skippa
     annars helt om du vill hålla kh-halten extra låg.
 testlogg: []
+bild: "hjortfile-rodvinssas.jpg"
+bild_alt: "AI-bild: Hjortfile med rödvinssås"
+bild_ai: true
 ---
 
 

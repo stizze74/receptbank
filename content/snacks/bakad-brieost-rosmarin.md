@@ -49,6 +49,9 @@ tips:
   - Brieost är mild — ingen av Stefans "starka ostar".
   - Variera med pekannötter och en droppe erytritol-honung ovanpå.
 testlogg: []
+bild: "bakad-brieost-rosmarin.jpg"
+bild_alt: "AI-bild: Bakad Brieost med rosmarin"
+bild_ai: true
 ---
 
 

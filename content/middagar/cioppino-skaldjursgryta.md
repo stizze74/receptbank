@@ -94,6 +94,9 @@ tips:
     Funkar med vilken kombination av färsk fisk och skaldjur du har — mer är
     bättre.
 testlogg: []
+bild: "cioppino-skaldjursgryta.jpg"
+bild_alt: "AI-bild: Cioppino (italiensk skaldjursgryta)"
+bild_ai: true
 ---
 
 

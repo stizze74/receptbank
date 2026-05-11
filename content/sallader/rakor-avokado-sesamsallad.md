@@ -62,6 +62,9 @@ tips:
   - Mynta för asiatisk färskhet (i stället för koriander).
   - Variera med stora grillade räkor för festmiddag.
 testlogg: []
+bild: "rakor-avokado-sesamsallad.jpg"
+bild_alt: "AI-bild: Räkor och avokado sesamsallad"
+bild_ai: true
 ---
 
 

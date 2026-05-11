@@ -62,6 +62,9 @@ tips:
     (erytritol).
   - Funkar lika bra som förrätt eller som del av kall buffe.
 testlogg: []
+bild: "julbord-gravad-lax-dilltartsas.jpg"
+bild_alt: "AI-bild: Julbord: gravad lax med dilltartsa s"
+bild_ai: true
 ---
 
 

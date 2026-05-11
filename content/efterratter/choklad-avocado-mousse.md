@@ -22,6 +22,9 @@ tillagning:
   - "Mixa allt slätt i blender."
   - "Kyl 30 min."
 testlogg: []
+bild: "choklad-avocado-mousse.jpg"
+bild_alt: "AI-bild: Avokado-chokladmousse"
+bild_ai: true
 ---
 
 Snabb mousse. Avokado smakas inte alls.

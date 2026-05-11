@@ -72,6 +72,9 @@ tips:
   - Klassisk mellanostern-brunch — perfekt på helger.
   - Variera med 1 röd paprika i strimlor för mer kropp.
 testlogg: []
+bild: "shakshuka-lchf.jpg"
+bild_alt: "AI-bild: Shakshuka LCHF (skinka- och tomatgryta med ägg)"
+bild_ai: true
 ---
 
 

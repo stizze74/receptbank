@@ -24,7 +24,7 @@ ingredienser:
     vara: vatten
   - mangd: 4
     enhet: st
-    vara: tepasar
+    vara: tepåsar
     notering: svart te eller assam
   - mangd: 2
     enhet: tsk

@@ -97,6 +97,9 @@ tips:
     vidare. Mer smak.
   - En klick crème fraîche och dill i tallriken är inte valfritt.
 testlogg: []
+bild: "raksoppa.jpg"
+bild_alt: "AI-bild: Räksoppa"
+bild_ai: true
 ---
 
 Krämig och rik räksoppa med tomatpaprika-bas. På Stefans gränsmängd kh per portion — bevaka första gången.

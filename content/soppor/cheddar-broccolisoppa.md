@@ -23,6 +23,9 @@ tillagning:
   - "Mixa."
   - "Vänd ner grädde + ost + smör. Värm igen."
 testlogg: []
+bild: "cheddar-broccolisoppa.jpg"
+bild_alt: "AI-bild: Cheddar-broccolisoppa"
+bild_ai: true
 ---
 
 Amerikansk klassiker.

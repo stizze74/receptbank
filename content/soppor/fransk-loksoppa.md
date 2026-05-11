@@ -24,6 +24,9 @@ tillagning:
   - "Vin + buljong + timjan, sjud 15 min."
   - "Riv ost över, gratinera 5 min."
 testlogg: []
+bild: "fransk-loksoppa.jpg"
+bild_alt: "AI-bild: Fransk löksoppa LCHF"
+bild_ai: true
 ---
 
 Fransk klassiker.

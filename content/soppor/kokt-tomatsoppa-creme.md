@@ -24,6 +24,9 @@ tillagning:
   - { namn: "Tomater", text: "Sjud 15 min.", timer_min: 15 }
   - "Mixa, vänd ner crème fraîche, basilika."
 testlogg: []
+bild: "kokt-tomatsoppa-creme.jpg"
+bild_alt: "AI-bild: Tomatsoppa med crème fraîche"
+bild_ai: true
 ---
 
 Klassisk tomatsoppa.

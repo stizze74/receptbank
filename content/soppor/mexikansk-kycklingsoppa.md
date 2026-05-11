@@ -26,6 +26,9 @@ tillagning:
   - { namn: "Sjud", text: "Buljong, 20 min.", timer_min: 20 }
   - "Lägg avokado i tallrik, häll på soppa."
 testlogg: []
+bild: "mexikansk-kycklingsoppa.jpg"
+bild_alt: "AI-bild: Mexikansk kycklingsoppa (LCHF)"
+bild_ai: true
 ---
 
 Sopa de pollo.

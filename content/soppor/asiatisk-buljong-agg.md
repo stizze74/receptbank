@@ -24,6 +24,9 @@ tillagning:
   - { namn: "Pochera ägg", text: "3 min.", timer_min: 3 }
   - "Salladslök, sesamolja."
 testlogg: []
+bild: "asiatisk-buljong-agg.jpg"
+bild_alt: "AI-bild: Asiatisk buljong med pocherade ägg"
+bild_ai: true
 ---
 
 Snabb asiatisk lunch-soppa.

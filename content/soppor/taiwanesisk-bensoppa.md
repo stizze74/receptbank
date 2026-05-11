@@ -22,6 +22,9 @@ tillagning:
   - { namn: "Sjud", text: "2 timmar lågt.", timer_min: 120 }
   - "Sila, salta."
 testlogg: []
+bild: "taiwanesisk-bensoppa.jpg"
+bild_alt: "AI-bild: Taiwanesisk bensoppa"
+bild_ai: true
 ---
 
 Lugn söndagsmiddag.

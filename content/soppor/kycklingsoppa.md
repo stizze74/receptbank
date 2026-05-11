@@ -84,6 +84,9 @@ tips:
     min.
   - 'För krämigare bas: mixa hälften av soppan, blanda tillbaka.'
 testlogg: []
+bild: "kycklingsoppa.jpg"
+bild_alt: "AI-bild: Krämig kycklingsoppa"
+bild_ai: true
 ---
 
 Klassisk vinter-soppa. Kyckling, blomkål, lök i grädde — komplett måltid på 25 minuter.

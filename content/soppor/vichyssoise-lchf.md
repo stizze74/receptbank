@@ -59,6 +59,9 @@ tips:
     rotselleri för samma krameringa textur utan kh.
   - Perfekt förrätt på en varm sommarkväll.
 testlogg: []
+bild: "vichyssoise-lchf.jpg"
+bild_alt: "AI-bild: Vichyssoise LCHF (kall rotselleri-purjolökssoppa)"
+bild_ai: true
 ---
 
 

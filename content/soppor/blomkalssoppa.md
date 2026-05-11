@@ -77,6 +77,9 @@ tips:
     sidfläsk — grymt.
   - Soppan blir godare dag 2 — gör gärna mer och spara.
 testlogg: []
+bild: "blomkalssoppa.jpg"
+bild_alt: "AI-bild: Blomkålssoppa"
+bild_ai: true
 ---
 
 Krämig och mild — perfekt vintersoppa eller kall lunch. Riktigt mycket smör är nyckeln, både i kokningen och i finishen.

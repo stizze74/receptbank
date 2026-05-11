@@ -25,6 +25,9 @@ tillagning:
   - "Lök + paprika + cumin 2 min."
   - "Buljong + tomat, sjud 75 min."
 testlogg: []
+bild: "gulash-soppa.jpg"
+bild_alt: "AI-bild: Ungersk gulashsoppa"
+bild_ai: true
 ---
 
 Stark soppa.

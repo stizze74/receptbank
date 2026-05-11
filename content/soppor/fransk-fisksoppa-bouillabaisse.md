@@ -25,6 +25,9 @@ tillagning:
   - "Tomat + saffran + buljong + vin, sjud 15 min."
   - "Fisk sista 8 min."
 testlogg: []
+bild: "fransk-fisksoppa-bouillabaisse.jpg"
+bild_alt: "AI-bild: Bouillabaisse"
+bild_ai: true
 ---
 
 Marseille-klassiker.

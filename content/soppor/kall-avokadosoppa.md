@@ -60,6 +60,9 @@ tips:
   - Perfekt sommarsoppa — frisk och kall.
   - Funkar lika bra som förrätt i shotglas.
 testlogg: []
+bild: "kall-avokadosoppa.jpg"
+bild_alt: "AI-bild: Kall avokadosoppa"
+bild_ai: true
 ---
 
 

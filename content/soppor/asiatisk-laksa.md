@@ -25,6 +25,9 @@ tillagning:
   - "Protein 5 min."
   - "Lime + basilika."
 testlogg: []
+bild: "asiatisk-laksa.jpg"
+bild_alt: "AI-bild: Asiatisk laksa-soppa"
+bild_ai: true
 ---
 
 Sydostasiatisk-fusion.

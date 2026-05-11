@@ -98,6 +98,9 @@ tips:
     vit krämig fisksoppa.
   - Frusen lax/torsk fungerar — tina först och torka lätt.
 testlogg: []
+bild: "fisksoppa.jpg"
+bild_alt: "AI-bild: Fisksoppa"
+bild_ai: true
 ---
 
 Krämig fisksoppa med lax, torsk och räkor — i tomatig grädde-bas. Fyllig nog som hel måltid. Tar 25 min och funkar både vardag och helg.

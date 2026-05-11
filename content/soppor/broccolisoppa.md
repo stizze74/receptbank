@@ -73,6 +73,9 @@ tips:
   - En klick crème fraîche och riven cheddar i mitten = perfekt topping.
   - Krispigt sidfläsk smulat över gör soppan till mätt huvudrätt.
 testlogg: []
+bild: "broccolisoppa.jpg"
+bild_alt: "AI-bild: Broccolisoppa"
+bild_ai: true
 ---
 
 Identisk struktur som blomkålssoppa men med mer karaktär — broccolins gröna smak och syrliga ton. Grön färg lyser vackert med en klick crème fraîche.

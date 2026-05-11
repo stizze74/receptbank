@@ -24,6 +24,9 @@ tillagning:
   - "Mixa allt."
   - "Kyl 30 min."
 testlogg: []
+bild: "gazpacho-keto.jpg"
+bild_alt: "AI-bild: Gazpacho (kall tomatsoppa)"
+bild_ai: true
 ---
 
 Spansk sommar-soppa.

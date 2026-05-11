@@ -83,6 +83,9 @@ tips:
     Kummin är vad som gör det till kålsoppa, inte bara fläsk-i-vatten. Snobba
     inte med mängden.
 testlogg: []
+bild: "kalsoppa.jpg"
+bild_alt: "AI-bild: Kålsoppa med fläsk"
+bild_ai: true
 ---
 
 Husmanssoppa i LCHF-version. Sidfläsk + vitkål + grädde + kummin = matig och varm vintersoppa. Mättar i timmar.

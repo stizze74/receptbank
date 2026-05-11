@@ -55,6 +55,9 @@ tips:
   - Toppa med en klick crème fraiche och rostade pinjenötter.
   - Funkar lika bra med grönkål eller mangold.
 testlogg: []
+bild: "krameringd-spenatsoppa.jpg"
+bild_alt: "AI-bild: Krämig spenatsoppa"
+bild_ai: true
 ---
 
 

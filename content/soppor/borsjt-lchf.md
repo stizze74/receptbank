@@ -68,6 +68,9 @@ tips:
     Klassisk borsjt har vanligen socker — LCHF-version har vinäger som
     syra-balans.
 testlogg: []
+bild: "borsjt-lchf.jpg"
+bild_alt: "AI-bild: Borsjt LCHF (rysk rödbetssoppa)"
+bild_ai: true
 ---
 
 

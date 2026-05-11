@@ -50,9 +50,9 @@ tillagning:
   - namn: Mixa
     text: >-
       Mixa avokado, kall buljong, crème fraiche, vitlök, lime, olivolja,
-      chiliflakes, salt och peppar i blender till helt län.
+      chiliflakes, salt och peppar i blender till helt len.
   - namn: Kyl
-    text: Küla 1 h innan servering.
+    text: Kyla 1 h innan servering.
     timer_min: 60
   - namn: Servera
     text: Fördela i skålar. Toppa med färsk persilja och en droppe olivolja.

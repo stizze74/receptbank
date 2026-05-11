@@ -84,6 +84,9 @@ tips:
     karamelliserad (15 min på låg).
   - Funkar lika bra med fläskfars eller blandfars.
 testlogg: []
+bild: "pannbiff-lokssas.jpg"
+bild_alt: "AI-bild: Pannbiff med lökssås"
+bild_ai: true
 ---
 
 

@@ -121,6 +121,9 @@ tips:
   - Torsk är torrt om överstekt — dra hellre ut tidigare. Eftervarmen jobbar.
   - 'För mer fräschhet: färsk dill över torsken precis innan servering.'
 testlogg: []
+bild: "torsk-citronsmor-zucchini.jpg"
+bild_alt: "AI-bild: Torsk med zucchini & citronsmör"
+bild_ai: true
 ---
 
 Vardags-fisk när det ska gå snabbt. Torsk + smör + citron är klassisk kombo. Zucchini steks i samma panna efteråt. 20 min totalt.

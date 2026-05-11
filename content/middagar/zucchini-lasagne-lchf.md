@@ -85,6 +85,9 @@ tips:
   - 'Bäst dagen efter, smakerna mögnar.'
   - Funkar lika bra med aubergine i stället för zucchini.
 testlogg: []
+bild: "zucchini-lasagne-lchf.jpg"
+bild_alt: "AI-bild: Zucchini-lasagne LCHF"
+bild_ai: true
 ---
 
 

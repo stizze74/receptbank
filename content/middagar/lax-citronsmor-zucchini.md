@@ -104,6 +104,9 @@ tips:
   - Pannfettet från laxen är perfekt för zucchinin.
   - Citronsmör på laxen istället för hollandaise — snabbare och färre kalorier.
 testlogg: []
+bild: "lax-citronsmor-zucchini.jpg"
+bild_alt: "AI-bild: Lax med zucchini & citronsmör"
+bild_ai: true
 ---
 
 Vardagslax. Smörstekt lax + citronsmör + zucchini i samma panna. 20 minuter.

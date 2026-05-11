@@ -31,6 +31,9 @@ tillagning:
 tips:
   - "Miso ska aldrig koka. Rör in vid slutet."
 testlogg: []
+bild: "misogryta-kyckling-wakame.jpg"
+bild_alt: "AI-bild: Misogryta med kyckling & wakame"
+bild_ai: true
 ---
 
 Japansk soppa-gryta-hybrid. Wakame är havsalg, finns torkad i Asien-butiker.

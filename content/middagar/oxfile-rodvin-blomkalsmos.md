@@ -26,6 +26,9 @@ tillagning:
   - "Sås: deglaze panna med vin, buljong, grädde, sjud 5 min."
   - "Mosa blomkål."
 testlogg: []
+bild: "oxfile-rodvin-blomkalsmos.jpg"
+bild_alt: "AI-bild: Oxfilé i rödvinssås med blomkålsmos"
+bild_ai: true
 ---
 
 Fransk-svensk klassiker.

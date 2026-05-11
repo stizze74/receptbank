@@ -24,6 +24,9 @@ tillagning:
   - "Häll grädde över."
   - { namn: "Ugn", text: "200°C, 35 min.", timer_min: 35 }
 testlogg: []
+bild: "jansson-utan-potatis.jpg"
+bild_alt: "AI-bild: Janssons frestelse utan potatis"
+bild_ai: true
 ---
 
 Svensk julbordsklassiker.

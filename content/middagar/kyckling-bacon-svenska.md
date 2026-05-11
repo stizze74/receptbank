@@ -23,6 +23,9 @@ tillagning:
   - { namn: "Stek kyckling", text: "I baconfettet, 8 min/sida.", timer_min: 16 }
   - "Brysselkål 8 min."
 testlogg: []
+bild: "kyckling-bacon-svenska.jpg"
+bild_alt: "AI-bild: Kyckling med bacon och brysselkål"
+bild_ai: true
 ---
 
 Vintervardag.

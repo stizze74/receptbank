@@ -29,6 +29,9 @@ tillagning:
 tips:
   - "Citrongräs är karakteristisk smak. Mortlas eller rivs."
 testlogg: []
+bild: "vietnamesisk-kalvkebab-spett.jpg"
+bild_alt: "AI-bild: Vietnamesisk kalvkebab på spett"
+bild_ai: true
 ---
 
 Vietnamesisk-fransk-fusion. Kalvkött snabbt grillat.

@@ -99,6 +99,9 @@ tips:
     Funkar lika bra med musselblåskal eller bara skaldjur (skippa
     kyckling+chorizo).
 testlogg: []
+bild: "spansk-paella-lchf.jpg"
+bild_alt: "AI-bild: Spansk paella LCHF (blomkålsris)"
+bild_ai: true
 ---
 
 

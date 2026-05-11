@@ -33,6 +33,9 @@ tips:
   - "Massaman är mildare än grön/röd curry. Kanel och kardemumma ger varm söt-doft."
   - "Långkok = möra köttbitar. Hoppa inte över tiden."
 testlogg: []
+bild: "massaman-curry-biff.jpg"
+bild_alt: "AI-bild: Massaman-curry med biff"
+bild_ai: true
 ---
 
 Helgmiddag i wok. Massaman är persisk-thai-fusion. Lite kh från cashews men värt det.

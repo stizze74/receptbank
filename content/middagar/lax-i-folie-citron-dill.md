@@ -22,6 +22,9 @@ tillagning:
   - "Lax på folie med smör + citron + dill."
   - { namn: "Ugn", text: "180°C, 18 min.", timer_min: 18 }
 testlogg: []
+bild: "lax-i-folie-citron-dill.jpg"
+bild_alt: "AI-bild: Lax i folie med citron och dill"
+bild_ai: true
 ---
 
 Vardag, ren och enkel.

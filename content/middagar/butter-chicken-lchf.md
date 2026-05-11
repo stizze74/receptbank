@@ -40,6 +40,9 @@ tips:
   - "Originalet har socker och smör i mängder — vi behåller smör, byter socker mot erytritol."
   - "Servera med blomkålsris."
 testlogg: []
+bild: "butter-chicken-lchf.jpg"
+bild_alt: "AI-bild: Butter chicken (LCHF)"
+bild_ai: true
 ---
 
 Indiens mest populära internationella rätt. LCHF-anpassad utan kompromiss.

@@ -30,6 +30,9 @@ tillagning:
 tips:
   - "Bananblad ger mer aromater. Folie funkar utmärkt på 90% av rätten."
 testlogg: []
+bild: "thai-fisk-bananblad.jpg"
+bild_alt: "AI-bild: Thai-fisk i bananblad (eller folie)"
+bild_ai: true
 ---
 
 Thai-klassiker, ångmetod. Saftig fisk, intensiv smak.

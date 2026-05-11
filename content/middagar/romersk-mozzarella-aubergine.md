@@ -23,6 +23,9 @@ tillagning:
   - "Lager: tomat + aubergine + mozzarella x 2."
   - { namn: "Ugn", text: "200°C, 25 min.", timer_min: 25 }
 testlogg: []
+bild: "romersk-mozzarella-aubergine.jpg"
+bild_alt: "AI-bild: Romersk aubergine med mozzarella"
+bild_ai: true
 ---
 
 Aubergine parmigiana.

@@ -82,6 +82,9 @@ tips:
   - Bea kommer ur kylen — ingen extra tid läggs på såsen.
   - 'För mer fest: byt ut Lohmanders bea mot egen hollandaise (5 min extra).'
 testlogg: []
+bild: "kycklinglar-broccolimos-bea.jpg"
+bild_alt: "AI-bild: Kycklinglår med broccolimos & béarnaise"
+bild_ai: true
 ---
 
 Vardagsklassiker. Tre moduler i parallell — kycklinglåren tar längst tid, broccolimos kokas under tiden, béarnaisen åker bara ur kylen. 30 min från start till tallrik om man jobbar parallellt.

@@ -27,6 +27,9 @@ tillagning:
 tips:
   - "Lammbog är fettare och mörare än lammbulk — perfekt för spett."
 testlogg: []
+bild: "thai-lammkebab-spett.jpg"
+bild_alt: "AI-bild: Thai-lammkebab på spett"
+bild_ai: true
 ---
 
 Thai-fusion lamm. Curry-pastan funkar perfekt med lamm.

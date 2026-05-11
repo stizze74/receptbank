@@ -32,6 +32,9 @@ tillagning:
 tips:
   - "Två steg: koka först, bryn sen. Det är hela poängen."
 testlogg: []
+bild: "twice-cooked-pork-sichuan.jpg"
+bild_alt: "AI-bild: Twice-cooked pork (sichuan)"
+bild_ai: true
 ---
 
 Sichuan-klassiker. Fläsksida i två steg = ultra-rikt.

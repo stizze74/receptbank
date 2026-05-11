@@ -31,6 +31,9 @@ tillagning:
 tips:
   - "Klassisk amerikansk-kinesisk. Sötare än native kinesisk."
 testlogg: []
+bild: "mongolisk-biff-blomkalsris.jpg"
+bild_alt: "AI-bild: Mongolisk biff med blomkålsris"
+bild_ai: true
 ---
 
 Snabb wokmiddag. Hög värme = char-aroma.

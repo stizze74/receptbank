@@ -22,6 +22,9 @@ tillagning:
   - "Bred pesto på torsk, vira skinka runt."
   - { namn: "Ugn", text: "180°C, 15 min.", timer_min: 15 }
 testlogg: []
+bild: "torsk-skinka-pesto.jpg"
+bild_alt: "AI-bild: Torsk med skinka och pesto"
+bild_ai: true
 ---
 
 Italiensk-skandinavisk fusion.

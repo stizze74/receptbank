@@ -78,6 +78,9 @@ tips:
     samma tygd och bett utan svamp.
   - Funkar lika bra med haricots verts istället för broccoli.
 testlogg: []
+bild: "pannbiff-jagarsas-svampfri.jpg"
+bild_alt: "AI-bild: Pannbiff jagarsås (svamp-fri, med broccoli)"
+bild_ai: true
 ---
 
 

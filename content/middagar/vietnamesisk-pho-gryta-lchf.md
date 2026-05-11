@@ -77,6 +77,9 @@ tips:
   - Shirataki är 0 kh konjac-nudlar — kan skippas helt om du föredrar ren soppa.
   - Bäst om buljongen får dra längre tid (1 h+) för djupare smak.
 testlogg: []
+bild: "vietnamesisk-pho-gryta-lchf.jpg"
+bild_alt: "AI-bild: Vietnamesisk pho-gryta (LCHF)"
+bild_ai: true
 ---
 
 Vietnams nationalsoppa, LCHF-anpassad utan ris-nudlar och utan koriander.

@@ -34,6 +34,9 @@ tillagning:
 tips:
   - "Koriander-FRÖ-PULVER är OK (det är hela frön). Färska blad är förbjudet."
 testlogg: []
+bild: "lamm-rogan-josh.jpg"
+bild_alt: "AI-bild: Lamm-rogan-josh"
+bild_ai: true
 ---
 
 Kashmir-klassiker. Lamm i yoghurt-bas, milt kryddat.

@@ -23,6 +23,9 @@ tillagning:
   - "Stek 3 min/sida."
   - "Deglaze med vin."
 testlogg: []
+bild: "kalvfile-saltimbocca.jpg"
+bild_alt: "AI-bild: Kalvfilé saltimbocca"
+bild_ai: true
 ---
 
 "Hoppar i munnen" — italiensk.

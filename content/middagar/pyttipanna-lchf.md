@@ -24,6 +24,9 @@ tillagning:
   - { namn: "Stek rotselleri", text: "Smör, 10 min.", timer_min: 10 }
   - { namn: "Lök + protein", text: "5 min.", timer_min: 5 }
 testlogg: []
+bild: "pyttipanna-lchf.jpg"
+bild_alt: "AI-bild: LCHF-pyttipanna"
+bild_ai: true
 ---
 
 Klassisk husmans utan potatis.

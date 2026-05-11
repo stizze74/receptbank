@@ -24,6 +24,9 @@ tillagning:
   - "Ugn 180°C 8 min."
   - "Vila, skär, parmesan + rucola."
 testlogg: []
+bild: "oxstek-italiensk-stil.jpg"
+bild_alt: "AI-bild: Oxstek på italienskt sätt"
+bild_ai: true
 ---
 
 Tagliata italiensk.

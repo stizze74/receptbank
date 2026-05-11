@@ -104,6 +104,9 @@ tips:
   - Citronsmöret gör jobbet som sås — ingen extra pannsås behövs.
   - 'För mer mättnad: tillsätt avokado eller kokt ägg i salladen.'
 testlogg: []
+bild: "kycklingbrost-citronsmor-sallad.jpg"
+bild_alt: "AI-bild: Kycklingbröst med sallad & citronsmör"
+bild_ai: true
 ---
 
 Lättare vardagsmiddag. Smörstekt kycklingbröst med citronsmör som smälter över, frisk grön sallad bredvid. 15 minuter, perfekt när du inte har tid eller energi.

@@ -31,6 +31,9 @@ tillagning:
 tips:
   - "Råa ägg = japansk klassiker. Använd FÄRSKA ägg från betrodd källa."
 testlogg: []
+bild: "sukiyaki-gryta.jpg"
+bild_alt: "AI-bild: Sukiyaki-gryta"
+bild_ai: true
 ---
 
 Helgmiddag i japansk stil. Råa ägg + saltsöt sukiyaki-sås är magi.

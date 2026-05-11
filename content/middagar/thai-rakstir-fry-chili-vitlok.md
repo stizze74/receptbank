@@ -34,6 +34,9 @@ tips:
   - "Råa räkor (frysta tar du ut tinade) — kokta blir gummi vid wokning."
   - "Hög värme är nyckeln. Wok ska ryka."
 testlogg: []
+bild: "thai-rakstir-fry-chili-vitlok.jpg"
+bild_alt: "AI-bild: Thai-räkstir-fry med chili-vitlök"
+bild_ai: true
 ---
 
 Snabb thai-vardag. Hettan, syran, sältan i balans.

@@ -30,6 +30,9 @@ tillagning:
 tips:
   - "6 vitlöksklyftor är inte för mycket — de bryns mjuka."
 testlogg: []
+bild: "kungsrakor-vitlokssas.jpg"
+bild_alt: "AI-bild: Kungsräkor i vitlökssås"
+bild_ai: true
 ---
 
 Kantonesisk klassiker. Vitlök är hela rätten.

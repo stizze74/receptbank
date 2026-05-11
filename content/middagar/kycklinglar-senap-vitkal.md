@@ -118,6 +118,9 @@ tips:
     Kycklinglår >>> kycklingbröst i smak och saftighet. Använd lår när du har
     tid.
 testlogg: []
+bild: "kycklinglar-senap-vitkal.jpg"
+bild_alt: "AI-bild: Kycklinglår med vitkål & senap-grädde"
+bild_ai: true
 ---
 
 Vardagsmiddag med rejäl smak. Kycklinglår är saftigare än bröst och tar emot senap-grädde-sås perfekt. Smörstekt vitkål — klassiskt med fläsk men funkar lika bra med kyckling.

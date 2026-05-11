@@ -21,6 +21,9 @@ tillagning:
   - "Lax på folie, pesto, parmesan, pinjenötter."
   - { namn: "Ugn", text: "180°C, 18 min.", timer_min: 18 }
 testlogg: []
+bild: "lax-pesto-uppskuren.jpg"
+bild_alt: "AI-bild: Lax i ugn med pesto"
+bild_ai: true
 ---
 
 Snabb italiensk-modern.

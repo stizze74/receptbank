@@ -30,6 +30,9 @@ tillagning:
 tips:
   - "Originalet har socker — erytritol-honung ger glansyta utan kh."
 testlogg: []
+bild: "char-siu-flask-ugn.jpg"
+bild_alt: "AI-bild: Char siu-fläsk i ugn"
+bild_ai: true
 ---
 
 Hong Kong street-food. Sötröd, glansig, klistrig — perfekt LCHF-anpassad.

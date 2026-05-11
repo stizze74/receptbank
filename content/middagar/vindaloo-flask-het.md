@@ -32,6 +32,9 @@ tillagning:
 tips:
   - "Vindaloo är portugisisk-indisk fusion. \"Vinha d'alhos\" = vinäger + vitlök."
 testlogg: []
+bild: "vindaloo-flask-het.jpg"
+bild_alt: "AI-bild: Vindaloo-fläsk (het)"
+bild_ai: true
 ---
 
 Goa-klassiker. Hetare än hett, syrlig från vinäger.

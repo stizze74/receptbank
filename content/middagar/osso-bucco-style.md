@@ -26,6 +26,9 @@ tillagning:
   - { namn: "Sjud", text: "110 min lågt.", timer_min: 110 }
   - "Toppa med gremolata."
 testlogg: []
+bild: "osso-bucco-style.jpg"
+bild_alt: "AI-bild: Osso bucco kalvskank"
+bild_ai: true
 ---
 
 Italiensk klassiker.

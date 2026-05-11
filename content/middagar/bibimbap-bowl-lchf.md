@@ -33,6 +33,9 @@ tillagning:
 tips:
   - "Originalet har ris — blomkålsris är LCHF-substitut."
 testlogg: []
+bild: "bibimbap-bowl-lchf.jpg"
+bild_alt: "AI-bild: Bibimbap-bowl (LCHF)"
+bild_ai: true
 ---
 
 Korean klassiker som bowl. Färgglad, balanserad, omami-rik.

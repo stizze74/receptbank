@@ -130,6 +130,9 @@ tips:
   - 'För mer sås: fyll på med extra grädde och senap. Det går alltid åt.'
   - 'För festligare version: byt fläskkarré mot fläskfilé — magrare, dyrare.'
 testlogg: []
+bild: "flaskkarre-senap-blomkalsmos.jpg"
+bild_alt: "AI-bild: Fläskkarré med blomkålsmos & senap-grädde"
+bild_ai: true
 ---
 
 Vardagsklassiker. Husmanskonst i LCHF-version: stekt fläskkarré, krämig senap-grädde-sås från pannskyn, mjukt blomkålsmos. 30 min med parallellbearbetning.

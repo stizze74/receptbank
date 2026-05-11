@@ -23,6 +23,9 @@ tillagning:
   - "Stek bönor 5 min."
   - "Citronsaft över allt."
 testlogg: []
+bild: "kycklingbrost-citronsmor-haricots.jpg"
+bild_alt: "AI-bild: Smörstekt kycklingbröst med haricots verts"
+bild_ai: true
 ---
 
 Klassisk vardag.

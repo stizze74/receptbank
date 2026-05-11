@@ -29,6 +29,9 @@ tillagning:
 tips:
   - "Krossade pork rinds (svålen) är \"pork panko\" — perfect LCHF-ersättare för panko-bröd."
 testlogg: []
+bild: "tonkatsu-style-flaskschnitzel-lchf.jpg"
+bild_alt: "AI-bild: Tonkatsu-style fläskschnitzel (LCHF)"
+bild_ai: true
 ---
 
 Japansk schnitzel. Pork rinds som breading är genialt.

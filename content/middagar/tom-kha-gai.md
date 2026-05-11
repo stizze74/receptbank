@@ -33,6 +33,9 @@ tips:
   - "Galangal är thailändsk ingefära, mer citrusig. Vanlig ingefära fungerar."
   - "Kafferlimebald och citrongräs finns frusna på Asien-butiker."
 testlogg: []
+bild: "tom-kha-gai.jpg"
+bild_alt: "AI-bild: Tom kha gai (thai-kokossoppa med kyckling)"
+bild_ai: true
 ---
 
 Aromatisk klassiker. Citrusig, het, krämig — den ultimata thai-soppan.

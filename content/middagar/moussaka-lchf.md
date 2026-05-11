@@ -92,6 +92,9 @@ tips:
     smak.
   - Lammfärs ger autentisk smak men nötfärs fungerar.
 testlogg: []
+bild: "moussaka-lchf.jpg"
+bild_alt: "AI-bild: Moussaka LCHF (grek-stil med béchamel-toppning)"
+bild_ai: true
 ---
 
 

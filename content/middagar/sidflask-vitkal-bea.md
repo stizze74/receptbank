@@ -76,6 +76,9 @@ tips:
   - Smakkolla SALT INNAN du saltar — fläsket bär mycket salt.
   - Bea ur kylen — inget extra arbete. Klassiskt smörsmörs-tillbehör.
 testlogg: []
+bild: "sidflask-vitkal-bea.jpg"
+bild_alt: "AI-bild: Sidfläsk med vitkål & béarnaise"
+bild_ai: true
 ---
 
 Husmansklassiker. "Fläsk och vitkål" — gammelsvenska. LCHF-perfekt eftersom båda komponenterna är låga på kh och höga på fett. Bea bredvid lyfter det till middag-status.

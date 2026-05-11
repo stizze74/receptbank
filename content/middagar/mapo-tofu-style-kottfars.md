@@ -32,6 +32,9 @@ tillagning:
 tips:
   - "Sichuan-peppar är inte vanlig peppar — har numbing-effekt."
 testlogg: []
+bild: "mapo-tofu-style-kottfars.jpg"
+bild_alt: "AI-bild: Mapo tofu-style med köttfärs"
+bild_ai: true
 ---
 
 Klassisk Sichuan-rätt. Het, numbing, omami-bomb.

@@ -78,6 +78,9 @@ tips:
     märkta 'sushi-grade'.
   - Servera med LCHF-tunnbröd eller bräddade gurkskivor.
 testlogg: []
+bild: "lax-tartare-dill-avokado.jpg"
+bild_alt: "AI-bild: Lax-tartare med dill och avokado"
+bild_ai: true
 ---
 
 

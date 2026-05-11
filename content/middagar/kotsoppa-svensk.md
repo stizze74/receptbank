@@ -24,6 +24,9 @@ tillagning:
   - "Rotsaker + buljong."
   - { namn: "Sjud", text: "60 min.", timer_min: 60 }
 testlogg: []
+bild: "kotsoppa-svensk.jpg"
+bild_alt: "AI-bild: Köttsoppa svensk"
+bild_ai: true
 ---
 
 Svensk vinterklassiker.

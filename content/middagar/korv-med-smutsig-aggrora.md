@@ -83,6 +83,9 @@ tips:
     För Jessica: byt korven mot t.ex. halloumi eller vegetarisk korv — resten av
     tallriken är samma.
 testlogg: []
+bild: "korv-med-smutsig-aggrora.jpg"
+bild_alt: "AI-bild: Korv med smutsig äggröra, feta & béarnaise"
+bild_ai: true
 ---
 
 Helgbrunch. Två sorters korv stekt först, sedan äggröra som får ta upp färg och smak från korvfettet i samma panna. Fetaost, halverade tomater och en klick Lohmanders Bea vid sidan.

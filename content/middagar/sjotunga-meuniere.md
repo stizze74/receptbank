@@ -58,6 +58,9 @@ tips:
     autentisk smak.
   - Funkar lika bra med rödspatta eller annan tunn vit fisk.
 testlogg: []
+bild: "sjotunga-meuniere.jpg"
+bild_alt: "AI-bild: Sjötunga meunière"
+bild_ai: true
 ---
 
 

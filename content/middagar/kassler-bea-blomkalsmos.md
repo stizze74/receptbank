@@ -24,6 +24,9 @@ tillagning:
   - "Koka och mosa blomkål."
   - "Servera med bea."
 testlogg: []
+bild: "kassler-bea-blomkalsmos.jpg"
+bild_alt: "AI-bild: Kassler med bea och blomkålsmos"
+bild_ai: true
 ---
 
 Svensk klassiker.

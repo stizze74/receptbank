@@ -25,6 +25,9 @@ tillagning:
   - { namn: "Stek", text: "8 min.", timer_min: 8 }
   - "Sås: smör + grädde + soja, sjud 5 min."
 testlogg: []
+bild: "kotbullar-grаdde.jpg"
+bild_alt: "AI-bild: Köttbullar i gräddsås"
+bild_ai: true
 ---
 
 Svensk klassiker, LCHF.

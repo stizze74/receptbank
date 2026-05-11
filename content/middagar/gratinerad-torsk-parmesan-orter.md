@@ -71,6 +71,9 @@ tips:
     hungrig.
   - Servera med smörstekt sparris eller LCHF-rotsellerimos.
 testlogg: []
+bild: "gratinerad-torsk-parmesan-orter.jpg"
+bild_alt: "AI-bild: Gratinerad torsk med parmesan och örter"
+bild_ai: true
 ---
 
 

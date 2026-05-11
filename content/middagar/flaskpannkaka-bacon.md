@@ -23,6 +23,9 @@ tillagning:
   - "Vispa smet, häll över."
   - { namn: "Ugn", text: "180°C, 25 min.", timer_min: 25 }
 testlogg: []
+bild: "flaskpannkaka-bacon.jpg"
+bild_alt: "AI-bild: LCHF-fläskpannkaka"
+bild_ai: true
 ---
 
 Svensk klassiker, LCHF-anpassad.

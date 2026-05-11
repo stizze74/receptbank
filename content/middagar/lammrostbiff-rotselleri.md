@@ -26,6 +26,9 @@ tillagning:
   - "Vila 10 min."
   - "Mosa rotselleri med smör + grädde."
 testlogg: []
+bild: "lammrostbiff-rotselleri.jpg"
+bild_alt: "AI-bild: Lammrostbiff med rotsellerimos"
+bild_ai: true
 ---
 
 Helgmiddag.

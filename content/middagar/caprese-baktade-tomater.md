@@ -23,6 +23,9 @@ tillagning:
   - { namn: "Ugn", text: "180°C, 25 min.", timer_min: 25 }
   - "Basilika över."
 testlogg: []
+bild: "caprese-baktade-tomater.jpg"
+bild_alt: "AI-bild: Bakat caprese-fyllda tomater"
+bild_ai: true
 ---
 
 Italiensk vegetarisk.

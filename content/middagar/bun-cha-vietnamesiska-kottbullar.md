@@ -31,6 +31,9 @@ tillagning:
 tips:
   - "Originalet har koriander — vi använder thaibasilika."
 testlogg: []
+bild: "bun-cha-vietnamesiska-kottbullar.jpg"
+bild_alt: "AI-bild: Bún chả (vietnamesiska köttbullar)"
+bild_ai: true
 ---
 
 Hanoi-klassiker. Köttbullar som äts i "wraps" med kall dressing.

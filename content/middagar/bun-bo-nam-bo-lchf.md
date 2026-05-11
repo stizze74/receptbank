@@ -77,6 +77,9 @@ tips:
     sallad istället.
   - Persilja och mynta ersatter koriander — funkar fint i vietnamesiska rätter.
 testlogg: []
+bild: "bun-bo-nam-bo-lchf.jpg"
+bild_alt: "AI-bild: Bun bo nam bo (vietnamesisk biffsallad, utan nudlar)"
+bild_ai: true
 ---
 
 

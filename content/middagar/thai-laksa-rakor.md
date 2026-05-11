@@ -31,6 +31,9 @@ tillagning:
 tips:
   - "Glöm shirataki-nudlar (de finns men är extra). Soppan står ensam."
 testlogg: []
+bild: "thai-laksa-rakor.jpg"
+bild_alt: "AI-bild: Thai-laksa med räkor"
+bild_ai: true
 ---
 
 Singapore-thai-soppa-fusion. Kokosbas, currypasta, räkor.

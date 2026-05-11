@@ -65,6 +65,9 @@ tips:
   - Klassisk svensk midsommar-mat utan potatis.
   - Funkar perfekt på LCHF-skivbröd som smörrebröd.
 testlogg: []
+bild: "midsommar-kallrokt-lax-dillstuvad-gurka.jpg"
+bild_alt: "AI-bild: Midsommar: kallrokt lax med dillstuvad gurka"
+bild_ai: true
 ---
 
 

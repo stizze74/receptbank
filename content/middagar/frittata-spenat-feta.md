@@ -24,6 +24,9 @@ tillagning:
   - "Vispa ägg, häll i, fetaost över."
   - { namn: "Ugn", text: "180°C, 20 min.", timer_min: 20 }
 testlogg: []
+bild: "frittata-spenat-feta.jpg"
+bild_alt: "AI-bild: Spenat-feta-frittata"
+bild_ai: true
 ---
 
 Italiensk klassiker.

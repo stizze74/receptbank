@@ -34,6 +34,9 @@ tillagning:
 tips:
   - "Paneer kan ersättas med halloumi eller fast tofu."
 testlogg: []
+bild: "saag-paneer-spenat-ost.jpg"
+bild_alt: "AI-bild: Saag-paneer (spenat & ost)"
+bild_ai: true
 ---
 
 Indisk vegetarisk klassiker. Stark mörkgrön smak.

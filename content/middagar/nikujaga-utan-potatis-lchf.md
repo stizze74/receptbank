@@ -72,6 +72,9 @@ tips:
     Mirin har naturligt sötma men också latt kh — verifiera med CGM första
     gången.
 testlogg: []
+bild: "nikujaga-utan-potatis-lchf.jpg"
+bild_alt: "AI-bild: Nikujaga LCHF (japansk nötgryta)"
+bild_ai: true
 ---
 
 Japansk husmanskost. Söt-salt-buljong i fokus.

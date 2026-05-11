@@ -24,6 +24,9 @@ tillagning:
   - "Lök + tomat + vin."
   - { namn: "Sjud", text: "40 min.", timer_min: 40 }
 testlogg: []
+bild: "kyckling-cacciatore.jpg"
+bild_alt: "AI-bild: Kyckling cacciatore"
+bild_ai: true
 ---
 
 Italiensk husmans.

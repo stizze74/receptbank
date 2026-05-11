@@ -34,6 +34,9 @@ tillagning:
 tips:
   - "Korma är mild — saknar chili. Lägg till om hetta önskas."
 testlogg: []
+bild: "lammkorma-kokos.jpg"
+bild_alt: "AI-bild: Lammkorma med kokos"
+bild_ai: true
 ---
 
 Mughal-klassiker. Mild, mjölgrön, sött-kryddig.

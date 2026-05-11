@@ -25,6 +25,9 @@ tillagning:
   - "Fyll paprika, toppa med ost."
   - { namn: "Ugn", text: "200°C, 35 min.", timer_min: 35 }
 testlogg: []
+bild: "fyllda-paprikor-kottfars.jpg"
+bild_alt: "AI-bild: Fyllda paprikor med köttfärs"
+bild_ai: true
 ---
 
 Klassiker.

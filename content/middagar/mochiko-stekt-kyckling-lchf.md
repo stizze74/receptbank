@@ -31,6 +31,9 @@ tillagning:
 tips:
   - "Mochiko-mjöl är klibbris — mandelmjöl är LCHF-ersättning."
 testlogg: []
+bild: "mochiko-stekt-kyckling-lchf.jpg"
+bild_alt: "AI-bild: Mochiko-stekt kyckling (LCHF)"
+bild_ai: true
 ---
 
 Hawaiiansk-japansk fusion. Krispig kyckling utan deep-frying.

@@ -31,6 +31,9 @@ tillagning:
 tips:
   - "Mirin innehåller socker — risvinäger + erytritol är LCHF-substitut."
 testlogg: []
+bild: "teriyaki-lax-blomkalsris.jpg"
+bild_alt: "AI-bild: Teriyaki-lax med blomkålsris"
+bild_ai: true
 ---
 
 Japans nationalklassiker, LCHF-anpassad. Snabb vardag.

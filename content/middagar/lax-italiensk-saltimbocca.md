@@ -23,6 +23,9 @@ tillagning:
   - "Stek 4 min/sida."
   - "Deglaze med vin."
 testlogg: []
+bild: "lax-italiensk-saltimbocca.jpg"
+bild_alt: "AI-bild: Lax saltimbocca-style"
+bild_ai: true
 ---
 
 Italiensk klassiker.

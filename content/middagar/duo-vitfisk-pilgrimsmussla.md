@@ -23,6 +23,9 @@ tillagning:
   - "Stek pilgrimsmusslor 90 sek/sida."
   - "Citronsaft."
 testlogg: []
+bild: "duo-vitfisk-pilgrimsmussla.jpg"
+bild_alt: "AI-bild: Vitfisk med pilgrimsmusslor"
+bild_ai: true
 ---
 
 Lyx-fisk-trio.

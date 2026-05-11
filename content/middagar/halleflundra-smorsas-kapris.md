@@ -62,6 +62,9 @@ tips:
   - Hälleflundra är en lyx-fisk — perfekt för middag med gäster.
   - Servera med smörstekt sparris eller haricots verts.
 testlogg: []
+bild: "halleflundra-smorsas-kapris.jpg"
+bild_alt: "AI-bild: Hälleflundra i smörsås med kapris"
+bild_ai: true
 ---
 
 

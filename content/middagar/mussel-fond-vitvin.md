@@ -67,6 +67,9 @@ tips:
     Stefans personliga undantag.
   - Servera med LCHF-skivbröd eller foccacia för att doppa i sa sen.
 testlogg: []
+bild: "mussel-fond-vitvin.jpg"
+bild_alt: "AI-bild: Pilgrimsmusslor i vitvinsbas med smör"
+bild_ai: true
 ---
 
 Mules marinière.

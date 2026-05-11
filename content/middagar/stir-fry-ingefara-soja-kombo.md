@@ -93,6 +93,9 @@ tips:
     Halloumi-versionen är faktiskt väldigt bra — funkar lika bra för Stefan om
     han vill ha vegetariskt en kväll.
 testlogg: []
+bild: "stir-fry-ingefara-soja-kombo.jpg"
+bild_alt: "AI-bild: Stir-fry med ingefära-soja (Stefan nöt, Jessica halloumi)"
+bild_ai: true
 ---
 
 

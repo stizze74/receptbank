@@ -74,6 +74,9 @@ tips:
     torr stekt.
   - Hollandaise kan köpas kärd (Lohmanders) eller göras hemma i mixer.
 testlogg: []
+bild: "pochat-lax-hollandaise-sparris.jpg"
+bild_alt: "AI-bild: Pochat lax med hollandaise och sparris"
+bild_ai: true
 ---
 
 

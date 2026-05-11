@@ -24,6 +24,9 @@ tillagning:
   - { namn: "Ugn", text: "180°C, 12 min.", timer_min: 12 }
   - "Vila 8 min."
 testlogg: []
+bild: "lammracks-rosmarin-bea.jpg"
+bild_alt: "AI-bild: Lammracks med rosmarin och bea"
+bild_ai: true
 ---
 
 Lyx-helgmat.

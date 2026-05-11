@@ -25,6 +25,9 @@ tillagning:
   - "Tomat + oliver + kapris, sjud 10 min."
   - "Wokra zoodles, vänd in såsen."
 testlogg: []
+bild: "puttanesca-zoodles.jpg"
+bild_alt: "AI-bild: Zoodles puttanesca"
+bild_ai: true
 ---
 
 Klassisk neapelitansk.

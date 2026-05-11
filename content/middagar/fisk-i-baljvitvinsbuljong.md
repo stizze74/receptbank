@@ -23,6 +23,9 @@ tillagning:
   - { namn: "Sjud", text: "Vin + buljong + smör 5 min.", timer_min: 5 }
   - { namn: "Fisk", text: "Lägg i fisken, sjud 8 min.", timer_min: 8 }
 testlogg: []
+bild: "fisk-i-baljvitvinsbuljong.jpg"
+bild_alt: "AI-bild: Vitfisk i vitvinsbuljong"
+bild_ai: true
 ---
 
 Fransk klassiker.

@@ -22,6 +22,9 @@ tillagning:
   - "Stek kyckling 5 min/sida."
   - "Sås: smör + marsala + buljong + grädde."
 testlogg: []
+bild: "kyckling-marsala.jpg"
+bild_alt: "AI-bild: Kyckling marsala"
+bild_ai: true
 ---
 
 Italiensk klassiker.

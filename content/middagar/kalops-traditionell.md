@@ -25,6 +25,9 @@ tillagning:
   - "Lök, kryddor, buljong."
   - { namn: "Sjud", text: "75 min lågt.", timer_min: 75 }
 testlogg: []
+bild: "kalops-traditionell.jpg"
+bild_alt: "AI-bild: Klassisk kalops"
+bild_ai: true
 ---
 
 Svensk klassiker.

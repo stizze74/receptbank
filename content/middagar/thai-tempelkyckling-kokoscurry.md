@@ -34,6 +34,9 @@ tips:
   - "Grön curry-pasta varierar i hetta — börja med 1 msk, smaka av."
   - "Thaibasilika finns på Asienbutik. Persilja eller mynta funkar i nödfall."
 testlogg: []
+bild: "thai-tempelkyckling-kokoscurry.jpg"
+bild_alt: "AI-bild: Thai-tempelkyckling med kokoscurry"
+bild_ai: true
 ---
 
 Klassisk thai-curry. Kokosmjölk gör allt fett-rikt. Inga skuldkänslor — bara LCHF-mat.

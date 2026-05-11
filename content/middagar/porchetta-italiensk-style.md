@@ -22,6 +22,9 @@ tillagning:
   - "Massera in kryddor."
   - { namn: "Ugn", text: "160°C, 75 min, sen 220°C 15 min för krispighet.", timer_min: 90 }
 testlogg: []
+bild: "porchetta-italiensk-style.jpg"
+bild_alt: "AI-bild: Italiensk porchetta"
+bild_ai: true
 ---
 
 Italiensk fläskklassiker.

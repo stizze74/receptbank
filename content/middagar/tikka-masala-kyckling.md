@@ -35,6 +35,9 @@ tillagning:
 tips:
   - "Skillnaden mot butter chicken: tikka-masala har mer kryddor och är något starkare."
 testlogg: []
+bild: "tikka-masala-kyckling.jpg"
+bild_alt: "AI-bild: Tikka masala med kyckling"
+bild_ai: true
 ---
 
 Storbritanniens favorit-curry. Indisk-engelsk hybrid.

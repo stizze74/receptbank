@@ -73,6 +73,9 @@ tips:
   - Salladsblad ersätter de tunna pannkakorna från originalet.
   - Erytritol-honung (Sukrin) istället för riktig honung — ger glaze utan kh.
 testlogg: []
+bild: "pekinganka-style-kyckling-wraps.jpg"
+bild_alt: "AI-bild: Pekinganka-style kyckling i wraps"
+bild_ai: true
 ---
 
 Pekinganka-känslan utan ankan. Kyckling med krispigt skinn fungerar lika bra.

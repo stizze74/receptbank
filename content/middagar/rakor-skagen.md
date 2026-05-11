@@ -97,6 +97,9 @@ tips:
     om du vill.
   - 'För helg-version: löjrom på toppen, en skvätt cognac i aiolin.'
 testlogg: []
+bild: "rakor-skagen.jpg"
+bild_alt: "AI-bild: Räkor i Skagen-stil med sallad & aioli"
+bild_ai: true
 ---
 
 Skagen-stil utan brödet. Räkor, sallad, aioli, avokado — kall portion på 5 minuter. Sommarmiddag, lunch, eller när det är för varmt att laga mat.

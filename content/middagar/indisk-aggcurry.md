@@ -34,6 +34,9 @@ tillagning:
 tips:
   - "Snabb vegetarisk curry. Ägg ÄR proteinet."
 testlogg: []
+bild: "indisk-aggcurry.jpg"
+bild_alt: "AI-bild: Indisk äggcurry"
+bild_ai: true
 ---
 
 Indisk vardag. Ägg + curry-bas är klassisk kombination.

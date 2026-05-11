@@ -32,6 +32,9 @@ tillagning:
 tips:
   - "Skär köttet TVÄRS fibrerna — tunnt blir mört."
 testlogg: []
+bild: "thai-biff-lime-bladsas.jpg"
+bild_alt: "AI-bild: Thai-biff med limebladssås"
+bild_ai: true
 ---
 
 Thai street-food i hemversion. Stark, syrlig, friskhet från mynta.

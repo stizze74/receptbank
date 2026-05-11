@@ -30,6 +30,9 @@ tillagning:
 tips:
   - "Tare-sås är hjärtat — gör en sats, håller månader i kyl."
 testlogg: []
+bild: "yakitori-spett-kyckling.jpg"
+bild_alt: "AI-bild: Yakitori-spett med kyckling & salladslök"
+bild_ai: true
 ---
 
 Japans stadsmat. Yakitori-bar i hemversion.

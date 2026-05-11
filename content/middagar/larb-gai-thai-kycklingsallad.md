@@ -30,6 +30,9 @@ tillagning:
 tips:
   - "Klassisk laotisk-thailändsk. Stark, syrlig, fräsch — och mager för att vara thai."
 testlogg: []
+bild: "larb-gai-thai-kycklingsallad.jpg"
+bild_alt: "AI-bild: Larb gai (thai kycklingsallad)"
+bild_ai: true
 ---
 
 Salladsbladen är skedarna. Plocka upp, ät med fingrarna.

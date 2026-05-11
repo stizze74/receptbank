@@ -22,6 +22,9 @@ tillagning:
   - "Stek kyckling 4 min/sida."
   - "Sås: smör + citron + kapris + buljong."
 testlogg: []
+bild: "kyckling-piccata.jpg"
+bild_alt: "AI-bild: Kyckling piccata"
+bild_ai: true
 ---
 
 Italiensk klassiker.

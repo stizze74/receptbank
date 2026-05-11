@@ -30,6 +30,9 @@ tillagning:
 tips:
   - "Bulgogi = \"fire meat\". Trad nötkött, kyckling funkar lika bra."
 testlogg: []
+bild: "bulgogi-kyckling.jpg"
+bild_alt: "AI-bild: Bulgogi-kyckling"
+bild_ai: true
 ---
 
 Korean street-food. Ssä-flatkött med sötrökig sås.

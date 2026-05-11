@@ -24,6 +24,9 @@ tillagning:
   - { namn: "Ugn", text: "180°C, 12 min.", timer_min: 12 }
   - "Sås: deglaze + grädde + senap."
 testlogg: []
+bild: "flaskfile-aplecidersås.jpg"
+bild_alt: "AI-bild: Fläskfilé i äppelcidersås"
+bild_ai: true
 ---
 
 Fransk klassiker.

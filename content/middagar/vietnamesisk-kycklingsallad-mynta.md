@@ -31,6 +31,9 @@ tillagning:
 tips:
   - "Klassisk Goi-sallad. Friskhet är hela poängen."
 testlogg: []
+bild: "vietnamesisk-kycklingsallad-mynta.jpg"
+bild_alt: "AI-bild: Vietnamesisk kycklingsallad med mynta"
+bild_ai: true
 ---
 
 Vietnamesisk LCHF-bowl. Friskhet och umami i balans.

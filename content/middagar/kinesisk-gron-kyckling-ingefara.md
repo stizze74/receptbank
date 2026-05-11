@@ -30,6 +30,9 @@ tillagning:
 tips:
   - "3 msk ingefära är medvetet — den är hela rätten."
 testlogg: []
+bild: "kinesisk-gron-kyckling-ingefara.jpg"
+bild_alt: "AI-bild: Kinesisk grön kyckling med ingefära"
+bild_ai: true
 ---
 
 Mild kinesisk vardag. Ingefära som bas-smak.

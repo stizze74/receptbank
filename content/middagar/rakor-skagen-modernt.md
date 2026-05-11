@@ -25,6 +25,9 @@ tillagning:
   - "Blanda röran."
   - "Lägg på fathead, ägg, dill."
 testlogg: []
+bild: "rakor-skagen-modernt.jpg"
+bild_alt: "AI-bild: Skagenröra modernt"
+bild_ai: true
 ---
 
 Klassisk svensk fest.

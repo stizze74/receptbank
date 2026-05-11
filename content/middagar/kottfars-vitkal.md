@@ -93,6 +93,9 @@ tips:
     Vitkål som fortfarande har biss är målet — överkokt blir den slapp och
     förlorar smaken.
 testlogg: []
+bild: "kottfars-vitkal.jpg"
+bild_alt: "AI-bild: Köttfärs med smörstekt vitkål"
+bild_ai: true
 ---
 
 Vardags-arbetshäst. Två moduler i samma panna, en efter en. Vitkålen får hänga med köttfärsen och suga upp fonden. 20 min total, en panna, ingen disk.

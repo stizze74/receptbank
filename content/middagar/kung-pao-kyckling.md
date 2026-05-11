@@ -35,6 +35,9 @@ tips:
   - "Sichuan-peppar ger numbing-effekt — finns på Asien-butik."
   - "Originalet har jordnötter — cashews ger lite mindre kh."
 testlogg: []
+bild: "kung-pao-kyckling.jpg"
+bild_alt: "AI-bild: Kung pao-kyckling utan jordnötter"
+bild_ai: true
 ---
 
 Sichuan-klassiker. Numbing-het, söt-salt, krispigt.

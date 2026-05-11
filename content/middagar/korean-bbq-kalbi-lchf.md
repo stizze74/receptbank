@@ -29,6 +29,9 @@ tillagning:
 tips:
   - "Originalet använder asiatiskt päron — erytritol är substitut för sötman."
 testlogg: []
+bild: "korean-bbq-kalbi-lchf.jpg"
+bild_alt: "AI-bild: Korean BBQ kalbi (LCHF)"
+bild_ai: true
 ---
 
 Korean BBQ-klassiker. Eaten med chopsticks i salladsblad.

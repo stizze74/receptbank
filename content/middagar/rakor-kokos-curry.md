@@ -33,6 +33,9 @@ tillagning:
 tips:
   - "Goa-style. Räkor + kokos = pacific-mat-klassiker."
 testlogg: []
+bild: "rakor-kokos-curry.jpg"
+bild_alt: "AI-bild: Räkor i kokos-curry"
+bild_ai: true
 ---
 
 Snabb indisk räkrätt. Kokos är basen, kryddor ger djup.

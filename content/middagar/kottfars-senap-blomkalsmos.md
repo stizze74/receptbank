@@ -125,6 +125,9 @@ tips:
   - 'För mer husmans-känsla: tillsätt 1 tsk torkad timjan i såsen.'
   - Dubbla satsen — räcker till nya middag dag 2.
 testlogg: []
+bild: "kottfars-senap-blomkalsmos.jpg"
+bild_alt: "AI-bild: Köttfärs med blomkålsmos & senap-grädde"
+bild_ai: true
 ---
 
 Vardagsmiddag när du har 25 min och vill ha "riktig" husmans-känsla. Köttfärs är förlåtande och hela rätten kan göras i en kastrull + en stekpanna parallellt.

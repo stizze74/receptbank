@@ -80,6 +80,9 @@ tips:
     Carbonara-magisken: äggen ska tjocknas av värmen i pasta-pannan men inte
     skirar. Tålamod mört frågan.
 testlogg: []
+bild: "rakpasta-carbonara-carbzone.jpg"
+bild_alt: "AI-bild: Räkpasta carbonara (Carbzone)"
+bild_ai: true
 ---
 
 

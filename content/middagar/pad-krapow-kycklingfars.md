@@ -34,6 +34,9 @@ tips:
   - "Thai-klassiker. Hettan kommer från chili — använd thai-chili (mycket het)."
   - "Stekt ägg med krispiga kanter är en del av rätten — undanta inte."
 testlogg: []
+bild: "pad-krapow-kycklingfars.jpg"
+bild_alt: "AI-bild: Pad krapow med kycklingfärs"
+bild_ai: true
 ---
 
 Stefans hetta-kärlek möter thai. Pad krapow är en av Bangkoks vardagsrätter.

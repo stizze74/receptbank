@@ -105,6 +105,9 @@ tips:
   - Bea kommer ur kylen — ingen extra tid på såsen.
   - Pannskyn med vitlök och timjan är färdig pann-sås — skölj inte ur pannan.
 testlogg: []
+bild: "entrecote-bea-rotselleri.jpg"
+bild_alt: "AI-bild: Entrecôte med rotsellerimos & béarnaise"
+bild_ai: true
 ---
 
 Söndagsmiddagen. Entrecôte stekt rätt, Lohmanders bea ur kylen, krämig rotsellerimos. 50 minuter med rätt parallellbearbetning — köttet är begränsande faktor.

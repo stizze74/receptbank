@@ -95,6 +95,9 @@ tips:
     fungerar.
   - 'För ny version: byt spenat mot grönkål för robustare smak.'
 testlogg: []
+bild: "spenat-curry-kombo-byt-protein.jpg"
+bild_alt: "AI-bild: Krämig spenat-curry (Stefan kyckling, Jessica paneer/halloumi)"
+bild_ai: true
 ---
 
 

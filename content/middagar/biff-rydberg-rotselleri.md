@@ -25,6 +25,9 @@ tillagning:
   - "Stek kött snabbt 3 min."
   - "Servera separat med äggula och senap."
 testlogg: []
+bild: "biff-rydberg-rotselleri.jpg"
+bild_alt: "AI-bild: Biff Rydberg med rotselleri"
+bild_ai: true
 ---
 
 Klassisk svensk delikatess.

@@ -26,6 +26,9 @@ tillagning:
   - "Wokra zoodles 2 min."
   - "Servera med sås, parmesan över."
 testlogg: []
+bild: "pasta-zoodles-bolognese.jpg"
+bild_alt: "AI-bild: Zoodles med bolognese"
+bild_ai: true
 ---
 
 Italiensk pasta utan pasta.

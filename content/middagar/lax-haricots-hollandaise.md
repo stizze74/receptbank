@@ -90,6 +90,9 @@ tips:
     istället för 4.
   - 'Rester av hollandaise: går att kyla och använda på ägg nästa morgon.'
 testlogg: []
+bild: "lax-haricots-hollandaise.jpg"
+bild_alt: "AI-bild: Lax med haricots verts & hollandaise"
+bild_ai: true
 ---
 
 Fisktorsdagen. Lax i pannan, haricots verts i en annan, hollandaise i mixern medan resten går. 25 min, två stekpannor, en mixerstav. Båda äter samma — Jessica behöver ingen anpassning.

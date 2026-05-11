@@ -73,6 +73,9 @@ tips:
   - Salladsbladen är din 'tortilla' — en utmärkt LCHF-version av street-tacos.
   - Funkar lika bra med stora grillade räkor eller kräftor.
 testlogg: []
+bild: "skaldjurstacos-salladsblad.jpg"
+bild_alt: "AI-bild: Skaldjurstacos i salladsblad med lime-aioli"
+bild_ai: true
 ---
 
 

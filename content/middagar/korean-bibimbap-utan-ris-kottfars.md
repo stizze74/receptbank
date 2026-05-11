@@ -31,6 +31,9 @@ tillagning:
 tips:
   - "Klassisk LCHF-anpassning utan blomkålsris."
 testlogg: []
+bild: "korean-bibimbap-utan-ris-kottfars.jpg"
+bild_alt: "AI-bild: Korean-style bibimbap utan ris (köttfärs)"
+bild_ai: true
 ---
 
 En bowl-klassiker. Färs gör den extra mättande.

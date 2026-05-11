@@ -82,6 +82,9 @@ tips:
   - Klassisk khao soi har äggnudlar — vår LCHF-version är soppa utan nudlar.
   - 'Thaibasilika ger mer autentisk smak än mynta, men båda fungerar.'
 testlogg: []
+bild: "khao-soi-lchf.jpg"
+bild_alt: "AI-bild: Khao soi LCHF (thai curry-soppa med kyckling)"
+bild_ai: true
 ---
 
 

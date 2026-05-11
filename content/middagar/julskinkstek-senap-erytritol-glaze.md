@@ -73,6 +73,9 @@ tips:
   - Lågtemperatur-tekniken (110°C långt) ger mört och saftigt resultat.
   - Servera med dijonsenap på sidan och klassisk julbord-tillbehor.
 testlogg: []
+bild: "julskinkstek-senap-erytritol-glaze.jpg"
+bild_alt: "AI-bild: Helstekt julskinkstek med senap-erytritol-glaze"
+bild_ai: true
 ---
 
 

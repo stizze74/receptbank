@@ -104,6 +104,9 @@ tips:
   - Inte övervispa äggen — lite strängar är bättre än perfekt blandning.
   - 'Riven ost (cheddar, gruyère) inuti omeletten gör helgen ny.'
 testlogg: []
+bild: "helgbrunch-omelett-sidflask.jpg"
+bild_alt: "AI-bild: Helgbrunch: omelett, sidfläsk & haricots verts"
+bild_ai: true
 ---
 
 Helgbrunch eller helg-lunch. Omelett med fluffigt smör, krispigt sidfläsk, smörstekta haricots verts. 20 minuter, mättar i timmar.

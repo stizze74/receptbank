@@ -57,7 +57,7 @@ tillagning:
       Glassmaskin: kör enligt anvisning, tillsätt hackad choklad sista minuten.
       Manuellt: frys 30 min, vispa, tillsätt choklad, frys 1–2 h till.
   - namn: Servera
-    text: Ta ut 5 min innan servering för krameringd textur.
+    text: Ta ut 5 min innan servering för krämig textur.
 tips:
   - >-
     Klassisk stracciatella — chokladen sprider sig som små skärvor genom

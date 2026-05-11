@@ -47,11 +47,11 @@ ingredienser:
 tillagning:
   - namn: Förber
     text: >-
-      Sett ugnen på 110°C, undervarme. Lagg skinkan i en stor ugnsförema form
+      Sätt ugnen på 110°C, undervarme. Lägg skinkan i en stor ugnsförema form
       (sk inn-sidan upp).
   - namn: Kör långsamt
     text: >-
-      Sett in en st ektermometer i tjockaste delen. Ugnsstek 3,5–4 timme tills
+      Sätt in en st ektermometer i tjockaste delen. Ugnsstek 3,5–4 timme tills
       innertemp är 65°C. Faktiskt tid beror på storlek.
     timer_min: 220
   - namn: Gör glaze
@@ -60,7 +60,7 @@ tillagning:
       svartpeppar.
   - namn: Glaze och gratinera
     text: >-
-      Ta ut skinkan. Öka ugn till 250°C. Bred på glazen på sk inn-sidan. Lagg in
+      Ta ut skinkan. Öka ugn till 250°C. Bred på glazen på sk inn-sidan. Lägg in
       8 min tills gyllene och bubblig.
     timer_min: 8
   - namn: Vila

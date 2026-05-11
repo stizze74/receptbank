@@ -42,15 +42,15 @@ tillagning:
   - namn: Smält choklad
     text: >-
       Hacka chokladen fint. Värm grädde och smör till strax under kokning. Häll
-      över chokladen. Låt stå 1 min, rör till län.
+      över chokladen. Låt stå 1 min, rör till len.
   - namn: Smaksätt
     text: Rör ner vanilj och ev. konjak.
   - namn: Kyl
-    text: Küla i kyl 2 h tills fast.
+    text: Kyla i kyl 2 h tills fast.
     timer_min: 120
   - namn: Rulla
     text: >-
-      Forma till 16 små bollar med tsked, rulla i kakao på plat. Hand-trick: ha
+      Forma till 16 små bollar med tsked, rulla i kakao på plåt. Hand-trick: ha
       skedar i varmt vatten för skopa.
   - namn: Förvara
     text: Lägg i böckre eller förpacka som gåva. Förvara kyl.

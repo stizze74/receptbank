@@ -21,6 +21,9 @@ tillagning:
   - "Olja + frön + salt."
   - { namn: "Ugn", text: "200°C, 25 min.", timer_min: 25 }
 testlogg: []
+bild: "fankalstek-rostad.jpg"
+bild_alt: "AI-bild: Rostad fänkål"
+bild_ai: true
 ---
 
 Sötgrönsak.

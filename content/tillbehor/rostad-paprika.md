@@ -21,6 +21,9 @@ tillagning:
   - "Olja + vitlök."
   - { namn: "Ugn", text: "200°C, 25 min.", timer_min: 25 }
 testlogg: []
+bild: "rostad-paprika.jpg"
+bild_alt: "AI-bild: Rostad paprika med olja"
+bild_ai: true
 ---
 
 Söt rostad paprika.

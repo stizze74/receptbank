@@ -54,6 +54,9 @@ tips:
   - 'Spara skyn i pannan — ringla över innan servering, ger düm extra smak.'
   - Funkar lika bra som sallad-topping kall dagen efter.
 testlogg: []
+bild: "krasna-rostade-tomater.jpg"
+bild_alt: "AI-bild: Rostade körsbärstomater med vitlök"
+bild_ai: true
 ---
 
 Snabb sida.

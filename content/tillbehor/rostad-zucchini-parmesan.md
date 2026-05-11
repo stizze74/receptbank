@@ -21,6 +21,9 @@ tillagning:
   - "Olja + parmesan."
   - { namn: "Ugn", text: "200°C, 18 min.", timer_min: 18 }
 testlogg: []
+bild: "rostad-zucchini-parmesan.jpg"
+bild_alt: "AI-bild: Rostad zucchini med parmesan"
+bild_ai: true
 ---
 
 Italiensk grönsak.

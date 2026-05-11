@@ -23,6 +23,9 @@ tillagning:
   - { namn: "Ugn", text: "200°C, 30 min.", timer_min: 30 }
   - "Tahini + citron + vitlök över."
 testlogg: []
+bild: "rostad-aubergine.jpg"
+bild_alt: "AI-bild: Rostad aubergine med tahini"
+bild_ai: true
 ---
 
 Babaganoush.

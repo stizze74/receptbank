@@ -55,6 +55,9 @@ tips:
   - Bra som förrätt på ett salladsblad eller i en avokadohålva.
   - Funkar också som lyxsnack med extra löjrom över.
 testlogg: []
+bild: "skagenrora.jpg"
+bild_alt: "AI-bild: Skagenröra"
+bild_ai: true
 ---
 
 

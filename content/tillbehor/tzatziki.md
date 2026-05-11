@@ -59,6 +59,9 @@ tips:
   - 'Bra till lamm, kyckling, korv, grönsaker för doppning.'
   - Fet yoghurt är kritiskt — light-yoghurt blir vattnig och har mer kh.
 testlogg: []
+bild: "tzatziki.jpg"
+bild_alt: "AI-bild: Tzatziki"
+bild_ai: true
 ---
 
 

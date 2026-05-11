@@ -21,6 +21,9 @@ tillagning:
   - "Blanda allt."
   - { namn: "Ugn", text: "200°C, 30 min.", timer_min: 30 }
 testlogg: []
+bild: "rostad-rotselleri.jpg"
+bild_alt: "AI-bild: Rostad rotselleri"
+bild_ai: true
 ---
 
 Vinter-rotsak.

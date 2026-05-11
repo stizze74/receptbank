@@ -20,6 +20,9 @@ tillagning:
   - "Massera kål med olja."
   - { namn: "Ugn", text: "160°C, 12 min.", timer_min: 12 }
 testlogg: []
+bild: "gronkalschips.jpg"
+bild_alt: "AI-bild: Grönkålschips med flingsalt"
+bild_ai: true
 ---
 
 Krispigt sprödbete.

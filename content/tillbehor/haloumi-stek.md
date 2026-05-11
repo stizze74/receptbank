@@ -21,6 +21,9 @@ tillagning:
   - "Stek halloumi 2 min/sida."
   - "Citronsaft + oregano."
 testlogg: []
+bild: "haloumi-stek.jpg"
+bild_alt: "AI-bild: Stekt halloumi i citron"
+bild_ai: true
 ---
 
 Vegetariskt protein.

@@ -21,6 +21,9 @@ tillagning:
   - "Blanda blomkål med olja och kryddor."
   - { namn: "Ugn", text: "200°C, 25 min.", timer_min: 25 }
 testlogg: []
+bild: "rostad-blomkal-cumin.jpg"
+bild_alt: "AI-bild: Rostad blomkål med cumin"
+bild_ai: true
 ---
 
 Mellanösterns blomkål.

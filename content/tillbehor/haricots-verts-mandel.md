@@ -22,6 +22,9 @@ tillagning:
   - "Stek bönor i smör 5 min."
   - "Mandlar och vitlök 2 min."
 testlogg: []
+bild: "haricots-verts-mandel.jpg"
+bild_alt: "AI-bild: Haricots verts med mandel"
+bild_ai: true
 ---
 
 Klassisk fransk garnityr.

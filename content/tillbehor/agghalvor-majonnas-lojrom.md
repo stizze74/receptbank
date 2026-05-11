@@ -52,6 +52,9 @@ tips:
   - Byt löjrom mot stenbitsrom för billigare variant.
   - 'Klassisk svensk variant: maj + räka på toppen istället.'
 testlogg: []
+bild: "agghalvor-majonnas-lojrom.jpg"
+bild_alt: "AI-bild: Ägghalvor med majonnäs & löjrom"
+bild_ai: true
 ---
 
 

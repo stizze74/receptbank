@@ -59,6 +59,9 @@ tips:
     Sukrin/erytritol påverkar inte glukos — vanligt socker bytt mot detta funkar
     bra i picklingar.
 testlogg: []
+bild: "snabbpicklad-rodlok.jpg"
+bild_alt: "AI-bild: Snabbpicklad rödlök"
+bild_ai: true
 ---
 
 

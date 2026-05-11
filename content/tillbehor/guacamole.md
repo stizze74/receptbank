@@ -21,6 +21,9 @@ ingredienser:
 tillagning:
   - "Mosa avokado, blanda allt."
 testlogg: []
+bild: "guacamole.jpg"
+bild_alt: "AI-bild: Klassisk guacamole"
+bild_ai: true
 ---
 
 Mexikansk dipping.

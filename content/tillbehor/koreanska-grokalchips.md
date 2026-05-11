@@ -21,6 +21,9 @@ tillagning:
   - "Massera kål med olja + gochujang."
   - { namn: "Ugn", text: "160°C, 15 min.", timer_min: 15 }
 testlogg: []
+bild: "koreanska-grokalchips.jpg"
+bild_alt: "AI-bild: Korean grönkålschips"
+bild_ai: true
 ---
 
 Koreansk twist.

@@ -21,6 +21,9 @@ tillagning:
   - "Stek pinjenötter torrt 1 min."
   - "Smör + vitlök + spenat 3 min."
 testlogg: []
+bild: "spenat-pinjenotter.jpg"
+bild_alt: "AI-bild: Smörstekt spenat med pinjenötter"
+bild_ai: true
 ---
 
 Italiensk garnityr.

@@ -21,6 +21,9 @@ tillagning:
   - "Olja + krydda."
   - { namn: "Ugn", text: "220°C, 30 min, vänd halvvägs.", timer_min: 30 }
 testlogg: []
+bild: "rostat-rotselleri-lchf.jpg"
+bild_alt: "AI-bild: Rotselleri-pommes"
+bild_ai: true
 ---
 
 LCHF-pommes.

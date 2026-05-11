@@ -48,6 +48,9 @@ tips:
   - Funkar lika bra med vanliga tomater i klyftor.
   - En skvätt balsamico funkar om du provat och vet att det inte spikar dig.
 testlogg: []
+bild: "tomatsallad-med-basilika-olivolja.jpg"
+bild_alt: "AI-bild: Tomatsallad med basilika & olivolja"
+bild_ai: true
 ---
 
 

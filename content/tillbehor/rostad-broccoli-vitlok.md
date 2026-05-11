@@ -21,6 +21,9 @@ tillagning:
   - "Olja, vitlök, salt."
   - { namn: "Ugn", text: "220°C, 18 min.", timer_min: 18 }
 testlogg: []
+bild: "rostad-broccoli-vitlok.jpg"
+bild_alt: "AI-bild: Rostad broccoli med vitlök"
+bild_ai: true
 ---
 
 Sprödig vitlöks-broccoli.

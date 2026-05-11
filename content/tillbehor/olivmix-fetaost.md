@@ -50,6 +50,9 @@ tips:
   - Bra som apero-snack eller med kallskärda kotletter.
   - Håller en vecka i kyl i skål med lock — bara bättre dag två.
 testlogg: []
+bild: "olivmix-fetaost.jpg"
+bild_alt: "AI-bild: Olivmix med fetaost"
+bild_ai: true
 ---
 
 

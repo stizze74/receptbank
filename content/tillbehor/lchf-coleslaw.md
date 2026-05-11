@@ -53,6 +53,9 @@ tips:
   - Håller 2–3 dagar i kyl — bara bättre på dag två.
   - 'Bra till grillat, kotletter, sidfläsk och hamburgare utan bröd.'
 testlogg: []
+bild: "lchf-coleslaw.jpg"
+bild_alt: "AI-bild: LCHF-coleslaw"
+bild_ai: true
 ---
 
 

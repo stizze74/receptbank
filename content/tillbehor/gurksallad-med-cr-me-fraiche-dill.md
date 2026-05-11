@@ -46,6 +46,9 @@ tips:
     Färdig dressing kan stå i kyl tills servering — gurkan blandas i precis
     innan.
 testlogg: []
+bild: "gurksallad-med-cr-me-fraiche-dill.jpg"
+bild_alt: "AI-bild: Gurksallad med crème fraiche & dill"
+bild_ai: true
 ---
 
 

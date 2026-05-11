@@ -47,7 +47,7 @@ tillagning:
   - namn: Rör ihop dressing
     text: 'Blanda crème fraiche, majonnäs, dill, citron och senap.'
   - namn: Vänd ner räkor
-    text: Tillsatt räkor försiktigt. Smaka av med salt och peppar.
+    text: Tillsätt räkor försiktigt. Smaka av med salt och peppar.
   - namn: Vila
     text: Låt stå i kyl 10 min innan servering.
     timer_min: 10

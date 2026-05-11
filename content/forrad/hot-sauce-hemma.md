@@ -54,7 +54,7 @@ tillagning:
     timer_min: 12
   - namn: Mixa
     text: >-
-      Mixa allt med stavmixer till helt län sås. Sila om du vill ha
+      Mixa allt med stavmixer till helt len sås. Sila om du vill ha
       kristallklar.
   - namn: Förvara
     text: För över i ren flaska. Förvara i kyl.

@@ -60,7 +60,7 @@ tillagning:
     text: Lägg fisken på tallrik. Häll sör smörsa sen över. Toppa med persilja.
 tips:
   - Hälleflundra är en lyx-fisk — perfekt för middag med gäster.
-  - Servera med smortstekt sparris eller haricots verts.
+  - Servera med smörstekt sparris eller haricots verts.
 testlogg: []
 ---
 

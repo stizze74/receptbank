@@ -57,7 +57,7 @@ tillagning:
   - namn: Blanda vätska
     text: 'Vispa ägg, olja, vatten och vinäger.'
   - namn: Förena
-    text: Vinda samman till en len deg. Låt stå 10 min.
+    text: Vänd samman till en len deg. Låt stå 10 min.
     timer_min: 10
   - namn: Forma
     text: >-

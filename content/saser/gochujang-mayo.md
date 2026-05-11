@@ -20,6 +20,9 @@ ingredienser:
 tillagning:
   - "Vispa."
 testlogg: []
+bild: "gochujang-mayo.jpg"
+bild_alt: "AI-bild: Gochujang-majonnäs"
+bild_ai: true
 ---
 
 Koreansk modern.

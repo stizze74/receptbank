@@ -21,6 +21,9 @@ ingredienser:
 tillagning:
   - "Vispa allt."
 testlogg: []
+bild: "tahini-citron.jpg"
+bild_alt: "AI-bild: Tahini-citronsås"
+bild_ai: true
 ---
 
 Mellanöstern-bas-sås.

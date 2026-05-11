@@ -21,6 +21,9 @@ ingredienser:
 tillagning:
   - "Vispa allt."
 testlogg: []
+bild: "rom-sour-cream-sas.jpg"
+bild_alt: "AI-bild: Sour cream med rom"
+bild_ai: true
 ---
 
 Lyx-fisk-sås.

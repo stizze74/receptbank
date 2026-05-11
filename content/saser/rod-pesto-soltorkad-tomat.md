@@ -21,6 +21,9 @@ ingredienser:
 tillagning:
   - "Mixa."
 testlogg: []
+bild: "rod-pesto-soltorkad-tomat.jpg"
+bild_alt: "AI-bild: Röd pesto med soltorkad tomat"
+bild_ai: true
 ---
 
 Röd italiensk variant.

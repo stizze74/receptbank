@@ -21,6 +21,9 @@ ingredienser:
 tillagning:
   - "Blanda allt."
 testlogg: []
+bild: "tartarsas.jpg"
+bild_alt: "AI-bild: Tartarsås"
+bild_ai: true
 ---
 
 Klassisk fisk-sås.

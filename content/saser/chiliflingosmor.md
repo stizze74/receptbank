@@ -20,6 +20,9 @@ ingredienser:
 tillagning:
   - "Rör."
 testlogg: []
+bild: "chiliflingosmor.jpg"
+bild_alt: "AI-bild: Chili-flingor-smör"
+bild_ai: true
 ---
 
 Het smörklick.

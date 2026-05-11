@@ -29,6 +29,9 @@ tips:
   - "Om såsen skär: lägg till en matsked kallt vatten och mixa igen."
   - "Funkar till lax, ägg, sparris, blomkål — i princip allt."
 testlogg: []
+bild: "hollandaise-mixer.jpg"
+bild_alt: "AI-bild: Hollandaise mixer-metoden"
+bild_ai: true
 ---
 
 Den enda hollandaise du behöver kunna. Mixer-metoden är felsäker så länge smöret är

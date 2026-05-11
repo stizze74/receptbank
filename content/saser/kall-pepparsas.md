@@ -67,6 +67,9 @@ tips:
     Lohmanders och Eriks Såser har båda kalla pepparsåser — LCHF-vänliga
     genvägar när du inte hinner.
 testlogg: []
+bild: "kall-pepparsas.jpg"
+bild_alt: "AI-bild: Kall pepparsås"
+bild_ai: true
 ---
 
 Hemmagjord kall pepparsås — krämig, syrlig, med bett från krossad svartpeppar. Funkar utmärkt till varm rödbiff och kalla rätter med rostbiff eller skinka.

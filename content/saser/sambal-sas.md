@@ -20,6 +20,9 @@ ingredienser:
 tillagning:
   - "Vispa."
 testlogg: []
+bild: "sambal-sas.jpg"
+bild_alt: "AI-bild: Sambal-sås (asiatisk het)"
+bild_ai: true
 ---
 
 Indonesisk klassiker.

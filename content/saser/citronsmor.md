@@ -70,6 +70,9 @@ tips:
     För dill-version: byt persilja mot dill, passar superbra till förkor och
     lax.
 testlogg: []
+bild: "citronsmor.jpg"
+bild_alt: "AI-bild: Citronsmör"
+bild_ai: true
 ---
 
 Klassiskt smaksatt smör som smälter över varm fisk eller kyckling. Halv-färdig i kylen — gör en gång, ät i flera dagar.

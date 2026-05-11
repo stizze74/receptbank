@@ -20,6 +20,9 @@ ingredienser:
 tillagning:
   - "Vispa."
 testlogg: []
+bild: "kall-vitloksas.jpg"
+bild_alt: "AI-bild: Kall vitlökssås"
+bild_ai: true
 ---
 
 Snabb vitlöksmajo.

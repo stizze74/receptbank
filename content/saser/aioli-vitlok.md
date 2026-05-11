@@ -23,6 +23,9 @@ tillagning:
   - "Droppa i olivolja under vispning."
   - "Citron + salt."
 testlogg: []
+bild: "aioli-vitlok.jpg"
+bild_alt: "AI-bild: Hemmagjord vitlöksaioli"
+bild_ai: true
 ---
 
 Spansk-katalonsk aioli.

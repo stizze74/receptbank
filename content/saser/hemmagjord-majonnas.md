@@ -52,6 +52,9 @@ tips:
     etc.
   - Funkar inte med kall äggula — ta ut ägget en timme innan.
 testlogg: []
+bild: "hemmagjord-majonnas.jpg"
+bild_alt: "AI-bild: Hemmagjord majonnäs"
+bild_ai: true
 ---
 
 

@@ -21,6 +21,9 @@ tillagning:
   - "Reducera vin + buljong + lök till hälften."
   - "Vispa in smör."
 testlogg: []
+bild: "rodvinsas-bea-style.jpg"
+bild_alt: "AI-bild: Rödvinssås med smör"
+bild_ai: true
 ---
 
 Klassisk rödvinssås.

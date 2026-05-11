@@ -77,6 +77,9 @@ testlogg:
   - datum: '2026-05-09'
     betyg: 4
     notering: 'Pipeline-test: verifiera push-flow'
+bild: "senap-gradde.jpg"
+bild_alt: "AI-bild: Senap- och gräddsås"
+bild_ai: true
 ---
 
 Klassisk följeslagare till fläsk och kyckling. Görs allra bäst i samma panna som proteinet just stekts i — fonden från köttet lyfter såsen rejält. Tar 8 minuter från start till tallrik och kräver ingen pyssel.

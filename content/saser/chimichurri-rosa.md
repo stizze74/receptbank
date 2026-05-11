@@ -23,6 +23,9 @@ ingredienser:
 tillagning:
   - "Hacka, blanda."
 testlogg: []
+bild: "chimichurri-rosa.jpg"
+bild_alt: "AI-bild: Rosa chimichurri"
+bild_ai: true
 ---
 
 Argentinsk klassiker (utan koriander!).

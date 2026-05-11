@@ -22,6 +22,9 @@ ingredienser:
 tillagning:
   - "Vispa."
 testlogg: []
+bild: "ranchdressing-keto.jpg"
+bild_alt: "AI-bild: Ranchdressing keto"
+bild_ai: true
 ---
 
 Klassisk amerikansk dressing.

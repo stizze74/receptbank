@@ -21,6 +21,9 @@ ingredienser:
 tillagning:
   - "Mortla eller mixa."
 testlogg: []
+bild: "pesto-grön-pinjenot.jpg"
+bild_alt: "AI-bild: Klassisk grön pesto"
+bild_ai: true
 ---
 
 Klassisk pesto.

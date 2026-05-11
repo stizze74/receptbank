@@ -21,6 +21,9 @@ ingredienser:
 tillagning:
   - "Vispa allt."
 testlogg: []
+bild: "gravlax-sas-senap.jpg"
+bild_alt: "AI-bild: Hovmästarsås till gravlax"
+bild_ai: true
 ---
 
 Hovmästarsås LCHF.

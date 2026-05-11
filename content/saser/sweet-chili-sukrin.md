@@ -21,6 +21,9 @@ ingredienser:
 tillagning:
   - "Sjud allt 5 min till sirap."
 testlogg: []
+bild: "sweet-chili-sukrin.jpg"
+bild_alt: "AI-bild: Sweet chili-sås (sukrin)"
+bild_ai: true
 ---
 
 LCHF-version av thai-klassiker.

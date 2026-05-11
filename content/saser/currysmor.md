@@ -21,6 +21,9 @@ tillagning:
   - "Rör samman."
   - "Forma till \"korv\" i plastfilm, kyl."
 testlogg: []
+bild: "currysmor.jpg"
+bild_alt: "AI-bild: Currysmör"
+bild_ai: true
 ---
 
 Smaksatt smör.

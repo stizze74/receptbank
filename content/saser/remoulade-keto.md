@@ -22,6 +22,9 @@ ingredienser:
 tillagning:
   - "Vispa."
 testlogg: []
+bild: "remoulade-keto.jpg"
+bild_alt: "AI-bild: Remoulade keto"
+bild_ai: true
 ---
 
 Dansk klassiker.

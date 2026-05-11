@@ -71,6 +71,9 @@ tips:
     Använd på grillat kött på sommaren — smälter perfekt och ger
     restaurangkänsla.
 testlogg: []
+bild: "ortsmor.jpg"
+bild_alt: "AI-bild: Örtsmör"
+bild_ai: true
 ---
 
 Klassiskt kompoundsmör med vitlök och blandade örter. Funkar smält över entrecôte, lax, kyckling — och som klick på smörstekta grönsaker.

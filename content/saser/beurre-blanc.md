@@ -21,6 +21,9 @@ tillagning:
   - "Reducera vin + vinäger + lök till 1 msk."
   - "Vispa in smör en bit i taget."
 testlogg: []
+bild: "beurre-blanc.jpg"
+bild_alt: "AI-bild: Beurre blanc (vitvinsmör)"
+bild_ai: true
 ---
 
 Klassisk fransk fisk-sås.

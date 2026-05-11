@@ -21,6 +21,9 @@ ingredienser:
 tillagning:
   - "Vispa."
 testlogg: []
+bild: "kallsas-rakor-cocktail.jpg"
+bild_alt: "AI-bild: Räk-cocktailsås"
+bild_ai: true
 ---
 
 Räkcocktail-sås.

@@ -23,6 +23,9 @@ ingredienser:
 tillagning:
   - "Mixa allt."
 testlogg: []
+bild: "caesardressing.jpg"
+bild_alt: "AI-bild: Caesardressing"
+bild_ai: true
 ---
 
 Klassisk caesar.

@@ -57,6 +57,9 @@ tips:
     glukos.
   - Frusen schalottenlök går bra om du har bråttom.
 testlogg: []
+bild: "vitvinssas.jpg"
+bild_alt: "AI-bild: Vitvinssås"
+bild_ai: true
 ---
 
 

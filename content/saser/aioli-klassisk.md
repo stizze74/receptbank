@@ -58,6 +58,9 @@ tips:
     Funkar perfekt till stekt fisk, grillat kött, eller som dippsås till
     halloumi-fries.
 testlogg: []
+bild: "aioli-klassisk.jpg"
+bild_alt: "AI-bild: Aioli klassisk (vitlökmajonnäs)"
+bild_ai: true
 ---
 
 

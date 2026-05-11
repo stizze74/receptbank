@@ -23,6 +23,9 @@ tillagning:
   - "Saffran löses i 1 tsk varmt vatten 5 min."
   - "Vispa äggula + vitlök, droppa i olja + saffran."
 testlogg: []
+bild: "ailolisas-saffran.jpg"
+bild_alt: "AI-bild: Saffran-aioli"
+bild_ai: true
 ---
 
 Spanjorsk delikatess.

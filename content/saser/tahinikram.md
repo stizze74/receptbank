@@ -21,6 +21,9 @@ ingredienser:
 tillagning:
   - "Vispa allt."
 testlogg: []
+bild: "tahinikram.jpg"
+bild_alt: "AI-bild: Tahinikram med citron"
+bild_ai: true
 ---
 
 Mellanöstern-bas-sås.

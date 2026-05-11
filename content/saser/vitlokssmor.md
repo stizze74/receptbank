@@ -20,6 +20,9 @@ ingredienser:
 tillagning:
   - "Rör."
 testlogg: []
+bild: "vitlokssmor.jpg"
+bild_alt: "AI-bild: Vitlökssmör"
+bild_ai: true
 ---
 
 Klassiskt smaksmör.

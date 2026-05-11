@@ -23,6 +23,9 @@ tillagning:
   - "Smör + cognac + flambera."
   - "Grädde + peppar, sjud 5 min."
 testlogg: []
+bild: "gradde-konjak-pepparsas.jpg"
+bild_alt: "AI-bild: Pepparsås med konjak"
+bild_ai: true
 ---
 
 Hemmagjord pepparsås.

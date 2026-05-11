@@ -22,6 +22,9 @@ ingredienser:
 tillagning:
   - "Mortla eller mixa allt."
 testlogg: []
+bild: "pesto-genovese-pinjenötter.jpg"
+bild_alt: "AI-bild: Pesto genovese (pinjenötter)"
+bild_ai: true
 ---
 
 Klassisk italiensk pesto.

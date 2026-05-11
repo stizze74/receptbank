@@ -23,6 +23,9 @@ ingredienser:
 tillagning:
   - "Mixa allt."
 testlogg: []
+bild: "salsa-verde-italiensk.jpg"
+bild_alt: "AI-bild: Italiensk salsa verde (utan koriander)"
+bild_ai: true
 ---
 
 Italiensk persilja-bas. Persilja inte koriander.

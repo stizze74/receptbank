@@ -21,6 +21,9 @@ ingredienser:
 tillagning:
   - "Hacka, blanda."
 testlogg: []
+bild: "gremolata-extra.jpg"
+bild_alt: "AI-bild: Gremolata med citron"
+bild_ai: true
 ---
 
 Italiensk fräschet.

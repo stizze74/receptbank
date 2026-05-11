@@ -19,6 +19,9 @@ ingredienser:
 tillagning:
   - "Vispa."
 testlogg: []
+bild: "sriracha-majo.jpg"
+bild_alt: "AI-bild: Sriracha-majo"
+bild_ai: true
 ---
 
 Snabb het sås.

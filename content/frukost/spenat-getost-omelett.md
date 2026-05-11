@@ -46,7 +46,7 @@ tillagning:
     text: >-
       Tillsätt resterande smör i pannan. Häll i äggsmeten på medel-låg värme.
       Lyft kanterna lätt och låt flytande del rinna ut. När nastan stelt: lägg
-      spenat och getost på ena halvan. Vinda omeletten.
+      spenat och getost på ena halvan. Vänd omeletten.
     timer_min: 5
   - namn: Servera
     text: Glid på tallrik. Skär på mitten för två portioner.

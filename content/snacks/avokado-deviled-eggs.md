@@ -43,7 +43,7 @@ tillagning:
     timer_min: 10
   - namn: Gör fyllning
     text: >-
-      Mosa äggulor med avokado, majonnas, lime, chili, salt och peppar till län
+      Mosa äggulor med avokado, majonnas, lime, chili, salt och peppar till len
       krame.
   - namn: Fyll
     text: Sprits eller skeda kramen tillbaka i ägghalvorna. Toppa med persilja.

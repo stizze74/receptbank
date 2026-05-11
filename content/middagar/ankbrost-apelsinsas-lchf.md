@@ -53,7 +53,7 @@ tillagning:
   - namn: Stek fettsida
     text: >-
       Lägg brösten i KALL stekpanna med fettsidan neråt. Sätt på medelvärme.
-      Fettet smälter latt och blir krispigt, 8 min. Häll bort överflödat fett
+      Fettet smälter lätt och blir krispigt, 8 min. Häll bort överflödat fett
       (spara!).
     timer_min: 8
   - namn: Vänd och stek köttsida

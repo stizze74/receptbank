@@ -51,8 +51,8 @@ tillagning:
     text: 'Blanda mandelmjöl, erytritol, bakpulver, vanilj och salt.'
   - namn: Tillsätt vätska
     text: >-
-      Rör ner ägg, smält smör och mandelarom. Vinda i mandlarna. Forma till en
-      log på plat med bakplats (~25 cm lång).
+      Rör ner ägg, smält smör och mandelarom. Vänd i mandlarna. Forma till en
+      log på plåt med bakplåtspapper (~25 cm lång).
   - namn: Första bakning
     text: Baka 25 min tills gyllene och fast.
     timer_min: 25

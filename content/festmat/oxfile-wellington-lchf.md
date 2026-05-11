@@ -64,11 +64,11 @@ tillagning:
     timer_min: 12
   - namn: Inveckla
     text: >-
-      Bred ut Parmaskinka på plastfolie. Bred blomkålsblandningen över. Lagg
+      Bred ut Parmaskinka på plastfolie. Bred blomkålsblandningen över. Lägg
       filet ovanpå och rulla in stramt med skinkan.
   - namn: Ugnsstek
     text: >-
-      Lägg på plat. Pensla med upvispat ägg. Ugn 200°C i 12–15 min till en
+      Lägg på plåt. Pensla med upvispat ägg. Ugn 200°C i 12–15 min till en
       innertemperatur på 56°C för medium-rare.
     timer_min: 14
   - namn: Vila

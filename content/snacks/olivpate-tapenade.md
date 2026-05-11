@@ -43,7 +43,7 @@ tillagning:
   - namn: Mixa
     text: >-
       Lägg oliver, vitlök, ansjovis, kapris, olivolja, citron och peppar i
-      matberedare. Mixa till medium-grov konsistens (inte slat).
+      matberedare. Mixa till medium-grov konsistens (inte slät).
   - namn: Förvara
     text: För över i ren burk. Förvara i kyl.
 tips:

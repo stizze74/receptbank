@@ -61,7 +61,7 @@ tillagning:
     timer_min: 12
   - namn: Mixa
     text: >-
-      Mixa med stavmixer tills slat. För extra slat resultat: passera genom
+      Mixa med stavmixer tills slät. För extra slät resultat: passera genom
       finmaskig sil.
   - namn: Tillsätt smör och grädde
     text: >-
@@ -71,7 +71,7 @@ tillagning:
     text: 'Salt, vitpeppar, eventuell muskot.'
 tips:
   - 'Mycket smör i finishen är poängen — inte snåla, det ger restaurangkänsla.'
-  - 'Stavmixer ger bra resultat. För helt slat: passera genom sil efteråt.'
+  - 'Stavmixer ger bra resultat. För helt slät: passera genom sil efteråt.'
   - >-
     Toppa med en klick crème fraîche, hackad gräslök, eller smulat krispigt
     sidfläsk — grymt.

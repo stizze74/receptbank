@@ -65,8 +65,8 @@ tillagning:
     text: >-
       Rör ihop olivolja, citron, lime, dijonsenap, schalottenlök, kapris och
       dill.
-  - namn: Vinda samman
-    text: Vinda laxen med dressing. Küla i kyl 30 min så smakerna gor ihop sig.
+  - namn: Vänd samman
+    text: Vänd laxen med dressing. Kyla i kyl 30 min så smakerna gör ihop sig.
     timer_min: 30
   - namn: Lägg upp
     text: >-

@@ -28,6 +28,21 @@ const planerade = alla.filter((r) => r.data.status === 'planerad');
 
 const senaste = skrivna.slice(0, 6);
 
+const slumpbaraFlera = (...moduler: string[]) =>
+  skrivna.filter((r) => moduler.includes(r.data.modul)).map((r) => r.id);
+
+const matModuler = ['middag', 'soppa', 'sallad', 'festmat'];
+const jessicaIds = skrivna
+  .filter((r) => matModuler.includes(r.data.modul) && r.data.jessica_tagg)
+  .map((r) => r.id);
+
+const slumpaListor = {
+  frukost: slumpbaraFlera('frukost'),
+  lunch: slumpbaraFlera('sallad', 'soppa'),
+  middag: slumpbaraFlera('middag', 'soppa'),
+  jessica: jessicaIds,
+};
+
 const moduler = [
   { titel: 'Baser', slug: 'baser', mojligt: 'bas' },
   { titel: 'Proteiner', slug: 'proteiner', mojligt: 'protein' },
@@ -55,16 +70,56 @@ const moduler = [
     LCHF · ~5–10 g netto kh per måltid · {skrivna.length} skrivna recept · {planerade.length} planerade
   </p>
 
-  <section class="mb-6 grid grid-cols-2 gap-2">
-    <a href="/kombinera" class="kort flex flex-col gap-1 no-underline hover:bg-bas-50">
-      <span class="text-xs uppercase tracking-wide text-bas-600">Vad ska jag äta?</span>
-      <span class="text-base font-semibold">Kombinera modul →</span>
-    </a>
-    <a href="/veckoplan" class="kort flex flex-col gap-1 no-underline hover:bg-bas-50">
-      <span class="text-xs uppercase tracking-wide text-bas-600">Hela veckan</span>
-      <span class="text-base font-semibold">Veckoplan →</span>
-    </a>
+  <section class="mb-6">
+    <h2 class="mb-2 text-lg">Vad ska jag äta?</h2>
+    <div class="grid grid-cols-2 gap-2 sm:grid-cols-4">
+      <button type="button" data-slumpa="frukost" class="kort flex flex-col gap-1 text-left hover:bg-bas-50">
+        <span class="text-xs uppercase tracking-wide text-bas-600">Slumpa</span>
+        <span class="text-base font-semibold">Frukost →</span>
+        <span class="text-xs text-bas-600">{slumpaListor.frukost.length} st</span>
+      </button>
+      <button type="button" data-slumpa="lunch" class="kort flex flex-col gap-1 text-left hover:bg-bas-50">
+        <span class="text-xs uppercase tracking-wide text-bas-600">Slumpa</span>
+        <span class="text-base font-semibold">Lunch →</span>
+        <span class="text-xs text-bas-600">{slumpaListor.lunch.length} st</span>
+      </button>
+      <button type="button" data-slumpa="middag" class="kort flex flex-col gap-1 text-left hover:bg-bas-50">
+        <span class="text-xs uppercase tracking-wide text-bas-600">Slumpa</span>
+        <span class="text-base font-semibold">Middag →</span>
+        <span class="text-xs text-bas-600">{slumpaListor.middag.length} st</span>
+      </button>
+      <button type="button" data-slumpa="jessica" class="kort flex flex-col gap-1 text-left hover:bg-bas-50">
+        <span class="text-xs uppercase tracking-wide text-bas-600">Slumpa</span>
+        <span class="text-base font-semibold">Jessica →</span>
+        <span class="text-xs text-bas-600">{slumpaListor.jessica.length} st</span>
+      </button>
+    </div>
+    <div class="mt-2 grid grid-cols-2 gap-2">
+      <a href="/veckoplan" class="kort flex flex-col gap-1 no-underline hover:bg-bas-50">
+        <span class="text-xs uppercase tracking-wide text-bas-600">Hela veckan</span>
+        <span class="text-base font-semibold">Veckoplan →</span>
+      </a>
+      <a href="/kombinera" class="kort flex flex-col gap-1 no-underline hover:bg-bas-50">
+        <span class="text-xs uppercase tracking-wide text-bas-600">Bygg från moduler</span>
+        <span class="text-base font-semibold">Kombinera →</span>
+      </a>
+    </div>
   </section>
+
+  <script define:vars={{ SLUMPA: slumpaListor }}>
+    document.querySelectorAll('[data-slumpa]').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const typ = btn.getAttribute('data-slumpa');
+        const lista = SLUMPA[typ] ?? [];
+        if (lista.length === 0) {
+          alert(`Inga recept i ${typ}-samlingen än.`);
+          return;
+        }
+        const id = lista[Math.floor(Math.random() * lista.length)];
+        location.href = `/recept/${id}`;
+      });
+    });
+  </script>
 
   <section class="mb-6">
     <h2 class="mb-2 text-lg">Senaste recept</h2>

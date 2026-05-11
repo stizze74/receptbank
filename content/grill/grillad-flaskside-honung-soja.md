@@ -52,7 +52,7 @@ tillagning:
       i kyl, helst över natt.
   - namn: Grilla indirekt
     text: >-
-      Tänd grillen för medel-hög värme. Lagg fläsket på indirekt sida. Grilla 20
+      Tänd grillen för medel-hög värme. Lägg fläsket på indirekt sida. Grilla 20
       min, vänd halvvägs.
     timer_min: 20
   - namn: Slutgrilla direkt

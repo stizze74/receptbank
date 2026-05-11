@@ -36,10 +36,10 @@ ingredienser:
     vara: vaniljpulver
 tillagning:
   - namn: Mosa hallon
-    text: Mosa hallon med en gaffel i en kastrull. Tillsatt erytritol och citron.
+    text: Mosa hallon med en gaffel i en kastrull. Tillsätt erytritol och citron.
   - namn: Koka
     text: >-
-      Värm på medelvärme 5 min, rör ofta. Tillsatt chiafrön och vanilj. Koka 3–4
+      Värm på medelvärme 5 min, rör ofta. Tillsätt chiafrön och vanilj. Koka 3–4
       min till.
     timer_min: 10
   - namn: Sval och förvara

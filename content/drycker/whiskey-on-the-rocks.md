@@ -18,6 +18,9 @@ ingredienser:
 tillagning:
   - "Häll whiskey över is i tumbler."
 testlogg: []
+bild: "whiskey-on-the-rocks.jpg"
+bild_alt: "AI-bild: Whiskey on the rocks"
+bild_ai: true
 ---
 
 Klassiskt avslut. 0g kh, ren spirit.

@@ -21,6 +21,9 @@ ingredienser:
 tillagning:
   - "Blanda allt."
 testlogg: []
+bild: "citrus-spritz.jpg"
+bild_alt: "AI-bild: Citrus-spritz mocktail"
+bild_ai: true
 ---
 
 Brunch-aperitif. Bittersött.

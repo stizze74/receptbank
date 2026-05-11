@@ -23,6 +23,9 @@ tillagning:
   - "Krossa lime, mynta, erytritol i glas."
   - "Fyll med is, rom, sodavatten."
 testlogg: []
+bild: "mojito-classic.jpg"
+bild_alt: "AI-bild: Klassisk mojito"
+bild_ai: true
 ---
 
 Mojito med erytritol istället för socker.

@@ -22,6 +22,9 @@ ingredienser:
 tillagning:
   - "Blanda allt i glas med is."
 testlogg: []
+bild: "virgin-bloody-mary.jpg"
+bild_alt: "AI-bild: Virgin bloody mary"
+bild_ai: true
 ---
 
 Brunchklassiker utan vodka. Selleristjälken är hälften av poängen.

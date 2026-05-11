@@ -21,6 +21,9 @@ tillagning:
   - "Rör med is i mixerglas (inte shaka)."
   - "Sila i kall martini-glas."
 testlogg: []
+bild: "martini-dry.jpg"
+bild_alt: "AI-bild: Dry martini"
+bild_ai: true
 ---
 
 Dry martini. James Bond shakar — Stefan rör.

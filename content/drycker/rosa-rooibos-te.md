@@ -23,6 +23,9 @@ tillagning:
   - "Tillsätt vanilj och erytritol."
   - "Skvätta i kokosmjölk."
 testlogg: []
+bild: "rosa-rooibos-te.jpg"
+bild_alt: "AI-bild: Rosa rooibos med vanilj"
+bild_ai: true
 ---
 
 Kvälls-te. Koffeinfritt.

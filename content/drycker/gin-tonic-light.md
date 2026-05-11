@@ -23,6 +23,9 @@ tillagning:
   - "Häll i gin och tonic light."
   - "Pressa lime."
 testlogg: []
+bild: "gin-tonic-light.jpg"
+bild_alt: "AI-bild: Gin & tonic light"
+bild_ai: true
 ---
 
 Gin-tonic LCHF. Light-tonic är nyckeln.

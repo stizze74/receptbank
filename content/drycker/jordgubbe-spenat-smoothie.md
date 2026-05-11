@@ -20,6 +20,9 @@ ingredienser:
 tillagning:
   - "Mixa."
 testlogg: []
+bild: "jordgubbe-spenat-smoothie.jpg"
+bild_alt: "AI-bild: Jordgubbe-spenat smoothie"
+bild_ai: true
 ---
 
 Söt + grön. Spenat-smaken försvinner i jordgubbe.

@@ -17,6 +17,9 @@ ingredienser:
 tillagning:
   - "Häll i glas. Servera vid rumstemp."
 testlogg: []
+bild: "rödvin-glas.jpg"
+bild_alt: "AI-bild: Glas rödvin"
+bild_ai: true
 ---
 
 Torra röd-viner är LCHF-vänliga. 1.5 dl per glas.

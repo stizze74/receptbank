@@ -22,6 +22,9 @@ tillagning:
   - "Fyll vinglas med is."
   - "Häll Aperol, prosecco, soda. Apelsinklyfta i glaset."
 testlogg: []
+bild: "aperol-spritz-keto.jpg"
+bild_alt: "AI-bild: Aperol spritz keto"
+bild_ai: true
 ---
 
 Italiensk aperitif. Aperol har lite kh — räkna in.

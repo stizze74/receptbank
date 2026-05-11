@@ -22,6 +22,9 @@ tillagning:
   - "Krossa lime, mynta, erytritol i glas (muddla)."
   - "Fyll med is, häll på sodavatten."
 testlogg: []
+bild: "mojito-mocktail.jpg"
+bild_alt: "AI-bild: Mocktail mojito"
+bild_ai: true
 ---
 
 Mojito utan rom. Klassisk.

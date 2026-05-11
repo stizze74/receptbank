@@ -21,6 +21,9 @@ ingredienser:
 tillagning:
   - "Mixa."
 testlogg: []
+bild: "avocado-grön-smoothie.jpg"
+bild_alt: "AI-bild: Avokado-mintsmoothie"
+bild_ai: true
 ---
 
 Mojito-smoothie utan rom. Mint + lime är magi.

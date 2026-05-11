@@ -20,6 +20,9 @@ ingredienser:
 tillagning:
   - "Mixa."
 testlogg: []
+bild: "jordgubbe-kokos-smoothie.jpg"
+bild_alt: "AI-bild: Jordgubbe-kokos smoothie"
+bild_ai: true
 ---
 
 Sommar-smoothie. Fryst frukt = inget behov av is.

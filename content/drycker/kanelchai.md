@@ -25,6 +25,9 @@ tillagning:
   - "Lägg i tepåsar, dra 4 min."
   - "Sila, tillsätt kokosmjölk + erytritol."
 testlogg: []
+bild: "kanelchai.jpg"
+bild_alt: "AI-bild: Kanelchai"
+bild_ai: true
 ---
 
 Indisk chai. Värmer själen.

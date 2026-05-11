@@ -21,6 +21,9 @@ ingredienser:
 tillagning:
   - "Mixa allt med is i blender."
 testlogg: []
+bild: "keto-pina-colada.jpg"
+bild_alt: "AI-bild: Keto pina colada"
+bild_ai: true
 ---
 
 Tropisk klassiker LCHF-anpassad — utan ananas.

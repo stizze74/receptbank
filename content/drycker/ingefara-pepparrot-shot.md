@@ -21,6 +21,9 @@ tillagning:
   - "Riv ingefära och pepparrot. Pressa ur saften genom kaffe-filter eller siktduk."
   - "Tillsätt citron och cayenne."
 testlogg: []
+bild: "ingefara-pepparrot-shot.jpg"
+bild_alt: "AI-bild: Ingefära-pepparrot shot"
+bild_ai: true
 ---
 
 Hälsobomb. 30 ml shot, sätter igång allt.

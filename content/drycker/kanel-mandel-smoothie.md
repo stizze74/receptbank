@@ -21,6 +21,9 @@ ingredienser:
 tillagning:
   - "Mixa."
 testlogg: []
+bild: "kanel-mandel-smoothie.jpg"
+bild_alt: "AI-bild: Kanel-mandel smoothie"
+bild_ai: true
 ---
 
 Eftermiddags-snack med varm-känsla.

@@ -22,6 +22,9 @@ tillagning:
   - "Vispa matcha med 2 msk varmt vatten till slät pasta."
   - "Mixa allt."
 testlogg: []
+bild: "matcha-mandel-smoothie.jpg"
+bild_alt: "AI-bild: Matcha-mandel smoothie"
+bild_ai: true
 ---
 
 Japansk eftermiddag. Matcha ger mild koffeinkick.

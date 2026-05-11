@@ -23,6 +23,9 @@ tillagning:
   - "Värm mandelmjölk, tillsätt erytritol och vanilj."
   - "Häll mandelmjölk över matcha."
 testlogg: []
+bild: "matcha-latte.jpg"
+bild_alt: "AI-bild: Matcha-latte med mandelmjölk"
+bild_ai: true
 ---
 
 Japansk eftermiddag. Stadigare koffeinkick än kaffe.

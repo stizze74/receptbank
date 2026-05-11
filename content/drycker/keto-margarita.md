@@ -23,6 +23,9 @@ tillagning:
   - "Salta glasets rand med citronklyfta + salt."
   - "Shaka allt med is, sila i glaset."
 testlogg: []
+bild: "keto-margarita.jpg"
+bild_alt: "AI-bild: Keto-margarita"
+bild_ai: true
 ---
 
 Margarita utan socker. Klassisk LCHF-drink.

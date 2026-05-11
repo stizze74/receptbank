@@ -21,6 +21,9 @@ ingredienser:
 tillagning:
   - "Mixa."
 testlogg: []
+bild: "avokado-protein-smoothie.jpg"
+bild_alt: "AI-bild: Avokado-protein smoothie"
+bild_ai: true
 ---
 
 Krämig protein-smoothie. Avokado ger fett + textur.

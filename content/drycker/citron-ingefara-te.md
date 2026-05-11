@@ -21,6 +21,9 @@ tillagning:
   - "Lägg ingefära i kopp med kokande vatten. Dra 5 min."
   - "Pressa citron, tillsätt erytritol."
 testlogg: []
+bild: "citron-ingefara-te.jpg"
+bild_alt: "AI-bild: Citron-ingefära-te"
+bild_ai: true
 ---
 
 Förkylnings-te. Honungs-substitut ger samma känsla.

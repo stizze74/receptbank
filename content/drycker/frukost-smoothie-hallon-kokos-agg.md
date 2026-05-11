@@ -59,6 +59,9 @@ tips:
     ge lite mage för vissa.
   - Björnbär eller blåbär funkar lika bra som hallon — alla har låg sockerhalt.
 testlogg: []
+bild: "frukost-smoothie-hallon-kokos-agg.jpg"
+bild_alt: "AI-bild: Frukost-smoothie hallon, kokos och ägg"
+bild_ai: true
 ---
 
 

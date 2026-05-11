@@ -20,6 +20,9 @@ ingredienser:
 tillagning:
   - "Mixa."
 testlogg: []
+bild: "blabar-citron-smoothie.jpg"
+bild_alt: "AI-bild: Blåbär-citron smoothie"
+bild_ai: true
 ---
 
 Antioxidanter + frisk syra.

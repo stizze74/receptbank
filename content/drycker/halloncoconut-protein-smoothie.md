@@ -20,6 +20,9 @@ ingredienser:
 tillagning:
   - "Mixa."
 testlogg: []
+bild: "halloncoconut-protein-smoothie.jpg"
+bild_alt: "AI-bild: Hallon-coconut protein smoothie"
+bild_ai: true
 ---
 
 Frukost för aktiva. Protein + kokosfett = mätt i 4 timmar.

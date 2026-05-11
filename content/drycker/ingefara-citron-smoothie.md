@@ -21,6 +21,9 @@ ingredienser:
 tillagning:
   - "Mixa."
 testlogg: []
+bild: "ingefara-citron-smoothie.jpg"
+bild_alt: "AI-bild: Ingefära-citron smoothie"
+bild_ai: true
 ---
 
 Morgon-pep. Ingefära väcker.

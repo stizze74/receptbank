@@ -21,6 +21,9 @@ ingredienser:
 tillagning:
   - "Blanda allt i glas med is."
 testlogg: []
+bild: "aperol-mocktail.jpg"
+bild_alt: "AI-bild: Aperol-stil mocktail"
+bild_ai: true
 ---
 
 Aperitif utan alkohol.

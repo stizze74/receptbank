@@ -21,6 +21,9 @@ tillagning:
   - "Lägg hallon i botten, krossa lätt."
   - "Häll på sodavatten, citron, erytritol."
 testlogg: []
+bild: "berries-prosecco-mocktail.jpg"
+bild_alt: "AI-bild: Bär-prosecco mocktail"
+bild_ai: true
 ---
 
 Helgmocktail. Prosecco-känsla.

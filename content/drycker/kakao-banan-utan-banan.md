@@ -21,6 +21,9 @@ ingredienser:
 tillagning:
   - "Mixa."
 testlogg: []
+bild: "kakao-banan-utan-banan.jpg"
+bild_alt: "AI-bild: Kakao-jordnötssmör smoothie"
+bild_ai: true
 ---
 
 Snickers-smoothie utan socker. Kombinationen är klassisk.

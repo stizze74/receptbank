@@ -23,6 +23,9 @@ ingredienser:
 tillagning:
   - "Mixa allt i blender 30 sek tills slät."
 testlogg: []
+bild: "grön-smoothie-spenat-avokado.jpg"
+bild_alt: "AI-bild: Grön smoothie med spenat & avokado"
+bild_ai: true
 ---
 
 Klassisk grön smoothie. Avokado ger krämighet, spenat ger näring.

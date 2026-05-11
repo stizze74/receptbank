@@ -21,6 +21,9 @@ ingredienser:
 tillagning:
   - "Mixa."
 testlogg: []
+bild: "blabar-mandelmjolk-smoothie.jpg"
+bild_alt: "AI-bild: Blåbär-mandelmjölk smoothie"
+bild_ai: true
 ---
 
 Frukost eller eftermiddags-snack.

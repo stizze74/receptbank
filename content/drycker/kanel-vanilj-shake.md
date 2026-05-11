@@ -50,6 +50,9 @@ tips:
   - Variera med kokosmälk eller vispgrädde — båda fungerar.
   - Funkar som frukost-shake eller eftermiddags-mellanmal.
 testlogg: []
+bild: "kanel-vanilj-shake.jpg"
+bild_alt: "AI-bild: Kanel-vanilj-shake"
+bild_ai: true
 ---
 
 

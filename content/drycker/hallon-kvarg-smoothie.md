@@ -21,6 +21,9 @@ ingredienser:
 tillagning:
   - "Mixa till slät smoothie."
 testlogg: []
+bild: "hallon-kvarg-smoothie.jpg"
+bild_alt: "AI-bild: Hallon-kvarg smoothie"
+bild_ai: true
 ---
 
 Hög-protein-smoothie. Frusna bär gör den kall utan is.

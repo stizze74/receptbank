@@ -47,6 +47,9 @@ tips:
     Om du inte hittar LCHF-cranberry: byt mot 1 msk pressad lime + 1 tsk
     erytritol — ger samma syra utan kh.
 testlogg: []
+bild: "cosmopolitan-keto.jpg"
+bild_alt: "AI-bild: Cosmopolitan keto"
+bild_ai: true
 ---
 
 Sex and the City-klassiker LCHF-anpassad.

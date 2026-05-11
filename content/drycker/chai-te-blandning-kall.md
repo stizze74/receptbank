@@ -62,6 +62,9 @@ tips:
   - Funkar lika bra varm — hoppa kylsteget och tillsätt grädde direkt.
   - Variera med en nypa svartpeppar för autentisk masala chai.
 testlogg: []
+bild: "chai-te-blandning-kall.jpg"
+bild_alt: "AI-bild: Chai-te-blandning hemma (kall variant)"
+bild_ai: true
 ---
 
 

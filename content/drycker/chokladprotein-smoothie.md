@@ -22,6 +22,9 @@ ingredienser:
 tillagning:
   - "Mixa allt 30 sek."
 testlogg: []
+bild: "chokladprotein-smoothie.jpg"
+bild_alt: "AI-bild: Chokladprotein-smoothie"
+bild_ai: true
 ---
 
 Pre/post-träning. 28g protein.

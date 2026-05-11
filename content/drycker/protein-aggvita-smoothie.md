@@ -21,6 +21,9 @@ ingredienser:
 tillagning:
   - "Mixa."
 testlogg: []
+bild: "protein-aggvita-smoothie.jpg"
+bild_alt: "AI-bild: Äggvitsmoothie med vanilj"
+bild_ai: true
 ---
 
 Hög-protein utan pulver. Pastöriserade äggvitor är säkra.

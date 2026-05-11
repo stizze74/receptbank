@@ -23,6 +23,9 @@ tillagning:
   - "Tillsätt is och whiskey, rör."
   - "Pressa apelsinskalets oljor över."
 testlogg: []
+bild: "keto-old-fashioned.jpg"
+bild_alt: "AI-bild: Keto old fashioned"
+bild_ai: true
 ---
 
 Old fashioned utan socker. Sukrin gold smakar närmre brunt socker.

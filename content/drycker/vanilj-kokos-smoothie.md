@@ -21,6 +21,9 @@ ingredienser:
 tillagning:
   - "Mixa."
 testlogg: []
+bild: "vanilj-kokos-smoothie.jpg"
+bild_alt: "AI-bild: Vanilj-kokos smoothie"
+bild_ai: true
 ---
 
 Vanilj-glass i drinkform. 4 min jobb.

@@ -22,6 +22,9 @@ tillagning:
   - "Krossa enbär i botten av glaset."
   - "Fyll med is, gurka, tonic, lime."
 testlogg: []
+bild: "gin-tonic-mocktail-virgin.jpg"
+bild_alt: "AI-bild: Virgin gin-tonic"
+bild_ai: true
 ---
 
 Gin-tonic utan gin. Enbär ger gin-doft.

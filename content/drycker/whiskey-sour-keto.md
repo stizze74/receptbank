@@ -22,6 +22,9 @@ tillagning:
   - "Shaka kraftigt med is."
   - "Sila i glaset."
 testlogg: []
+bild: "whiskey-sour-keto.jpg"
+bild_alt: "AI-bild: Whiskey sour keto"
+bild_ai: true
 ---
 
 Klassisk cocktail. Äggvitan ger restaurang-skum.

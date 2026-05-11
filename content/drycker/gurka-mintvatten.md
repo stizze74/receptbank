@@ -20,6 +20,9 @@ ingredienser:
 tillagning:
   - "Lägg gurka och mynta i vatten, vila 30 min."
 testlogg: []
+bild: "gurka-mintvatten.jpg"
+bild_alt: "AI-bild: Gurka-mintvatten (infusion)"
+bild_ai: true
 ---
 
 Spa-vatten hemma. Ingen söta krävs.

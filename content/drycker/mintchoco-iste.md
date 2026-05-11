@@ -24,6 +24,9 @@ tillagning:
   - "Vispa in kakao + erytritol."
   - "Häll över is."
 testlogg: []
+bild: "mintchoco-iste.jpg"
+bild_alt: "AI-bild: Mint-choklad iste"
+bild_ai: true
 ---
 
 Eftermiddags-iste med chokladnoter.

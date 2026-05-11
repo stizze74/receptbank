@@ -24,6 +24,9 @@ tillagning:
   - "Sila, kyl. Fyll glas med is."
   - "Toppa med kokosmjölk-skvätt."
 testlogg: []
+bild: "thai-iste.jpg"
+bild_alt: "AI-bild: Thai-iste utan socker"
+bild_ai: true
 ---
 
 Thai-iste i Bangkok-stil. Klassiskt orange-gult — vi skippar färgämnet.

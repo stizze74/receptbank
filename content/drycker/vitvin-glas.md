@@ -17,6 +17,9 @@ ingredienser:
 tillagning:
   - "Servera kallt."
 testlogg: []
+bild: "vitvin-glas.jpg"
+bild_alt: "AI-bild: Glas vitvin"
+bild_ai: true
 ---
 
 Torrt vitt — ej söta dessertviner.

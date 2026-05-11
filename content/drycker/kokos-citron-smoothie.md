@@ -21,6 +21,9 @@ ingredienser:
 tillagning:
   - "Mixa."
 testlogg: []
+bild: "kokos-citron-smoothie.jpg"
+bild_alt: "AI-bild: Kokos-citron smoothie"
+bild_ai: true
 ---
 
 Tropisk fräschet. Som pina colada utan ananas.

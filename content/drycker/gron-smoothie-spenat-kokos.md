@@ -57,6 +57,9 @@ tips:
   - Avokado ger krämig textur och mättnad.
   - Funkar lika bra med grönkål istället för spenat.
 testlogg: []
+bild: "gron-smoothie-spenat-kokos.jpg"
+bild_alt: "AI-bild: Grön smoothie (spenat-kokos-avokado)"
+bild_ai: true
 ---
 
 

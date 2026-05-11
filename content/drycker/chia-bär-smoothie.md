@@ -22,6 +22,9 @@ tillagning:
   - "Blanda chia + mandelmjölk, vila 5 min."
   - "Mixa med resten."
 testlogg: []
+bild: "chia-bär-smoothie.jpg"
+bild_alt: "AI-bild: Chia-bär smoothie"
+bild_ai: true
 ---
 
 Chia ger fiber och mättnad.

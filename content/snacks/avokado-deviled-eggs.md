@@ -19,7 +19,7 @@ taggar:
   - festligt
 ingredienser:
   - mangd: 4
-    enhet: g
+    enhet: st
     vara: ägg
   - mangd: 4
     enhet: msk
@@ -49,8 +49,9 @@ tillagning:
     text: Sprits eller skeda kramen tillbaka i ägghalvorna. Toppa med persilja.
 tips:
   - >-
-    Variera med tex-mex-stil: chiliflakes, lime, koriander — men byt koriander
-    mot persilja.
+    Variera med tex-mex-stil: chiliflakes och lime, garnera med persilja eller
+    mynta.
+  - Pressa lime över avokadon i fyllningen så den inte oxiderar.
 testlogg: []
 ---
 

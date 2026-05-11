@@ -23,6 +23,9 @@ ingredienser:
 tillagning:
   - "Blanda allt."
 testlogg: []
+bild: "tonfisk-sallad-medelhav.jpg"
+bild_alt: "AI-bild: Medelhavs-tonfisksallad"
+bild_ai: true
 ---
 
 Snabb medelhavs-lunch.

@@ -22,6 +22,9 @@ tillagning:
   - "Skär tomater och mozzarella i skivor."
   - "Lägg upp, basilika, olja, salt, peppar."
 testlogg: []
+bild: "tomato-mozzarella-basilika.jpg"
+bild_alt: "AI-bild: Caprese-bowl med basilika"
+bild_ai: true
 ---
 
 Caprese som lunch.

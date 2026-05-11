@@ -22,6 +22,9 @@ tillagning:
   - "Mosa ägg + majo + senap + gräslök."
   - "Bred på bröd."
 testlogg: []
+bild: "aggsallad-pa-fathead.jpg"
+bild_alt: "AI-bild: Äggsallad på fathead-bröd"
+bild_ai: true
 ---
 
 Klassisk äggsmörgås.

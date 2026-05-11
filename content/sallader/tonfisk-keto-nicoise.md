@@ -23,6 +23,9 @@ ingredienser:
 tillagning:
   - "Anrätta på fat."
 testlogg: []
+bild: "tonfisk-keto-nicoise.jpg"
+bild_alt: "AI-bild: Tonfisk-Niçoise (LCHF)"
+bild_ai: true
 ---
 
 Fransk klassiker utan potatis.

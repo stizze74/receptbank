@@ -24,6 +24,9 @@ tillagning:
   - "Blanda dressing."
   - "Häll över allt."
 testlogg: []
+bild: "kyckling-thai-mintsallad.jpg"
+bild_alt: "AI-bild: Thai-kycklingsallad med mynta"
+bild_ai: true
 ---
 
 Vietnamesisk-thai-stil.

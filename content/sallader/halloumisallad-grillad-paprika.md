@@ -65,6 +65,9 @@ tips:
   - Halloumi serveras alltid varm — servera direkt.
   - Funkar med färdig-grillad paprika i burk för snabb-version.
 testlogg: []
+bild: "halloumisallad-grillad-paprika.jpg"
+bild_alt: "AI-bild: Halloumisallad med grillad paprika"
+bild_ai: true
 ---
 
 

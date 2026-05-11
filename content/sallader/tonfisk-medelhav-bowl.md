@@ -23,6 +23,9 @@ ingredienser:
 tillagning:
   - "Blanda."
 testlogg: []
+bild: "tonfisk-medelhav-bowl.jpg"
+bild_alt: "AI-bild: Tonfisk-medelhavs-bowl"
+bild_ai: true
 ---
 
 Snabb medelhavs-lunch.

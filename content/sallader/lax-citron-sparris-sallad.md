@@ -23,6 +23,9 @@ tillagning:
   - "Bryt sparris i bitar."
   - "Blanda allt, dressa med olja + citron."
 testlogg: []
+bild: "lax-citron-sparris-sallad.jpg"
+bild_alt: "AI-bild: Lax-sparris-sallad med citron"
+bild_ai: true
 ---
 
 Vårfräsch sallad.

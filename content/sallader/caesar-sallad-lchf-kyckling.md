@@ -72,6 +72,9 @@ tips:
     smakar inte fisk.
   - Funkar lika bra med smorstekt sidfläsk i stället för kyckling.
 testlogg: []
+bild: "caesar-sallad-lchf-kyckling.jpg"
+bild_alt: "AI-bild: Caesar-sallad LCHF med kyckling"
+bild_ai: true
 ---
 
 

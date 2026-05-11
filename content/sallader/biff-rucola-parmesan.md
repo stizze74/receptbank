@@ -23,6 +23,9 @@ tillagning:
   - "Stek köttet rare. Skär tunt."
   - "Lägg på rucola, parmesanflisor, dressing."
 testlogg: []
+bild: "biff-rucola-parmesan.jpg"
+bild_alt: "AI-bild: Biff-rucola-sallad med parmesan"
+bild_ai: true
 ---
 
 Italiensk klassiker.

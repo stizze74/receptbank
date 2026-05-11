@@ -22,6 +22,9 @@ tillagning:
   - "Strimla sallad."
   - "Lägg på kyckling, parmesan, ansjovis. Ringla dressing."
 testlogg: []
+bild: "caesar-kyckling-anchovis.jpg"
+bild_alt: "AI-bild: Caesar-sallad med kyckling och ansjovis"
+bild_ai: true
 ---
 
 Klassisk lunch-sallad.

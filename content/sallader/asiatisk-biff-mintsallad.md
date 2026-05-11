@@ -26,6 +26,9 @@ tillagning:
   - "Blanda dressing."
   - "Anrätta."
 testlogg: []
+bild: "asiatisk-biff-mintsallad.jpg"
+bild_alt: "AI-bild: Asiatisk biffsallad med mynta"
+bild_ai: true
 ---
 
 Asiatisk fusion-lunch.

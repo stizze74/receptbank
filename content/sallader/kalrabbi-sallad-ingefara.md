@@ -61,6 +61,9 @@ tips:
     mild kalrot.
   - Funkar som sida till asiatiska rätter.
 testlogg: []
+bild: "kalrabbi-sallad-ingefara.jpg"
+bild_alt: "AI-bild: Kålrabbi-sallad med ingefära"
+bild_ai: true
 ---
 
 

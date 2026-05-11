@@ -67,6 +67,9 @@ tips:
     blandas.
   - Anvand tonfisk i god olivolja — inte vatten.
 testlogg: []
+bild: "nicoise-sallad-lchf.jpg"
+bild_alt: "AI-bild: Nicoise-sallad LCHF (utan potatis)"
+bild_ai: true
 ---
 
 

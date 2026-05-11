@@ -61,6 +61,9 @@ tips:
     istället.
   - Pers ilja och mynta i stället för koriander — perfekt för Stefan.
 testlogg: []
+bild: "blomkals-tabbouleh.jpg"
+bild_alt: "AI-bild: Blomkåls-tabbouleh (mellanostern)"
+bild_ai: true
 ---
 
 

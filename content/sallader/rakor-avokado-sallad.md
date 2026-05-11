@@ -22,6 +22,9 @@ ingredienser:
 tillagning:
   - "Blanda allt."
 testlogg: []
+bild: "rakor-avokado-sallad.jpg"
+bild_alt: "AI-bild: Räkor med avokado på sallad"
+bild_ai: true
 ---
 
 Snabb skaldjurslunch.

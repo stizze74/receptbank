@@ -88,6 +88,9 @@ tips:
     Funkar lika bra med stekt kyckling-lårfilet eller stekt sidfläsk om anka
     inte finns.
 testlogg: []
+bild: "anka-sallad-apelsin.jpg"
+bild_alt: "AI-bild: Anka-sallad med apelsin (LCHF)"
+bild_ai: true
 ---
 
 

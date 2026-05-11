@@ -24,6 +24,9 @@ tillagning:
   - "Skär grovt."
   - "Olja, oregano, salt."
 testlogg: []
+bild: "grekisk-feta-oliver.jpg"
+bild_alt: "AI-bild: Grekisk sallad med feta"
+bild_ai: true
 ---
 
 Klassisk grekisk.

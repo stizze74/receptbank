@@ -22,6 +22,9 @@ ingredienser:
 tillagning:
   - "Blanda allt."
 testlogg: []
+bild: "kalkonsallad-tranbar-keto.jpg"
+bild_alt: "AI-bild: Kalkonsallad med tranbär (keto)"
+bild_ai: true
 ---
 
 Höst-sallad.

@@ -22,6 +22,9 @@ tillagning:
   - "Wokra zoodles 2 min."
   - "Pesto + parmesan + pinjenötter."
 testlogg: []
+bild: "spaghetti-zucchini-pesto.jpg"
+bild_alt: "AI-bild: Zucchini-spaghetti pesto"
+bild_ai: true
 ---
 
 Italiensk LCHF-lunch.

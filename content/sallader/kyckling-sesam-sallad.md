@@ -24,6 +24,9 @@ tillagning:
   - "Blanda dressing."
   - "Häll över."
 testlogg: []
+bild: "kyckling-sesam-sallad.jpg"
+bild_alt: "AI-bild: Sesam-kycklingsallad asiatisk"
+bild_ai: true
 ---
 
 Sesam-asiatisk.

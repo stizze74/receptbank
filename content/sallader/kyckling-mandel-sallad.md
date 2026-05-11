@@ -24,6 +24,9 @@ tillagning:
   - "Blanda dressingen."
   - "Häll över sallad och kyckling."
 testlogg: []
+bild: "kyckling-mandel-sallad.jpg"
+bild_alt: "AI-bild: Kyckling-mandelsallad med dijondressing"
+bild_ai: true
 ---
 
 Klassisk amerikansk-fransk lunch.

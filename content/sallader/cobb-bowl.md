@@ -72,6 +72,9 @@ tips:
     cheddar (eller halloumi om du vill) för Stefans smakprofil.
   - Bra som matig lunch på jobbet — alla komponenter görs i förva g.
 testlogg: []
+bild: "cobb-bowl.jpg"
+bild_alt: "AI-bild: Cobb-bowl (LCHF, utan blåmögelost)"
+bild_ai: true
 ---
 
 Amerikansk klassiker.

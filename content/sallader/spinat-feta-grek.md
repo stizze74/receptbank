@@ -22,6 +22,9 @@ ingredienser:
 tillagning:
   - "Blanda allt."
 testlogg: []
+bild: "spinat-feta-grek.jpg"
+bild_alt: "AI-bild: Grek-spenat-fetaost-sallad"
+bild_ai: true
 ---
 
 Grek-medel-sallad.

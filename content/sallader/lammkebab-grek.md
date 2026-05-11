@@ -24,6 +24,9 @@ tillagning:
   - "Stek lammkebab 8 min."
   - "Anrätta över sallad."
 testlogg: []
+bild: "lammkebab-grek.jpg"
+bild_alt: "AI-bild: Lammkebab på grek-sallad"
+bild_ai: true
 ---
 
 Grekisk lammbowl.

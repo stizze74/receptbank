@@ -44,11 +44,11 @@ ingredienser:
   - vara: 'is, valfritt'
 tillagning:
   - namn: Mixa
-    text: Lägg alla ingredienser i blendern. Mixa 30–60 sek tills helt län.
+    text: Lägg alla ingredienser i blendern. Mixa 30–60 sek tills helt len.
     timer_min: 1
   - namn: Smaka
     text: >-
-      Smaka av sötningen. Tillsatt mer erytritol om du vill ha sötare. Tillsatt
+      Smaka av sötningen. Tillsätt mer erytritol om du vill ha sötare. Tillsätt
       is för kallare/tjockare resultat.
 tips:
   - >-

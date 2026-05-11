@@ -46,10 +46,10 @@ tillagning:
       (medel-låg värme, varsamt). Tar ca 5 min.
     timer_min: 5
   - namn: Tillsätt vätska
-    text: Tillsätt grädde och mjölk varsamt (kokar latt upp). Rör till län.
+    text: Tillsätt grädde och mjölk varsamt (kokar lätt upp). Rör till len.
   - namn: Tjocka
     text: >-
-      Vispa äggulor latt. Tillsätt latt i karamellkramen. Värm till 82°C, rör
+      Vispa äggulor lätt. Tillsätt lätt i karamellkramen. Värm till 82°C, rör
       konstant. Tillsätt vanilj och salt.
     timer_min: 10
   - namn: Sval och frys

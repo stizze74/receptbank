@@ -43,7 +43,7 @@ ingredienser:
     notering: för färg
 tillagning:
   - namn: Förber kött
-    text: Lagg nötinnerfälän i frysen 30 min innan — gör det lättare att skära tunt.
+    text: Lägg nötinnerfälän i frysen 30 min innan — gör det lättare att skära tunt.
   - namn: Skär tunt
     text: >-
       Skär mycket tunna skivor med vass kniv (nastan transparenta). Lägg ut på

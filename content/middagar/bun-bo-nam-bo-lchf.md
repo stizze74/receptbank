@@ -57,7 +57,7 @@ ingredienser:
     vara: vitlök
   - mangd: 1
     enhet: msk
-    vara: 'rostade jordnötter, krasch'
+    vara: 'rostade jordnötter, krossade'
     notering: topping
 tillagning:
   - namn: Stek kött

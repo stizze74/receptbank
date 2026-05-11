@@ -48,7 +48,7 @@ ingredienser:
 tillagning:
   - namn: Rosta aubergine
     text: >-
-      Sett ugn på 220°C. Stick i auberginen på flera ställen. Rosta hel på plat
+      Sätt ugn på 220°C. Stick i auberginen på flera ställen. Rosta hel på plåt
       40 min tills helt mjuk och kollapsad.
     timer_min: 40
   - namn: Skala

@@ -1,5 +1,5 @@
 ---
-namn: Pannbiff jagarsås (svamp-fri version)
+namn: 'Pannbiff jagarsås (svamp-fri, med broccoli)'
 status: skriven
 portioner: 2
 narings_per_portion:
@@ -24,8 +24,8 @@ ingredienser:
     notering: 'i 1,5 cm skivor'
   - mangd: 200
     enhet: g
-    vara: champinjoner — INTE Stefan
-    notering: färska
+    vara: broccoli
+    notering: i små buketter
   - mangd: 50
     enhet: g
     vara: smör
@@ -33,6 +33,9 @@ ingredienser:
     enhet: st
     vara: schalottenlök
     notering: finhackad
+  - mangd: 2
+    enhet: klyftor
+    vara: vitlök
   - mangd: 1
     enhet: msk
     vara: konjak
@@ -49,19 +52,19 @@ ingredienser:
     enhet: msk
     vara: färsk persilja
   - vara: 'salt, svartpeppar'
-  - vara: 'OBS: utöka med fler grönsaker i stället för svamp'
 tillagning:
   - namn: Förber
-    text: >-
-      Salta, peppra köttbitar. (Ví lägger inte svamp pga Stefans smakpreferens —
-      utöka i stället med extra lök eller broccolibitar.)
+    text: 'Salta, peppra köttbitar.'
   - namn: Stek kött
     text: >-
       Stek köttbitar i halva smöret på hög värme 2 min per sida tills färgade.
       Lägg åt sidan.
     timer_min: 4
-  - namn: Fräs aromer
-    text: Smula i mer smör. Fräs schalottenlöken mjuk 3 min.
+  - namn: Fräs broccoli
+    text: >-
+      Smula i mer smör. Fräs schalottenlök och vitlök 2 min. Tillsätt
+      broccolibuketter, fräs 4 min tills latt mjuka men fortfarande gröna.
+    timer_min: 6
   - namn: Bygg sås
     text: >-
       Häll i konjak och flambera om du vill (eller koka in). Tillsätt buljong
@@ -71,9 +74,9 @@ tillagning:
     text: Lägg tillbaka köttet i såsen. Värm igenom 2 min. Toppa med persilja.
 tips:
   - >-
-    Klassisk jagarsås har vanligen svamp — vår version anpassad till Stefans
-    smak.
-  - Variera med extra broccolibitar eller smorstekta sparris.
+    Klassisk jagarsås har vanligen svamp — vår version använder broccoli för
+    samma tygd och bett utan svamp.
+  - Funkar lika bra med haricots verts istället för broccoli.
 testlogg: []
 ---
 

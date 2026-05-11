@@ -47,11 +47,11 @@ ingredienser:
     vara: äppelcidervinäger
 tillagning:
   - namn: Förvärm ugn
-    text: Sätt ugnen på 220°C. Plat i ugnen blir varmt.
+    text: Sätt ugnen på 220°C. Plåt i ugnen blir varmt.
   - namn: Blanda
     text: >-
       Blanda alla torra ingredienser. Tillsätt ägg, yoghurt, olja och vinäger.
-      Vinda till len, klibbig deg. Låt stå 8 min.
+      Vänd till len, klibbig deg. Låt stå 8 min.
     timer_min: 8
   - namn: Forma
     text: >-

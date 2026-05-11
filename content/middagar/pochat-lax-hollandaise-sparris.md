@@ -56,12 +56,12 @@ tillagning:
     timer_min: 5
   - namn: Stek sparris
     text: >-
-      Smortstek sparrisen i en annan panna 4 min tills latt brynt men
-      fortfarande crunchig. Salta latt.
+      Smörstek sparrisen i en annan panna 4 min tills lätt brynt men
+      fortfarande crunchig. Salta lätt.
     timer_min: 4
   - namn: Pochera lax
     text: >-
-      Släck till sjudande lag (inte kokande). Lagg i laxbitarna. Pochera 8 min
+      Släck till sjudande lag (inte kokande). Lägg i laxbitarna. Pochera 8 min
       tills precis genomkokt.
     timer_min: 8
   - namn: Servera

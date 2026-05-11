@@ -37,7 +37,7 @@ ingredienser:
   - vara: 'salt, vitpeppar'
 tillagning:
   - namn: Blanda
-    text: 'Rör ihop crème fraiche, majonnäs och senap. Tillsatt dill och citron.'
+    text: 'Rör ihop crème fraiche, majonnäs och senap. Tillsätt dill och citron.'
   - namn: Smaka av
     text: 'Salta, peppra. Låt stå minst 15 min i kyl så dillen ger ifrån sig smaken.'
     timer_min: 15

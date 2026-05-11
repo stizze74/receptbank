@@ -60,7 +60,7 @@ ingredienser:
 tillagning:
   - namn: Förber zucchini
     text: >-
-      Skiva zucchini på langden, 0,5 cm tjocka. Salta latt och låt stå 15 min,
+      Skiva zucchini på langden, 0,5 cm tjocka. Salta lätt och låt stå 15 min,
       sen torka med papper för att få ut vätska.
     timer_min: 15
   - namn: Gör köttfärssås
@@ -72,7 +72,7 @@ tillagning:
     text: 'Blanda ricotta med ägg, salt och peppar.'
   - namn: Bygg
     text: >-
-      Sett ugnen på 200°C. I eldfast form: lägg lager zucchini, köttfärssås,
+      Sätt ugnen på 200°C. I eldfast form: lägg lager zucchini, köttfärssås,
       ricotta, mozzarella. Upprepa 2 lager. Toppa med mer mozzarella och
       parmesan.
   - namn: Gratinera

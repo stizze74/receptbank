@@ -36,17 +36,17 @@ ingredienser:
     vara: vaniljpulver
   - vara: nypa salt
 tillagning:
-  - namn: Smalta choklad
+  - namn: Smälta choklad
     text: >-
-      Smalta chokladen i vattenbad eller mikro på låg effekt. Rör tills län. Låt
+      Smälta chokladen i vattenbad eller mikro på låg effekt. Rör tills len. Låt
       svalna 5 min.
   - namn: Vispa grädde
     text: >-
-      Vispa grädden till mjuka toppar (inte hela vägen). Tillsatt erytritol,
+      Vispa grädden till mjuka toppar (inte hela vägen). Tillsätt erytritol,
       vanilj, salt och kakao.
-  - namn: Vand ihop
+  - namn: Vänd ihop
     text: >-
-      Vinda försiktigt ner den ljumna chokladen i grädden med slickepott. Inte
+      Vänd försiktigt ner den ljumna chokladen i grädden med slickepott. Inte
       rör ut luften.
   - namn: Kyl
     text: Forma upp i 4 glas. Ställ i kyl minst 1 timme.

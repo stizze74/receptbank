@@ -1,27 +1,64 @@
 ---
-namn: "Musslor i vitvinsfond"
+namn: Pilgrimsmusslor i vitvinsfond
 status: skriven
 portioner: 2
 narings_per_portion:
-  netto_kh: 3
-  fett: 14
-  protein: 16
-  kcal: 220
+  netto_kh: 2
+  fett: 18
+  protein: 18
+  kcal: 240
 tid:
-  prep_min: 15
-  total_min: 15
+  prep_min: 5
+  tillagning_min: 8
+  total_min: 13
 forvantad_glukospaverkan: mycket-lag
-taggar: ["forratt", "skaldjur", "fransk"]
+taggar:
+  - forratt
+  - skaldjur
+  - fransk
+  - snabb
+  - festligt
 ingredienser:
-  - { mangd: 500, enhet: "g", vara: "blåmusslor" }
-  - { mangd: 1, enhet: "dl", vara: "torrt vitvin" }
-  - { mangd: 30, enhet: "g", vara: "smör" }
-  - { mangd: 2, enhet: "st", vara: "vitlöksklyftor" }
-  - { mangd: 1, enhet: "msk", vara: "färsk persilja" }
+  - mangd: 8
+    enhet: st
+    vara: pilgrimsmusslor
+  - mangd: 1
+    enhet: dl
+    vara: torrt vitvin
+  - mangd: 30
+    enhet: g
+    vara: smör
+  - mangd: 2
+    enhet: klyftor
+    vara: vitlök
+  - mangd: 1
+    enhet: msk
+    vara: 'färsk persilja, hackad'
+  - mangd: 1
+    enhet: msk
+    vara: pressad citron
+  - vara: 'flingsalt, svartpeppar'
 tillagning:
-  - { namn: "Koka", text: "Smör, vitlök 1 min.", timer_min: 1 }
-  - { namn: "Vin + musslor", text: "Lock, ångas 4 min tills musslorna öppnat.", timer_min: 4 }
-  - "Persilja över."
+  - namn: Förber musslor
+    text: >-
+      Torka pilgrimsmusslorna noggrant med papper — måste vara torra för
+      karamellisering. Salta latt.
+  - namn: Fond
+    text: Smält halva smöret. Fräs skivad vitlök 1 min utan att färga.
+    timer_min: 1
+  - namn: Stek musslor
+    text: >-
+      Tillsätt resterande smör på hög värme. Stek pilgrimsmusslorna 1,5 min per
+      sida tills gyllene och fortfarande latt genomskinliga i mitten.
+    timer_min: 3
+  - namn: Avsluta
+    text: >-
+      Tillsätt vitvin och citron, koka in 1 min. Toppa med persilja och
+      svartpeppar. Servera direkt.
+    timer_min: 1
+tips:
+  - Pilgrimsmusslor istället för blåmusslor — Stefans personliga undantag.
+  - Servera som förrätt med en bit LCHF-bröd att doppa i fonden.
 testlogg: []
 ---
 

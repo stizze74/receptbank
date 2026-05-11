@@ -47,20 +47,20 @@ ingredienser:
     notering: grovhackade
 tillagning:
   - namn: Förvärm ugn
-    text: Sätt ugnen på 175°C. Klä en form (20x20 cm) med bakplats.
+    text: Sätt ugnen på 175°C. Klä en form (20x20 cm) med bakplåtspapper.
   - namn: Smält choklad och smör
     text: >-
       Smält choklad och smör tillsammans i vattenbad eller mikro på låg effekt.
-      Rör till län. Låt svalna 5 min.
+      Rör till len. Låt svalna 5 min.
     timer_min: 5
   - namn: Vispa ägg
     text: 'Vispa ägg och erytritol tills tjockt och ljust, ca 3 min.'
   - namn: Blanda
     text: >-
       Rör ner den ljumna chokladbland-ningen i äggsmeten. Sikta i mandelmjöl,
-      kakao, vanilj och salt. Vinda till jämn smet.
+      kakao, vanilj och salt. Vänd till jämn smet.
   - namn: Tillsätt val nötter
-    text: 'Vinda i hackade valnötter. Häll smeten i formen, glatta ytan.'
+    text: 'Vänd i hackade valnötter. Häll smeten i formen, glatta ytan.'
   - namn: Grädda
     text: >-
       Grädda 22–25 min — mitten ska fortfarande vara aningen klibbig. Underrätta
@@ -73,7 +73,7 @@ tips:
   - >-
     Erytritol kan kristallisera lite när den svalnar — använd pulversötning för
     bättre resultat.
-  - 'Håller 4 dagar i lufttat burk, fryser bra (skiljebakplats mellan rutor).'
+  - 'Håller 4 dagar i lufttat burk, fryser bra (skiljebakplåtspapper mellan rutor).'
   - >-
     Variera: tillsätt mintsmak (1 tsk extrakt) eller 50 g hallon på toppen före
     gräddning.

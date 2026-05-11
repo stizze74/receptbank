@@ -80,7 +80,7 @@ tips:
 testlogg: []
 ---
 
-Vardagshjälte. Kycklinglår tål mer värme och mer tid än bröst, blir saftigare av sig själv, och fungerar i stort sett alla modulkombinationer. När bröstfilén är för torr — välj lår.
+Vardagshjälte. Kycklinglår tål mer värme och mer tid än bröst, blir saftigare av sig själv, och fungerar i stort sätt alla modulkombinationer. När bröstfilén är för torr — välj lår.
 
 ## Modulkombinationer som funkar
 

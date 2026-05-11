@@ -50,7 +50,7 @@ tillagning:
     text: Tärna avokadon i samma storlek. Vanda i citron direkt så den inte mortnar.
   - namn: Blanda
     text: >-
-      Vinda lax och avokado försiktigt med olivolja, dill, gräslök. Salta,
+      Vänd lax och avokado försiktigt med olivolja, dill, gräslök. Salta,
       peppra.
   - namn: Servera
     text: Forma med en ring på tallrik för snyggt. Toppa ev. med löjrom.

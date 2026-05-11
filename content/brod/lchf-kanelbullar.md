@@ -75,18 +75,18 @@ tillagning:
     text: 'Vispa ägg, smält smör och vatten.'
   - namn: Förena
     text: >-
-      Vinda samman till en deg. Låt stå 10 min så psylliumen suger vätska och
+      Vänd samman till en deg. Låt stå 10 min så psylliumen suger vätska och
       degen blir hanterbar.
     timer_min: 10
   - namn: Gör fyllning
     text: 'Blanda mjukt smör, kanel och erytritol till en pasta.'
   - namn: Kavla och fyll
     text: >-
-      Kavla ut degen mellan två bakplater till en rektangel (ca 30x20 cm). Bred
+      Kavla ut degen mellan två bakplåtar till en rektangel (ca 30x20 cm). Bred
       ut fyllningen jämnt.
   - namn: Rulla och skär
     text: >-
-      Rulla ihop från långsidan. Skär i 10 bitar med vass kniv. Lägg på plat med
+      Rulla ihop från långsidan. Skär i 10 bitar med vass kniv. Lägg på plåt med
       bakplats, snittsidan uppat.
   - namn: Pensla och toppa
     text: Pensla med upvispat ägg. Strö över pärlsocker om du har.
@@ -95,12 +95,12 @@ tillagning:
     timer_min: 19
 tips:
   - >-
-    LCHF-deg är mer fragil än vanlig vetebrödsdeg — bakplats hjälper vid
+    LCHF-deg är mer fragil än vanlig vetebrödsdeg — bakplåtspapper hjälper vid
     utkavling.
   - >-
     Pärlsocker LCHF kan vara svårt att hitta — hoppa över eller använd
     grovkornig erytritol.
-  - Fryser bra — töa och värm latt innan servering.
+  - Fryser bra — töa och värm lätt innan servering.
   - >-
     Variera fyllning: kardemumma + erytritol, eller kakao + erytritol för
     choklad-version.

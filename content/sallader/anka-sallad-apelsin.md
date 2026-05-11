@@ -63,7 +63,7 @@ tillagning:
     text: >-
       Om rå ankbröst: rita snitt i fettsidan, salta. Stek på fettsidan i kall
       stekpanna på medelvärme 8 min, vänd och stek 2 min till. Vila 5 min, skär
-      tunt. Om färdig ankbröst: bara värm latt och skär.
+      tunt. Om färdig ankbröst: bara värm lätt och skär.
   - namn: Gör dressing
     text: >-
       Rör ihop soja, sesamolja, risvinäger, erytritol, ingefära och apelsinskal

@@ -50,11 +50,11 @@ ingredienser:
     vara: 'färsk mynta, hackad'
 tillagning:
   - namn: Förber
-    text: 'Skiva kålrabbi och morot mycket tunt. Salta latt, låt stå 5 min, krama ur.'
+    text: 'Skiva kålrabbi och morot mycket tunt. Salta lätt, låt stå 5 min, krama ur.'
   - namn: Dressing
     text: 'Rör ihop sesamolja, soja, risvinäger, ingefära och chili.'
   - namn: Blanda
-    text: Vinda grönsakerna i dressingen. Strö sesamfrön och mynta. Servera direkt.
+    text: Vänd grönsakerna i dressingen. Strö sesamfrön och mynta. Servera direkt.
 tips:
   - >-
     Kålrabbi är en underuppskattad LCHF-grönsak — crunch som rabarber, smak som

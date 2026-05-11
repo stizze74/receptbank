@@ -51,20 +51,20 @@ ingredienser:
     notering: valfritt på toppen
 tillagning:
   - namn: Förvärm ugn
-    text: 'Sätt ugnen på 175°C, varmluft. Bakplats på plat.'
+    text: 'Sätt ugnen på 175°C, varmluft. Bakplåtspapper på plåt.'
   - namn: Blanda torrt
     text: 'Blanda mandelmjöl, kokosmjöl, psyllium husk, bakpulver och salt.'
   - namn: Blanda vätskan
     text: 'Vispa ägg, smält smör, vatten och vinäger.'
   - namn: Förena
     text: >-
-      Vinda samman till en len, fast deg. Låt stå 5 min så psylliumen suger
+      Vänd samman till en len, fast deg. Låt stå 5 min så psylliumen suger
       vätska.
     timer_min: 5
   - namn: Forma
     text: >-
       Dela degen i 4 lika delar. Forma till runda, lite plattade bullar (~8 cm
-      diam). Lägg på plat med 4 cm mellan. Pensla med ett upvispat ägg om du
+      diam). Lägg på plåt med 4 cm mellan. Pensla med ett upvispat ägg om du
       vill (extra glans) och strö sesam ovanpå.
   - namn: Grädda
     text: Grädda 18–20 min tills gyllene och fasta. Färdig när ihl kommer ut torr.
@@ -77,7 +77,7 @@ tips:
     burgare.
   - Fryser bra hela eller delade.
   - 'Variera: byt sesam mot vallmö eller solrosfrön på toppen.'
-  - 'För soft texture: tillsatt 1 msk grädde i vätskan.'
+  - 'För soft texture: tillsätt 1 msk grädde i vätskan.'
 testlogg: []
 ---
 

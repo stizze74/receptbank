@@ -1,5 +1,5 @@
 ---
-namn: Hallonsorbet LCHF
+namn: Hallonsorbet LCHF (allulose-baserad)
 status: skriven
 portioner: 6
 narings_per_portion:
@@ -37,15 +37,15 @@ ingredienser:
   - vara: nypa salt
 tillagning:
   - namn: Mosa hallon
-    text: Töa hallon halvvägs. Mosa eller mixa till slät röra.
-  - namn: Gör sirap
+    text: Töa hallon halvvägs. Mosa eller mixa till slat röra.
+  - namn: Gör söt lag
     text: >-
       Värm vatten med allulose, salt, vanilj och citron tills sötningen löst
-      sig.
+      sig. (Är ingen riktig sirap — vanlig socker-sirap innehåller höga kh.)
     timer_min: 3
   - namn: Sila och frys
     text: >-
-      Vänd samman hallonmösa och sirap. Sila om du vill ha utan frön. Frys i
+      Vänd samman hallonmösa och söt lag. Sila om du vill ha utan frön. Frys i
       form, vispa var 30 min i 2–3 h.
     timer_min: 150
 tips:

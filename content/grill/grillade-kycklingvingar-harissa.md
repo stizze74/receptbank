@@ -50,14 +50,14 @@ ingredienser:
 tillagning:
   - namn: Marinera
     text: >-
-      Vinda olivolja, harissa, tomatpuré, spiskummin, paprika, vitlök, salt och
-      peppar i en skål. Vinda i kycklingvingarna så alla är täckta. Låt marinera
+      Vänd olivolja, harissa, tomatpuré, spiskummin, paprika, vitlök, salt och
+      peppar i en skål. Vänd i kycklingvingarna så alla är täckta. Låt marinera
       30 min i rumstemp eller upp till 24 h i kyl.
   - namn: Förber grill
     text: Tänd grillen för medel-hög indirekt värme (eller medelvärme på kol).
   - namn: Grilla
     text: >-
-      Lagg vingarna på indirekt sida. Grilla 20–25 min, vand var 5–7 min. Sista
+      Lägg vingarna på indirekt sida. Grilla 20–25 min, vänd var 5–7 min. Sista
       3 min flytta till direkt värme för att få lite char.
     timer_min: 25
   - namn: Vila

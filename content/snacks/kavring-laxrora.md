@@ -20,6 +20,9 @@ ingredienser:
 tillagning:
   - "Bred crème fraîche, lägg lax, dill."
 testlogg: []
+bild: "kavring-laxrora.jpg"
+bild_alt: "AI-bild: Fathead-knäcke med laxröra"
+bild_ai: true
 ---
 
 Skandinavisk smörgås light.

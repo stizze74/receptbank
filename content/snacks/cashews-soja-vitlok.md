@@ -21,6 +21,9 @@ tillagning:
   - { namn: "Ugn", text: "180°C, 6 min.", timer_min: 6 }
   - "Blanda i såsen medan varma."
 testlogg: []
+bild: "cashews-soja-vitlok.jpg"
+bild_alt: "AI-bild: Soya-vitlöks-cashew"
+bild_ai: true
 ---
 
 Asiatisk twist på cashew.

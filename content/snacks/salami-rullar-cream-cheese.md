@@ -19,6 +19,9 @@ ingredienser:
 tillagning:
   - "Bred gräddost + gräslök på salami, rulla."
 testlogg: []
+bild: "salami-rullar-cream-cheese.jpg"
+bild_alt: "AI-bild: Salami-rullar med gräddost"
+bild_ai: true
 ---
 
 Snack i 5 min.

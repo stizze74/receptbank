@@ -19,6 +19,9 @@ ingredienser:
 tillagning:
   - "Cottage cheese i skål, paprika på toppen."
 testlogg: []
+bild: "cottage-cheese-paprika.jpg"
+bild_alt: "AI-bild: Cottage cheese med röd paprika & svartpeppar"
+bild_ai: true
 ---
 
 Snabb proteinsnack.

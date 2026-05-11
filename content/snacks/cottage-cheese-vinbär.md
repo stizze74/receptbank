@@ -17,6 +17,9 @@ ingredienser:
 tillagning:
   - "Se brödtext."
 testlogg: []
+bild: "cottage-cheese-vinbär.jpg"
+bild_alt: "AI-bild: Cottage cheese med svartavinbärkompott (sukrin)"
+bild_ai: true
 ---
 
 Cottage cheese, sukrin-baserad svartavinbärkompott.

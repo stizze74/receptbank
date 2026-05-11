@@ -21,6 +21,9 @@ ingredienser:
 tillagning:
   - "Lägg upp på fat."
 testlogg: []
+bild: "salami-skinka-ost-bricka.jpg"
+bild_alt: "AI-bild: Charkbricka för en"
+bild_ai: true
 ---
 
 Snabb tapas-mellanmål.

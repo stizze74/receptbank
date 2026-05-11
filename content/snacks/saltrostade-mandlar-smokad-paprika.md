@@ -53,6 +53,9 @@ tips:
     chilipulver för olika smaker.
   - '1 portion = ca 25 g — lagom som snack, inte hel skål.'
 testlogg: []
+bild: "saltrostade-mandlar-smokad-paprika.jpg"
+bild_alt: "AI-bild: Saltrostade mandlar med smokad paprika"
+bild_ai: true
 ---
 
 

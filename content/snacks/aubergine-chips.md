@@ -22,6 +22,9 @@ tillagning:
   - "Pensla med olja, salta, krydda."
   - { namn: "Ugn", text: "160°C, 25 min, vänd halvvägs.", timer_min: 25 }
 testlogg: []
+bild: "aubergine-chips.jpg"
+bild_alt: "AI-bild: Aubergine-chips i ugn"
+bild_ai: true
 ---
 
 Krispiga grönsakschips.

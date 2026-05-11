@@ -50,6 +50,9 @@ tips:
   - Funkar med Grän a Padano eller pecorino också.
   - Förvara i lufttat burk i rumstemp — håller en vecka utan att bli mjuka.
 testlogg: []
+bild: "parmesan-flarn.jpg"
+bild_alt: "AI-bild: Parmesan-flarn"
+bild_ai: true
 ---
 
 

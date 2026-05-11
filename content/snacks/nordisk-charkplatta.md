@@ -17,6 +17,9 @@ ingredienser:
 tillagning:
   - "Se brödtext."
 testlogg: []
+bild: "nordisk-charkplatta.jpg"
+bild_alt: "AI-bild: Nordisk charkplatta"
+bild_ai: true
 ---
 
 Skinka, salami, ost, picklad rödlök.

@@ -21,6 +21,9 @@ tillagning:
   - "Smält choklad i mikro 30 sek."
   - "Blanda kokos i choklad, klicka ut på papper, kyl 10 min."
 testlogg: []
+bild: "kokosflakes-mork-choklad.jpg"
+bild_alt: "AI-bild: Kokosflakes-snack med mörk choklad"
+bild_ai: true
 ---
 
 Krispiga, söta, kalle.

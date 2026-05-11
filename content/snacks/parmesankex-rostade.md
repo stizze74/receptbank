@@ -19,6 +19,9 @@ tillagning:
   - { namn: "Ugn", text: "200°C, 5–6 min tills bubbliga och gyllene.", timer_min: 6 }
   - "Låt svalna — de blir krispiga."
 testlogg: []
+bild: "parmesankex-rostade.jpg"
+bild_alt: "AI-bild: Parmesankex i ugn"
+bild_ai: true
 ---
 
 Krispiga ostchips.

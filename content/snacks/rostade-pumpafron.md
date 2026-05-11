@@ -17,6 +17,9 @@ ingredienser:
 tillagning:
   - "Se brödtext."
 testlogg: []
+bild: "rostade-pumpafron.jpg"
+bild_alt: "AI-bild: Rostade pumpafrön"
+bild_ai: true
 ---
 
 Pumpafrön rostade torrt med salt.

@@ -17,6 +17,9 @@ ingredienser:
 tillagning:
   - "Se brödtext."
 testlogg: []
+bild: "agg-paté.jpg"
+bild_alt: "AI-bild: Ägg-paté med rom"
+bild_ai: true
 ---
 
 Mosade ägg, rom, citronpressad, smör.

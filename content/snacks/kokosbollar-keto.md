@@ -22,6 +22,9 @@ tillagning:
   - "Vänd ner kokos."
   - "Forma 8 bollar, kyl 30 min."
 testlogg: []
+bild: "kokosbollar-keto.jpg"
+bild_alt: "AI-bild: Kokosbollar"
+bild_ai: true
 ---
 
 Sukrin-substitut för kokoskola.

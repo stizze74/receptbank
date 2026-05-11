@@ -21,6 +21,9 @@ tillagning:
   - { namn: "Ugn", text: "180°C, 8 min på plåt.", timer_min: 8 }
   - "Strö över rosmarin, salt, olja medan varma."
 testlogg: []
+bild: "rostade-mandlar-rosmarin.jpg"
+bild_alt: "AI-bild: Rostade mandlar med rosmarin & flingsalt"
+bild_ai: true
 ---
 
 Hemmagjort snabbsnack.

@@ -22,6 +22,9 @@ tillagning:
   - "Lägg nötterna, blanda."
   - { namn: "Ugn", text: "180°C, 6 min.", timer_min: 6 }
 testlogg: []
+bild: "macadamia-rostade-cayenne.jpg"
+bild_alt: "AI-bild: Rostade macadamia med cayenne"
+bild_ai: true
 ---
 
 Het macadamia. Stoffes favorit.

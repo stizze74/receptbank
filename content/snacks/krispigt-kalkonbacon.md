@@ -17,6 +17,9 @@ ingredienser:
 tillagning:
   - "Se brödtext."
 testlogg: []
+bild: "krispigt-kalkonbacon.jpg"
+bild_alt: "AI-bild: Krispigt kalkonbacon"
+bild_ai: true
 ---
 
 Bacon stekt extra-krispigt. Snabbsnack.

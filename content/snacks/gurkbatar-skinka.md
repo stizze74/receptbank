@@ -17,6 +17,9 @@ ingredienser:
 tillagning:
   - "Se brödtext."
 testlogg: []
+bild: "gurkbatar-skinka.jpg"
+bild_alt: "AI-bild: Gurkbåtar med skinka"
+bild_ai: true
 ---
 
 Gurka rivad ur, fyll med skinka och senap.

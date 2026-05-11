@@ -17,6 +17,9 @@ ingredienser:
 tillagning:
   - "Se brödtext."
 testlogg: []
+bild: "parmesan-spjut.jpg"
+bild_alt: "AI-bild: Parmesan-spjut"
+bild_ai: true
 ---
 
 Parmesan, kapris, citron-tomat på cocktail-sticka.

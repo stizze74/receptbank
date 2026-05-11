@@ -21,6 +21,9 @@ ingredienser:
 tillagning:
   - "Blanda allt."
 testlogg: []
+bild: "tomatsallad-mozzarella-kuber.jpg"
+bild_alt: "AI-bild: Tomatkuber med mozzarella & basilika"
+bild_ai: true
 ---
 
 Caprese-snack.

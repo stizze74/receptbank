@@ -23,6 +23,9 @@ tillagning:
   - "Blanda gula med majo, curry, senap, salt."
   - "Spritsa tillbaka i vita."
 testlogg: []
+bild: "agg-deviled-curry.jpg"
+bild_alt: "AI-bild: Curry-ägg (deviled eggs)"
+bild_ai: true
 ---
 
 Klassisk fest-mellanmål.

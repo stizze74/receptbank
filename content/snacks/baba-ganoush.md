@@ -65,6 +65,9 @@ tips:
   - Bra dippsås till tapas eller meze-bricka.
   - Håller 4 dagar i kyl.
 testlogg: []
+bild: "baba-ganoush.jpg"
+bild_alt: "AI-bild: Baba ganoush (aubergine-paté)"
+bild_ai: true
 ---
 
 

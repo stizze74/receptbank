@@ -20,6 +20,9 @@ ingredienser:
 tillagning:
   - "Halvera ägg, klick majo, strö paprika."
 testlogg: []
+bild: "agghalvor-majo-paprika.jpg"
+bild_alt: "AI-bild: Ägghalvor med majo & paprika"
+bild_ai: true
 ---
 
 Klassisk Stefan-snack.

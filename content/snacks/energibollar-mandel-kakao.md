@@ -23,6 +23,9 @@ tillagning:
   - "Blanda allt."
   - "Forma 12 bollar, kyl."
 testlogg: []
+bild: "energibollar-mandel-kakao.jpg"
+bild_alt: "AI-bild: Energibollar mandel-kakao"
+bild_ai: true
 ---
 
 Träningssnack.

@@ -22,6 +22,9 @@ tillagning:
   - "Smält ost."
   - "Lägg i salladsblad."
 testlogg: []
+bild: "fattburgare-utan-bun.jpg"
+bild_alt: "AI-bild: Mini-burgare utan bun"
+bild_ai: true
 ---
 
 Burger-snack.

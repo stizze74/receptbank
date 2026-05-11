@@ -21,6 +21,9 @@ tillagning:
   - "Hacka tonfisk, blanda med majo + soja."
   - "Lägg på gurkskivor, rulla."
 testlogg: []
+bild: "cucumber-rolls-fishtartare.jpg"
+bild_alt: "AI-bild: Gurkrullar med tonfisktartare"
+bild_ai: true
 ---
 
 Sushi-stil-snack.

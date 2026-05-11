@@ -21,6 +21,9 @@ ingredienser:
 tillagning:
   - "Blanda allt."
 testlogg: []
+bild: "olivmix-feta-vitlok.jpg"
+bild_alt: "AI-bild: Olivmix med feta och vitlök"
+bild_ai: true
 ---
 
 Tapas. Klassisk.

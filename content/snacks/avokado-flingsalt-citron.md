@@ -39,6 +39,9 @@ tips:
   - Funkar både som mellanmal och som tillbehor.
   - Pressa citron över halvor så de inte mossnar på tallriken.
 testlogg: []
+bild: "avokado-flingsalt-citron.jpg"
+bild_alt: "AI-bild: Halv avokado med flingsalt & citron"
+bild_ai: true
 ---
 
 Den enklaste mellanmål.

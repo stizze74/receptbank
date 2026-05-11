@@ -50,6 +50,9 @@ tips:
   - 'Perfekt på LCHF-knackebröd, gurkbatar eller som dippsås.'
   - Håller 2 veckor i kyl.
 testlogg: []
+bild: "olivpate-tapenade.jpg"
+bild_alt: "AI-bild: Olivpaté (tapenade)"
+bild_ai: true
 ---
 
 

@@ -21,6 +21,9 @@ tillagning:
   - "Blanda allt på plåt."
   - { namn: "Ugn", text: "180°C, 6 min.", timer_min: 6 }
 testlogg: []
+bild: "pekan-rosmarin-rostade.jpg"
+bild_alt: "AI-bild: Rostade pekannötter med rosmarin"
+bild_ai: true
 ---
 
 Lyxsnack.

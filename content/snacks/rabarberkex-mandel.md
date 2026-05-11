@@ -23,6 +23,9 @@ tillagning:
   - "Kavla ut tunt mellan papper."
   - { namn: "Grädda", text: "170°C, 12 min.", timer_min: 12 }
 testlogg: []
+bild: "rabarberkex-mandel.jpg"
+bild_alt: "AI-bild: Mandelkex (mjölfri)"
+bild_ai: true
 ---
 
 Kex till ostbrickan.

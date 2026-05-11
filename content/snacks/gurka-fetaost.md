@@ -21,6 +21,9 @@ tillagning:
   - "Skär gurka i 5 cm bitar, kärna ur lite."
   - "Toppa med feta, olja, oregano."
 testlogg: []
+bild: "gurka-fetaost.jpg"
+bild_alt: "AI-bild: Gurkbåtar med feta & olivolja"
+bild_ai: true
 ---
 
 Sval mediterran-snack.

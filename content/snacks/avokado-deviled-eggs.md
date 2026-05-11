@@ -53,6 +53,9 @@ tips:
     mynta.
   - Pressa lime över avokadon i fyllningen så den inte oxiderar.
 testlogg: []
+bild: "avokado-deviled-eggs.jpg"
+bild_alt: "AI-bild: Avokado-deviled-eggs"
+bild_ai: true
 ---
 
 

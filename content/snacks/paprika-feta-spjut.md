@@ -21,6 +21,9 @@ tillagning:
   - "Skär paprika i bitar."
   - "Trä paprika + feta på sticka."
 testlogg: []
+bild: "paprika-feta-spjut.jpg"
+bild_alt: "AI-bild: Paprika-feta-spjut"
+bild_ai: true
 ---
 
 Bordsplockmat.

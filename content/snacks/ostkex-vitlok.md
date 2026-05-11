@@ -17,6 +17,9 @@ ingredienser:
 tillagning:
   - "Se brödtext."
 testlogg: []
+bild: "ostkex-vitlok.jpg"
+bild_alt: "AI-bild: Ostkex med vitlök & sesam"
+bild_ai: true
 ---
 
 Mandelmjöl + ost + vitlök + sesam, gräddat.

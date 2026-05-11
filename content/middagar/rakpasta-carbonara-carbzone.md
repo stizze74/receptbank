@@ -64,11 +64,11 @@ tillagning:
     text: 'Tillsätt räkor, stek 2 min tills rosa.'
     timer_min: 2
   - namn: Gör carbonara
-    text: 'Vispa äggulor, halva parmesanen och grädde i skål. Salta och peppra latt.'
+    text: 'Vispa äggulor, halva parmesanen och grädde i skål. Salta och peppra lätt.'
   - namn: Förena
     text: >-
-      TA AV VÄRMEN på pannan. Häll i den varma pastan och vinda runt. Häll i
-      ägg-blandningen och vinda snabbt så äggen tjockna mjuka (inte skirar).
+      TA AV VÄRMEN på pannan. Häll i den varma pastan och vänd runt. Häll i
+      ägg-blandningen och vänd snabbt så äggen tjockna mjuka (inte skirar).
       Tillsätt något av kokvattnet om för torrt.
   - namn: Servera
     text: >-

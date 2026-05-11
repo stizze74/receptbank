@@ -38,17 +38,17 @@ ingredienser:
 tillagning:
   - namn: Reducera vinet
     text: >-
-      Smalta smör i en kastrull, fräs schalottenlöken mjuk utan färg. Tillsatt
+      Smälta smör i en kastrull, fräs schalottenlöken mjuk utan färg. Tillsätt
       vinet och koka in tills det äterstår ca 2 msk.
     timer_min: 8
-  - namn: Tillsatt grädde
+  - namn: Tillsätt grädde
     text: >-
       Häll i grädden. Koka på medelvärme tills såsen tjocknar och täcker
       baksidan av en sked.
     timer_min: 5
   - namn: Smaka av
     text: >-
-      Salta, peppra. Sila bort löken om du vill ha helt län sås. Ev. citron för
+      Salta, peppra. Sila bort löken om du vill ha helt len sås. Ev. citron för
       friskhet.
 tips:
   - 'Funkar till lax, torsk, kyckling.'

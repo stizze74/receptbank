@@ -69,7 +69,7 @@ tips:
   - >-
     Topping går att förbereda i förva g — ha i kyl, gratinera direkt när du är
     hungrig.
-  - Servera med smortstekt sparris eller LCHF-rotsellerimos.
+  - Servera med smörstekt sparris eller LCHF-rotsellerimos.
 testlogg: []
 ---
 

@@ -44,7 +44,7 @@ tillagning:
       annars hailler oljan inte.
   - namn: Mixa
     text: >-
-      Mixa basilika, olivolja, vitlök och salt i en stavmixer tills helt län.
+      Mixa basilika, olivolja, vitlök och salt i en stavmixer tills helt len.
       Tar ca 1 min.
     timer_min: 1
   - namn: Sila

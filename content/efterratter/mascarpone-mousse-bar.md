@@ -48,18 +48,18 @@ tillagning:
     text: >-
       Rör mascarpone lätt med resten av erytritolen och citronen. Tillsätt en
       nypa salt för balans.
-  - namn: Vinda samman
+  - namn: Vänd samman
     text: >-
-      Vinda försiktigt ner den vispade grädden i mascarponen med slickepott.
+      Vänd försiktigt ner den vispade grädden i mascarponen med slickepott.
       Inte rör ut luften.
   - namn: Layered
     text: >-
       I 4 glas: lägg ett lager mousse, några bär, mer mousse, mer bär på toppen.
-      Küla minst 1 h.
+      Kyla minst 1 h.
     timer_min: 60
 tips:
   - Lätt och fluffig — inte töng som ostkaka.
-  - Bären ger latt syra som balanserar fett-sötman.
+  - Bären ger lätt syra som balanserar fett-sötman.
   - Funkar lika bra med jordgubbar eller kombination.
   - Håller 2 dagar i kyl men bäst samma dag.
   - 'Lyx-version: tillsätt 1 msk grand marnier eller cointreau i mascarponen.'

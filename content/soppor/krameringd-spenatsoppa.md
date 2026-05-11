@@ -1,5 +1,5 @@
 ---
-namn: Krameringd spenatsoppa
+namn: Krämig spenatsoppa
 status: skriven
 portioner: 2
 narings_per_portion:
@@ -45,7 +45,7 @@ tillagning:
     text: Fräs finhackad lök och vitlök i smör tills mjuk.
     timer_min: 5
   - namn: Tillsätt spenat
-    text: Tillsätt spenat i omgångar. Vinda tills sjunkit ihop.
+    text: Tillsätt spenat i omgångar. Vänd tills sjunkit ihop.
   - namn: Bygg soppa
     text: Tillsätt buljong och grädde. Sjud 8 min.
     timer_min: 8

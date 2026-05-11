@@ -31,8 +31,8 @@ ingredienser:
 tillagning:
   - namn: Vispa
     text: Vispa ihop ägg och grädde lätt. Salta och peppra.
-  - namn: Smalta smör
-    text: Smalta smöret på medellåg värme i en non-stick stekpanna.
+  - namn: Smälta smör
+    text: Smälta smöret på medellåg värme i en non-stick stekpanna.
   - namn: Rör röra
     text: >-
       Häll i äggsmeten. Rör konstant med slickepott i tjocka strimmor. Lyft av

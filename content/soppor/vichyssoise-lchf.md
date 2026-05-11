@@ -51,7 +51,7 @@ tillagning:
   - namn: Mixa
     text: Mixa län. Tillsätt grädde. Smaka av med salt och vitpeppar.
   - namn: Kyl
-    text: Küla minst 1 h. Servera i kalla skålar med gräslök.
+    text: Kyla minst 1 h. Servera i kalla skålar med gräslök.
     timer_min: 60
 tips:
   - >-

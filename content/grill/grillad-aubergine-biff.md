@@ -27,6 +27,9 @@ tillagning:
 tips:
   - "Stefan undviker svamp — aubergine är fett, mättande, gillrar svamprolen."
 testlogg: []
+bild: "grillad-aubergine-biff.jpg"
+bild_alt: "AI-bild: Grillade portobello-substitut: aubergine 'biff'"
+bild_ai: true
 ---
 
 Vegetarisk "biff" som tål en grillkväll utan att försvinna.

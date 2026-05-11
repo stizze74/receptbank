@@ -30,6 +30,9 @@ tips:
   - "Fänkålsfröna gör skillnaden — krossa dem grovt i mortel."
   - "Innertemp: 65°C för medium, 70°C för helt genomstekt."
 testlogg: []
+bild: "grillad-flaskkarre-fanksolfrö.jpg"
+bild_alt: "AI-bild: Grillad fläskkarré med fänkålsfrö"
+bild_ai: true
 ---
 
 Italiensk fläskmarinad anpassad för grill. Långsam marinering = djup smak.

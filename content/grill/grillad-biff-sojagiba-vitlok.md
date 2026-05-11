@@ -30,6 +30,9 @@ tips:
   - "Sesamfrön strösas på vid servering."
   - "Ingefärsbitar på grillen ger bra rökarom."
 testlogg: []
+bild: "grillad-biff-sojagiba-vitlok.jpg"
+bild_alt: "AI-bild: Grillad biff med sojagiba & vitlök"
+bild_ai: true
 ---
 
 Asiatisk grillklassiker. Soja-marinaden penetrerar köttet under timmen i kyl.

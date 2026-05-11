@@ -29,6 +29,9 @@ tips:
   - "Lamm ska vara medium-rare. Övergrillat blir torrt och tråkigt."
   - "Köttermometer är hjälpligt — innertemp 55°C = perfekt."
 testlogg: []
+bild: "grillad-lammracks-rosmarin.jpg"
+bild_alt: "AI-bild: Grillad lammracks med rosmarin & vitlök"
+bild_ai: true
 ---
 
 Helgkött vid eldhärden. Rosmarin är klassisk lammkrydda — våga vara generös.

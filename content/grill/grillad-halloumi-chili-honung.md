@@ -61,6 +61,9 @@ tips:
   - Funkar som vegetariskt huvudprotein eller som tapas-bit.
   - Bränner lätt om grillen är för het — medelvärme är bäst.
 testlogg: []
+bild: "grillad-halloumi-chili-honung.jpg"
+bild_alt: "AI-bild: Grillad halloumi med chili-sukrin glaze"
+bild_ai: true
 ---
 
 Söt-het-salt kombination. Vegetariskt huvudprotein på grillen.

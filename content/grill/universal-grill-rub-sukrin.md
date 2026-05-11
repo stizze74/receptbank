@@ -30,6 +30,9 @@ tips:
   - "Håller 6 mån i lufttät burk."
   - "Sukrin gold ger karamell-aktig smak — viktig för grilltryck."
 testlogg: []
+bild: "universal-grill-rub-sukrin.jpg"
+bild_alt: "AI-bild: Universal grill-rub (sukrin-baserad)"
+bild_ai: true
 ---
 
 Bas-rub som passar fläsk, kyckling, oxe. Gör en sats, ha på alla.

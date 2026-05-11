@@ -26,6 +26,9 @@ tillagning:
 tips:
   - "Håller 3 veckor i kyl. Toppa allt: hamburgare, kött, sallader."
 testlogg: []
+bild: "picklad-rodlok-grillkvall.jpg"
+bild_alt: "AI-bild: Picklad rödlök till grillkväll"
+bild_ai: true
 ---
 
 Rödlök som blir mjuk-syrlig. Hela grillkvällens sidekick.

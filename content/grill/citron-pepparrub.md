@@ -24,6 +24,9 @@ tillagning:
 tips:
   - "Funkar bäst på lax, torsk, kyckling."
 testlogg: []
+bild: "citron-pepparrub.jpg"
+bild_alt: "AI-bild: Citron-pepparrub"
+bild_ai: true
 ---
 
 Klassisk fisk- och fågelrub. Citronen kommer till sin rätt på grillen.

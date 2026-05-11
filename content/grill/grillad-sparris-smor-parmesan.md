@@ -27,6 +27,9 @@ tillagning:
 tips:
   - "Tjock sparris klarar grillen bättre än tunn."
 testlogg: []
+bild: "grillad-sparris-smor-parmesan.jpg"
+bild_alt: "AI-bild: Grillad sparris med smör & parmesan"
+bild_ai: true
 ---
 
 Vårens grillsida. Sparris + smör + parmesan = perfektion.

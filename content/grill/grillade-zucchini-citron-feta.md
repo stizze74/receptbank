@@ -27,6 +27,9 @@ tillagning:
 tips:
   - "Stora zucchinier blir vattnigare — välj små eller medel."
 testlogg: []
+bild: "grillade-zucchini-citron-feta.jpg"
+bild_alt: "AI-bild: Grillade zucchini med citron & feta"
+bild_ai: true
 ---
 
 Klassisk grillsida. Snabb, smakrik, mycket fett från olja och feta.

@@ -29,6 +29,9 @@ tips:
   - "Dela upp paprika, lök som sidor på grillen för en hel \"kebab-tallrik\"."
   - "Servera med yoghurt-mintsås eller tzatziki."
 testlogg: []
+bild: "grillade-lammspett-harissa.jpg"
+bild_alt: "AI-bild: Grillade lammspett med harissa"
+bild_ai: true
 ---
 
 Marockansk-inspirerad streetfood. Harissan ger värme, kumin ger jordighet.

@@ -30,6 +30,9 @@ tillagning:
 tips:
   - "Mandelmjöl + ägg ger struktur utan ströbröd."
 testlogg: []
+bild: "grillade-italienska-kottbullar-spett.jpg"
+bild_alt: "AI-bild: Grillade italienska köttbullar på spett"
+bild_ai: true
 ---
 
 Italienska köttbullar på grillen. Servera med tomatsås eller bara med citron.

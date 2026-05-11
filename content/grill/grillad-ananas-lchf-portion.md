@@ -25,6 +25,9 @@ tillagning:
 tips:
   - "Ananas har kh — håll portionen liten. 1 skiva per person räcker."
 testlogg: []
+bild: "grillad-ananas-lchf-portion.jpg"
+bild_alt: "AI-bild: Grillad ananas (LCHF-portion)"
+bild_ai: true
 ---
 
 Söt avslutning till grillkvällen. Bevakad portion, men värt det.

@@ -29,6 +29,9 @@ tips:
   - "Gochujang är het men sötakommer från fermenterade chilibönor — LCHF OK i lagom dos."
   - "Servera med kimchi och risätergräs (eller blomkålsris)."
 testlogg: []
+bild: "grillad-gochujang-kyckling.jpg"
+bild_alt: "AI-bild: Grillad gochujang-kyckling"
+bild_ai: true
 ---
 
 Koreansk klassiker. Gochujang står sig väl mot grillens hetta.

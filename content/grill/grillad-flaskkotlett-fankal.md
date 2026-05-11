@@ -28,6 +28,9 @@ tillagning:
 tips:
   - "Fänkålsfrö + fläsk är italiensk klassiker — porchetta-smak utan långstek."
 testlogg: []
+bild: "grillad-flaskkotlett-fankal.jpg"
+bild_alt: "AI-bild: Grillad fläskkotlett med fänkål"
+bild_ai: true
 ---
 
 Italiensk-inspirerat. Fänkål är underutnyttjat på svensk grill.

@@ -29,6 +29,9 @@ tips:
   - "Vit miso (shiro) är mildare än röd. Bättre för grillning."
   - "Hög värme för krispigt skinn."
 testlogg: []
+bild: "grillad-miso-lax.jpg"
+bild_alt: "AI-bild: Grillad miso-lax"
+bild_ai: true
 ---
 
 Japansk klassiker — Misoyaki. Funkar lika bra med torsk eller sotare.

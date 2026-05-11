@@ -26,6 +26,9 @@ tillagning:
 tips:
   - "Stora långa gurkor (slang-gurka) blir bäst."
 testlogg: []
+bild: "grillade-gurkkex-dill-vitlok.jpg"
+bild_alt: "AI-bild: Grillade gurkkex med dill & vitlök"
+bild_ai: true
 ---
 
 Outforskat — gurka på grill är otroligt gott. Dill-vitlök ger fräsch karaktär.

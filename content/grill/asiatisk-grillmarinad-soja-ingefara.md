@@ -28,6 +28,9 @@ tips:
   - "Räcker till ca 800 g kött."
   - "Funkar för biff, fläsk, kyckling, lax. Skip för räkor (för stark)."
 testlogg: []
+bild: "asiatisk-grillmarinad-soja-ingefara.jpg"
+bild_alt: "AI-bild: Asiatisk grillmarinad (soja-ingefära)"
+bild_ai: true
 ---
 
 Universal asiatisk grillmarinad. En sats håller en grillkväll.

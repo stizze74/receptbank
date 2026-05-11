@@ -25,6 +25,9 @@ tillagning:
 tips:
   - "Fet fisk som makrill är perfekt för grill — fettet håller den saftig."
 testlogg: []
+bild: "grillad-makrill-fankal-citron.jpg"
+bild_alt: "AI-bild: Grillad makrill med fänkål & citron"
+bild_ai: true
 ---
 
 Klassisk svensk skärgårdsgrill. Färsk makrill är säsongs-trotjänare.

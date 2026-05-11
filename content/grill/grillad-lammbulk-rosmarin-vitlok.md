@@ -27,6 +27,9 @@ tillagning:
 tips:
   - "Lammbulk är klassiskt grillkött — perfekt för helggrill."
 testlogg: []
+bild: "grillad-lammbulk-rosmarin-vitlok.jpg"
+bild_alt: "AI-bild: Grillad lammbulk med rosmarin & vitlök"
+bild_ai: true
 ---
 
 Helgens stora kötträtt. Skiva tunt mot fibrerna.

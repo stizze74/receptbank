@@ -30,6 +30,9 @@ tillagning:
 tips:
   - "Tahini-sås tjocknar — tunna med vatten tills rätt konsistens."
 testlogg: []
+bild: "grillade-auberginer-tahini-sas.jpg"
+bild_alt: "AI-bild: Grillade auberginer med tahini-sås"
+bild_ai: true
 ---
 
 Mellanöstern-klassiker. Auberginer steks bäst på grill — svårslaget.

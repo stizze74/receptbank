@@ -28,6 +28,9 @@ tillagning:
 tips:
   - "Kalkon är mager — överstek den inte, då blir den torr."
 testlogg: []
+bild: "grillad-kalkonbrost-ortsmor.jpg"
+bild_alt: "AI-bild: Grillad kalkonbröst med örtsmör"
+bild_ai: true
 ---
 
 Kalkon är en underanvänd grillkomponent. Mager, neutral, smörörter höjer.

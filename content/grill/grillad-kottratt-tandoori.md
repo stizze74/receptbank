@@ -30,6 +30,9 @@ tips:
   - "Yoghurten gör kycklingen extremt mör — skip aldrig den."
   - "Tandoori-pulver finns i de flesta livsmedelsbutiker. Annars: blanda paprika, garam masala, kanel, fennel, vitlök, salt."
 testlogg: []
+bild: "grillad-kottratt-tandoori.jpg"
+bild_alt: "AI-bild: Grillad kötträtt med tandoori-rub"
+bild_ai: true
 ---
 
 Indisk gril-klassiker. Yoghurtmarinad är magin.

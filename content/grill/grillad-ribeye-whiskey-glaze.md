@@ -26,6 +26,9 @@ tillagning:
 tips:
   - "Marmoreringen smälter — välj köttbit med fina vita ådror."
 testlogg: []
+bild: "grillad-ribeye-whiskey-glaze.jpg"
+bild_alt: "AI-bild: Grillad ribeye med whiskey-glaze"
+bild_ai: true
 ---
 
 Helgklass. Whiskey ger underliggande smak utan kh.

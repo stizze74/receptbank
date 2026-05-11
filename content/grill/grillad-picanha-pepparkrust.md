@@ -27,6 +27,9 @@ tips:
   - "Brasiliansk grill-klassiker. Fettkappan ÄR rätten — skär inte bort."
   - "Servera med chimichurri (recept finns i såser)."
 testlogg: []
+bild: "grillad-picanha-pepparkrust.jpg"
+bild_alt: "AI-bild: Grillad picanha med pepparkrust"
+bild_ai: true
 ---
 
 Sydamerikansk specialitet. Picanha bör grillas hel, sen skäras tunt.

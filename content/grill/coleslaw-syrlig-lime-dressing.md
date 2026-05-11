@@ -29,6 +29,9 @@ tillagning:
 tips:
   - "Bäst dagen efter — smakerna gifter sig."
 testlogg: []
+bild: "coleslaw-syrlig-lime-dressing.jpg"
+bild_alt: "AI-bild: Coleslaw med syrlig limedressing"
+bild_ai: true
 ---
 
 Klassisk amerikansk coleslaw, syrligare än vanligt. Funkar till alla grillrätter.

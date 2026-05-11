@@ -30,6 +30,9 @@ tips:
   - "Färsk lime är kritiskt — flask-lime smakar annat."
   - "Servera med limeklyftor och en klick gräddfil."
 testlogg: []
+bild: "grillad-chili-lime-kyckling.jpg"
+bild_alt: "AI-bild: Grillad chili-lime kyckling"
+bild_ai: true
 ---
 
 Mexikansk-inspirerad sommarrätt. Bra till sallad eller grillade gröna.

@@ -70,6 +70,9 @@ tips:
   - Servera med tzatziki eller LCHF-coleslaw.
   - 'I ugn: 200°C 25 min, sen 250°C eller broil sista 3 min.'
 testlogg: []
+bild: "grillad-flaskside-honung-soja.jpg"
+bild_alt: "AI-bild: Grillad fläsksida med soja-sukringlaze"
+bild_ai: true
 ---
 
 Asiatisk inspiration. Fläsksida ÄR fett — perfekt LCHF.

@@ -25,6 +25,9 @@ tips:
   - "Padron-chili från Spanien är klassikern. 1 av 10 är hetare — ryskt roulett."
   - "Servera som tilltug eller sida."
 testlogg: []
+bild: "grillade-grona-chilifrukter-flingsalt.jpg"
+bild_alt: "AI-bild: Grillade gröna chilifrukter med flingsalt"
+bild_ai: true
 ---
 
 Tapas-klassiker. Mild chili som blir söt och rökig på grillen.

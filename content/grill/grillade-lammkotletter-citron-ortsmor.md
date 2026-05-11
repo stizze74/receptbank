@@ -30,6 +30,9 @@ tips:
   - "Lammkotletter är tunna — gå över med försiktighet, de blir torra fort."
   - "Korta vilstid (3 min) räcker."
 testlogg: []
+bild: "grillade-lammkotletter-citron-ortsmor.jpg"
+bild_alt: "AI-bild: Grillade lammkotletter med citron-örtsmör"
+bild_ai: true
 ---
 
 Snabbt och elegant. Tunna kotletter på minuter, smöret gör resten.

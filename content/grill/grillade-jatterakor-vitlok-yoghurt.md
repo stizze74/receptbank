@@ -29,6 +29,9 @@ tillagning:
 tips:
   - "Skalen håller köttet saftigt på grillen. Peta ut med fingrarna."
 testlogg: []
+bild: "grillade-jatterakor-vitlok-yoghurt.jpg"
+bild_alt: "AI-bild: Grillade jätteräkor med vitlöks-yoghurtsås"
+bild_ai: true
 ---
 
 Sommarklassiker. Yoghurt-vitlöks-sås gör mer för rätten än man tror.

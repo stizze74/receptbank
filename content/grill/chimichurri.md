@@ -29,6 +29,9 @@ tips:
   - "Stefan tål persilja men ej koriander — chimichurri är klassiskt persilja, inte koriander. Bra match."
   - "Använd som dressing eller sås till alla grillkött. Räcker en vecka i kyl."
 testlogg: []
+bild: "chimichurri.jpg"
+bild_alt: "AI-bild: Chimichurri (argentinsk grilssås)"
+bild_ai: true
 ---
 
 Argentinas svar på pesto. Färsk, syrlig, kryddig. Extra bra till entrecôte och picanha.

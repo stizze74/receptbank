@@ -48,6 +48,9 @@ tips:
     honung.
   - Gör dubbel sats om du grillar för många — håller en vecka i kyl.
 testlogg: []
+bild: "dijonsenap-honungs-glaze.jpg"
+bild_alt: "AI-bild: Dijon-söt glaze (med erytritol-honung)"
+bild_ai: true
 ---
 
 Snabb glaze för helgens grillkväll.

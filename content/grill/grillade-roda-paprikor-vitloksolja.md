@@ -28,6 +28,9 @@ tillagning:
 tips:
   - "Håller en vecka i kyl. Toppa allt: omeletter, sallader, grillkött."
 testlogg: []
+bild: "grillade-roda-paprikor-vitloksolja.jpg"
+bild_alt: "AI-bild: Grillade röda paprikor med vitlöksolja"
+bild_ai: true
 ---
 
 Spansk-italiensk klassiker. Rökiga söta paprikor är en grilltur värd.

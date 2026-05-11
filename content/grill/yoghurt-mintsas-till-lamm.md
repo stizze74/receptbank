@@ -24,6 +24,9 @@ tillagning:
 tips:
   - "Mynta är klassiskt till lamm. Persilja kan blandas in också."
 testlogg: []
+bild: "yoghurt-mintsas-till-lamm.jpg"
+bild_alt: "AI-bild: Yoghurt-mintsås till lamm"
+bild_ai: true
 ---
 
 Svalkande sås till de starka lammrätterna. Mediterran inspiration.

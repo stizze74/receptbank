@@ -27,6 +27,9 @@ tips:
   - "Chipotle ger rökig värme. Ej superhet."
   - "Använd på fläskkarré eller kyckling 1 tim före grillning."
 testlogg: []
+bild: "tex-mex-rub-chipotle.jpg"
+bild_alt: "AI-bild: Tex-mex-rub med chipotle"
+bild_ai: true
 ---
 
 Mexikansk rub med chipotle som kärna. Pasande för köttiga rätter.

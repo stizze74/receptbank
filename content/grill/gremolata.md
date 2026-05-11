@@ -24,6 +24,9 @@ tillagning:
 tips:
   - "Toppa grillad oxstek, lammkotletter, vitfisk."
 testlogg: []
+bild: "gremolata.jpg"
+bild_alt: "AI-bild: Gremolata (italiensk persilja-citron-vitlök)"
+bild_ai: true
 ---
 
 Italiensk klassiker till osso buco — funkar fenomenalt på grillkött också.

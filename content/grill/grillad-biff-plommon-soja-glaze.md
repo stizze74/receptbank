@@ -27,6 +27,9 @@ tillagning:
 tips:
   - "Sukrin-baserad plommon-jam ger äkta umami utan kh-stegring."
 testlogg: []
+bild: "grillad-biff-plommon-soja-glaze.jpg"
+bild_alt: "AI-bild: Grillad biff i plommon-sojaglaze"
+bild_ai: true
 ---
 
 Asiatisk-vägrande grillklassiker. Hangerstek är billigare än entrecôte men lika gott när rätt grillat.

@@ -29,6 +29,9 @@ tillagning:
 tips:
   - "Blomkål-stekar är vegetariska huvudrätter när de görs ordentligt."
 testlogg: []
+bild: "grillad-blomkal-stek-tahini.jpg"
+bild_alt: "AI-bild: Grillad blomkål-stek med tahini"
+bild_ai: true
 ---
 
 En grill-vänlig vegetarisk huvudrätt med substans.

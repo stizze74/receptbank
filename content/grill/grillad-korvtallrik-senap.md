@@ -28,6 +28,9 @@ tips:
   - "Vägrad inte salta korven — den är salt nog."
   - "En klick crème fraîche med pepparrot är klassiskt tilltug."
 testlogg: []
+bild: "grillad-korvtallrik-senap.jpg"
+bild_alt: "AI-bild: Grillad korvtallrik med senap"
+bild_ai: true
 ---
 
 Dvs grillen utan ambitioner. Bra korv + senap. Ofta bästa kvällen.

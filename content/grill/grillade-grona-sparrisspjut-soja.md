@@ -26,6 +26,9 @@ tillagning:
 tips:
   - "Ingefära vrids ner i kolen sista minuten — extra rökarom."
 testlogg: []
+bild: "grillade-grona-sparrisspjut-soja.jpg"
+bild_alt: "AI-bild: Grillade gröna sparrisspjut med soja"
+bild_ai: true
 ---
 
 Asiatiskt twist på sparris. Kort tid, stor smak.

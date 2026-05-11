@@ -30,6 +30,9 @@ tips:
   - "Anka är fet — låt skinnet rendera. Förskärningarna släpper fett."
   - "Innertemp 56°C för medium-rare."
 testlogg: []
+bild: "grillad-anka-plomon-glaze.jpg"
+bild_alt: "AI-bild: Grillad anka med plomon-glaze"
+bild_ai: true
 ---
 
 Asiatisk-inspirerad helggrill. Anka är specialvara — provkör 1–2 gånger.

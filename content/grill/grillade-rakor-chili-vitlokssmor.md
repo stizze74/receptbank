@@ -30,6 +30,9 @@ tips:
   - "Råa jumboräkor finns frusna i de flesta livsmedelsbutiker."
   - "Spara skalen för räkfond senare."
 testlogg: []
+bild: "grillade-rakor-chili-vitlokssmor.jpg"
+bild_alt: "AI-bild: Grillade räkor med chili-vitlökssmör"
+bild_ai: true
 ---
 
 Sommarklassiker. Skalen ger smaken — peta ut räkorna med fingrarna.

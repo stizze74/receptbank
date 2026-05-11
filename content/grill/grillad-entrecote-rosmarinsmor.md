@@ -31,6 +31,9 @@ tips:
   - "Använd direktvärme. Rosmarinkvistar i kolen ger extra rökig doft."
   - "Smöret kan göras dagar i förväg och ligga i frysen."
 testlogg: []
+bild: "grillad-entrecote-rosmarinsmor.jpg"
+bild_alt: "AI-bild: Grillad entrecôte med rosmarinsmör"
+bild_ai: true
 ---
 
 Klassikern. Tar 22 min totalt om köttet är rumstempererat. Smöret är hela rätten.

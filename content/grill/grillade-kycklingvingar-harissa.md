@@ -67,6 +67,9 @@ tips:
   - 'Harissa varierar i hetta — testa först, dosera efter din burks styrka.'
   - 'I ugn istallet: 220°C 25–30 min på galler med plat under.'
 testlogg: []
+bild: "grillade-kycklingvingar-harissa.jpg"
+bild_alt: "AI-bild: Grillade kycklingvingar med harissa"
+bild_ai: true
 ---
 
 

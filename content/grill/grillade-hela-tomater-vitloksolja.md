@@ -26,6 +26,9 @@ tillagning:
 tips:
   - "Köttiga tomater (Cuore di Bue) blir bäst."
 testlogg: []
+bild: "grillade-hela-tomater-vitloksolja.jpg"
+bild_alt: "AI-bild: Grillade hela tomater med vitlöksolja"
+bild_ai: true
 ---
 
 Snabbsida. Söt grillad tomatfrukt som komplement till oxstek.

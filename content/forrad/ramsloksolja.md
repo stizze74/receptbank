@@ -37,7 +37,7 @@ tillagning:
     text: Krama ur bladen och torka ordentligt.
   - namn: Mixa
     text: >-
-      Mixa ramslök med olivolja och salt till län. Sila genom finmaskig sil
+      Mixa ramslök med olivolja och salt till len. Sila genom finmaskig sil
       eller kaffefilter för klar olja.
   - namn: Förvara
     text: För över i ren flaska. Förvara i kyl.

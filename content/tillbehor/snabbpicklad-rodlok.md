@@ -48,13 +48,13 @@ tillagning:
     text: 'Koka upp ättika, vatten, sötning, salt, lagerblad och pepparkorn.'
     timer_min: 3
   - namn: Häll över
-    text: Lagg löken i en burk. Häll kokande lag över. Tryck ner så allt är täckt.
+    text: Lägg löken i en burk. Häll kokande lag över. Tryck ner så allt är täckt.
   - namn: Vila
     text: Låt stå minst 30 min innan användning. Bäst efter 1–2 timmar.
     timer_min: 30
 tips:
   - Håller 1–2 veckor i kyl i tätsluten burk.
-  - 'Bra på sallader, hamburgare, smorrebrod-stil, korv.'
+  - 'Bra på sallader, hamburgare, smörrebröd-stil, korv.'
   - >-
     Sukrin/erytritol påverkar inte glukos — vanligt socker bytt mot detta funkar
     bra i picklingar.

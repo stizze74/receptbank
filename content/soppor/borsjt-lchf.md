@@ -57,7 +57,7 @@ tillagning:
     text: 'Häll i buljong, vinäger och lagerblad. Sjud 30 min tills rödbetan är mör.'
     timer_min: 30
   - namn: Mixa
-    text: Plocka bort lagerblad. Mixa till län soppa. Smaka av.
+    text: Plocka bort lagerblad. Mixa till len soppa. Smaka av.
   - namn: Servera
     text: Fördela i skålar. Klicka på crème fraiche och strö dill.
 tips:

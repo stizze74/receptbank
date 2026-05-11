@@ -64,6 +64,7 @@ const baseSchema = z.object({
   inkop: z.string().optional(),
   bild: z.string().optional(), // filnamn relativt content/<modul>/bilder/, t.ex. "kycklinglar.jpg"
   bild_alt: z.string().optional(),
+  bild_ai: z.boolean().optional(), // true = AI-genererad placeholder, false/saknad = riktigt foto
 });
 
 const makeCollection = (folder: string, modul: string) =>

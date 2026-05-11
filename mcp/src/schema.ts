@@ -55,6 +55,7 @@ export const receptFrontmatter = z.object({
   inkop: z.string().optional(),
   bild: z.string().optional(),
   bild_alt: z.string().optional(),
+  bild_ai: z.boolean().optional(),
 });
 
 export type ReceptFrontmatter = z.infer<typeof receptFrontmatter>;

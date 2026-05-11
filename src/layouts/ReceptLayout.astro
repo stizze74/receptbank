@@ -53,12 +53,17 @@ const bild = bildUrl(recept);
 
 <BaseLayout titel={d.namn} jsonLd={ld}>
   {bild && (
-    <figure class="mb-4 -mx-3 sm:mx-0 sm:rounded-xl overflow-hidden">
+    <figure class="relative mb-4 -mx-3 overflow-hidden sm:mx-0 sm:rounded-xl">
       <img
         src={bild}
         alt={bildAlt(recept)}
-        class="w-full aspect-[4/3] object-cover sm:aspect-[16/9]"
+        class="aspect-[4/3] w-full object-cover sm:aspect-[16/9]"
       />
+      {d.bild_ai && (
+        <figcaption class="absolute bottom-2 right-2 rounded-full bg-black/60 px-2 py-1 text-[10px] font-medium uppercase tracking-wider text-white/90 backdrop-blur">
+          AI-bild · väntar på foto
+        </figcaption>
+      )}
     </figure>
   )}
   <header class="mb-4">

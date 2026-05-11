@@ -206,6 +206,7 @@ mcp.tool(
       const ny = {
         ...recept.frontmatter,
         bild: filnamn,
+        bild_ai: false,
         ...(alt_text ? { bild_alt: alt_text } : {}),
       };
       await skrivRecept(recept.modul, slug, ny, recept.brödtext);
@@ -354,6 +355,7 @@ app.post('/upload', corsMcpServer, basicAuth, async (req, res) => {
       const ny = {
         ...recept.frontmatter,
         bild: filnamn,
+        bild_ai: false,
         ...(typeof alt_text === 'string' && alt_text.trim() ? { bild_alt: alt_text.trim() } : {}),
       };
       await skrivRecept(recept.modul, slug, ny, recept.brödtext);

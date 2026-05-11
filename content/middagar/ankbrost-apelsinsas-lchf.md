@@ -78,6 +78,9 @@ tips:
     kyl).
   - Apelsinskal ger smaken utan apelsinjuice som har för mycket kh.
 testlogg: []
+bild: "ankbrost-apelsinsas-lchf.jpg"
+bild_alt: "AI-bild: Stekt ankbröst med apelsinsås (LCHF)"
+bild_ai: true
 ---
 
 

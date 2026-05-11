@@ -49,12 +49,19 @@ const initial = d.namn.charAt(0).toUpperCase();
   ]}
 >
   {bild ? (
-    <img
-      src={bild}
-      alt={bildAlt(recept)}
-      loading="lazy"
-      class="aspect-[3/4] w-full object-cover transition duration-200 group-hover:scale-[1.03]"
-    />
+    <div class="relative">
+      <img
+        src={bild}
+        alt={bildAlt(recept)}
+        loading="lazy"
+        class="aspect-[3/4] w-full object-cover transition duration-200 group-hover:scale-[1.03]"
+      />
+      {d.bild_ai && (
+        <span class="absolute right-1.5 top-1.5 rounded-full bg-black/60 px-1.5 py-0.5 text-[9px] font-medium uppercase tracking-wider text-white/90 backdrop-blur">
+          AI
+        </span>
+      )}
+    </div>
   ) : (
     <div class="aspect-[3/4] flex flex-col items-center justify-center gap-1 bg-gradient-to-br from-bas-100 via-bas-50 to-bas-200 text-bas-600">
       <span class="text-7xl font-light leading-none opacity-30">{initial}</span>

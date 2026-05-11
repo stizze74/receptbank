@@ -43,15 +43,15 @@ ingredienser:
     notering: grovhackade
 tillagning:
   - namn: Förvärm ugn
-    text: Sätt ugnen på 175°C. Klä en form (20x20 cm) med bakplats.
+    text: Sätt ugnen på 175°C. Klä en form (20x20 cm) med bakplåtspapper.
   - namn: Blanda vätska
     text: >-
       Vispa smält smör med erytritol till ljust. Tillsätt ägg och vanilj, vispa
       till jämn smet.
   - namn: Tillsätt torrt
-    text: 'Sikta i mandelmjöl, bakpulver och salt. Vinda samman.'
+    text: 'Sikta i mandelmjöl, bakpulver och salt. Vänd samman.'
   - namn: Tillsätt nötter
-    text: Vinda i macadamianötterna. Häll smeten i formen.
+    text: Vänd i macadamianötterna. Häll smeten i formen.
   - namn: Grädda
     text: Grädda 20–22 min tills gyllene på ytan men fortfarande mjuk i mitten.
     timer_min: 21

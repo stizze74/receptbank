@@ -37,7 +37,7 @@ ingredienser:
   - vara: nypa salt
 tillagning:
   - namn: Gör röra
-    text: Vispa äggulor med erytritol till tjockt och latt skum.
+    text: Vispa äggulor med erytritol till tjockt och lätt skum.
   - namn: Värm grädde
     text: >-
       Värm grädde, mjölk, vaniljpulver och salt till strax under kokning. Rör in
@@ -62,7 +62,7 @@ tips:
     Erytritol i puderform smaltsmar jämnare — vanlig kornform kan ge lite
     kornighet i glassen.
   - >-
-    Variera: tillsatt 50 g smalt mörk choklad i basen, eller 100 g mosade hallon
+    Variera: tillsätt 50 g smält mörk choklad i basen, eller 100 g mosade hallon
     innan frysningen.
   - >-
     Funkar att toppa med saltrostade mandlar eller chokladdragerade

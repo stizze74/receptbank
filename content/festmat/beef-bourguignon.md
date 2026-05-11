@@ -73,7 +73,7 @@ tillagning:
       i ugn 160°C i 3 h.
     timer_min: 150
   - namn: Avsluta
-    text: Vinda i smör för glans. Smaka av.
+    text: Vänd i smör för glans. Smaka av.
 tips:
   - Bättre dagen efter — gör dagen innan.
   - Burgundvin specificerat klassiskt men vilken god rödvin som helst funkar.

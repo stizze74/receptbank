@@ -73,7 +73,7 @@ tillagning:
     timer_min: 50
   - namn: Avsluta
     text: >-
-      Vinda i smör för glans. Smaka av med salt och peppar. Plocka bort
+      Vänd i smör för glans. Smaka av med salt och peppar. Plocka bort
       lagerblad och timjankvistar.
 tips:
   - Klassisk fransk bistro-rätt — möng dre och bra dagen efter.

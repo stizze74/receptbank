@@ -38,16 +38,16 @@ tillagning:
   - namn: Mosa bär
     text: >-
       Mosa jordgubbar med erytritol och citron. Låt stå 10 min så sockret kommer
-      ur. Mixa till slat röra.
+      ur. Mixa till slät röra.
     timer_min: 10
   - namn: Vispa grädde
     text: Vispa grädde med vanilj och salt till mjuka toppar.
-  - namn: Vinda samman
+  - namn: Vänd samman
     text: >-
-      Vinda försiktigt ner jordgubbsmösan i grädden för marmorerad effekt, eller
+      Vänd försiktigt ner jordgubbsmösan i grädden för marmorerad effekt, eller
       vispa in helt för enhetlig färg.
   - namn: Kyl
-    text: Forma upp i glas. Küla 1 h innan servering.
+    text: Forma upp i glas. Kyla 1 h innan servering.
     timer_min: 60
 tips:
   - Klassisk svensk sommardessert.

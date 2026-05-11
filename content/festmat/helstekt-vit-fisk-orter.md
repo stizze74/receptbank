@@ -49,7 +49,7 @@ ingredienser:
 tillagning:
   - namn: Förber fisken
     text: >-
-      Skol och torka fisken. Salta invändigt och utvändigt. Snitta latt på
+      Skölj och torka fisken. Salta invändigt och utvändigt. Snitta lätt på
       sidorna 3–4 ggr.
   - namn: Fyll
     text: >-
@@ -59,12 +59,12 @@ tillagning:
     text: Pensla med olivolja. Lägg klickar smör ovanpå. Salta och peppra.
   - namn: Ugnsstek
     text: >-
-      Sett ugn 200°C. Lagg fisken på plat med bakplats. Stek 25–30 min tills
-      köttet är ogenomskinligt och flagar latt med gaffel.
+      Sätt ugn 200°C. Lägg fisken på plåt med bakplåtspapper. Stek 25–30 min tills
+      köttet är ogenomskinligt och flagar lätt med gaffel.
     timer_min: 28
   - namn: Servera
     text: >-
-      Ringla över smortet från plat. Servera med extra citron och fris vita
+      Ringla över smöret från plat. Servera med extra citron och fris vita
       grönsaker.
 tips:
   - Be fiskhandlaren rensa fisken (urtaga inkrävarna och fjall).

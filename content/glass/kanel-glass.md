@@ -20,6 +20,9 @@ ingredienser:
 tillagning:
   - "Klassisk metod."
 testlogg: []
+bild: "kanel-glass.jpg"
+bild_alt: "AI-bild: Kanel-glass"
+bild_ai: true
 ---
 
 Kanelbulle som glass.

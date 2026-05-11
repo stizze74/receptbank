@@ -20,6 +20,9 @@ ingredienser:
 tillagning:
   - "Klassisk metod med kokosmjölk istället för grädde."
 testlogg: []
+bild: "kokosglass.jpg"
+bild_alt: "AI-bild: Kokosglass"
+bild_ai: true
 ---
 
 Mjölkfri tropisk glass.

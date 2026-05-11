@@ -24,6 +24,9 @@ tillagning:
   - "Vispa in i grädden, klassisk glass-metod."
   - "Strö flingsalt på serveringsstunden."
 testlogg: []
+bild: "salt-karamell-glass.jpg"
+bild_alt: "AI-bild: Saltkaramellglass"
+bild_ai: true
 ---
 
 LCHF salt-karamell.

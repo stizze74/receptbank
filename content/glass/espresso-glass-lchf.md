@@ -75,6 +75,9 @@ tips:
     espresso.
   - Kallt kaffe kvar från morgonen fungerar perfekt — lagra i kyl och använd.
 testlogg: []
+bild: "espresso-glass-lchf.jpg"
+bild_alt: "AI-bild: Espresso-glass LCHF"
+bild_ai: true
 ---
 
 

@@ -52,6 +52,9 @@ tips:
   - Allulose ger bättre sorbet-textur än erytritol — mindre kornighet.
   - Funkar lika bra med björnbär eller en mix.
 testlogg: []
+bild: "hallonsorbet-allulose.jpg"
+bild_alt: "AI-bild: Hallonsorbet LCHF (allulose-baserad)"
+bild_ai: true
 ---
 
 

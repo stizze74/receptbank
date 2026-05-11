@@ -22,6 +22,9 @@ tillagning:
   - "Vänd in vispad grädde + espresso."
   - "Frys 4 tim."
 testlogg: []
+bild: "kaffeparfait.jpg"
+bild_alt: "AI-bild: Kaffeparfait"
+bild_ai: true
 ---
 
 Italiensk parfait — INGEN glassmaskin.

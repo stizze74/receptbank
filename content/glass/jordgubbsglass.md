@@ -23,6 +23,9 @@ tillagning:
   - "Vispa, värm, sjud, kyl."
   - "Glassmaskin."
 testlogg: []
+bild: "jordgubbsglass.jpg"
+bild_alt: "AI-bild: Jordgubbsglass"
+bild_ai: true
 ---
 
 Sommar-glass.

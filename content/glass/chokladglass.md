@@ -22,6 +22,9 @@ tillagning:
   - "Vispa, värm, sjud, kyl."
   - "Glassmaskin eller frys."
 testlogg: []
+bild: "chokladglass.jpg"
+bild_alt: "AI-bild: Chokladglass"
+bild_ai: true
 ---
 
 Klassisk chokladglass.

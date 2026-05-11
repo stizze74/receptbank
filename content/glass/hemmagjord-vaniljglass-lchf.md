@@ -68,6 +68,9 @@ tips:
     Funkar att toppa med saltrostade mandlar eller chokladdragerade
     hasselnotter.
 testlogg: []
+bild: "hemmagjord-vaniljglass-lchf.jpg"
+bild_alt: "AI-bild: Hemmagjord vaniljglass LCHF"
+bild_ai: true
 ---
 
 

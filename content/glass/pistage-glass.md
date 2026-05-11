@@ -21,6 +21,9 @@ tillagning:
   - "Mortla pistagenötter."
   - "Klassisk metod."
 testlogg: []
+bild: "pistage-glass.jpg"
+bild_alt: "AI-bild: Pistage-glass"
+bild_ai: true
 ---
 
 Italiensk klassiker.

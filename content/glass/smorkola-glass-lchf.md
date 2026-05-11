@@ -62,6 +62,9 @@ tips:
     det.
   - 'Topping-idé: extra erytritol-karamellsa s eller krossade pekannötter.'
 testlogg: []
+bild: "smorkola-glass-lchf.jpg"
+bild_alt: "AI-bild: Smörkola-glass LCHF"
+bild_ai: true
 ---
 
 

@@ -48,6 +48,9 @@ testlogg:
       glukospåverkan — sötningsmedlen (allulose, erytritol, sorbitol, ev.
       xylitol) väl tolererade glukosmässigt. God smak.
 inkop: 'ICA, Coop, Hemköp — frysavdelningen. Köps i pint (473 ml).'
+bild: "nicks-sea-salt-caramel.jpg"
+bild_alt: "AI-bild: Nick's Sea Salt Caramel (köpt glass)"
+bild_ai: true
 ---
 
 

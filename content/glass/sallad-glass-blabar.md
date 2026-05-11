@@ -20,6 +20,9 @@ ingredienser:
 tillagning:
   - "Mosa bär, klassisk metod."
 testlogg: []
+bild: "sallad-glass-blabar.jpg"
+bild_alt: "AI-bild: Blåbärsglass"
+bild_ai: true
 ---
 
 Skogsbär-glass.

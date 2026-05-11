@@ -21,6 +21,9 @@ ingredienser:
 tillagning:
   - "Klassisk metod, vänd in choklad sista minuten."
 testlogg: []
+bild: "kakao-mintglass.jpg"
+bild_alt: "AI-bild: Choklad-mintglass"
+bild_ai: true
 ---
 
 After Eight som glass.

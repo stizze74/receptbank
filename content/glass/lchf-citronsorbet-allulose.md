@@ -61,6 +61,9 @@ tips:
   - Servera direkt från frysen — sorbet hårdnar mer än grad ass.
   - Toppa med färska bär eller en kvist mynta.
 testlogg: []
+bild: "lchf-citronsorbet-allulose.jpg"
+bild_alt: "AI-bild: LCHF-citronsorbet (allulose-baserad)"
+bild_ai: true
 ---
 
 

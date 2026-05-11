@@ -24,6 +24,9 @@ tillagning:
   - "Sjud 75°C, kyl."
   - "Glassmaskin 25 min eller frys + rör 30 min."
 testlogg: []
+bild: "vaniljglass-grunden.jpg"
+bild_alt: "AI-bild: Vaniljglass (grundrecept)"
+bild_ai: true
 ---
 
 Vanlig vaniljglass utan socker.

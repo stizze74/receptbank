@@ -64,6 +64,9 @@ tips:
     glassen.
   - Pepparmyntsextrakt finns i alla väl-sortidae mataffe rer.
 testlogg: []
+bild: "mintchoklad-stracciatella.jpg"
+bild_alt: "AI-bild: Mintchoklad-stracciatella glass"
+bild_ai: true
 ---
 
 

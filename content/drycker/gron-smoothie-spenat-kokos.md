@@ -49,12 +49,12 @@ ingredienser:
     notering: valfritt
 tillagning:
   - namn: Mixa
-    text: Lägg alla ingredienser i blender. Mixa 30–60 sek till helt län.
+    text: Lägg alla ingredienser i blender. Mixa 30–60 sek till helt len.
     timer_min: 1
   - namn: Smaka
     text: Justera med mer lime eller sötning om du vill.
 tips:
-  - Avokado ger krameringd textur och mättnad.
+  - Avokado ger krämig textur och mättnad.
   - Funkar lika bra med grönkål istället för spenat.
 testlogg: []
 ---

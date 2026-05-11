@@ -45,7 +45,7 @@ tillagning:
   - namn: Emulgera
     text: >-
       Tillsätt olivolja droppvis under konstant vispning. När blandningen börjar
-      tjockna kan du tillsätta i tunn stråle. Fortsatt vispa tills aioli har
+      tjockna kan du tillsätta i tunn stråle. Fortsätt vispa tills aioli har
       konsistens av majonnäs.
   - namn: Smaka av
     text: >-

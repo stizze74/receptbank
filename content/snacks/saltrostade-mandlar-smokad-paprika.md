@@ -35,11 +35,11 @@ tillagning:
     text: 'Sätt ugnen på 175°C, varmluft.'
   - namn: Blanda
     text: >-
-      Blanda mandlar med olivolja och smokad paprika i en skål. Vinda runt så
+      Blanda mandlar med olivolja och smokad paprika i en skål. Vänd runt så
       alla är täckta.
   - namn: Rosta
     text: >-
-      Bred ut på plat med bakplat. Rosta 10–12 min, skakar pannan halvvägs.
+      Bred ut på plåt med bakplåt. Rosta 10–12 min, skakar pannan halvvägs.
       Mandlarna ska dofta och mortna lite på ytan.
     timer_min: 11
   - namn: Salta

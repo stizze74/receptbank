@@ -43,7 +43,7 @@ ingredienser:
     vara: 'persilja, fint hackad'
     notering: valfritt
 tillagning:
-  - namn: Smalt smör
+  - namn: Smält smör
     text: >-
       Använd helst samma panna som proteinet just stekts i — stekfonden är halva
       grejen. Annars: smalt smöret på medelvärme i en ren panna.

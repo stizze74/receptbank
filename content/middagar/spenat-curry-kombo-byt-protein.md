@@ -64,7 +64,7 @@ tillagning:
   - namn: Förber spenat-bas
     text: >-
       Wilte spenaten 2 min i het panna med en klick smör tills sjunkit ihop.
-      Mixa till slat pasta.
+      Mixa till slät pasta.
     timer_min: 4
   - namn: Fräs aromer
     text: >-
@@ -86,7 +86,7 @@ tillagning:
     timer_min: 10
   - namn: Servera
     text: >-
-      Fördela curryn på två tallrikar. Tillsatt Stefan kyckling i sin,
+      Fördela curryn på två tallrikar. Tillsätt Stefan kyckling i sin,
       paneer/halloumi i Jessicas.
 tips:
   - 'Klassisk saag-stil indisk curry — mycket av sa s, lite kraftig spice.'

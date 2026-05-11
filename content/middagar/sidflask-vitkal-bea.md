@@ -42,7 +42,9 @@ ingredienser:
     enhet: tsk
     vara: kummin
     notering: 'valfritt, klassiskt med fläsk'
-  - { vara: "Klick av Lohmanders Béarnaise Original", mangd: 1, enhet: msk }
+  - mangd: 1
+    enhet: msk
+    vara: Klick av Lohmanders Béarnaise Original
 tillagning:
   - namn: Förberedelse
     text: >-
@@ -75,10 +77,17 @@ tips:
     stekt i smör.
   - Smakkolla SALT INNAN du saltar — fläsket bär mycket salt.
   - Bea ur kylen — inget extra arbete. Klassiskt smörsmörs-tillbehör.
-testlogg: []
-bild: "sidflask-vitkal-bea.jpg"
-bild_alt: "AI-bild: Sidfläsk med vitkål & béarnaise"
-bild_ai: true
+testlogg:
+  - datum: '2026-05-11'
+    magreaktion: 'Bra, inga besvär.'
+    betyg: 4
+    notering: >-
+      God och mättande. Lade till extra korv för att fylla ut. Bra som
+      återställare efter krävande kh-lunch (bulgur-bowl). LCHF-middag landar
+      glukos även efter jobbig dag. Trött efter crosstraining 18:15 men sov-redo
+      efter måltid.
+bild: sidflask-vitkal-bea.jpg
+bild_alt: 'AI-bild: Sidfläsk med vitkål & béarnaise'
 ---
 
 Husmansklassiker. "Fläsk och vitkål" — gammelsvenska. LCHF-perfekt eftersom båda komponenterna är låga på kh och höga på fett. Bea bredvid lyfter det till middag-status.

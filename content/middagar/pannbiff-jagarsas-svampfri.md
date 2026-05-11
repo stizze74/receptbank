@@ -63,7 +63,7 @@ tillagning:
   - namn: Fräs broccoli
     text: >-
       Smula i mer smör. Fräs schalottenlök och vitlök 2 min. Tillsätt
-      broccolibuketter, fräs 4 min tills latt mjuka men fortfarande gröna.
+      broccolibuketter, fräs 4 min tills lätt mjuka men fortfarande gröna.
     timer_min: 6
   - namn: Bygg sås
     text: >-

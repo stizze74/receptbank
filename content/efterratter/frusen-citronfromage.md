@@ -44,10 +44,10 @@ tillagning:
   - namn: Vispa äggvitor
     text: >-
       Vispa äggvitorna med nypa salt till hårda toppar. Tillsätt resterande
-      erytritol och fortsatt vispa tills glatt.
-  - namn: Vinda samman
+      erytritol och fortsätt vispa tills glatt.
+  - namn: Vänd samman
     text: >-
-      Rör citronsaft, citronskal och vanilj i äggvitan. Vinda försiktigt ner
+      Rör citronsaft, citronskal och vanilj i äggvitan. Vänd försiktigt ner
       grädden — inte rör ut luften.
   - namn: Forma och frys
     text: >-
@@ -56,7 +56,7 @@ tillagning:
     timer_min: 240
   - namn: Servera
     text: >-
-      Ta ut 5 min innan servering så den blir krameringd. Toppa med färska bär
+      Ta ut 5 min innan servering så den blir krämig. Toppa med färska bär
       eller mintkvist.
 tips:
   - Lite mer luftig och fris kare än vanlig glass.

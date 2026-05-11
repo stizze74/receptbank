@@ -52,7 +52,7 @@ ingredienser:
     vara: vaniljpulver
 tillagning:
   - namn: Förvärm ugn
-    text: Sätt ugnen på 200°C. Bakplats på plat.
+    text: Sätt ugnen på 200°C. Bakplåtspapper på plåt.
   - namn: Blanda torrt
     text: >-
       Blanda mandelmjöl, kokosmjöl, psyllium, erytritol, bakpulver, salt och
@@ -62,7 +62,7 @@ tillagning:
   - namn: Tillsätt vätska
     text: Rör ner ägg och grädde till en len deg. Klibbig men håller form.
   - namn: Forma
-    text: Forma till 8 små trianglar eller runda bullar på plat med 4 cm mellan.
+    text: Forma till 8 små trianglar eller runda bullar på plåt med 4 cm mellan.
   - namn: Baka
     text: Baka 18–20 min tills gyllene.
     timer_min: 19

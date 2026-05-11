@@ -37,7 +37,7 @@ ingredienser:
   - vara: nypa salt
 tillagning:
   - namn: Mosa hallon
-    text: Töa hallon halvvägs. Mosa eller mixa till slat röra.
+    text: Töa hallon halvvägs. Mosa eller mixa till slät röra.
   - namn: Gör sirap
     text: >-
       Värm vatten med allulose, salt, vanilj och citron tills sötningen löst
@@ -45,7 +45,7 @@ tillagning:
     timer_min: 3
   - namn: Sila och frys
     text: >-
-      Vinda samman hallonmösa och sirap. Sila om du vill ha utan frön. Frys i
+      Vänd samman hallonmösa och sirap. Sila om du vill ha utan frön. Frys i
       form, vispa var 30 min i 2–3 h.
     timer_min: 150
 tips:

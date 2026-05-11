@@ -59,7 +59,7 @@ ingredienser:
     vara: 'lime, klyftor'
   - mangd: 1
     enhet: msk
-    vara: krasch rostade jordnötter
+    vara: krossade rostade jordnötter
     notering: topping
 tillagning:
   - namn: Curry-pasta

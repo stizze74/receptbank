@@ -36,18 +36,18 @@ ingredienser:
   - mangd: 500
     enhet: g
     vara: ankfett
-    notering: smalt eller olivolja som ersättning
+    notering: smält eller olivolja som ersättning
 tillagning:
   - namn: Salta
     text: >-
       Gnid anklarna med salt, vitlök och timjan. Lägg i kyl 8–12 h (eller över
       natt).
     timer_min: 480
-  - namn: Skol
-    text: Skol av saltet och torka anklarna ordentligt med papper.
+  - namn: Skölj
+    text: Skölj av saltet och torka anklarna ordentligt med papper.
   - namn: Confit
     text: >-
-      Smält ankfett (eller olivolja) i ugnsförema kastrull. Lagg i anklarna helt
+      Smält ankfett (eller olivolja) i ugnsförema kastrull. Lägg i anklarna helt
       täckta. Tillsätt lagerblad. Confit på 100°C ugn i 3 timmar tills mycket
       möra.
     timer_min: 180

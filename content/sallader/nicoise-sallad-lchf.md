@@ -24,11 +24,11 @@ ingredienser:
     vara: kokt tonfisk i olja
   - mangd: 4
     enhet: st
-    vara: hardkokta ägg
+    vara: hårdkokta ägg
   - mangd: 100
     enhet: g
     vara: haricots verts
-    notering: lattkokta
+    notering: lättkokta
   - mangd: 100
     enhet: g
     vara: körsbärstomater
@@ -53,7 +53,7 @@ tillagning:
     text: Koka haricots verts 5 min. Spola kallt.
     timer_min: 5
   - namn: Förber ägg
-    text: Halvera de hardkokta äggen.
+    text: Halvera de hårdkokta äggen.
   - namn: Gör dressing
     text: 'Rör ihop olivolja, vinäger, dijonsenap, salt och peppar.'
   - namn: Lägg upp

@@ -64,6 +64,9 @@ tips:
   - Håller 2 dagar i kyl men bäst samma dag.
   - 'Lyx-version: tillsätt 1 msk grand marnier eller cointreau i mascarponen.'
 testlogg: []
+bild: "mascarpone-mousse-bar.jpg"
+bild_alt: "AI-bild: Mascarpone-mousse med färska bär"
+bild_ai: true
 ---
 
 

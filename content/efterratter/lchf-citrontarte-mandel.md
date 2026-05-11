@@ -81,6 +81,9 @@ tips:
   - Håller 3 dagar i kyl.
   - 'För mer ''sour'' karaktär: tillsätt 1 msk extra citronsaft i kramen.'
 testlogg: []
+bild: "lchf-citrontarte-mandel.jpg"
+bild_alt: "AI-bild: LCHF-citrontarte med mandelmjölsbotten"
+bild_ai: true
 ---
 
 

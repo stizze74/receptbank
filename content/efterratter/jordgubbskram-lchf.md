@@ -53,6 +53,9 @@ tips:
   - Klassisk svensk sommardessert.
   - Frusna jordgubbar fungerar perfekt — töa halvvägs innan mosning.
 testlogg: []
+bild: "jordgubbskram-lchf.jpg"
+bild_alt: "AI-bild: Jordgubbskräm LCHF"
+bild_ai: true
 ---
 
 

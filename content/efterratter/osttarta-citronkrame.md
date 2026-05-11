@@ -23,6 +23,9 @@ tillagning:
   - "Vispa allt slätt."
   - { namn: "Grädda", text: "160°C, 50 min.", timer_min: 50 }
 testlogg: []
+bild: "osttarta-citronkrame.jpg"
+bild_alt: "AI-bild: Citronostkaka"
+bild_ai: true
 ---
 
 Klassisk LCHF-ostkaka.

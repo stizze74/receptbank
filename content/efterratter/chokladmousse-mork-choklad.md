@@ -59,6 +59,9 @@ tips:
     låg.
   - Funkar att göra dagen innan — blir bättre.
 testlogg: []
+bild: "chokladmousse-mork-choklad.jpg"
+bild_alt: "AI-bild: Chokladmousse med mörk choklad"
+bild_ai: true
 ---
 
 

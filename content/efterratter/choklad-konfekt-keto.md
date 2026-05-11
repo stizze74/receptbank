@@ -22,6 +22,9 @@ tillagning:
   - "Vänd ner mandlar."
   - "Häll i form, kyl 1 tim. Bryt i bitar."
 testlogg: []
+bild: "choklad-konfekt-keto.jpg"
+bild_alt: "AI-bild: Mörk choklad-konfekt"
+bild_ai: true
 ---
 
 Hemlagad chokladkonfekt.

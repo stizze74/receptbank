@@ -21,6 +21,9 @@ tillagning:
   - "Vispa grädde, vänd ner mascarpone, erytritol, vanilj."
   - "Kyl 30 min."
 testlogg: []
+bild: "mascarponemousse-vanilj.jpg"
+bild_alt: "AI-bild: Mascarpone-mousse med vanilj"
+bild_ai: true
 ---
 
 Italiensk silkesmousse.

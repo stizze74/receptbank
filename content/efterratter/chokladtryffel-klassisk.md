@@ -59,6 +59,9 @@ tips:
   - 'Variera rullning: krossade hasselnötter, pistage, eller flingsalt.'
   - 'Håller 2 veckor i kyl, fryser bra.'
 testlogg: []
+bild: "chokladtryffel-klassisk.jpg"
+bild_alt: "AI-bild: Chokladtryffel klassisk"
+bild_ai: true
 ---
 
 

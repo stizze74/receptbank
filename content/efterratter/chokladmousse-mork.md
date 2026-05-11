@@ -23,6 +23,9 @@ tillagning:
   - "Vänd ner äggulor i den ljumma chokladen, sen grädden."
   - "Kyl 30 min."
 testlogg: []
+bild: "chokladmousse-mork.jpg"
+bild_alt: "AI-bild: Mörkchokladmousse med grädde"
+bild_ai: true
 ---
 
 Mörk och seriös choklad.

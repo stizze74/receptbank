@@ -62,6 +62,9 @@ tips:
   - Lite mer luftig och fris kare än vanlig glass.
   - Funkar lika bra med lime eller blodapelsin-skal.
 testlogg: []
+bild: "frusen-citronfromage.jpg"
+bild_alt: "AI-bild: Frusen citronfromage"
+bild_ai: true
 ---
 
 

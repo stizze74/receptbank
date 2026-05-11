@@ -20,6 +20,9 @@ ingredienser:
 tillagning:
   - "Blanda, forma 8 bollar, kyl."
 testlogg: []
+bild: "kokosbollar-rom.jpg"
+bild_alt: "AI-bild: Kokosbollar med rom"
+bild_ai: true
 ---
 
 Klassisk svensk.

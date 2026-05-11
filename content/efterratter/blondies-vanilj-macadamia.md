@@ -63,6 +63,9 @@ tips:
     Macadamianötter ger 'vita choklad'-känsla utan choklad. Pekan eller mandel
     funkar också.
 testlogg: []
+bild: "blondies-vanilj-macadamia.jpg"
+bild_alt: "AI-bild: Vita blondies (vanilj-macadamia)"
+bild_ai: true
 ---
 
 

@@ -20,6 +20,9 @@ ingredienser:
 tillagning:
   - { namn: "Sjud", text: "Allt i kastrull, 8 min.", timer_min: 8 }
 testlogg: []
+bild: "jordgubbe-rabarber-keto.jpg"
+bild_alt: "AI-bild: Jordgubbs-rabarber-kompott"
+bild_ai: true
 ---
 
 Sommarefterrätt.

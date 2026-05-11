@@ -21,6 +21,9 @@ tillagning:
   - "Smält allt."
   - "Häll i form, kyl 1 tim."
 testlogg: []
+bild: "choklad-fudge-keto.jpg"
+bild_alt: "AI-bild: Choklad-fudge keto"
+bild_ai: true
 ---
 
 LCHF-godis.

@@ -26,6 +26,9 @@ tillagning:
   - "Doppa kex i kaffe, varva med crème."
   - "Strö kakao över. Kyl 4 tim."
 testlogg: []
+bild: "tiramisu-keto.jpg"
+bild_alt: "AI-bild: Keto-tiramisu"
+bild_ai: true
 ---
 
 Italiensk klassiker LCHF-anpassad.

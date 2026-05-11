@@ -21,6 +21,9 @@ tillagning:
   - "Värm smällt."
   - "Häll i form, kyl 1 tim."
 testlogg: []
+bild: "fudge-jordnotssmor.jpg"
+bild_alt: "AI-bild: Jordnötssmör-fudge"
+bild_ai: true
 ---
 
 Amerikansk klassiker.

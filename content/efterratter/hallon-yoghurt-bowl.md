@@ -21,6 +21,9 @@ ingredienser:
 tillagning:
   - "Skiktning i glas: yoghurt + erytritol, hallon, choklad, kokos."
 testlogg: []
+bild: "hallon-yoghurt-bowl.jpg"
+bild_alt: "AI-bild: Hallon-yoghurt med kokoschokladtopping"
+bild_ai: true
 ---
 
 Snabb dessert i glas.

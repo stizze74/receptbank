@@ -20,6 +20,9 @@ ingredienser:
 tillagning:
   - "Blanda, kyl 4 tim."
 testlogg: []
+bild: "jordgubbschia-pudding.jpg"
+bild_alt: "AI-bild: Jordgubbschia-pudding"
+bild_ai: true
 ---
 
 Sommar-pudding.

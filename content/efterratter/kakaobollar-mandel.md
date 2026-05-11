@@ -22,6 +22,9 @@ tillagning:
   - "Blanda allt."
   - "Forma 12 bollar, kyl 1 tim."
 testlogg: []
+bild: "kakaobollar-mandel.jpg"
+bild_alt: "AI-bild: Kakaobollar med mandel"
+bild_ai: true
 ---
 
 Klassiska bollar.

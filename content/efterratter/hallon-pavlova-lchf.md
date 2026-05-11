@@ -66,6 +66,9 @@ tips:
     resultatet är fantastiskt.
   - 'Gör pavlovan dagen innan, toppa med grädde och bär precis före servering.'
 testlogg: []
+bild: "hallon-pavlova-lchf.jpg"
+bild_alt: "AI-bild: Hallon-pavlova LCHF"
+bild_ai: true
 ---
 
 

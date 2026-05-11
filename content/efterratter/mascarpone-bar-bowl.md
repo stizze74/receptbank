@@ -22,6 +22,9 @@ tillagning:
   - "Vispa mascarpone + grädde + erytritol."
   - "Topp med hallon."
 testlogg: []
+bild: "mascarpone-bar-bowl.jpg"
+bild_alt: "AI-bild: Mascarpone-bär-bowl"
+bild_ai: true
 ---
 
 Snabb italiensk.

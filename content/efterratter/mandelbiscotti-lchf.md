@@ -67,6 +67,9 @@ tips:
     senare är inte LCHF).
   - Håller 2 veckor i lufttat burk.
 testlogg: []
+bild: "mandelbiscotti-lchf.jpg"
+bild_alt: "AI-bild: Mandelbiscotti LCHF"
+bild_ai: true
 ---
 
 

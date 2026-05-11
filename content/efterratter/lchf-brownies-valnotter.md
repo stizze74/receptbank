@@ -78,6 +78,9 @@ tips:
     Variera: tillsätt mintsmak (1 tsk extrakt) eller 50 g hallon på toppen före
     gräddning.
 testlogg: []
+bild: "lchf-brownies-valnotter.jpg"
+bild_alt: "AI-bild: LCHF-brownies med valnötter"
+bild_ai: true
 ---
 
 

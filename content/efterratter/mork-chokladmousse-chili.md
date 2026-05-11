@@ -60,6 +60,9 @@ tips:
     partners.
   - Variera mexikansk-stil med kanel istället för chili.
 testlogg: []
+bild: "mork-chokladmousse-chili.jpg"
+bild_alt: "AI-bild: Mörk choklad-mousse med chili"
+bild_ai: true
 ---
 
 

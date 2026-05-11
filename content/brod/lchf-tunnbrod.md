@@ -45,12 +45,12 @@ ingredienser:
 tillagning:
   - namn: Blanda
     text: >-
-      Blanda alla ingredienser. Vinda samman till en len, smidig deg. Låt stå 5
+      Blanda alla ingredienser. Vänd samman till en len, smidig deg. Låt stå 5
       min.
     timer_min: 5
   - namn: Forma
     text: >-
-      Dela degen i 4 delar. Kavla mellan två bakplater till tunna plattor (~20
+      Dela degen i 4 delar. Kavla mellan två bakplåtar till tunna plattor (~20
       cm, 2 mm tjocka).
   - namn: Stek
     text: >-

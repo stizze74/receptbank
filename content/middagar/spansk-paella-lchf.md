@@ -65,7 +65,7 @@ ingredienser:
   - vara: 'salt, citronklyftor'
 tillagning:
   - namn: Gör blomkålsris
-    text: Riv blomkål grovt i matberedare. Ange blomkålsriset latt med salt.
+    text: Riv blomkål grovt i matberedare. Ange blomkålsriset lätt med salt.
   - namn: Förber soffrito
     text: >-
       Smält olivolja i stor paella-panna eller djup stekpanna. Fräs skivad lök,

@@ -22,6 +22,9 @@ tillagning:
   - "Blanda allt utom äggula."
   - "Forma, gula i mitten."
 testlogg: []
+bild: "kalv-tartar.jpg"
+bild_alt: "AI-bild: Kalv-tartar"
+bild_ai: true
 ---
 
 Mildare än oxtartar.

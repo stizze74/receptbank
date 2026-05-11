@@ -22,6 +22,9 @@ tillagning:
   - "Lägg på skinka."
   - "Toppa med hollandaise."
 testlogg: []
+bild: "agg-benedict-utan-bröd.jpg"
+bild_alt: "AI-bild: Eggs Benedict utan bröd"
+bild_ai: true
 ---
 
 Klassiker utan bröd.

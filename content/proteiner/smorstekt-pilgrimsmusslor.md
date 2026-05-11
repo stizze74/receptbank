@@ -22,6 +22,9 @@ tillagning:
   - { namn: "Stek", text: "Hög värme, smör, 90 sek per sida.", timer_min: 3 }
   - "Citronsaft."
 testlogg: []
+bild: "smorstekt-pilgrimsmusslor.jpg"
+bild_alt: "AI-bild: Smörstekta pilgrimsmusslor"
+bild_ai: true
 ---
 
 Lyx-protein. 90 sek per sida = perfekt.

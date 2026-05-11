@@ -66,6 +66,9 @@ tips:
     mer fluffig.
   - 'Använd alltid smör, inte olja — smaken är halva poängen.'
 testlogg: []
+bild: "agg-omelett.jpg"
+bild_alt: "AI-bild: Omelett med smör"
+bild_ai: true
 ---
 
 Snabbaste maten du kan göra. Funkar lika bra till frukosthelg, lunch på vardag eller middagsnödläge när kylen är tom så när som på ägg.

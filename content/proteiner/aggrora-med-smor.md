@@ -46,6 +46,9 @@ tips:
   - 'Toppa med färsk gräslök, riven ost, eller en klick bea för lyx-version.'
   - 'Kombo: äggröra + sidfläsk + avokado = solid frukost.'
 testlogg: []
+bild: "aggrora-med-smor.jpg"
+bild_alt: "AI-bild: Äggröra med smör"
+bild_ai: true
 ---
 
 

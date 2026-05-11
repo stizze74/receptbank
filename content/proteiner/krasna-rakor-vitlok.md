@@ -58,6 +58,9 @@ tips:
   - Servera med mandelmjöls-skivbröd för att skopa upp smöret — bästa delen.
   - 'Funkar med mindre frusna räkor i nödfall, men jätteräkor ger bäst textur.'
 testlogg: []
+bild: "krasna-rakor-vitlok.jpg"
+bild_alt: "AI-bild: Krispiga räkor med vitlök (gambas al ajillo)"
+bild_ai: true
 ---
 
 Spansk gambas al ajillo.

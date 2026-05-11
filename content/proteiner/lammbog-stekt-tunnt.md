@@ -20,6 +20,9 @@ ingredienser:
 tillagning:
   - "Stek 3 min/sida."
 testlogg: []
+bild: "lammbog-stekt-tunnt.jpg"
+bild_alt: "AI-bild: Lammbog tunnt-stekt"
+bild_ai: true
 ---
 
 Snabbt lamm.

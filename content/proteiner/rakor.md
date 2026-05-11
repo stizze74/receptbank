@@ -60,6 +60,9 @@ tips:
     För extra-flott: bräck en rå äggula över räkorna. Klassisk skagen-stil utan
     brödet.
 testlogg: []
+bild: "rakor.jpg"
+bild_alt: "AI-bild: Räkor i kall portion"
+bild_ai: true
 ---
 
 Inget tillagas. Räkor handpillade direkt ur paketet, dressade med olja och citron, serverade kallt. Den enklaste middagen i banken — under 5 minuter från kyl till tallrik.

@@ -74,6 +74,9 @@ tips:
     För krispigt fettkant: snitta fettranden i pannan först (stående) i 30 sek
     innan du lägger ner platt.
 testlogg: []
+bild: "flaskkarre.jpg"
+bild_alt: "AI-bild: Stekt fläskkarré"
+bild_ai: true
 ---
 
 Vardagsklassiker. Fläskkarré är förlåtande, fett och billigt — perfekt för 30-minutersmiddag. Skivor på 1,5 cm tjocklek är sweet spot: stektid 8–10 min totalt, blir saftigt utan att kräva termometer.

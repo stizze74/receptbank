@@ -76,6 +76,9 @@ tips:
     Frusen torsk: tina helt och torka extra noga, annars fäller fisken massor av
     vätska i pannan.
 testlogg: []
+bild: "torsk.jpg"
+bild_alt: "AI-bild: Smörstekt torsk"
+bild_ai: true
 ---
 
 Vardags-fisk när det ska gå snabbt. Torsk är magert och kräver fett från smör/sås — ensam blir den fadd. Saltning 5–10 min före stekning ger fastare köttstruktur. Stek inte för länge; flagar lätt vid 50–55°C innertemp.

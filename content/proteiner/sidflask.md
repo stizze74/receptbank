@@ -55,6 +55,9 @@ tips:
     bittert.
   - Skär för tunna skivor krymper till intet och blir spröda — satsar på 3–4 mm.
 testlogg: []
+bild: "sidflask.jpg"
+bild_alt: "AI-bild: Stekt sidfläsk"
+bild_ai: true
 ---
 
 Snabbaste fettkällan i pannan. Sidfläsk steks bäst kallt, långsamt — då smälter fettet ut och köttet blir krispigt utan att brännas. Det utfällda fettet är guld och ska sparas till nästa moment (stekta ägg, smörstekta grönsaker, fond till sås).

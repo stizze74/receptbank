@@ -73,6 +73,9 @@ tips:
     Vill du ha lökfri version: hoppa löken, stärk smaken med extra vitlök och en
     skvätt sötningsmedel-fri worcestershås.
 testlogg: []
+bild: "kottfars.jpg"
+bild_alt: "AI-bild: Smörstekt köttfärs"
+bild_ai: true
 ---
 
 Vardags-arbetshäst nummer ett. Färs är förlåtande, snabbt och passar i hundra kombinationer. Nyckeln för LCHF: hög fetthalt på färsen (gärna 17–20%) och låt vätskan koka bort innan du höjer värmen för stekyta.

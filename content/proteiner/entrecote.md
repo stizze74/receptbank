@@ -88,6 +88,9 @@ tips:
     Avglacera med en skvätt vatten eller buljong, koka ihop med smör.
   - Skär ALLTID mot fibrerna — gör köttet mörare i munnen.
 testlogg: []
+bild: "entrecote.jpg"
+bild_alt: "AI-bild: Stekt entrecôte"
+bild_ai: true
 ---
 
 Helgmiddagens krona. Entrecôte tål — och kräver — hög värme och kort tid. Två faktorer avgör resultatet: rumstempererat kött innan stekning, och vila efter. Resten är ren teknik.

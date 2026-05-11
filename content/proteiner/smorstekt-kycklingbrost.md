@@ -29,6 +29,9 @@ tips:
   - "För extra smak: lägg en kvist timjan eller rosmarin i smöret de sista minuterna."
   - "Byt smör mot ghee om du vill stekta i högre värme utan att smöret bränns."
 testlogg: []
+bild: "smorstekt-kycklingbrost.jpg"
+bild_alt: "AI-bild: Smörstekt kycklingbröst"
+bild_ai: true
 ---
 
 Bas-protein i banken. Snabbt, smaklöst på ett bra sätt — låter sås och bas styra.

@@ -22,6 +22,9 @@ tillagning:
   - "Skär thunfisk i tunna skivor."
   - "Servera med soja-wasabi, droppa sesamolja."
 testlogg: []
+bild: "sashimi-thunfisk.jpg"
+bild_alt: "AI-bild: Sashimi av thunfisk (LCHF)"
+bild_ai: true
 ---
 
 Sashimi som protein-rätt.

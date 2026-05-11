@@ -22,6 +22,9 @@ tillagning:
   - { namn: "Vänd", text: "4 min på köttsidan. Innertemp 56°C medium-rare.", timer_min: 4 }
   - "Vila 5 min."
 testlogg: []
+bild: "smorstekt-anka-brost.jpg"
+bild_alt: "AI-bild: Smörstekt ankbröst"
+bild_ai: true
 ---
 
 Anka 101 — låt fettet rendera.

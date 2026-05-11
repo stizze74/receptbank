@@ -21,6 +21,9 @@ tillagning:
   - "Halvera ägg."
   - "Klick majo, klick löjrom, dill."
 testlogg: []
+bild: "agghalvor-rom.jpg"
+bild_alt: "AI-bild: Ägghalvor med löjrom"
+bild_ai: true
 ---
 
 Lättskryt-mat.

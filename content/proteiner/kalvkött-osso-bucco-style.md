@@ -24,6 +24,9 @@ tillagning:
   - "Lök, vitlök, tomat, buljong."
   - { namn: "Sjud", text: "80 min lågt.", timer_min: 80 }
 testlogg: []
+bild: "kalvkött-osso-bucco-style.jpg"
+bild_alt: "AI-bild: Kalvkött osso bucco-style"
+bild_ai: true
 ---
 
 Italiensk husmanskost.

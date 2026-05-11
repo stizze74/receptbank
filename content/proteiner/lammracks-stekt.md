@@ -23,6 +23,9 @@ tillagning:
   - { namn: "Ugn", text: "180°C, 12–15 min innertemp 55°C.", timer_min: 15 }
   - "Vila 8 min."
 testlogg: []
+bild: "lammracks-stekt.jpg"
+bild_alt: "AI-bild: Stekt lammracks"
+bild_ai: true
 ---
 
 Helgens lammrätt.

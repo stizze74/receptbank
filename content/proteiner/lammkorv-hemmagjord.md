@@ -23,6 +23,9 @@ tillagning:
   - "Blanda, forma till korv-form."
   - "Stek 8 min/sida."
 testlogg: []
+bild: "lammkorv-hemmagjord.jpg"
+bild_alt: "AI-bild: Hemmagjord lammkorv"
+bild_ai: true
 ---
 
 Lammkorv hemma.

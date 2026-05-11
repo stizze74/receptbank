@@ -21,6 +21,9 @@ tillagning:
   - "Täck med salt."
   - { namn: "Ugn", text: "180°C, 75 min.", timer_min: 75 }
 testlogg: []
+bild: "salt-fläsksida-baktad.jpg"
+bild_alt: "AI-bild: Saltbakad fläsksida"
+bild_ai: true
 ---
 
 Saltbakad — förvånansvärt bra.

@@ -29,6 +29,9 @@ tips:
   - "För Jessica: stek två separata bitar samtidigt om hon också vill ha lax — annars tar du hela 300 g till dig själv."
   - "Resterande lax är perfekt kall till sallad dagen efter."
 testlogg: []
+bild: "smorstekt-lax.jpg"
+bild_alt: "AI-bild: Smörstekt lax"
+bild_ai: true
 ---
 
 Snabb, fet, mycket protein, noll kh. Defaultval när kylen är tom.

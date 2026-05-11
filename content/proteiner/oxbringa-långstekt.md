@@ -22,6 +22,9 @@ tillagning:
   - { namn: "Ugn", text: "120°C, 5 timmar, täckt med folie.", timer_min: 300 }
   - "Vila 30 min."
 testlogg: []
+bild: "oxbringa-långstekt.jpg"
+bild_alt: "AI-bild: Långstekt oxbringa (5h)"
+bild_ai: true
 ---
 
 Texas-style brisket. Tar tid.

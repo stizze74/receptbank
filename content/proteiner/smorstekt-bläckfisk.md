@@ -22,6 +22,9 @@ tillagning:
   - { namn: "Stek", text: "Smör + vitlök, 2 min på hög värme.", timer_min: 2 }
   - "Citron."
 testlogg: []
+bild: "smorstekt-bläckfisk.jpg"
+bild_alt: "AI-bild: Smörstekt bläckfisk-tubar"
+bild_ai: true
 ---
 
 2 min eller hela natten — det finns inget mellanrum.

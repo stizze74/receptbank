@@ -48,7 +48,7 @@ tillagning:
     timer_min: 60
   - namn: Vispa äggvita
     text: >-
-      (valfritt) Vispa äggvitan till hårdt skum. Vinda försiktigt ner i den
+      (valfritt) Vispa äggvitan till hårdt skum. Vänd försiktigt ner i den
       kalla sockerlagen för len textur.
   - namn: Frys
     text: >-

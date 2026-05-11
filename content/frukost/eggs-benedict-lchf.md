@@ -61,6 +61,9 @@ tips:
     Pochat ägg: vortex-trick gör runt och fint ägg — sn rrla vattnet med sked
     först, sedan knack in i mitten.
 testlogg: []
+bild: "eggs-benedict-lchf.jpg"
+bild_alt: "AI-bild: Eggs Benedict LCHF"
+bild_ai: true
 ---
 
 

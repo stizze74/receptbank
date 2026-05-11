@@ -21,6 +21,9 @@ tillagning:
   - { namn: "Stek korv", text: "5 min.", timer_min: 5 }
   - { namn: "Stek ägg", text: "3 min.", timer_min: 3 }
 testlogg: []
+bild: "smorstekt-korv-agg.jpg"
+bild_alt: "AI-bild: Smörstekt korv med ägg"
+bild_ai: true
 ---
 
 Lättlagad weekend-startare.

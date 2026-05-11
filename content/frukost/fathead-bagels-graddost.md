@@ -22,6 +22,9 @@ tillagning:
   - "Forma 4 bagels."
   - { namn: "Grädda", text: "200°C, 14 min.", timer_min: 14 }
 testlogg: []
+bild: "fathead-bagels-graddost.jpg"
+bild_alt: "AI-bild: Fathead-bagels med gräddost"
+bild_ai: true
 ---
 
 Klassisk fathead-recept.

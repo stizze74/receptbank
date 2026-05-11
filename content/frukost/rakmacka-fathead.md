@@ -20,6 +20,9 @@ ingredienser:
 tillagning:
   - "Bred majo, lägg räkor, dill, citron."
 testlogg: []
+bild: "rakmacka-fathead.jpg"
+bild_alt: "AI-bild: Räkmacka på fathead-bröd"
+bild_ai: true
 ---
 
 Söndagsfrukost.

@@ -22,6 +22,9 @@ tillagning:
   - "Mixa allt utom smör."
   - { namn: "Stek", text: "Smör i pannan, 1–2 min per sida.", timer_min: 8 }
 testlogg: []
+bild: "lchf-pannkakor-kvarg.jpg"
+bild_alt: "AI-bild: LCHF-pannkakor med kvarg"
+bild_ai: true
 ---
 
 Helgpannkakor.

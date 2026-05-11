@@ -22,6 +22,9 @@ ingredienser:
 tillagning:
   - "Mixa, stek tunna pannkakor."
 testlogg: []
+bild: "crepes-citron.jpg"
+bild_alt: "AI-bild: LCHF-crepes med smör & citron"
+bild_ai: true
 ---
 
 Tunnare än vanliga LCHF-pannkakor.

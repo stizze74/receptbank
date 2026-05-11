@@ -21,6 +21,9 @@ ingredienser:
 tillagning:
   - "Mixa, stek pannkakor 1 min/sida."
 testlogg: []
+bild: "protein-pannkakor.jpg"
+bild_alt: "AI-bild: Protein-pannkakor"
+bild_ai: true
 ---
 
 Hög protein.

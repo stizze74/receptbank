@@ -65,6 +65,9 @@ tips:
     amerikanska pancakes.
   - Funkar att fördubbla — svala extra och ta med som snack.
 testlogg: []
+bild: "lchf-pannkakor-mandelmjol.jpg"
+bild_alt: "AI-bild: LCHF-pannkakor (mandelmjölsbas)"
+bild_ai: true
 ---
 
 

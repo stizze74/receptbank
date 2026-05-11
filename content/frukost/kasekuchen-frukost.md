@@ -23,6 +23,9 @@ tillagning:
   - { namn: "Grädda", text: "160°C, 35 min.", timer_min: 35 }
   - "Bättre dagen efter."
 testlogg: []
+bild: "kasekuchen-frukost.jpg"
+bild_alt: "AI-bild: LCHF-käsekuchen-frukost"
+bild_ai: true
 ---
 
 Tysk klassiker. Förbered kvällen innan.

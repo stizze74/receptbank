@@ -21,6 +21,9 @@ tillagning:
   - "Vispa ägg + grädde."
   - { namn: "Stek långsamt", text: "Låg värme, rör mjukt 4 min.", timer_min: 4 }
 testlogg: []
+bild: "aggrora-med-gradde.jpg"
+bild_alt: "AI-bild: Krämig äggröra med grädde"
+bild_ai: true
 ---
 
 Fransk metod.

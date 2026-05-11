@@ -21,6 +21,9 @@ tillagning:
   - "Halvera avokado, salta + citron."
   - "Stek ägg 3 min."
 testlogg: []
+bild: "avokado-stekt-agg.jpg"
+bild_alt: "AI-bild: Avokado med stekt ägg & flingsalt"
+bild_ai: true
 ---
 
 Snabb fett-bombsfrukost.

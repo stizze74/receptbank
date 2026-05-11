@@ -22,6 +22,9 @@ tillagning:
   - { namn: "Stek ägg", text: "3 min.", timer_min: 3 }
   - { namn: "Tomater", text: "Sista minuten.", timer_min: 1 }
 testlogg: []
+bild: "halloumi-agg-tomat.jpg"
+bild_alt: "AI-bild: Halloumi & ägg med tomat"
+bild_ai: true
 ---
 
 Mediterran frukost.

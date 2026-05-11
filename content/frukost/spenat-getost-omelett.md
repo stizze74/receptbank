@@ -56,6 +56,9 @@ tips:
     funkar bra.
   - Variera med tärnade körsbärstomater och basilika.
 testlogg: []
+bild: "spenat-getost-omelett.jpg"
+bild_alt: "AI-bild: Spenat- och getost-omelett"
+bild_ai: true
 ---
 
 

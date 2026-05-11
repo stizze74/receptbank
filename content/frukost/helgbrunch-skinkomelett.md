@@ -21,6 +21,9 @@ tillagning:
   - "Vispa ägg."
   - { namn: "Stek", text: "Smör, ägg, lägg på skinka och ost, vik.", timer_min: 4 }
 testlogg: []
+bild: "helgbrunch-skinkomelett.jpg"
+bild_alt: "AI-bild: Helgbrunch: skinka & ostomelett"
+bild_ai: true
 ---
 
 Lyxhelgomelett.

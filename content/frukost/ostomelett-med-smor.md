@@ -22,6 +22,9 @@ tillagning:
   - "Smält smör."
   - { namn: "Stek", text: "Häll i ägg, ost, vik dubbel.", timer_min: 3 }
 testlogg: []
+bild: "ostomelett-med-smor.jpg"
+bild_alt: "AI-bild: Ostomelett med smör"
+bild_ai: true
 ---
 
 Frukost-grunden.

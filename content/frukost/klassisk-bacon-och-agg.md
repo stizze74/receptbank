@@ -20,6 +20,9 @@ tillagning:
   - { namn: "Stek bacon", text: "Krispigt, 5 min.", timer_min: 5 }
   - { namn: "Stek ägg", text: "I baconfettet, 3 min.", timer_min: 3 }
 testlogg: []
+bild: "klassisk-bacon-och-agg.jpg"
+bild_alt: "AI-bild: Klassisk bacon & ägg"
+bild_ai: true
 ---
 
 Den klassiska frukosten.

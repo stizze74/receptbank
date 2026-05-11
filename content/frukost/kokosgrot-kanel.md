@@ -22,6 +22,9 @@ tillagning:
   - "Värm kokosmjölk, vispa i mjölet, sjud 4 min."
   - "Toppa med smör."
 testlogg: []
+bild: "kokosgrot-kanel.jpg"
+bild_alt: "AI-bild: Kokosgröt med kanel & smör"
+bild_ai: true
 ---
 
 LCHF-gröt.

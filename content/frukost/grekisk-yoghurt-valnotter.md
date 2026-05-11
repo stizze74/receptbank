@@ -19,6 +19,9 @@ ingredienser:
 tillagning:
   - "Yoghurt, toppa."
 testlogg: []
+bild: "grekisk-yoghurt-valnotter.jpg"
+bild_alt: "AI-bild: Grekisk yoghurt med valnötter"
+bild_ai: true
 ---
 
 3-min-frukost.

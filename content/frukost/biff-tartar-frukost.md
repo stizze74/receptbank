@@ -22,6 +22,9 @@ tillagning:
   - "Blanda allt utom äggula."
   - "Forma rund hög, gula i mitten."
 testlogg: []
+bild: "biff-tartar-frukost.jpg"
+bild_alt: "AI-bild: Biff-tartar (helgmorgon)"
+bild_ai: true
 ---
 
 Helgmorgon-tartar.

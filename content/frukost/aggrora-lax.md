@@ -22,6 +22,9 @@ tillagning:
   - "Stek långsamt 3 min."
   - "Lyft från värmen, vänd ner lax + dill."
 testlogg: []
+bild: "aggrora-lax.jpg"
+bild_alt: "AI-bild: Äggröra med rökt lax"
+bild_ai: true
 ---
 
 Söndagsbrunch-klass.

@@ -20,6 +20,9 @@ ingredienser:
 tillagning:
   - "Yoghurt, toppa med bär, mandlar, nibs."
 testlogg: []
+bild: "kvargbowl-bar-mandlar.jpg"
+bild_alt: "AI-bild: Kvargbowl med bär & mandlar"
+bild_ai: true
 ---
 
 Snabb proteinfrukost.

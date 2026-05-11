@@ -22,6 +22,9 @@ tillagning:
   - "Vispade ägg, rör mjukt 3 min."
   - "Parmesan över."
 testlogg: []
+bild: "gröna-äggröra.jpg"
+bild_alt: "AI-bild: Grön äggröra med spenat"
+bild_ai: true
 ---
 
 Grön start.

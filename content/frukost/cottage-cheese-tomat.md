@@ -20,6 +20,9 @@ ingredienser:
 tillagning:
   - "Cottage cheese i skål, tomater, olja, salt."
 testlogg: []
+bild: "cottage-cheese-tomat.jpg"
+bild_alt: "AI-bild: Cottage cheese med tomat"
+bild_ai: true
 ---
 
 Mediterran lättfrukost.

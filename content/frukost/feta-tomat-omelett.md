@@ -21,6 +21,9 @@ tillagning:
   - "Stek tomater 1 min."
   - "Häll i ägg, fetaost. Vik."
 testlogg: []
+bild: "feta-tomat-omelett.jpg"
+bild_alt: "AI-bild: Feta-tomat-omelett"
+bild_ai: true
 ---
 
 Mediterran omelett.

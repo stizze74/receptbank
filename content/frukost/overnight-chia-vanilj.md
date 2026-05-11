@@ -21,6 +21,9 @@ ingredienser:
 tillagning:
   - "Blanda, kyl över natten."
 testlogg: []
+bild: "overnight-chia-vanilj.jpg"
+bild_alt: "AI-bild: Overnight chia med vanilj"
+bild_ai: true
 ---
 
 Förbered kvällen innan.

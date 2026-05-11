@@ -21,6 +21,9 @@ tillagning:
   - { namn: "Stek spenat", text: "1 min.", timer_min: 1 }
   - { namn: "Häll ägg", text: "Strö feta, vik.", timer_min: 3 }
 testlogg: []
+bild: "spenat-omelett-feta.jpg"
+bild_alt: "AI-bild: Spenat-omelett med fetaost"
+bild_ai: true
 ---
 
 Mediterran omelett.

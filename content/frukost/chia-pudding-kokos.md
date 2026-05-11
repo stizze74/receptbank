@@ -21,6 +21,9 @@ tillagning:
   - "Blanda chia, kokos, erytritol. Vila i kyl över natten."
   - "Toppa med hallon."
 testlogg: []
+bild: "chia-pudding-kokos.jpg"
+bild_alt: "AI-bild: Chia-pudding med kokos & hallon"
+bild_ai: true
 ---
 
 Förbereds kvällen innan.

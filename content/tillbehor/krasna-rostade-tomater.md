@@ -38,7 +38,7 @@ tillagning:
     text: 'Sätt ugnen på 180°C, varmluft.'
   - namn: Blanda
     text: >-
-      Halvera tomaterna. Skiva vitlöken tunt. Lägg på plat med bakplat, ringla
+      Halvera tomaterna. Skiva vitlöken tunt. Lägg på plåt med bakplåt, ringla
       över olivolja, salta och peppra. Blanda runt så allt blir täckt.
   - namn: Rosta
     text: >-

@@ -20,6 +20,9 @@ ingredienser:
 tillagning:
   - { namn: "Stek", text: "10 min.", timer_min: 10 }
 testlogg: []
+bild: "savoy-vitkalsmix.jpg"
+bild_alt: "AI-bild: Savoy-vitkålsmix"
+bild_ai: true
 ---
 
 Mix-bas.

@@ -21,6 +21,9 @@ tillagning:
   - { namn: "Stek", text: "Snittsidan ned, 4 min, vänd, 4 min.", timer_min: 8 }
   - "Vitlök sista minuten."
 testlogg: []
+bild: "rosenkal-stekta.jpg"
+bild_alt: "AI-bild: Stekta rosenkål med smör"
+bild_ai: true
 ---
 
 Vintergrönsak.

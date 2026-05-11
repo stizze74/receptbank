@@ -59,6 +59,9 @@ tips:
     Curry, soja eller säsongens smaksättning kan tillsättas i smöret — gör
     blomkålsriset till renspår för många retter.
 testlogg: []
+bild: "blomkalsris.jpg"
+bild_alt: "AI-bild: Blomkålsris"
+bild_ai: true
 ---
 
 Riven blomkål steks i smör — färdig på 10 minuter. Funkar som ris-ersättning i alla rätter där "ris och nåt" är formulering: curry, gryta, rödbetssallad, asiatiskt.

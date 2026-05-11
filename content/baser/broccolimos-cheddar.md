@@ -20,6 +20,9 @@ ingredienser:
 tillagning:
   - "Koka, mosa med ost + smör + grädde."
 testlogg: []
+bild: "broccolimos-cheddar.jpg"
+bild_alt: "AI-bild: Broccolimos med cheddar"
+bild_ai: true
 ---
 
 Krämigare broccolimos.

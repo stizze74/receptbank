@@ -19,6 +19,9 @@ ingredienser:
 tillagning:
   - { namn: "Stek", text: "10 min på medelvärme.", timer_min: 10 }
 testlogg: []
+bild: "smorstekt-savojkal.jpg"
+bild_alt: "AI-bild: Smörstekt savojkål"
+bild_ai: true
 ---
 
 Variant av vitkål — sötare.

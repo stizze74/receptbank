@@ -64,6 +64,9 @@ tips:
     dressingen.
   - 'Avokado, nötter eller riven ost höjer mättnaden om salladen är huvudrätt.'
 testlogg: []
+bild: "sallad.jpg"
+bild_alt: "AI-bild: Grön sallad med olja & vinäger"
+bild_ai: true
 ---
 
 Den enklaste basen i banken. Färska bladsallader, en god dressing, klart. Tar 5 minuter, kräver inget från spisen, fungerar som lättare bas till nästan alla proteiner.

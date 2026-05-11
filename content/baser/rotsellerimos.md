@@ -60,6 +60,9 @@ tips:
     broccoli.
   - Blanda 50/50 med blomkål för att sänka kh och fortfarande få mättig textur.
 testlogg: []
+bild: "rotsellerimos.jpg"
+bild_alt: "AI-bild: Rotsellerimos"
+bild_ai: true
 ---
 
 Rotsellerimos är högst i kh av baserna men ger den närmaste "potatismos-känslan". Använd när du vill ha rik och fast textur — t.ex. till entrecôte eller stuvningar.

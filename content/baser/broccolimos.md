@@ -29,6 +29,9 @@ tips:
   - "Lite riven muskot lyfter smaken om du har tid."
   - "Byt mot blomkål om du vill växla bas — receptet är identiskt."
 testlogg: []
+bild: "broccolimos.jpg"
+bild_alt: "AI-bild: Broccolimos"
+bild_ai: true
 ---
 
 Klassisk LCHF-bas. Funkar till nästan allt — kyckling, lax, fläsk, ägg.

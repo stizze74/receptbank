@@ -58,6 +58,9 @@ tips:
   - 'Vitlök går in på slutet, inte tidigare — bränner annars.'
   - Tryck lätt med stekspade så bönorna får kontakt med pannan — bättre stekyta.
 testlogg: []
+bild: "smorstekta-haricots-verts.jpg"
+bild_alt: "AI-bild: Smörstekta haricots verts"
+bild_ai: true
 ---
 
 Snabbaste gröna basen. Haricots verts steks i smör tills knapriga och gyllene — 7 minuter total tid.

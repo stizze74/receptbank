@@ -53,6 +53,9 @@ tips:
   - En skvätt äppelcidervinäger sista minuten lyfter smaken.
   - Kummin är klassiskt med fläsk — funkar särskilt bra ihop.
 testlogg: []
+bild: "smorstekt-vitkal.jpg"
+bild_alt: "AI-bild: Smörstekt vitkål"
+bild_ai: true
 ---
 
 "Smörkål" på svensk husmanska. Strimlad vitkål steks långsamt i smör tills mjuk, söt och gyllen. Klassisk följeslagare till fläsk men funkar till nästan allt protein.

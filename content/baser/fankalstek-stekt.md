@@ -20,6 +20,9 @@ ingredienser:
 tillagning:
   - { namn: "Stek", text: "Medelvärme, 6 min per sida.", timer_min: 12 }
 testlogg: []
+bild: "fankalstek-stekt.jpg"
+bild_alt: "AI-bild: Stekt fänkålsklyftor"
+bild_ai: true
 ---
 
 Söt italiensk grönsak.

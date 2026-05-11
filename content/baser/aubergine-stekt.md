@@ -23,6 +23,9 @@ tillagning:
   - { namn: "Stek", text: "Smör, 5 min.", timer_min: 5 }
   - "Tomater, sjud 5 min."
 testlogg: []
+bild: "aubergine-stekt.jpg"
+bild_alt: "AI-bild: Stekt aubergine med tomat"
+bild_ai: true
 ---
 
 Italiensk variant.

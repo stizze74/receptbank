@@ -69,6 +69,9 @@ tips:
     Citronskal i pannan precis innan servering ger fin frisk smak till
     fiskrätter.
 testlogg: []
+bild: "stekt-zucchini.jpg"
+bild_alt: "AI-bild: Stekt zucchini"
+bild_ai: true
 ---
 
 Zucchini steks i smör — färdig på 8 minuter. Mild smak som tar emot smaksättning bra. Bra "neutral" bas när du redan har en stark sås.

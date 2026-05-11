@@ -20,6 +20,9 @@ ingredienser:
 tillagning:
   - { namn: "Stek", text: "Smör + vitlök 1 min, lägg i spenat 2 min.", timer_min: 3 }
 testlogg: []
+bild: "spenat-smorslokt.jpg"
+bild_alt: "AI-bild: Smörslagad spenat"
+bild_ai: true
 ---
 
 6-min-bas.

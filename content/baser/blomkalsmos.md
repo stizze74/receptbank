@@ -62,6 +62,9 @@ tips:
     Lite riven parmesan i moset ger ostfin smak — funkar särskilt till rött
     kött.
 testlogg: []
+bild: "blomkalsmos.jpg"
+bild_alt: "AI-bild: Blomkålsmos"
+bild_ai: true
 ---
 
 Identisk princip som broccolimos: koka, mosa, smörifiera. Blomkålsmos är mer neutralt än broccolimos och passar därför bredare — som potatismosens LCHF-evtimperam.

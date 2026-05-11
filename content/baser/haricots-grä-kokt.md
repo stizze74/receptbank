@@ -19,6 +19,9 @@ ingredienser:
 tillagning:
   - { namn: "Sjud", text: "I lite vatten + smör 6 min.", timer_min: 6 }
 testlogg: []
+bild: "haricots-grä-kokt.jpg"
+bild_alt: "AI-bild: Haricots verts kokta i smör"
+bild_ai: true
 ---
 
 Snabb sida.

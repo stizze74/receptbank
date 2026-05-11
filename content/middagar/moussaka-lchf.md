@@ -66,7 +66,7 @@ ingredienser:
 tillagning:
   - namn: Stek aubergine
     text: >-
-      Skiva aubergine i 1 cm tjocka skivor. Salta latt, låt stå 15 min, torka.
+      Skiva aubergine i 1 cm tjocka skivor. Salta lätt, låt stå 15 min, torka.
       Stek i olivolja tills gyllene, 2 min per sida. Lägg åt sidan.
     timer_min: 15
   - namn: Gör lammsa s
@@ -76,12 +76,12 @@ tillagning:
     timer_min: 22
   - namn: Gör LCHF-béchamel
     text: >-
-      Värm grädde. Vispa äggulor latt. Tillsätt grädde i äggen, sen tillbaka i
+      Värm grädde. Vispa äggulor lätt. Tillsätt grädde i äggen, sen tillbaka i
       kastrullen. Tjocka på mycket låg värme tills tjockna (82°C). Tillsätt
       halva parmesan.
   - namn: Bygg
     text: >-
-      Sett ugnen på 200°C. I eldfast form: lägg aubergine, lammsa s, aubergine,
+      Sätt ugnen på 200°C. I eldfast form: lägg aubergine, lammsa s, aubergine,
       lammsa s, slut med béchamel. Toppa med resterande parmesan.
   - namn: Gratinera
     text: Gratinera 30 min tills gyllene.

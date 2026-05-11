@@ -47,10 +47,10 @@ tillagning:
     text: 'Smält choklad i vattenbad. Rör ner chili, cayenne och en nypa flingsalt.'
   - namn: Vispa grädde
     text: Vispa grädde med erytritol och vanilj till mjuka toppar.
-  - namn: Vinda samman
-    text: Vinda försiktigt ner den ljumna chokladen i grädden med slickepott.
+  - namn: Vänd samman
+    text: Vänd försiktigt ner den ljumna chokladen i grädden med slickepott.
   - namn: Kyl
-    text: Forma upp i 4 glas. Küla 1 h.
+    text: Forma upp i 4 glas. Kyla 1 h.
     timer_min: 60
   - namn: Toppa
     text: Toppa med extra flingsalt och en mindre nypa chili innan servering.

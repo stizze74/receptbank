@@ -48,22 +48,22 @@ ingredienser:
 tillagning:
   - namn: Förber gurka
     text: >-
-      Hyvla gurkan tunt med osthyvel eller mandolin. Salta latt och låt stå 10
+      Hyvla gurkan tunt med osthyvel eller mandolin. Salta lätt och låt stå 10
       min. Krama ur vätska.
     timer_min: 10
   - namn: Gör stuvning
     text: >-
       Blanda crème fraiche, dill, citronsaft, citronskal, erytritol, salt och
       peppar.
-  - namn: Vinda samman
-    text: Vinda ner gurkan i crème fraiche-blandningen. Låt stå 10 min.
+  - namn: Vänd samman
+    text: Vänd ner gurkan i crème fraiche-blandningen. Låt stå 10 min.
   - namn: Lägg upp
     text: >-
       Forma upp den kallrokta laxen på tallrikar. Klicka på dillstuvad gurka
       bredvid. Servera med extra citron.
 tips:
   - Klassisk svensk midsommar-mat utan potatis.
-  - Funkar perfekt på LCHF-skivbröd som smorrebrod.
+  - Funkar perfekt på LCHF-skivbröd som smörrebröd.
 testlogg: []
 ---
 

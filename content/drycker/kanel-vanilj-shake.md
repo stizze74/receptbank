@@ -42,7 +42,7 @@ ingredienser:
   - vara: is
 tillagning:
   - namn: Mixa
-    text: Lägg alla ingredienser i blender med is. Mixa 30 sek till län och kall.
+    text: Lägg alla ingredienser i blender med is. Mixa 30 sek till len och kall.
     timer_min: 1
   - namn: Servera
     text: Häll i hogt glass. Strö lite extra kanel.

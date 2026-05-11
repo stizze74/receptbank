@@ -22,6 +22,9 @@ tillagning:
   - { namn: "Ugn", text: "180°C, 8 min innertemp 54°C.", timer_min: 8 }
   - "Vila 8 min."
 testlogg: []
+bild: "oxfile-bea-helg.jpg"
+bild_alt: "AI-bild: Oxfilé med béarnaise"
+bild_ai: true
 ---
 
 Klassisk fest-rätt.

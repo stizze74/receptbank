@@ -23,6 +23,9 @@ tillagning:
   - "Forma 16 fyrkantade bullar."
   - { namn: "Stek", text: "Smör, 6 min per sida.", timer_min: 12 }
 testlogg: []
+bild: "fyrkanntad-kotbullar.jpg"
+bild_alt: "AI-bild: Fyrkantade köttbullar (feststil)"
+bild_ai: true
 ---
 
 Festig presentation.

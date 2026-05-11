@@ -24,6 +24,9 @@ tillagning:
   - "Smält ost på toppen."
   - "Lägg upp i fralla."
 testlogg: []
+bild: "wagyu-style-burger.jpg"
+bild_alt: "AI-bild: Wagyu-style hamburgare (LCHF)"
+bild_ai: true
 ---
 
 Lyxig hamburgare.

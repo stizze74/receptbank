@@ -21,6 +21,9 @@ tillagning:
   - { namn: "Ugn", text: "160°C, 90 min, sen 220°C 10 min för krispighet.", timer_min: 100 }
   - "Vila 15 min."
 testlogg: []
+bild: "helstekt-anka.jpg"
+bild_alt: "AI-bild: Helstekt anka"
+bild_ai: true
 ---
 
 Helt anka för fest.

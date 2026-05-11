@@ -100,6 +100,9 @@ tips:
   - Servera med ett gläs torrt champagne eller chablis.
   - Funkar lika bra med stora räkor eller pilgrimsmusslor om hummer är för dyrt.
 testlogg: []
+bild: "hummersoppa-festmat.jpg"
+bild_alt: "AI-bild: Krämig hummersoppa (festmat)"
+bild_ai: true
 ---
 
 

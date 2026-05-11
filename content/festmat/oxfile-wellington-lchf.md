@@ -79,6 +79,9 @@ tips:
   - Servera med béarnaisesa s (Lohmanders eller hemmagjord) och blomkålspuré.
   - 'Festmat-nivå: passar perfekt till en specialkväll eller jul.'
 testlogg: []
+bild: "oxfile-wellington-lchf.jpg"
+bild_alt: "AI-bild: Oxfile Wellington LCHF (utan deg)"
+bild_ai: true
 ---
 
 

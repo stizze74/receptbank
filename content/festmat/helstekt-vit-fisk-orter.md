@@ -70,6 +70,9 @@ tips:
   - Be fiskhandlaren rensa fisken (urtaga inkrävarna och fjall).
   - Servera med rotsellerimos och citronsmorsås för riktigt festmat-nivå.
 testlogg: []
+bild: "helstekt-vit-fisk-orter.jpg"
+bild_alt: "AI-bild: Helstekt vit fisk med örter"
+bild_ai: true
 ---
 
 

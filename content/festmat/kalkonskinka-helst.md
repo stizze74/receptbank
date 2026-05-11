@@ -22,6 +22,9 @@ tillagning:
   - { namn: "Ugn", text: "160°C, 60 min innertemp 70°C.", timer_min: 60 }
   - "Vila 10 min."
 testlogg: []
+bild: "kalkonskinka-helst.jpg"
+bild_alt: "AI-bild: Helstekt kalkonskinka"
+bild_ai: true
 ---
 
 Lättare än kalkon, finmiddag.

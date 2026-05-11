@@ -23,6 +23,9 @@ tillagning:
   - "Blanda salt + erytritol + dill + peppar."
   - "Strö över laxen, plastfilm, 36 tim i kyl med tyngd."
 testlogg: []
+bild: "gravad-lax-hela.jpg"
+bild_alt: "AI-bild: Hemgravad lax"
+bild_ai: true
 ---
 
 Klassisk svensk festmat.

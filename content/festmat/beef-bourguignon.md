@@ -79,6 +79,9 @@ tips:
   - Burgundvin specificerat klassiskt men vilken god rödvin som helst funkar.
   - Servera med rotsellerimos.
 testlogg: []
+bild: "beef-bourguignon.jpg"
+bild_alt: "AI-bild: Beef bourguignon"
+bild_ai: true
 ---
 
 

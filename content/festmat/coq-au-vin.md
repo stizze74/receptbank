@@ -79,6 +79,9 @@ tips:
   - Klassisk fransk bistro-rätt — möng dre och bra dagen efter.
   - Servera med blomkålsmos eller rotsellerimos för att suga upp såsen.
 testlogg: []
+bild: "coq-au-vin.jpg"
+bild_alt: "AI-bild: Coq au vin (kyckling i rödvin)"
+bild_ai: true
 ---
 
 

@@ -23,6 +23,9 @@ tillagning:
   - { namn: "Ugn", text: "125°C, ca 60 min för innertemp 56°C medium-rare.", timer_min: 60 }
   - "Vila 10 min, skär tunt."
 testlogg: []
+bild: "rosbiff-uppskuren.jpg"
+bild_alt: "AI-bild: Rosbiff (helstekt)"
+bild_ai: true
 ---
 
 Festens rosbiff.

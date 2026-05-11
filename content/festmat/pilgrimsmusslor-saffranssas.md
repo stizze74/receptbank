@@ -68,6 +68,9 @@ tips:
     Saffran ger den karakteristiska gyllene färgen — tillät saffranen utveckla
     sig i den varma såsen.
 testlogg: []
+bild: "pilgrimsmusslor-saffranssas.jpg"
+bild_alt: "AI-bild: Pilgrimsmusslor med saffranssås"
+bild_ai: true
 ---
 
 

@@ -23,6 +23,9 @@ tillagning:
   - { namn: "Ugn", text: "125°C, 50 min innertemp 56°C.", timer_min: 50 }
   - "Vila 10 min."
 testlogg: []
+bild: "lammrostbiff-rosmarin.jpg"
+bild_alt: "AI-bild: Lammrostbiff med rosmarin"
+bild_ai: true
 ---
 
 Festlamm i ugn.

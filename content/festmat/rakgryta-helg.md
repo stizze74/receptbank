@@ -23,6 +23,9 @@ tillagning:
   - "Smör + saffran + buljong + grädde, sjud 5 min."
   - "Räkor + musslor sista 4 min."
 testlogg: []
+bild: "rakgryta-helg.jpg"
+bild_alt: "AI-bild: Räkgryta för fest"
+bild_ai: true
 ---
 
 Fest-skaldjurssoppa.

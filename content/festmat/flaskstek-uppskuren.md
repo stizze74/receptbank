@@ -23,6 +23,9 @@ tillagning:
   - "Höj till 250°C sista 10 min för krispig svål."
   - "Vila 10 min."
 testlogg: []
+bild: "flaskstek-uppskuren.jpg"
+bild_alt: "AI-bild: Helstek fläsk"
+bild_ai: true
 ---
 
 Söndagsfläsk på finvis.

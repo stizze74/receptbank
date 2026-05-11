@@ -63,6 +63,9 @@ tips:
     markerad smak.
   - Servera med ngon LCHF-skivbröd-rost för restaurang-känsla.
 testlogg: []
+bild: "kottcarpaccio-parmesan-rucola.jpg"
+bild_alt: "AI-bild: Köttcarpaccio med parmesan och rucola"
+bild_ai: true
 ---
 
 

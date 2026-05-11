@@ -22,6 +22,9 @@ tillagning:
   - { namn: "Ugn", text: "200°C, 8–10 min med smör.", timer_min: 10 }
   - "Bea bredvid."
 testlogg: []
+bild: "lobster-tail-bea.jpg"
+bild_alt: "AI-bild: Hummerstjärt med béarnaise"
+bild_ai: true
 ---
 
 Maximal lyx.

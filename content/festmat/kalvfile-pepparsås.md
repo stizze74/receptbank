@@ -24,6 +24,9 @@ tillagning:
   - "Ugn 180°C 8 min innertemp 56°C."
   - "Sås: deglaze med cognac, grädde, peppar, sjud 3 min."
 testlogg: []
+bild: "kalvfile-pepparsås.jpg"
+bild_alt: "AI-bild: Kalvfilé med pepparsås"
+bild_ai: true
 ---
 
 Klassisk fest-fransk.

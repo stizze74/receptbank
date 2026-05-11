@@ -52,7 +52,7 @@ tillagning:
     text: 'Halvera tomater. Riv skalet av en citron, pressa båda.'
   - namn: Blanda
     text: >-
-      Vinda alla ingredienser i en skål. Låt stå 10 min så smakerna gor ihop
+      Vänd alla ingredienser i en skål. Låt stå 10 min så smakerna gör ihop
       sig.
     timer_min: 10
 tips:

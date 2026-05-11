@@ -22,6 +22,9 @@ tillagning:
   - "Gnid bröd med vitlök."
   - "Toppa med tomater, basilika, olja."
 testlogg: []
+bild: "bruschetta-fathead-tomat.jpg"
+bild_alt: "AI-bild: Bruschetta på fathead-bröd"
+bild_ai: true
 ---
 
 Italiensk klassiker.

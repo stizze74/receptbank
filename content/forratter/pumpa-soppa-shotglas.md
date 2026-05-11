@@ -23,6 +23,9 @@ tillagning:
   - "Mixa, smör, kokos, muskot."
   - "Häll i shotglas."
 testlogg: []
+bild: "pumpa-soppa-shotglas.jpg"
+bild_alt: "AI-bild: Pumpa-soppa i shotglas"
+bild_ai: true
 ---
 
 Stylad förrätt. Liten portion = lite kh.

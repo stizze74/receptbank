@@ -60,6 +60,9 @@ tips:
   - Pilgrimsmusslor istället för blåmusslor — Stefans personliga undantag.
   - Servera som förrätt med en bit LCHF-bröd att doppa i fonden.
 testlogg: []
+bild: "mussla-vitvinsfond.jpg"
+bild_alt: "AI-bild: Pilgrimsmusslor i vitvinsfond"
+bild_ai: true
 ---
 
 Mules marinière.

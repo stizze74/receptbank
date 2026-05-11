@@ -22,6 +22,9 @@ tillagning:
   - "Lager: tomat, mozzarella, basilika x 3."
   - "Olivolja, salt."
 testlogg: []
+bild: "mozzarella-tomat-tornette.jpg"
+bild_alt: "AI-bild: Mozzarella-tomat-tornette"
+bild_ai: true
 ---
 
 Caprese som tornette.

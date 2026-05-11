@@ -24,6 +24,9 @@ tillagning:
   - "Blanda med soja, sesamolja, ingefära."
   - "Forma med ring, avokado i lager, tonfisk över."
 testlogg: []
+bild: "tonfisk-tartar.jpg"
+bild_alt: "AI-bild: Tonfisk-tartar med avokado"
+bild_ai: true
 ---
 
 Asiatisk inspiration. Snyggt på tallrik.

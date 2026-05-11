@@ -21,6 +21,9 @@ tillagning:
   - "Halvera ägg."
   - "Crème fraîche-klick, rom, dill."
 testlogg: []
+bild: "agg-och-rom.jpg"
+bild_alt: "AI-bild: Ägg- och romkanapé"
+bild_ai: true
 ---
 
 Lättskryt.

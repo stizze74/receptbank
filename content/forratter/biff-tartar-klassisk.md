@@ -23,6 +23,9 @@ tillagning:
   - "Blanda allt utom äggula."
   - "Forma med ring, gula i mitten."
 testlogg: []
+bild: "biff-tartar-klassisk.jpg"
+bild_alt: "AI-bild: Klassisk biff-tartar"
+bild_ai: true
 ---
 
 Fransk klassiker.

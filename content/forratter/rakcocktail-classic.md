@@ -25,6 +25,9 @@ tillagning:
   - "Lägg sallad i botten av glas."
   - "Räkor, sås, dill."
 testlogg: []
+bild: "rakcocktail-classic.jpg"
+bild_alt: "AI-bild: Klassisk räkcocktail"
+bild_ai: true
 ---
 
 70-tals-klassiker.

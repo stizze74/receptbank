@@ -59,6 +59,9 @@ tips:
   - Funkar på LCHF-skivbröd som canapé — perfekt förrätt-snack.
   - Persilja eller mynta funkar i stället för dill.
 testlogg: []
+bild: "laxtartar-avokado-citron.jpg"
+bild_alt: "AI-bild: Laxtartar med avokado och citron"
+bild_ai: true
 ---
 
 

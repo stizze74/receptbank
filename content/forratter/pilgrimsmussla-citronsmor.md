@@ -22,6 +22,9 @@ tillagning:
   - { namn: "Stek", text: "90 sek per sida i smör.", timer_min: 3 }
   - "Citronsaft, persilja."
 testlogg: []
+bild: "pilgrimsmussla-citronsmor.jpg"
+bild_alt: "AI-bild: Pilgrimsmusslor med citronsmör"
+bild_ai: true
 ---
 
 Lyx-förrätt på 6 min.

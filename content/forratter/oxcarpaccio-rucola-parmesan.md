@@ -23,6 +23,9 @@ tillagning:
   - "Lägg ut köttskivor på fat."
   - "Toppa med rucola, parmesan, olja, citron, salt."
 testlogg: []
+bild: "oxcarpaccio-rucola-parmesan.jpg"
+bild_alt: "AI-bild: Oxcarpaccio med rucola & parmesan"
+bild_ai: true
 ---
 
 Italiensk klassiker.

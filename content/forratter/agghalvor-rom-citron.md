@@ -21,6 +21,9 @@ tillagning:
   - "Halvera ägg."
   - "Klick majo, klick rom, dill, citron."
 testlogg: []
+bild: "agghalvor-rom-citron.jpg"
+bild_alt: "AI-bild: Ägghalvor med rom & citron"
+bild_ai: true
 ---
 
 Snabb finmat.

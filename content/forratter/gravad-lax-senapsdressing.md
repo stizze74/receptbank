@@ -22,6 +22,9 @@ tillagning:
   - "Lägg lax på fat."
   - "Vispa dressing och ringla över."
 testlogg: []
+bild: "gravad-lax-senapsdressing.jpg"
+bild_alt: "AI-bild: Gravad lax med senapsdressing"
+bild_ai: true
 ---
 
 Svensk klassiker.

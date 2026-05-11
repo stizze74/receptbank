@@ -60,7 +60,7 @@ tillagning:
   - namn: Förber fyllning
     text: >-
       Skär avokado i bitar. Blanda räkor med aioli, tomater, salladslök och
-      persilja. Salta latt.
+      persilja. Salta lätt.
   - namn: Bygg taco
     text: >-
       Lägg en sked räkblandning i varje salladsblad. Toppa med avokado-bitar.

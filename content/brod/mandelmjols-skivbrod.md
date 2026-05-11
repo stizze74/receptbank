@@ -76,6 +76,9 @@ tips:
     Funkar till smörrebröd-stil med pålägg, eller rostat med smör till
     frukosten.
 testlogg: []
+bild: "mandelmjols-skivbrod.jpg"
+bild_alt: "AI-bild: Mandelmjöls-skivbröd (klassisk LCHF)"
+bild_ai: true
 ---
 
 

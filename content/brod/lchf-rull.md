@@ -22,6 +22,9 @@ tillagning:
   - "Vispa allt."
   - { namn: "Mikro", text: "90 sek i mugg.", timer_min: 2 }
 testlogg: []
+bild: "lchf-rull.jpg"
+bild_alt: "AI-bild: LCHF-bullar (90-sek-bull)"
+bild_ai: true
 ---
 
 Snabbsnack-bröd.

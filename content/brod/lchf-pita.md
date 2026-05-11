@@ -66,6 +66,9 @@ tips:
   - 'Brytt upp för att skapa pocket-form — fyll med kebab, gyros eller halloumi.'
   - Funkar lika bra till tzatziki och oliver som tapas-bas.
 testlogg: []
+bild: "lchf-pita.jpg"
+bild_alt: "AI-bild: LCHF-pita"
+bild_ai: true
 ---
 
 

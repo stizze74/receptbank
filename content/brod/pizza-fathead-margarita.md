@@ -24,6 +24,9 @@ tillagning:
   - { namn: "Grädda", text: "200°C, 12 min.", timer_min: 12 }
   - "Basilika över."
 testlogg: []
+bild: "pizza-fathead-margarita.jpg"
+bild_alt: "AI-bild: Fathead-pizza margarita"
+bild_ai: true
 ---
 
 Klassisk pizza, LCHF-bas.

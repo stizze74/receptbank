@@ -79,6 +79,9 @@ tips:
   - 'Variera: byt sesam mot vallmö eller solrosfrön på toppen.'
   - 'För soft texture: tillsätt 1 msk grädde i vätskan.'
 testlogg: []
+bild: "lchf-hamburgerbullar.jpg"
+bild_alt: "AI-bild: LCHF-hamburgerbullar (mandelmjölsbas)"
+bild_ai: true
 ---
 
 

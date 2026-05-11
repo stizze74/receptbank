@@ -108,6 +108,9 @@ tips:
     Inte exakt sasom vanlig kanelbulle texturmaslig — mer som scone än bulle.
     Men smaken är där.
 testlogg: []
+bild: "lchf-kanelbullar.jpg"
+bild_alt: "AI-bild: LCHF-kanelbullar"
+bild_ai: true
 ---
 
 

@@ -24,6 +24,9 @@ tillagning:
   - "I limpform."
   - { namn: "Grädda", text: "170°C, 40 min.", timer_min: 40 }
 testlogg: []
+bild: "mandelmjol-skivbrod-2.jpg"
+bild_alt: "AI-bild: Mandelmjölsbröd (limpa)"
+bild_ai: true
 ---
 
 Klassisk LCHF-limpa.

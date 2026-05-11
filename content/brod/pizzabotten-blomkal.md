@@ -24,6 +24,9 @@ tillagning:
   - "Blanda med ostar + ägg + kryddor."
   - "Trycka ut på papper, baka 200°C 25 min."
 testlogg: []
+bild: "pizzabotten-blomkal.jpg"
+bild_alt: "AI-bild: Pizzabotten av blomkål"
+bild_ai: true
 ---
 
 Glutenfri pizzabotten.

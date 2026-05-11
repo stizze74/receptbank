@@ -61,6 +61,9 @@ tips:
   - 'Funkar som wrap, tortilla, eller bara torsk-bröd till husmans-rotmos.'
   - 'Bockande varmt: vik direkt från pannan för mjuk wraps.'
 testlogg: []
+bild: "lchf-tunnbrod.jpg"
+bild_alt: "AI-bild: LCHF-tunnbröd"
+bild_ai: true
 ---
 
 

@@ -24,6 +24,9 @@ tillagning:
   - "Forma 8 scones."
   - { namn: "Grädda", text: "200°C, 18 min.", timer_min: 18 }
 testlogg: []
+bild: "lchf-scones-cheddar.jpg"
+bild_alt: "AI-bild: LCHF-scones med cheddar"
+bild_ai: true
 ---
 
 Brittisk klassiker.

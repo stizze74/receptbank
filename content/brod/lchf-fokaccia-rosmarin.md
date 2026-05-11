@@ -72,6 +72,9 @@ tips:
   - Doppa i extra jungfru olivolja som klassisk fokaccia.
   - 'Variera: tomater, oliver, fetaost ovanpå innan bakning.'
 testlogg: []
+bild: "lchf-fokaccia-rosmarin.jpg"
+bild_alt: "AI-bild: LCHF-fokaccia med rosmarin"
+bild_ai: true
 ---
 
 

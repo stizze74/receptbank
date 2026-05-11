@@ -23,6 +23,9 @@ tillagning:
   - "Forma 8 bullar, tryck lätt."
   - { namn: "Grädda", text: "175°C, 12 min.", timer_min: 12 }
 testlogg: []
+bild: "lchf-bullar-jordnotssmor.jpg"
+bild_alt: "AI-bild: Bullar med jordnötssmör"
+bild_ai: true
 ---
 
 Glutenfri, mjölfri.

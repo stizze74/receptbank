@@ -26,6 +26,9 @@ tillagning:
   - "Forma 4 bagels med hål."
   - { namn: "Grädda", text: "200°C, 14 min med sesam + flingsalt.", timer_min: 14 }
 testlogg: []
+bild: "fathead-bagels.jpg"
+bild_alt: "AI-bild: Fathead-bagels"
+bild_ai: true
 ---
 
 Klassisk bagel-form.

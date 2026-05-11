@@ -25,6 +25,9 @@ tillagning:
   - { namn: "Grädda", text: "200°C, 18 min.", timer_min: 18 }
   - "Sesamfrön på toppen."
 testlogg: []
+bild: "fathead-fralla.jpg"
+bild_alt: "AI-bild: Fathead-frallor"
+bild_ai: true
 ---
 
 Hamburgerbröds-substitut.

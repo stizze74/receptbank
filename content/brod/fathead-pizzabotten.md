@@ -24,6 +24,9 @@ tillagning:
   - "Blanda med mjöl + ägg."
   - "Kavla ut, baka 200°C 12 min."
 testlogg: []
+bild: "fathead-pizzabotten.jpg"
+bild_alt: "AI-bild: Fathead-pizzabotten"
+bild_ai: true
 ---
 
 Pizza-bas. Knaprig.

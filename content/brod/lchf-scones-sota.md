@@ -70,6 +70,9 @@ tips:
   - Servera ljumma med extra smör eller LCHF-hallonmarmelad från forrad-modulen.
   - 'Variera: tillsätt 50 g hallon eller blåbär till smeten innan formning.'
 testlogg: []
+bild: "lchf-scones-sota.jpg"
+bild_alt: "AI-bild: LCHF-scones söta"
+bild_ai: true
 ---
 
 

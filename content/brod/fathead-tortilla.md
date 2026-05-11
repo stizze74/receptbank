@@ -22,6 +22,9 @@ tillagning:
   - "Kavla ut tunt."
   - { namn: "Stek", text: "Torrt i panna 1 min per sida.", timer_min: 2 }
 testlogg: []
+bild: "fathead-tortilla.jpg"
+bild_alt: "AI-bild: Fathead-tortilla"
+bild_ai: true
 ---
 
 Lågbroda-tortilla för wraps.

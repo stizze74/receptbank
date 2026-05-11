@@ -52,11 +52,11 @@ tillagning:
   - namn: Förber musslor
     text: >-
       Torka pilgrimsmusslorna noggrant med papper — måste vara torra för att
-      kunna karamelliseras. Salta latt.
+      kunna karamelliseras. Salta lätt.
   - namn: Stek musslor
     text: >-
       Värm smör i het stekpanna. Stek musslorna 1,5 min per sida tills gyllene
-      färg och fortfarande latt genomskinliga i mitten. Överstek ej.
+      färg och fortfarande lätt genomskinliga i mitten. Överstek ej.
     timer_min: 3
   - namn: Servera
     text: >-

@@ -1,5 +1,5 @@
 ---
-namn: Krameringd hummersoppa (festmat)
+namn: Krämig hummersoppa (festmat)
 status: skriven
 portioner: 2
 narings_per_portion:
@@ -65,7 +65,7 @@ tillagning:
       specialtång. Spara skalen! De är grunden för smaken.
   - namn: Rosta skal
     text: >-
-      Krossa skalen latt. Rosta i kastrull med 25 g smör på medelvärme 5 min
+      Krossa skalen lätt. Rosta i kastrull med 25 g smör på medelvärme 5 min
       tills doftar.
     timer_min: 5
   - namn: Bygg fond
@@ -89,7 +89,7 @@ tillagning:
     timer_min: 2
   - namn: Servera
     text: >-
-      Lagg hummerköttet i djupa tallrikar. Häll soppen runt. Garnera med färsk
+      Lägg hummerköttet i djupa tallrikar. Häll soppen runt. Garnera med färsk
       estragon eller persilja.
 tips:
   - Klassisk fransk bisque — perfekt för helg eller gäster.

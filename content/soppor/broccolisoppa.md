@@ -57,7 +57,7 @@ tillagning:
     timer_min: 8
   - namn: Mixa
     text: >-
-      Mixa med stavmixer tills slat. Mixa snabbt och sänk värmen — överkokt
+      Mixa med stavmixer tills slät. Mixa snabbt och sänk värmen — överkokt
       broccoli blir grågrön.
   - namn: Tillsätt smör och grädde
     text: >-

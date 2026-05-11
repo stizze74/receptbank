@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import ReceptKort from '../components/ReceptKort.astro';
 import { getCollection } from 'astro:content';
 
 const allaCollections = await Promise.all([
@@ -73,33 +74,33 @@ const moduler = [
   <section class="mb-6">
     <h2 class="mb-2 text-lg">Vad ska jag äta?</h2>
     <div class="grid grid-cols-2 gap-2 sm:grid-cols-4">
-      <button type="button" data-slumpa="frukost" class="kort flex flex-col gap-1 text-left hover:bg-bas-50">
-        <span class="text-xs uppercase tracking-wide text-bas-600">Slumpa</span>
-        <span class="text-base font-semibold">Frukost →</span>
-        <span class="text-xs text-bas-600">{slumpaListor.frukost.length} st</span>
+      <button type="button" data-slumpa="frukost" class="kort flex aspect-[4/5] flex-col justify-end overflow-hidden border-amber-200 bg-gradient-to-br from-amber-50 to-amber-200 p-3 text-left">
+        <span class="text-[10px] uppercase tracking-[0.2em] text-amber-900/70">Slumpa</span>
+        <span class="text-lg font-semibold text-amber-900">Frukost →</span>
+        <span class="text-xs text-amber-900/70">{slumpaListor.frukost.length} st</span>
       </button>
-      <button type="button" data-slumpa="lunch" class="kort flex flex-col gap-1 text-left hover:bg-bas-50">
-        <span class="text-xs uppercase tracking-wide text-bas-600">Slumpa</span>
-        <span class="text-base font-semibold">Lunch →</span>
-        <span class="text-xs text-bas-600">{slumpaListor.lunch.length} st</span>
+      <button type="button" data-slumpa="lunch" class="kort flex aspect-[4/5] flex-col justify-end overflow-hidden border-emerald-200 bg-gradient-to-br from-emerald-50 to-emerald-200 p-3 text-left">
+        <span class="text-[10px] uppercase tracking-[0.2em] text-emerald-900/70">Slumpa</span>
+        <span class="text-lg font-semibold text-emerald-900">Lunch →</span>
+        <span class="text-xs text-emerald-900/70">{slumpaListor.lunch.length} st</span>
       </button>
-      <button type="button" data-slumpa="middag" class="kort flex flex-col gap-1 text-left hover:bg-bas-50">
-        <span class="text-xs uppercase tracking-wide text-bas-600">Slumpa</span>
-        <span class="text-base font-semibold">Middag →</span>
-        <span class="text-xs text-bas-600">{slumpaListor.middag.length} st</span>
+      <button type="button" data-slumpa="middag" class="kort flex aspect-[4/5] flex-col justify-end overflow-hidden border-bas-300 bg-gradient-to-br from-bas-100 to-bas-300 p-3 text-left">
+        <span class="text-[10px] uppercase tracking-[0.2em] text-bas-900/70">Slumpa</span>
+        <span class="text-lg font-semibold text-bas-900">Middag →</span>
+        <span class="text-xs text-bas-900/70">{slumpaListor.middag.length} st</span>
       </button>
-      <button type="button" data-slumpa="jessica" class="kort flex flex-col gap-1 text-left hover:bg-bas-50">
-        <span class="text-xs uppercase tracking-wide text-bas-600">Slumpa</span>
-        <span class="text-base font-semibold">Jessica →</span>
-        <span class="text-xs text-bas-600">{slumpaListor.jessica.length} st</span>
+      <button type="button" data-slumpa="jessica" class="kort flex aspect-[4/5] flex-col justify-end overflow-hidden border-violet-200 bg-gradient-to-br from-violet-50 to-violet-200 p-3 text-left">
+        <span class="text-[10px] uppercase tracking-[0.2em] text-violet-900/70">Slumpa</span>
+        <span class="text-lg font-semibold text-violet-900">Jessica →</span>
+        <span class="text-xs text-violet-900/70">{slumpaListor.jessica.length} st</span>
       </button>
     </div>
     <div class="mt-2 grid grid-cols-2 gap-2">
-      <a href="/veckoplan" class="kort flex flex-col gap-1 no-underline hover:bg-bas-50">
+      <a href="/veckoplan" class="kort flex flex-col gap-1 no-underline">
         <span class="text-xs uppercase tracking-wide text-bas-600">Hela veckan</span>
         <span class="text-base font-semibold">Veckoplan →</span>
       </a>
-      <a href="/kombinera" class="kort flex flex-col gap-1 no-underline hover:bg-bas-50">
+      <a href="/kombinera" class="kort flex flex-col gap-1 no-underline">
         <span class="text-xs uppercase tracking-wide text-bas-600">Bygg från moduler</span>
         <span class="text-base font-semibold">Kombinera →</span>
       </a>
@@ -126,16 +127,8 @@ const moduler = [
     {senaste.length === 0 && (
       <p class="text-sm text-bas-700">Inga recept skrivna än. Kolla planerade nedan.</p>
     )}
-    <div class="grid grid-cols-1 gap-2 sm:grid-cols-2">
-      {senaste.map((r) => (
-        <a href={`/recept/${r.id}`} class="kort flex flex-col gap-0.5 no-underline hover:bg-bas-50">
-          <span class="text-xs uppercase tracking-wide text-bas-600">{r.data.modul}</span>
-          <span class="font-semibold">{r.data.namn}</span>
-          {r.data.tid?.total_min && (
-            <span class="text-xs text-bas-700">{r.data.tid.total_min} min</span>
-          )}
-        </a>
-      ))}
+    <div class="grid grid-cols-2 gap-2 sm:grid-cols-3">
+      {senaste.map((r) => <ReceptKort recept={r} />)}
     </div>
   </section>
 

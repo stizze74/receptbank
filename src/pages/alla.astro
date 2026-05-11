@@ -94,7 +94,7 @@ const allaTaggar = Array.from(
 
   <p id="resultat-text" class="mb-2 text-sm text-bas-700">{alla.length} recept</p>
 
-  <div id="recept-grid" class="grid grid-cols-1 gap-2 sm:grid-cols-2">
+  <div id="recept-grid" class="grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-4">
     {alla.map((r) => {
       const tid = r.data.tid;
       const totalt = tid?.total_min ?? ((tid?.prep_min ?? 0) + (tid?.tillagning_min ?? 0));

@@ -29,7 +29,11 @@
     @apply knapp border border-bas-300 bg-white text-bas-800 hover:bg-bas-100;
   }
   .kort {
-    @apply rounded-xl border border-bas-200 bg-white p-4 shadow-sm;
+    @apply rounded-xl border border-bas-200 bg-white p-4 shadow-sm transition duration-150;
+  }
+  a.kort:hover,
+  button.kort:hover {
+    @apply -translate-y-0.5 border-bas-300 shadow-md;
   }
   .modul-tagg {
     @apply inline-block rounded-full px-2 py-0.5 text-xs font-medium uppercase tracking-wide;

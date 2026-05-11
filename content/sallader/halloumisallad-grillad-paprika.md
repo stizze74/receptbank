@@ -51,7 +51,7 @@ tillagning:
       tills sk in net blir svart, ca 10 min.
     timer_min: 10
   - namn: Skala
-    text: 'Lagg paprikorna i plastpåse 5 min, sen drag av skinnet. Skär i strimlor.'
+    text: 'Lägg paprikorna i plastpåse 5 min, sen drag av skinnet. Skär i strimlor.'
   - namn: Stek halloumi
     text: 'Stek halloumi-skivor i torr stekpanna 1,5 min per sida tills gyllene.'
     timer_min: 3

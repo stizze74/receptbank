@@ -85,7 +85,7 @@ tillagning:
     timer_min: 4
   - namn: Förena
     text: >-
-      Lägg tillbaka grönsakerna i nötpannan. Vinda runt. Servera på två
+      Lägg tillbaka grönsakerna i nötpannan. Vänd runt. Servera på två
       tallrikar: en med nöt (Stefan), en med halloumi (Jessica). Strö sesam.
 tips:
   - Stir-fry kräver hög värme och snabb rörelse — inte fräs eller koka.
